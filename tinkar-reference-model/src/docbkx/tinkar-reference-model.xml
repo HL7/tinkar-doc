@@ -2,7 +2,48 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>TINKAR Reference Model Chapter Title</title>
+    <title>Tinkar Reference Model</title>
+    <para>This section describes classes of objects that support a common foundational framework for
+        standards-based terminology and knowledge base systems (e.g. SNOMED CT, LOINC, RxNorm, HL7,
+        etc.). </para>
+    <para> </para>
+    <section>
+        <title>Model Representation</title>
+        <para>The Tinkar Referene Model is a logical model described herein using the Object
+            Management Group (OMG) Unified Modeling Language (UML) 2.0 notation to describe the
+            structure of integrated data representation and change management for biomedical
+            terminologies.  </para>
+        <para/>
+        <para>Standard Class Model<inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="clip_image002_-469443168.png" depth="279" width="625"/>
+                </imageobject>
+            </inlinemediaobject>A “Chronology” Instance view<inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="clip_image004_88487584.png" depth="161" width="485"/>
+                </imageobject>
+            </inlinemediaobject></para>
+        <para>A “latest” Instance view</para>
+        <para> </para>
+        <para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="clip_image006_1731007892.png" depth="233" width="649"/>
+                </imageobject>
+            </mediaobject>
+        </para>
+        <para> </para>
+        <para> </para>
+        <para>Three Component Types</para>
+        <para>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="clip_image008_1535615720.png" depth="173" width="624"/>
+                </imageobject>
+            </mediaobject>
+        </para>
+        <para> </para>
+    </section>
 
 
 </chapter>

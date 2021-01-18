@@ -3,5 +3,351 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within. Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things. Thus, you end up with a bullet item that seems like it is floating in space." flag="done"?><?oxy_comment_end?>
-    <title>Business Requirements Chapter Title</title>
+    <title>Business Requirements</title>
+    <para>Draft: <informaltable>
+            <tgroup cols="1">
+                <colspec colnum="1" colname="col1"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">Requirement</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">support the coordination of safe,
+                                effective medicine </emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">quality information in the patient
+                                record</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">commonly understood data
+                                standards</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">support detailed change management on
+                                information assets</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">to record and review data quickly and
+                                accurately</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">knowing when a change in the knowledge
+                                base might affect a record</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">terms available are
+                            appropriate</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>a term that is not supported by the enterprise terminology, the
+                                <emphasis role="underline">effort will be
+                            captured</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">terms available are appropriate
+                                (duplicate)</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">Changes to the terminology that could
+                                affect record interpretation will be indicated</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>ability to <emphasis role="underline">see available values and CDS
+                                results for specific dates and contexts</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>availability of <emphasis role="underline">assets from prior points
+                                in time </emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>assets as <emphasis role="underline">defined or refined by different
+                                stakeholders </emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">manage change
+                            systematically</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">importing standard
+                                terminologies</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">modifying the enterprise
+                                terminologies</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">publishing the enterprise
+                                terminologies</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">A complete record of all changes,
+                                including relevant context information</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">A single syntax to support the
+                                representation of all terminology assets, known and
+                                future</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">Status</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">Time</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">Author</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">Module</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">Path</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry><emphasis role="underline">asset must itself be
+                                identifiable</emphasis></entry>
+                    </row>
+                    <row>
+                        <entry>All Tinkar assets have STAMP values</entry>
+                    </row>
+                    <row>
+                        <entry>assets in Tinkar must be identifiable (duplicate)</entry>
+                    </row>
+                    <row>
+                        <entry>Published terminologies, with all existing features</entry>
+                    </row>
+                    <row>
+                        <entry>Enumerated sets of concepts for specified purposes, a.k.a., value
+                            sets or refsets</entry>
+                    </row>
+                    <row>
+                        <entry>Sets of associations or constraints composing an intensional
+                            definition of a value set</entry>
+                    </row>
+                    <row>
+                        <entry>Sets of associations or constraints composing a logical definition of
+                            a concept</entry>
+                    </row>
+                    <row>
+                        <entry>Sets of information about a concept as specified by a system; e.g.,
+                            names (long, short, related, synonyms), codes, definitional properties,
+                            recommendations or constraints on use of units, change types</entry>
+                    </row>
+                    <row>
+                        <entry>Sets of information about metadata elements, such as the language of
+                            a term or steward of a module</entry>
+                    </row>
+                    <row>
+                        <entry>Associations among concepts, including relationships defined by
+                            member systems (LOINC system, MedRT mechanism of action, SNOMED CT
+                            finding site).</entry>
+                    </row>
+                    <row>
+                        <entry>Associations among concepts, including classification &amp;
+                            equivalence maps defined to harmonize and coordinate concepts common to
+                            different systems.</entry>
+                    </row>
+                    <row>
+                        <entry>Sets of sets, supporting maps with multiple members. E.g., a set of
+                            Names may include a single preferred name and a contained set of
+                            synonyms. [Specific use cases should illustrate how our Semantics will
+                            probably have several layers]</entry>
+                    </row>
+                    <row>
+                        <entry>Constraints on values</entry>
+                    </row>
+                    <row>
+                        <entry>Logical compositional constraints on valid concepts, e.g., the SNOMED
+                            CT concept model</entry>
+                    </row>
+                    <row>
+                        <entry>Syntactic compositional constraints on strings, e.g., MIME types, ISO
+                            languages, or UCUM units</entry>
+                    </row>
+                    <row>
+                        <entry>[Magnitudes? Dates?]</entry>
+                    </row>
+                    <row>
+                        <entry>Structural constraints, e.g., presence of exactly one name classified
+                            as “fully specified,” or names in specified languages</entry>
+                    </row>
+                    <row>
+                        <entry>Rules that may govern modifications to other assets, e.g.,
+                            incremental addition of effort estimates based on known problematic
+                            terms.</entry>
+                    </row>
+                    <row>
+                        <entry>Constraints depend on (refer to) values to be constrained; values are
+                            not bound to constraints in ways that cannot be filtered out</entry>
+                    </row>
+                    <row>
+                        <entry>Users can select contexts in which sets of constraints may or may not
+                            be applied</entry>
+                    </row>
+                    <row>
+                        <entry>Modify component</entry>
+                    </row>
+                    <row>
+                        <entry>An addition is a new version with a new chronology UUID.</entry>
+                    </row>
+                    <row>
+                        <entry>Semantics may assert rules for additions to Modules, Paths, or other
+                            sets, e.g.,</entry>
+                    </row>
+                    <row>
+                        <entry>A concept must have at least one name</entry>
+                    </row>
+                    <row>
+                        <entry>A concept must have at least one parent</entry>
+                    </row>
+                    <row>
+                        <entry>A Concept logical definition Semantic must have a definition
+                            status</entry>
+                    </row>
+                    <row>
+                        <entry>A deletion is a new version of an existing chronology with status set
+                            to “inactive.”</entry>
+                    </row>
+                    <row>
+                        <entry>Semantics may assert rules for deletions from Modules, Paths, or
+                            other sets, e.g.,</entry>
+                    </row>
+                    <row>
+                        <entry>Children of deactivated concepts must be assigned a new
+                            parent</entry>
+                    </row>
+                    <row>
+                        <entry>A change is a new version of an existing chronology with the new
+                            value(s), distinguishable by the time (and possibly other STAMP
+                            values).</entry>
+                    </row>
+                    <row>
+                        <entry>A change may involve only a STAMP value; e.g., deactivation, or
+                            transfer of a concept to a new module or path.</entry>
+                    </row>
+                    <row>
+                        <entry>Transfer involves a new version and a decision about whether to
+                            deactivate the old one.</entry>
+                    </row>
+                    <row>
+                        <entry>Any modification must be followed by identification of dependent
+                            relationships.</entry>
+                    </row>
+                    <row>
+                        <entry>A dependent relationship is a Semantic assertion that refers to a
+                            prior version of a changed component.</entry>
+                    </row>
+                    <row>
+                        <entry>Semantics should specify approaches for handling kinds of
+                            changes.</entry>
+                    </row>
+                    <row>
+                        <entry>Dependent relationships with rules may be handled
+                            automatically.</entry>
+                    </row>
+                    <row>
+                        <entry>Dependent relationships without rules must be handled
+                            manually.</entry>
+                    </row>
+                    <row>
+                        <entry>Multiple dependent relationships must be ordered to prevent redundant
+                            handling.</entry>
+                    </row>
+                    <row>
+                        <entry>If dependent relationship [A] also depends on a second dependent
+                            relationship [B], then dependent relationship [B] should be addressed
+                            first.</entry>
+                    </row>
+                    <row>
+                        <entry>Semantics are specific to module and path, so their rules are as
+                            well.</entry>
+                    </row>
+                    <row>
+                        <entry>Rules may include or exclude modules or paths from their dependency
+                            graphs.</entry>
+                    </row>
+                    <row>
+                        <entry>Rules will be applied at the time the change is recognized.</entry>
+                    </row>
+                    <row>
+                        <entry>Terminology authoring activities will apply these rules at the time
+                            of authoring.</entry>
+                    </row>
+                    <row>
+                        <entry>Export and publication activities may apply additional rules at the
+                            time of export or publication. These operations may be the equivalent of
+                            modifying the Path of a set of assets (i.e., creating a new set of
+                            versions specifying the new Path).</entry>
+                    </row>
+                    <row>
+                        <entry>Import activities may apply import rules at the time of
+                            import.</entry>
+                    </row>
+                    <row>
+                        <entry>The timeframe for rule disposition may be defined by the
+                            rule.</entry>
+                    </row>
+                    <row>
+                        <entry>Publication is the copying of a set of Versions with a new
+                            Path.</entry>
+                    </row>
+                    <row>
+                        <entry>Publication may invoke a specified set of rules or a higher level of
+                            stringency for previously applied rules.</entry>
+                    </row>
+                    <row>
+                        <entry>Publication may or may not imply deactivation of the Versions in the
+                            prior path.</entry>
+                    </row>
+                    <row>
+                        <entry>Export is the serialization of a data set (typically a published
+                            module or set of modules) into a file suitable for automated consumption
+                            by another terminology management system.</entry>
+                    </row>
+                    <row>
+                        <entry>This serialization will conform to [specification]</entry>
+                    </row>
+                    <row>
+                        <entry>Import is the automated consumption of an exported data set by a
+                            terminology management system.</entry>
+                    </row>
+                    <row>
+                        <entry>[Context | Coordinate] management</entry>
+                    </row>
+                    <row>
+                        <entry>A minimal set of STAMP values (time, module, and path) is required to
+                            determine the validity of any operation or Semantic.</entry>
+                    </row>
+                    <row>
+                        <entry>Author may be used for this purpose, but is unlikely to be
+                            useful.</entry>
+                    </row>
+                    <row>
+                        <entry>Status may be used to distinguish between “active-only” and “all”
+                            views.</entry>
+                    </row>
+                    <row>
+                        <entry>A module dependency Semantic may be used to determine what modules
+                            depend on others – i.e., adopt assertions in the independent module.
+                            Such a Semantic must be acyclic.</entry>
+                    </row>
+                    <row>
+                        <entry>[similar functionality for Paths?]</entry>
+                    </row>
+                    <row>
+                        <entry>A user will be able to determine what modules a service supports,
+                            with their dependencies</entry>
+                    </row>
+                    <row>
+                        <entry>Within the module, specific paths</entry>
+                    </row>
+                    <row>
+                        <entry>Within the module, sets of Semantics defined by grouping Semantics,
+                            e.g., for specific use cases (such as quality measures) or
+                            specialties.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable></para>
 </chapter>

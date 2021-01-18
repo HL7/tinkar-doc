@@ -3,6 +3,71 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Reference Implementation Chapter Title</title>
+    <title>Reference Implementation of Tinkar</title>
+    <para>This section shall include user documentation for a reference implementation of the
+        Terminology Knowledge Base standard, referred to as KOMET ( insert hyperlink ), and how
+        various terminologies, such as SNOMED, LOINC, RxNorm, and HL7 terminologies shall be
+        reproducibly represented using the Terminology Knowledge Base standard.</para>
+    <para>Placeholder screenshots of Reference Implementation: </para>
+    <para>A “Latest View with Active Status </para>
+    <para>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="clip_image002_-1889704679.png" depth="379" width="624"/>
+            </imageobject>
+        </mediaobject>
+    </para>
+    <para>A “latest” view With *any* status</para>
+    <para>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="clip_image004_-904174575.png" depth="319" width="625"/>
+            </imageobject>
+        </mediaobject>
+    </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para>Concept history</para>
+    <para>
+        <inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="reference-implementation.png"/>
+            </imageobject>
+        </inlinemediaobject></para>
+    <para><inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="reference-implementation2.png"/>
+            </imageobject>
+        </inlinemediaobject></para>
+    <para><inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="reference-implementation3.png"/>
+            </imageobject>
+        </inlinemediaobject></para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
+    <para> </para>
 
 </chapter>

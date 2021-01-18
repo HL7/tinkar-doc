@@ -4,10 +4,17 @@
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
   <preface>
-    <title>Intended Audience</title>
-    <para><glossterm baseform="Analysis Normal Form">TINKAR Ballot</glossterm> First paragraph.</para>
-    <para> Second paragraph. </para>
-    <para>Third paragraph.</para>
+    <title>Preface</title>
+    <para>This specification describes the requirements to manage terminology produced by a variety
+      of organizations across the healthcare enterprise. A Terminology foundation is required that
+      allows the enterprise to extend terminology standards and implement extensions in a timely
+      fashion.</para>
+    <para>This specification is intended to support healthcare organizations standard terminology
+      modules, value sets, and coding systems as well as local terms and equivalence
+      mappings.</para>
+    <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification is necessary to
+      support the operation of a variety of systems intended to deliver knowledge management for
+      terminology to vendors, provider, and standards-development organizations like HL7. </para>
   </preface>
   <preface>
     <title>Acknowledgements</title>
@@ -32,8 +39,20 @@
                 <para>&#x2003;&#x2003;&#x2003;Keith Campbell<superscript>1</superscript></para>
               </entry>
               <entry>
-                <para>Raja A. Cholan<superscript>2</superscript></para>
+                <para>TBD<superscript>2</superscript></para>
               </entry>
+            </row>
+            <row>
+              <entry/>
+              <entry/>
+            </row>
+            <row>
+              <entry/>
+              <entry/>
+            </row>
+            <row>
+              <entry/>
+              <entry/>
             </row>
           </tbody>
         </tgroup>
@@ -56,16 +75,16 @@
   <toc/>
 
 <!--  Abbreviated Glossary-->
-  <xi:include
+    <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/abbreviated-glossary/abbreviated-glossary.xml"
-          xmlns:xi="http://www.w3.org/2001/XInclude"/>
+          xmlns:xi="http://www.w3.org/2001/XInclude"/> 
 
 <!--  1.	Introduction-->
   <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/introduction/introduction.xml"
           xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-<!--  2.	Business requirements / User stories / Examples of Pain Points-->
+<!--  2.	Business Requirements-->
   <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/business-requirements/business-requirements.xml"
           xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -74,28 +93,29 @@
   <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/tinkar-reference-model/tinkar-reference-model.xml"
           xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+ <!--  4.	How Tinkar Represents Biomedical Terminologies-->
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
 
-<!--  4.	Gap Analysis with other models (CTS2, FHIR R4, HL7v2, EVS, and others TBD)-->
+<!--  5.	Gap Analysis with other models (CTS2, FHIR R4, HL7v2, EVS, and others TBD)-->
   <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/gap-analysis/gap-analysis.xml"
           xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-<!--  5.	Pragmatic usage and next steps (Reference Implementation)-->
+ <!--  6.	Tinkar Reference Implementation -->
   <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/reference-implementation/reference-implementation.xml"
           xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-<!--  6.	Implications – Improving data accuracy-->
-  <xi:include
-          href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"
-          xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-<!--  7.	Conclusion-->
+<!--  7.	Next Steps and Conclusion-->
   <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"
           xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-<!--  8.	Complete Glossary-->
+  
+ <!--  8.	Complete Glossary-->
   <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/complete-glossary/complete-glossary.xml"
           xmlns:xi="http://www.w3.org/2001/XInclude"/>

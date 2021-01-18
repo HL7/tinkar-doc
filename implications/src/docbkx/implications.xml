@@ -3,7 +3,11 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
-    <title>Implications Chapter Title</title>
+    <title>How Tinkar Represents Biomedical Terminologies</title>
+    <para>SNOMED CT</para>
+    <para>LOINC</para>
+    <para>RxNorm</para>
+    <para>Others?</para>
 
 
 </chapter>
