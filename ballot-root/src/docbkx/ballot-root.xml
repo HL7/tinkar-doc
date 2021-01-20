@@ -9,12 +9,12 @@
       of organizations across the healthcare enterprise. A Terminology foundation is required that
       allows the enterprise to extend terminology standards and implement extensions in a timely
       fashion.</para>
-    <para>This specification is intended to support healthcare organizations standard terminology
+    <para>This specification is intended to support healthcare organizations' standard terminology
       modules, value sets, and coding systems as well as local terms and equivalence
       mappings.</para>
     <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification is necessary to
       support the operation of a variety of systems intended to deliver knowledge management for
-      terminology to vendors, provider, and standards-development organizations like HL7. </para>
+      terminology to vendors, providers, and standards-development organizations like HL7. </para>
   </preface>
   <preface>
     <title>Acknowledgements</title>
