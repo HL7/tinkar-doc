@@ -12,15 +12,15 @@
     clinical terminologies through the unified terminology services of FHIR is facilitating their
     usage in support of interoperability in healthcare. </para>
   <para>Interoperability requires standardized semantics based on reference terminology provided by
-    standards development organizations, professional organization, or government agencies. These
+    standards development organizations, professional organizations, or government agencies. These
     organizations publish their content with the intention of licensing it to health IT vendors,
     providers, and research organizations. In the U.S., the core clinical reference terminology is
     based on SNOMED CT, LOINC, and RxNorm. Healthcare organizations have to adopt and integrate
     subsets or modules of various reference terminology and manage references, dependencies,
-    versions, and releases. It is important for the integrity of medical records that concepts and
-    value sets change history can be managed and tracked to allow the exchange of either current or
-    retrospective health records. Therefore, enterprise terminology requires integrated terminology
-    using a common representation and management.</para>
+    versions, and releases. It is important for the integrity of medical records that the change
+    history of concepts and value sets can be managed and tracked to allow the exchange of either
+    current or retrospective health records. Therefore, enterprise terminology requires integrated
+    terminology using a common representation and management.</para>
   <para>Despite the need to use standard terminologies in a highly integrated way, there is no
     standard representation across SNOMED CT, LOINC, RxNorm, etc. Some partnerships have been
     created among development teams to facilitate interoperability and minimize duplication of
@@ -45,8 +45,8 @@
     reactive</para>
   <para><emphasis role="bold">Repeatable</emphasis> – Tinkar provides the foundation for robust
     configuration management and quality assurance for terminologies</para>
-  <para><emphasis role="bold">Defined</emphasis> – Tinkar allowing terminologies to have
-    standardized update and extension process</para>
+  <para><emphasis role="bold">Defined</emphasis> – Tinkar allows terminologies to have standardized
+    update and extension processes</para>
   <para><emphasis role="bold">Managed</emphasis> – Tinkar represenents updates and changes to
     terminologies so that the changes can be measured and controlled</para>
   <para><emphasis role="bold">Optimizing</emphasis> – Tinkar aims to allow multiple stakeholders to
@@ -90,7 +90,7 @@
         Care</emphasis>. Washington, DC: National Academies Press] --REF ). Despite the widespread
       understanding of the importance of the quality of clinical data, there is currently a lack of
       integration and management of clinical terminologies across the healthcare enterprise. </para>
-    <para> Tinkar intends to integrate clinical terminology and local concepts in order to support
+    <para>Tinkar intends to integrate clinical terminology and local concepts in order to support
       interoperable information and increased data quality for clinical information. Quality
       clinical data enables healthcare systems across the enterprise to enhance quality of care
       across all medical facilities, conduct robust and meaningful data analysis, and increase
@@ -108,9 +108,8 @@
       private sector</para>
     <section>
       <title>The Problem Tinkar Addresses </title>
-      <para>The following 3 high level potential deficiencies related to preventable harm that
-        Tinkar aims to address related to poorly integrated terminology and inefficient change
-        management : </para>
+      <para>The following 3 high level potential deficiencies describe preventable harm that Tinkar
+        aims to address related to poorly integrated terminology and inefficient change management : </para>
       <para><emphasis role="bold">Inability to recognize equivalence </emphasis></para>
       <itemizedlist>
         <listitem>
@@ -239,39 +238,17 @@
     </orderedlist>
     <section>
       <title>Tinkar Objectives and Purpose – Manage Terminology and Change Better</title>
-      <para>This specification is describing the requirements and characteristics of systems require
-        to manage terminology produced by a variety of organization across a healthcare enterprise.
-        This foundation must allow enterprise to extend terminology standards and implement
-        extensions in a timely fashion.</para>
+      <para>This specification is describing the requirements and characteristics of systems
+        required to manage terminology produced by a variety of organizations across a healthcare
+        enterprise. This foundation must allow enterprise to extend terminology standards and
+        implement extensions in a timely fashion.</para>
       <para>This specification is intended to support healthcare organizations standard terminology
         modules, value sets, and coding systems as well as local terms and equivalence
         mappings.</para>
-      <para>A standard-based Terminology Knowledge Architecture (TINKAR) specification would be
+      <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification would be
         necessary to support the operation of a variety of systems intended to deliver knowledge
-        management for terminology to vendors, provider, and even standards-development
+        management for terminology to vendors, providers, and even standards-development
         organizations like HL7. </para>
-      <para>Previous efforts have attempted to create a common set of terminology capabilities and
-        services by specifying a single pre-defined structure for managing terminology.
-        Unfortunately, a hardwired structure that works for one standard may not work for another.
-        The ability of to integrate content across terminology standards is a barrier to
-        implementing services and modules that can deliver integrated concepts, code lists, and
-        value sets required by enterprise systems for treatment, research, business process
-        automation, quality measures, and outcome analysis. </para>
-      <para><itemizedlist>
-          <listitem>
-            <para>Clinical applications require integrated terminology to create interoperable
-              clinical statements organized into messages, documents, or resources.</para>
-          </listitem>
-          <listitem>
-            <para>Data analysis and research require integrated terminology to analyze aggregated
-              information. Interoperability, clinical decision support, or other types of automation
-              require common semantics based on a set of integrated models across reference
-              standards (e.g. SNOMED CT, LOINC, RxNorm, etc)</para>
-          </listitem>
-        </itemizedlist>Tinkar is intended to provide an architecture that delivers integrated
-        terminology to the enterprise and its information systems, that addresses the differences in
-        management and structure across reference terminology and with local concepts and code
-        lists/value sets. </para>
     </section>
   </section>
   <section>
@@ -336,11 +313,12 @@
     <title>About this Document</title>
     <para>This document describes how information systems can improve encoded clinical data with
       managing terminology and changes to terminology using a standardized model. </para>
-    <para>In the following chapter we enumerate business requirements for Tinkar followed by Chapter
-      X containing the Tinkar Reference Model and illustrative examples of terminology content
-      represented by Tinkar. Subsequently, we present a reference implementation of Tinkar to
-      demonstrate Tinkar in action. Finally, we discuss implications of TInkar on data quality,
-      clinical decision support and patient safety and outcomes. </para>
+    <para>In the following chapter we enumerate business requirements for Tinkar followed by
+      chapters containing the Tinkar Reference Model and illustrative examples of terminology
+      content represented by Tinkar. Subsequently, we compare/contrast Tinkar to other models and
+      present a reference implementation of Tinkar to demonstrate Tinkar in action. Finally, we
+      discuss implications of Tinkar on data quality, clinical decision support and patient safety
+      and outcomes. </para>
     <note>
       <para>(Placeholder - NEED TO UPDATE)</para>
       <para>Being on the right side of IP” – language to refer to the fact that different sources
