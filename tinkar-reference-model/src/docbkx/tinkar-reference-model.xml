@@ -4,27 +4,90 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Tinkar Reference Model</title>
     <para>This section describes classes of objects that support a common foundational framework for
-        standards-based terminology and knowledge base systems (e.g. SNOMED CT, LOINC, RxNorm, HL7,
-        etc.). </para>
+        <?oxy_comment_start author="timowilliams" timestamp="20210120T141743-0600" comment="Could this support non-standards based terminology as well?  Should we just drop this?"?>standards-based<?oxy_comment_end?>
+        terminology and knowledge base systems (e.g. SNOMED CT, LOINC, RxNorm, HL7, etc.). </para>
     <para> </para>
     <section>
         <title>Model Representation</title>
         <para>The Tinkar Referene Model is a logical model described herein using the Object
             Management Group (OMG) Unified Modeling Language (UML) 2.0 notation to describe the
             structure of integrated data representation and change management for biomedical
-            terminologies.  </para>
+            terminologies. </para>
         <para/>
-        <para>Standard Class Model<inlinemediaobject>
+    </section>
+    <section>
+        <title>Standard Class Model</title>
+        <para>
+        <inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="clip_image002_-469443168.png" depth="279" width="625"/>
+            </imageobject>
+        </inlinemediaobject>
+        </para>
+        <para>To fulfill the requirement of capturing a complete record of all changes, including
+            relevant context information (18) the relevant context information includes the
+            following: </para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Status of the asset: active or inactive (20) </para>
+                </listitem>
+                <listitem>
+                    <para>Time of change (21) </para>
+                </listitem>
+                <listitem>
+                    <para>Author of change (22) </para>
+                </listitem>
+                <listitem>
+                    <para>Module: Assignment to the appropriate terminology (e.g., LOINC) or
+                        terminology component (e.g., SNOMED CT, US Extension) (23) </para>
+                </listitem>
+                <listitem>
+                    <para>Path: Specification of a branch within an organization, e.g., for
+                        distributed development, testing, staging, or production (24)</para>
+                </listitem>
+            </orderedlist>
+        </para>
+                    <para> These elements together are referred to by the acronym “STAMP.” Every new
+            assertion, whether a new asset or a change to an existing asset, must have a STAMP in
+            order to determine when it is to be used. The STAMP properties support the ability to
+            apply terminology assets for specific purposes. For example, <itemizedlist>
+                <listitem>
+                    <para>“Path” can be used to test provisional content without physically swapping
+                        out systems.</para>
+                </listitem>
+                <listitem>
+                    <para>“Module” can be used to filter out work that has not been authorized be
+                        the enterprise.</para>
+                </listitem>
+                <listitem>
+                    <para>“Time” supports the ability to apply CDS rules as they would have looked
+                        in the past. </para>
+                </listitem>
+            </itemizedlist>The Tinkar model does not merely support the ability to “STAMP”
+            assertions: it asserts a requirement that all changes be STAMPed. As a result, any
+            Identifed Component in the knowledge base will consist of a series of change records,
+            called Versions, (beginning with the “Create” version), all associated to an underlying
+            Chronology. The Chronology only has properties inasmuch as they are attributed to it by
+            its versions. Looking at the Identifed Component through different sets of changes
+            (published version, geographically defined set of modules, historical timestamp) may
+            reveal substantially different Identifed Components. </para>
+        <figure>
+            <title>A “Chronology” Instance view</title>
+            <mediaobject>
                 <imageobject>
-                    <imagedata fileref="clip_image002_-469443168.png" depth="279" width="625"/>
+                    <imagedata fileref="clip_image004_88487584.png" scalefit="1" width="100%"
+                        contentdepth="100%"/>
                 </imageobject>
-            </inlinemediaobject>A “Chronology” Instance view<inlinemediaobject>
-                <imageobject>
-                    <imagedata fileref="clip_image004_88487584.png" depth="161" width="485"/>
-                </imageobject>
-            </inlinemediaobject></para>
-        <para>A “latest” Instance view</para>
-        <para> </para>
+            </mediaobject>
+            <caption>
+                <para><emphasis role="italics">A “Chronology” Instance view</emphasis></para>
+            </caption>
+        </figure>
+    </section>
+
+    <section>
+        <title>A “latest” Instance view</title>
         <para>
             <mediaobject>
                 <imageobject>
@@ -32,9 +95,9 @@
                 </imageobject>
             </mediaobject>
         </para>
-        <para> </para>
-        <para> </para>
-        <para>Three Component Types</para>
+    </section>
+    <section>
+        <title>Three Component Types</title>
         <para>
             <mediaobject>
                 <imageobject>
@@ -42,8 +105,6 @@
                 </imageobject>
             </mediaobject>
         </para>
-        <para> </para>
     </section>
-
 
 </chapter>
