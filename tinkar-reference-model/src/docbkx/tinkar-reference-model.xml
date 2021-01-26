@@ -13,42 +13,43 @@
             Management Group (OMG) Unified Modeling Language (UML) 2.0 notation to describe the
             structure of integrated data representation and change management for biomedical
             terminologies. </para>
-        <para/>
     </section>
     <section>
         <title>Standard Class Model</title>
         <para>
         <inlinemediaobject>
             <imageobject>
-                <imagedata fileref="clip_image002_-469443168.png" depth="279" width="625"/>
+                <imagedata fileref="clip_image002_-469443168.png" scalefit="1" width="100%"
+                    contentdepth="100%"/>
             </imageobject>
         </inlinemediaobject>
         </para>
-        <para>To fulfill the requirement of capturing a complete record of all changes, including
-            relevant context information (18) the relevant context information includes the
-            following: </para>
+        <para>The Tinkar Reference Model fulfills the requirement of capturing a complete record of
+            all changes, including relevant context information (Requirement 18). The relevant
+            context information includes the following: </para>
         <para>
             <orderedlist>
                 <listitem>
-                    <para>Status of the asset: active or inactive (20) </para>
+                    <para>Status of the asset: active or inactive (Requirement 20) </para>
                 </listitem>
                 <listitem>
-                    <para>Time of change (21) </para>
+                    <para>Time of change (Requirement 21) </para>
                 </listitem>
                 <listitem>
-                    <para>Author of change (22) </para>
+                    <para>Author of change (Requirement 22) </para>
                 </listitem>
                 <listitem>
                     <para>Module: Assignment to the appropriate terminology (e.g., LOINC) or
-                        terminology component (e.g., SNOMED CT, US Extension) (23) </para>
+                        terminology component (e.g., SNOMED CT, US Extension) (Requirement 23) </para>
                 </listitem>
                 <listitem>
                     <para>Path: Specification of a branch within an organization, e.g., for
-                        distributed development, testing, staging, or production (24)</para>
+                        distributed development, testing, staging, or production (Requirement
+                        24)</para>
                 </listitem>
             </orderedlist>
         </para>
-                    <para> These elements together are referred to by the acronym “STAMP.” Every new
+                    <para>These elements together are referred to by the acronym “STAMP.” Every new
             assertion, whether a new asset or a change to an existing asset, must have a STAMP in
             order to determine when it is to be used. The STAMP properties support the ability to
             apply terminology assets for specific purposes. For example, <itemizedlist>
@@ -66,12 +67,9 @@
                 </listitem>
             </itemizedlist>The Tinkar model does not merely support the ability to “STAMP”
             assertions: it asserts a requirement that all changes be STAMPed. As a result, any
-            Identifed Component in the knowledge base will consist of a series of change records,
-            called Versions, (beginning with the “Create” version), all associated to an underlying
-            Chronology. The Chronology only has properties inasmuch as they are attributed to it by
-            its versions. Looking at the Identifed Component through different sets of changes
-            (published version, geographically defined set of modules, historical timestamp) may
-            reveal substantially different Identifed Components. </para>
+            IdentifedComponent in the knowledge base will consist of a series of change records,
+            called ComponentVersions, (beginning with the “Create” version), all associated to an
+            underlying ComponentChronology.</para>
         <figure>
             <title>A “Chronology” Instance view</title>
             <mediaobject>
@@ -82,13 +80,21 @@
             </mediaobject>
             <caption>
                 <para><emphasis role="italics">A “Chronology” Instance view</emphasis></para>
+                <para> The ComponentChronology only has properties inasmuch as they are attributed
+                    to it by its versions. Looking at the IdentifedComponent through different sets
+                    of changes (published version, geographically defined set of modules, historical
+                    timestamp) may reveal substantially different IdentifedComponents. </para>
+                <para>STAMP assertions are also unversioned IdentifiedComponents to avoid the need
+                    to repeat the STAMP for all other IdentifiedComponents.</para>
             </caption>
         </figure>
         <figure>
             <title>A “latest” Instance view</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="clip_image006_1731007892.png" depth="233" width="649"/>
+                    <?oxy_comment_start author="timowilliams" timestamp="20210126T130544-0600" comment="I don&apos;t see this table in the overall architecture?  Is this just a view we are calculating?  "?>
+                    <imagedata fileref="clip_image006_1731007892.png" depth="233" width="649"
+                    /><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
             <caption>
@@ -96,50 +102,65 @@
             </caption>
         </figure>
     </section>
-    <section>
-        <title>Three Component Types</title>
-        <para>We begin by drawing boundaries for asserting things about concepts. Requirement 19 states that the design must support all known and unknown properties, so it must be a meta-model. In addition, assets must be identifiable. The result is similar to RDF, plus identification:</para>
-        <para>
+    <section><title>Component Types</title><para>Requirement 19 states that the design must support all known and unknown properties, so it
+            must be a meta-model. In addition, components must be identifiable. The result is
+            similar to RDF with the addition of identification:</para><para>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="clip_image008_1535615720.png" depth="173" width="624"/>
                 </imageobject>
             </mediaobject>
         </para>
-        <para>Both Concepts and the Semantics that describe them can be uniquely identified. The Semantic uses a Concept to define the relationship between the value and the Concept; the value itself may be either a concept or some other kind of value, such as a string.
-            We then create the ability to assemble assertions into more complex structures.
-        </para>
         <para>To assemble groups of assertions, Tinkar uses a construct called a <emphasis
-                role="bold">Semantic</emphasis>, which is an identifiable asset. Since it is
-            versioned, a Semantic is manifest as a <emphasis role="bold"
-                >SemanticChronology</emphasis>, containing a set of <emphasis role="bold"
-                >SemanticVersions</emphasis>. Concepts, too, are manifest as collections: a
-                <emphasis role="bold">ConceptChronology</emphasis> consisting of a set of <emphasis
-                role="bold">ConceptVersions</emphasis>.</para>
-        <para>It would be possible to support self-description using the Semantic structure, but it
+                role="bold">Semantic</emphasis>, which is an Identified Component. A Semantic is a
+            collection of values that supports the specification of value sets, compositional
+            definitions, and other assets requiring internal structure, and it specifies the nature
+            of the compositional relationship explicitly. Since it is versioned, a Semantic is
+            manifest as a <emphasis role="bold">SemanticChronology</emphasis>, containing a set of
+                <emphasis role="bold">SemanticVersions</emphasis>. Concepts, too, are manifest as
+            collections: a <emphasis role="bold">ConceptChronology</emphasis> consisting of a set of
+                <emphasis role="bold">ConceptVersions</emphasis>.</para><para>Both Concepts and the Semantics that describe them can be uniquely identified. The Semantic
+            uses a Concept to define the relationship between the value(s) and the Concept; the
+            value itself may be either a concept or some other kind of value, such as a string. We
+            then create the ability to assemble assertions into more complex structures. </para><para>It would be possible to support self-description using the Semantic structure, however it
             would mean associating each definitional assertion with yet another assertion
             characterizing it as definitional. Because this would result in a great deal of
             repetitive information, we have chosen to define another first-class feature of the
-            model, the
-            <?oxy_comment_start author="timowilliams" timestamp="20210121T162824-0600" comment="This name is changing so we will need to update the image and this whenever the name is finalized."?>SemanticDefinition<?oxy_comment_end?>
-                (<emphasis role="bold">SemanticDefinitionVersion</emphasis> and <emphasis
-                role="bold">SemanticDefinitionChronology</emphasis>). This feature uses a similar
-            pattern to assert patterns that Semantic assets can follow, just like an XML or RDF
-            Schema.</para>
-        <para>As discussed earlier, if an author makes a change to a concept, the prior <emphasis
-                role="bold">Version</emphasis> is unchanged, but a new version – with the
-            appropriate STAMP information – is recorded. Users viewing the concept in the prior
+            model, the PatternForSemantic (<emphasis role="bold"
+                >PatternForSemanticVersion</emphasis> and <emphasis role="bold"
+                >PatternForSemanticChronology</emphasis>). This feature uses a similar mechanism to
+            assert patterns that Semantic assets can follow, just like an XML or RDF Schema.</para><para>As discussed earlier, if an author makes a change to a concept, the
+            prior Version is unchanged, but a new version – with
+            the appropriate STAMP information – is recorded. Users viewing the concept in the prior
             context (i.e., as of the prior time, if no other STAMP element has changed) will see the
-            old value; users viewing the concept in the new context will see the new value.</para>
-        <para>If other assets depend on the changed concept, they can be identified by relationships
-            in the <emphasis role="bold">Semantics</emphasis>. The Semantics can assert rules for
-            how to manage these changes. A Semantic defining a value set for data entry might
-            automatically accept any deactivations from the source system authority, while a
-            Semantic defining a value set for research might automatically decline to adopt
+            old value; users viewing the concept in the new context will see the new
+            value.</para><para>If other IdentifiedComponents depend on the changed concept, they can be identified by
+            relationships in the Semantics. The Semantics can
+            assert rules for how to manage these changes. A Semantic defining a value set for data
+            entry might automatically accept any deactivations from the source system authority,
+            while a Semantic defining a value set for research might automatically decline to adopt
             deactivations, or do so based on whether there are extant operational values. Escalating
             such decisions for human adjudication or review at multiple levels is also always an
             option. Systems might adopt any number of methods for dealing with identified changes:
             the important thing is to ensure the changes can be identified consistently.</para>
+        <figure>
+            <title>Compositional Semantics</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="clip_image_compositional_semantics.png" depth="279" width="625"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>
+            <figure>
+                <title>Overall Tinkar Architecture</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Tinkar_Architecture.svg" format="SVG" scalefit="1"
+                            width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+            </figure></para>
     </section>
 
 </chapter>
