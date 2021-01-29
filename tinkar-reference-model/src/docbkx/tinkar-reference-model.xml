@@ -30,21 +30,33 @@
         <para>
             <orderedlist>
                 <listitem>
-                    <para>Status of the asset: active or inactive (Requirement 20) </para>
+                    <para><emphasis role="bold">Status of the asset:</emphasis> A status is
+                        identified by a defined concept, which may be annotated with other
+                        identifying information.  active or inactive (Requirement 20) </para>
                 </listitem>
                 <listitem>
-                    <para>Time of change (Requirement 21) </para>
+                    <para><emphasis role="bold">Time of change:</emphasis> Timestamps must employ a
+                        common standard, which must support precision and time zone. (Requirement
+                        21) </para>
                 </listitem>
                 <listitem>
-                    <para>Author of change (Requirement 22) </para>
+                    <para><emphasis role="bold">Author of change:</emphasis> An author is identified
+                        by a defined concept, which may be annotated with other identifying
+                        information. (Requirement 22) </para>
                 </listitem>
                 <listitem>
-                    <para>Module: Assignment to the appropriate terminology (e.g., LOINC) or
-                        terminology component (e.g., SNOMED CT, US Extension) (Requirement 23) </para>
+                    <para><emphasis role="bold">Module: </emphasis>Assignment to the appropriate
+                        terminology (e.g., LOINC) or terminology component (e.g., SNOMED CT, US
+                        Extension). A module is identified by a defined concept, which may be
+                        annotated with other identifying information. All modules must have a
+                        defined relationship to the root module. (Requirement 23) </para>
                 </listitem>
                 <listitem>
-                    <para>Path: Specification of a branch within an organization, e.g., for
-                        distributed development, testing, staging, or production (Requirement
+                    <para><emphasis role="bold">Path:</emphasis> Specification of a branch within an
+                        organization, e.g., for distributed development, testing, staging, or
+                        production. A path is identified by a defined concept, which may be
+                        annotated with other identifying information. A core set of paths is
+                        necessary to support publication to external organizations. (Requirement
                         24)</para>
                 </listitem>
             </orderedlist>
@@ -119,44 +131,95 @@
             manifest as a <emphasis role="bold">SemanticChronology</emphasis>, containing a set of
                 <emphasis role="bold">SemanticVersions</emphasis>. Concepts, too, are manifest as
             collections: a <emphasis role="bold">ConceptChronology</emphasis> consisting of a set of
-                <emphasis role="bold">ConceptVersions</emphasis>.</para><para>Both Concepts and the Semantics that describe them can be uniquely identified. The Semantic
-            uses a Concept to define the relationship between the value(s) and the Concept; the
-            value itself may be either a concept or some other kind of value, such as a string. We
-            then create the ability to assemble assertions into more complex structures. </para><para>It would be possible to support self-description using the Semantic structure, however it
-            would mean associating each definitional assertion with yet another assertion
+                <emphasis role="bold">ConceptVersions</emphasis>.</para>
+        <figure>
+            <title>Compositional Semantics</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="Compositional_Semantics.png"  format="PNG" scalefit="1"
+                        width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>Both Concepts and the Semantics that describe them are uniquely identified using
+            UUID's. The Semantic uses a Concept to define the relationship between the value(s) and
+            the Concept; the value itself may be either a concept or some other kind of value, such
+            as a string. We then create the ability to assemble assertions into more complex
+            structures. </para>
+        <para>It would be possible to support self-description using the Semantic structure, however
+            it would mean associating each definitional assertion with yet another assertion
             characterizing it as definitional. Because this would result in a great deal of
             repetitive information, we have chosen to define another first-class feature of the
             model, the PatternForSemantic (<emphasis role="bold"
                 >PatternForSemanticVersion</emphasis> and <emphasis role="bold"
                 >PatternForSemanticChronology</emphasis>). This feature uses a similar mechanism to
-            assert patterns that Semantic assets can follow, just like an XML or RDF Schema.</para><para>As discussed earlier, if an author makes a change to a concept, the
-            prior Version is unchanged, but a new version – with
-            the appropriate STAMP information – is recorded. Users viewing the concept in the prior
-            context (i.e., as of the prior time, if no other STAMP element has changed) will see the
-            old value; users viewing the concept in the new context will see the new
-            value.</para><para>If other IdentifiedComponents depend on the changed concept, they can be identified by
-            relationships in the Semantics. The Semantics can
-            assert rules for how to manage these changes. A Semantic defining a value set for data
-            entry might automatically accept any deactivations from the source system authority,
-            while a Semantic defining a value set for research might automatically decline to adopt
-            deactivations, or do so based on whether there are extant operational values. Escalating
-            such decisions for human adjudication or review at multiple levels is also always an
-            option. Systems might adopt any number of methods for dealing with identified changes:
-            the important thing is to ensure the changes can be identified consistently.</para>
-        <figure>
-            <title>Compositional Semantics</title>
+            assert patterns that Semantic assets can follow, just like an XML or RDF Schema.</para>
+        <para>As discussed earlier, if an author makes a change to a concept, the prior Version is
+            unchanged, but a new version – with the appropriate STAMP information – is recorded.
+            Users viewing the concept in the prior context (i.e., as of the prior time, if no other
+            STAMP element has changed) will see the old value; users viewing the concept in the new
+            context will see the new value.</para>
+        <para>If other IdentifiedComponents depend on the changed concept, they can be identified by
+            relationships in the Semantics. The Semantics can assert rules for how to manage these
+            changes. A Semantic defining a value set for data entry might automatically accept any
+            deactivations from the source system authority, while a Semantic defining a value set
+            for research might automatically decline to adopt deactivations, or do so based on
+            whether there are extant operational values. Escalating such decisions for human
+            adjudication or review at multiple levels is also always an option. Systems might adopt
+            any number of methods for dealing with identified changes: the important thing is to
+            ensure the changes can be identified consistently.</para>
+        
+    </section>
+    <section>
+        <title>Semantic Definition</title>
+        <para>
+            <figure>
+            <title>Semantic Definition</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="clip_image_compositional_semantics.png" depth="279" width="625"/>
+                    <imagedata fileref="Semantic_Definition.png" format="PNG" scalefit="1"
+                        width="100%" contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
-        </figure>
+            </figure>
+        </para>
+    </section>
+    <section>
+        <title>Constraints</title>
+        <para>Constraints are required to ensure that the appropriate level of detail for standard
+            terminologies are represented within Tinkar and if extensions are created they conform
+            to the requirements of the standard(s) they are based upon. For example, constraints
+            would be used to represent standard terminology artifacts like the SNOMED CT Machine
+            Readable Concept Model. Constraints are used to ensure that terminologies are
+            represented within Tinkar in such a way that they can be completely and consistently
+            queried and displayed. </para>
+        <para>With respect to creating new content, constraints would be used to specify what the
+            minimally viable data that would be required. For Example:<itemizedlist>
+                <listitem>
+                    <para>All concepts must have at least one Fully Qualified Name within at lease
+                        one Language or Dialect.</para>
+                </listitem>
+                <listitem>
+                    <para>All concepts must have at least one parent, unless it is a root
+                        concept.</para>
+                </listitem>
+                <listitem>
+                    <para/>
+                </listitem>
+            </itemizedlist></para>
+    </section>
+    <section>
+        <title>Coordinate</title>
+        <para></para>
+    </section>
+    <section>
+        <title></title>
         <para>
             <figure>
                 <title>Overall Tinkar Architecture</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Tinkar_Architecture.svg" format="SVG" scalefit="1"
+                        <imagedata fileref="Tinkar_Architecture.png" format="PNG" scalefit="1"
                             width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
