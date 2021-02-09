@@ -212,33 +212,33 @@
                         represented within Tinkar</para>
                 </listitem>
                 <listitem>
-                    <para>if extensions are created they conform to the requirements of the
+                    <para>if extensions are created that they conform to the requirements of the
                         standard(s) they are based upon</para>
                 </listitem>
                 <listitem>
                     <para>perform general quality assurance</para>
                 </listitem>
             </itemizedlist>For example, constraints would be used to represent standard terminology
-            artifacts like the SNOMED CT Machine Readable Concept Model. Constraints are used to
-            ensure that terminologies are represented within Tinkar in such a way that they can be
-            completely and consistently queried and displayed. </para>
-        <para>With respect to creating new content, constraints would be used to specify what the
-            minimally viable data that would be required. For Example:<itemizedlist>
+            artifacts like the SNOMED CT Machine Readable Concept Model. Additionally, constraints
+            could be used to ensure that terminologies are represented within Tinkar in such a way
+            that they can be completely and consistently queried and displayed. </para>
+        <para>These same constraints can be used with respect to creating new content within Tinkar
+            to specify what the minimally viable data that would be required. For example:<itemizedlist>
                 <listitem>
                     <para>All concepts must have at least one Fully Qualified Name within at least
                         one Language or Dialect.</para>
                 </listitem>
                 <listitem>
+                    <para>All concepts must have at least one Name specified as Preferred within at
+                        least one Language or Dialect.</para>
+                </listitem>
+                <listitem>
                     <para>All concepts must have at least one parent, unless it is a root
                         concept.</para>
                 </listitem>
-                <listitem>
-                    <para>etc</para>
-                </listitem>
             </itemizedlist></para>
-        <para>Allow List represented as a Semantic to record concepts that are allowed not to conform
-            to a constraint.</para>
-        <para>Constraints can be applied (and not applied) based on various criteria.  For example:<itemizedlist>
+        <para>Constraints can be applied (and not applied) based on various criteria to perform
+            Quality Assurance on content that is represented within Tinkar. For example:<itemizedlist>
                 <listitem>
                     <para>SNOMED CT FullySpecifiedName hierarchy tags are applied based on where a
                         concept exists in a hierarchy</para>
@@ -247,56 +247,81 @@
                     <para>Relationships between concepts have domain (based on hierarchy) and range
                         (the hieararchy(s) of values that a relationship takes)</para>
                 </listitem>
+                <listitem>
+                    <para>Modeling templates can be specified to ensure that new content that is
+                        created under a certain node in a hierarchy uses similar wording and
+                        relationships.</para>
+                </listitem>
             </itemizedlist></para>
-        <para>Constraints represented using semantics?</para>
-        <para>Implementers could utilize a Rete algorithm through something like Drools to implement
-            Constraints.</para>
+        <para>Since some Quality Assurance Constraints do not always indicate an error an Allow List
+            could also be represented as a Semantic to record concepts that are allowed not to
+            conform to a constraint. Constraints would be represented using semantics as they are
+            self describing and can support multiple different representations for constraints
+            (SNOMED CT Expression Constraint Language, Drools, etc.). Representing Constraints as a
+            Semantic also ensures they have a STAMP so they are versioned over time, captures author
+            information and allows them to be tested and progressed over different modules and
+            paths.</para>
+        <para>Implementing Constaints would depend upon how the Constraints are written and
+            formatted. For example, Implementers could utilize a Rete algorithm through something
+            like Drools to implement Constraints.</para>
     </section>
     <section>
         <title>Coordinate</title>
         <para>Tinkar supports and encourages the storage of time series data that utilizes multiple
             dimensions, for example: STAMP, source or content [SNOMED,LOINC,RxNORM, etc], Language,
-            Dialect, clinical domains.</para>
-        <para>Need to filter to support search, display, ?</para>
-        <para>precalculated coordinates stored in a separate data structure?</para>
-        <para>Define data for coordinates</para>
-        <para>Define behaviour of coordinates</para>
+            Dialect, clinical domains. The ability to efficiently search, display, and navigate
+            concepts and semantics requires the ability to calculate particular combinations of
+            content based on one or more of these different dimensions.  </para>
         <para>Types of Coordinates:<itemizedlist>
                 <listitem>
-                    <para>STAMP<itemizedlist>
+                    <para>STAMP coordinates are the most basic type of coordinate that all content
+                        should be filtered.  Example of STAMP coordinates are:<itemizedlist>
                             <listitem>
                                 <para>most recent version</para>
                             </listitem>
                             <listitem>
                                 <para>set of data from several versions</para>
                             </listitem>
-                        </itemizedlist></para>
-                </listitem>
-                <listitem>
-                    <para>Language<itemizedlist>
                             <listitem>
-                                <para>based on language and/or dialect</para>
-                            </listitem>
-                            <listitem>
-                                <para>prioritized list of synonyms based on clinical domain</para>
+                                <para>all active components only</para>
                             </listitem>
                         </itemizedlist></para>
                 </listitem>
                 <listitem>
-                    <para>Logic?</para>
+                    <para>Language coordinates are used to control the terms that should be
+                        displayed.  Examples of Language coordinates are:<itemizedlist>
+                            <listitem>
+                                <para>displaying terms based on a language and/or dialect</para>
+                            </listitem>
+                            <listitem>
+                                <para>prioritized list of synonyms based on a particular clinical
+                                    domain</para>
+                            </listitem>
+                        </itemizedlist></para>
                 </listitem>
                 <listitem>
-                    <para>Navigation<itemizedlist>
+                    <para>Logic coordinates are used to identify the various results from
+                        Description Logic Classifiers as well as the different versions of the
+                        output over time.</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Result from various Description Logic Classifiers</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>Navigation coordinates are used <itemizedlist>
                             <listitem>
                                 <para>Stated vs inferred relationships from SNOMED</para>
                             </listitem>
                             <listitem>
                                 <para>Concepts inclusion/exclusion for a particular domain</para>
-                                
                             </listitem>
                         </itemizedlist></para>
                 </listitem>
             </itemizedlist></para>
+        <para>Define data for coordinates</para>
+        <para>Define behaviour of coordinates</para>
         <para>
             <figure>
                 <title>A “latest” Instance view</title>
@@ -307,8 +332,12 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">A “latest” Instance
-                        view</emphasis></para>
+                    <para><emphasis role="italics">A “latest” Instance view</emphasis></para>
+                    <para>The ComponentChronology contains all the versions of a component from the
+                        date is was instantiated until the most recent version. Components only get
+                        a new version whenever something about the component changes.  To calculate
+                        the latest version requires the ability to find the most recent version of
+                        each component.</para>
                 </caption>
             </figure>
         </para>
