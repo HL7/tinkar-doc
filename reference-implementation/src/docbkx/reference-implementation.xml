@@ -8,66 +8,44 @@
         Terminology Knowledge Base standard, referred to as KOMET ( insert hyperlink ), and how
         various terminologies, such as SNOMED, LOINC, RxNorm, and HL7 terminologies shall be
         reproducibly represented using the Terminology Knowledge Base standard.</para>
-    <para>Placeholder screenshots of Reference Implementation: </para>
-    <para>A “Latest View with Active Status </para>
+  <section>
+      <title>Concept</title>
+  </section>
+    <section>
+        <title>Navigator View</title>
+    </section>
+  <section>
+      <title>Versioning in Tinkar</title>
     <para>
-        <mediaobject>
-            <imageobject>
-                <imagedata fileref="clip_image002_-1889704679.png" depth="379" width="624"/>
-            </imageobject>
-        </mediaobject>
+        <figure>
+            <title>Latest View with Active Status versus Latest View with Any Status</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="active_vs_inactive.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+            <caption>
+                <para><emphasis role="italics">Latest View with Active Status versus Latest View with Any Status</emphasis></para>
+            </caption>
+        </figure>
     </para>
-    <para>A “latest” view With *any* status</para>
+    <para> </para>
+    <para></para>
     <para>
-        <mediaobject>
-            <imageobject>
-                <imagedata fileref="clip_image004_-904174575.png" depth="319" width="625"/>
-            </imageobject>
-        </mediaobject>
+        <figure>
+            <title>Concept Definition History</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="definition_history.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                </imageobject>
+            </mediaobject>
+            <caption>
+                <para><emphasis role="italics">Concept Definition History</emphasis></para>
+            </caption>
+        </figure>
     </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para>Concept history</para>
-    <para>
-        <inlinemediaobject>
-            <imageobject>
-                <imagedata fileref="reference-implementation.png"/>
-            </imageobject>
-        </inlinemediaobject></para>
-    <para><inlinemediaobject>
-            <imageobject>
-                <imagedata fileref="reference-implementation2.png"/>
-            </imageobject>
-        </inlinemediaobject></para>
-    <para><inlinemediaobject>
-            <imageobject>
-                <imagedata fileref="reference-implementation3.png"/>
-            </imageobject>
-        </inlinemediaobject></para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-    <para> </para>
-
+    <para> In this example, the definition marked as 1 represents the most recent and active version
+        of the Concept Definition.  Below the current definition is the change history where each of
+        the previous versions of Concept Definitions are represented.</para>
+  </section>
 </chapter>
