@@ -5,17 +5,80 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Reference Implementation of Tinkar</title>
     <para>This section shall include user documentation for a reference implementation of the
-        Terminology Knowledge Base standard, referred to as KOMET ( insert hyperlink ), and how
+        Terminology Knowledge Base standard, referred to as Komet ( insert hyperlink ), and how
         various terminologies, such as SNOMED, LOINC, RxNorm, and HL7 terminologies shall be
-        reproducibly represented using the Terminology Knowledge Base standard.</para>
+        reproducibly represented using the Terminology Knowledge Base standard.  Using the Komet browser we can view the search concepts, view the concept details, and navigate hierarchies among many other functions that are outside the scope of this ballot.</para>
   <section>
-      <title>Concept</title>
+      <title>Concept Detail</title>
+      <para>Below we see the details for the LOINC concept Homocystine [Mass/time] in 24 hour Urine.
+            You can see the LOINC ID, data from the LOINC table, Solor assigned Names, and
+            relationships from the LOINC - SNOMED CT Cooperation Project.</para>
+      <para>
+          <figure>
+              <title>Concept Details</title>
+              <mediaobject>
+                  <imageobject>
+                      <imagedata fileref="concept_detail.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                  </imageobject>
+              </mediaobject>
+              <caption>
+                  <para><emphasis role="italics">Concept Details</emphasis></para>
+              </caption>
+          </figure>
+      </para>
+      <para>
+          <figure>
+              <title>STAMP</title>
+              <mediaobject>
+                  <imageobject>
+                      <imagedata fileref="stamp.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                  </imageobject>
+              </mediaobject>
+              <caption>
+                  <para><emphasis role="italics">STAMP</emphasis></para>
+              </caption>
+          </figure>
+      </para>
+        <para>The Identifiers associated with Components are deliberately hidden within KOMET. To
+            access the UUIDs  you can copy them by right clicking on the Concept Name at the top of
+            the Concept Details Panel.</para>
+      <para>
+          <figure>
+              <title>Accessing UUID's</title>
+              <mediaobject>
+                  <imageobject>
+                      <imagedata fileref="Finding_UUID.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                  </imageobject>
+              </mediaobject>
+              <caption>
+                  <para><emphasis role="italics">Accessing UUID's</emphasis></para>
+              </caption>
+          </figure>
+      </para>
   </section>
     <section>
         <title>Navigator View</title>
+        <para>
+            <figure>
+                <title>Navigation View</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="navigation_example.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Navigation View</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>In this example we see the results of combining the LOINC - SNOMED CT
+            Cooperation Project module with the latest SNOMED CT and LOINC releases.
+            You can then visualize and navigate the SNOMED CT hierarchy and arrive at
+            associated LOINC codes that would be reached by the Urine homocystine
+            measurement concept.</para>
     </section>
   <section>
-      <title>Versioning in Tinkar</title>
+      <title>Versioning in Komet</title>
     <para>
         <figure>
             <title>Latest View with Active Status versus Latest View with Any Status</title>
@@ -48,4 +111,29 @@
         of the Concept Definition.  Below the current definition is the change history where each of
         the previous versions of Concept Definitions are represented.</para>
   </section>
+    <section>
+        <title>SNOMED Example</title>
+    </section>
+    <section>
+        <title>LOINC Example</title>
+    </section>
+    <section>
+        <title>RxNorm Example</title>
+    </section>
+    <section>
+        <title>Equivalences between Modules</title>
+        <para>
+            <figure>
+                <title>SNOMED CT Equivalences between Modules</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="module_duplication.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">SNOMED CT Equivalences between Modules</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+    </section>
 </chapter>

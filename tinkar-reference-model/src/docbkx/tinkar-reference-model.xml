@@ -30,37 +30,39 @@
             </figure>
         </para>
         <para>The Tinkar Reference Model fulfills the requirement of capturing a complete record of
-            all changes, including relevant context information (Requirement 18): </para>
+            all changes, including relevant context information
+            (<?oxy_comment_start author="timowilliams" timestamp="20210218T094737-0600" comment="Add links back to the requirement chapter for each of these"?>Requirement
+            18<?oxy_comment_end?>): </para>
         <para>
             <orderedlist>
                 <listitem>
                     <para><emphasis role="bold">Status of the component:</emphasis> A status is
                         identified by a concept, which may be annotated with other identifying
-                        information. For example: active or inactive (Requirement 20) </para>
+                        information. For example: active or inactive (Requirement 20)</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Time of change:</emphasis> Timestamps must employ a
                         common standard, which must support precision and time zone. (Requirement
-                        21) </para>
+                        21)</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Author of change:</emphasis> An author is identified
                         by a concept, which may be annotated with other identifying information.
-                        (Requirement 22) </para>
+                        (Requirement 22)</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Module: </emphasis>Assignment to the appropriate
                         terminology (e.g., LOINC) or terminology component (e.g., SNOMED CT, US
                         Extension). A module is identified by a concept, which may be annotated with
-                        other identifying information. All modules must have a defined relationship
-                        to the root module. (Requirement 23) </para>
+                        other identifying information. (Requirement 23) </para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Path:</emphasis> Specification of a branch within an
-                        organization, e.g., for distributed development, testing, staging, or
-                        production. A path is identified by a concept, which may be annotated with
-                        other identifying information. A core set of paths is necessary to support
-                        publication to external organizations. (Requirement 24)</para>
+                        terminology development lifecycle, e.g., for distributed development,
+                        testing, staging, or production. A path is identified by a concept, which
+                        may be annotated with other identifying information. A core set of paths is
+                        necessary to support publication to external organizations. (Requirement
+                        24)</para>
                 </listitem>
             </orderedlist>
         </para>
@@ -73,7 +75,7 @@
                         out systems.</para>
                 </listitem>
                 <listitem>
-                    <para>“Module” can be used to filter out work that has not been authorized be
+                    <para>“Module” can be used to filter out work that has not been authorized by
                         the enterprise.</para>
                 </listitem>
                 <listitem>
@@ -81,32 +83,35 @@
                         in the past. </para>
                 </listitem>
             </itemizedlist>The Tinkar model does not merely support the ability to “STAMP”
-            assertions: it asserts a requirement that all changes be STAMPed. STAMP assertions are
-            unversioned IdentifiedComponents to avoid the need to repeat the STAMP for all other
-            IdentifiedComponents. As a result, any IdentifedComponent in the knowledge base will
-            consist of a series of change records, called ComponentVersions, (beginning with the
-            “Create” version), all associated to an underlying ComponentChronology.</para>
+            components: it asserts a requirement that all changes be STAMPed. STAMP assertions are
+            unversioned IdentifiedComponents that are referenced by the components they scope. Since
+            STAMP uses versioned (and STAMPED) concepts, having the STAMP as a versioned component
+            would lead to an infinite regress. </para>
+        <para>All IdentifedComponents in the knowledge base will consist of a series of change
+            records, called ComponentVersions, (beginning with the “Create” version), all associated
+            to an underlying ComponentChronology.</para>
         <figure>
             <title>A “Chronology” Instance view</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="clip_image004_88487584.png" scalefit="1" width="100%" contentdepth="100%"/>
+                    <?oxy_comment_start author="timowilliams" timestamp="20210218T105212-0600" comment="Need new image removing the ImmutableList"?>
+                    <imagedata fileref="clip_image004_88487584.png" scalefit="1" width="100%"
+                        contentdepth="100%"/><?oxy_comment_end?>
                 </imageobject>
             </mediaobject>
             <caption>
                 <para><emphasis role="italics">A “Chronology” Instance view</emphasis></para>
-                <para>A components Chronology only has properties inasmuch as they are attributed to
-                    it by its versions. Looking at the IdentifedComponent through different sets of
-                    changes (published version, geographically defined set of modules, historical
-                    timestamp) may reveal substantially different IdentifedComponents. </para>
             </caption>
         </figure>
+        <para>A Components Chronology only has properties inasmuch as they are attributed to it by
+            its versions. Looking at the IdentifedComponent through different sets of changes
+            (published version, geographically defined set of modules, historical timestamp) may
+            reveal substantially different IdentifedComponents. </para>
     </section>
     <section>
         <title>Component Types</title>
         <para>Requirement 19 states that the design must support all known and unknown properties,
-            so it must be a meta-model. In addition, components must be identifiable. The result is
-            similar to RDF with the addition of identification:</para>
+            so it must be a meta-model. In addition, components must be identifiable. </para>
         <para>
             <mediaobject>
                 <imageobject>
@@ -115,38 +120,38 @@
                 </imageobject>
             </mediaobject>
         </para>
-        <para>To assemble groups of assertions, Tinkar uses a construct called a <emphasis
-                role="bold">Semantic</emphasis>, which is an Identified Component. A Semantic is a
-            collection of values that supports the specification of value sets, compositional
-            definitions, and other components requiring internal structure, and it specifies the
-            nature of the compositional relationship explicitly. Since it is versioned, a Semantic
-            is manifest as a <emphasis role="bold">SemanticChronology</emphasis>, containing a set
-            of <emphasis role="bold">SemanticVersions</emphasis>. Concepts, too, are manifest as
-            collections: a <emphasis role="bold">ConceptChronology</emphasis> consisting of a set of
-                <emphasis role="bold">ConceptVersions</emphasis>.</para>
-        <figure>
-            <title>Compositional Semantics</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="Compositional_Semantics.png" format="PNG" scalefit="1"
-                        width="100%" contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-            <caption>
-                <para><emphasis role="italics">Compositional Semantics</emphasis></para>
-            </caption>
-        </figure>
         <para>Both Concepts and the Semantics that describe them are uniquely identified using
-            UUID's. The Semantic uses a Concept to define the relationship between the value(s) and
-            the Concept; the value itself may be either a concept or some other kind of value, such
+            UUIDs.  To assemble groups of assertions and to provide information about Concepts,
+            Tinkar uses a construct called a <emphasis role="bold">Semantic</emphasis>. A Semantic
+            is a collection of values that supports the specification of value sets, compositional
+            definitions, and other components requiring internal structure, and it specifies the
+            nature of the compositional relationship explicitly. </para>
+        <para>The Semantic uses a Concept to define the relationship between the value(s) and the
+            Concept; the value itself may be either a concept or some other kind of data type, such
             as a string. We then create the ability to assemble assertions into more complex
-            structures. </para>
-        <?oxy_comment_start author="timowilliams" timestamp="20210202T165204-0600" comment="Since concepts contain very little information they shouldn&apos;t have many versions.  If a semantic that is attached to a concept changes, the concept itself doesn&apos;t change.  Correct?"?>
-        <para>As discussed earlier, if an author makes a change to a concept, the prior Version is
-            unchanged, but a new version – with the appropriate STAMP information – is recorded.
-            Users viewing the concept in the prior context (i.e., as of the prior time, if no other
-            STAMP element has changed) will see the old value; users viewing the concept in the new
-            context will see the new value.<?oxy_comment_end?></para>
+            structures. <figure>
+                <title>Compositional Semantics</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Compositional_Semantics.png" format="PNG" scalefit="1"
+                            width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Compositional Semantics</emphasis></para>
+                </caption>
+            </figure></para>
+        <para>As discussed earlier, if an author makes a change to an IdentifiedComponent, the prior
+            Version is unchanged, but a new version – with the appropriate STAMP information – is
+            recorded. Users viewing the Concept and associated Semantics in the prior context (i.e.,
+            as of the prior time, if no other STAMP element has changed) will see the old values;
+            users viewing the Concept and associated Semantics in the new context will see the new
+            values.</para>
+        <para>Since it is versioned, a Semantic is manifest as a <emphasis role="bold"
+                >SemanticChronology</emphasis>, containing a set of <emphasis role="bold"
+                >SemanticVersions</emphasis>. Concepts, too, are manifest as collections: a
+                <emphasis role="bold">ConceptChronology</emphasis> consisting of a set of <emphasis
+                role="bold">ConceptVersions</emphasis>.</para>
         <para>If other IdentifiedComponents depend on the changed concept, they can be identified by
             relationships in the Semantics. The Semantics can assert rules for how to manage these
             changes. A Semantic defining a value set for data entry might automatically accept any
@@ -158,6 +163,63 @@
             ensure the changes can be identified consistently.</para>
     </section>
     <section>
+        <title>Data Types</title>
+        <para> Tinkar supports the following data types for use with Semantics.<itemizedlist>
+                <listitem>
+                    <para>String - a sequence of characters, either as a literal constant or as some
+                        kind of variable. Strings could be used to represent terms from code systems
+                        or things like URLs, textual definitions, etc.</para>
+                </listitem>
+                <listitem>
+                    <para>Integer - data type that represents some range of mathematical
+                        integers.</para>
+                </listitem>
+                <listitem>
+                    <para>Float - represents values as high-precision fractional values</para>
+                </listitem>
+                <listitem>
+                    <para>Boolean - represents the values true and false.</para>
+                </listitem>
+                <listitem>
+                    <para>Byte Array - an array of 8-bit signed two's complement integers</para>
+                </listitem>
+                <listitem>
+                    <para>Object Array - an array of objects</para>
+                </listitem>
+                <listitem>
+                    <para>Directed Graph or Digraph - A graph whose edges are ordered pairs of
+                        vertices. That is, each edge can be followed from one vertex to another
+                        vertex.</para>
+                </listitem>
+                <listitem>
+                    <para>Instant - models a single instantaneous point on the time-line.</para>
+                </listitem>
+                <listitem>
+                    <para>Planar Point - </para>
+                </listitem>
+                <listitem>
+                    <para>Spatial Point -</para>
+                </listitem>
+                <listitem>
+                    <para>Ditree - </para>
+                </listitem>
+                <listitem>
+                    <para>Vertex - </para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <?oxy_comment_start author="timowilliams" timestamp="20210218T185928-0600" comment="Where do these fit into the model?"?>
+        <para>Mentioned, but exist elsewhere: <itemizedlist>
+                <listitem>
+                    <para>COMPONENT_ID_LIST</para>
+                </listitem>
+                <listitem>
+                    <para>COMPONENT_ID_SET<?oxy_comment_end?></para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </section>
+    <section>
         <title>Patterns for Semantic</title>
         <para>It would be possible to support self-description using the Semantic structure, however
             it would mean associating each definitional assertion with yet another assertion
@@ -165,16 +227,16 @@
             repetitive information, we have chosen to define another first-class feature of the
             model, the PatternForSemantic (<emphasis role="bold"
                 >PatternForSemanticVersion</emphasis> and <emphasis role="bold"
-                >PatternForSemanticChronology</emphasis>). This feature uses a similar mechanism to
-            assert patterns that Semantic component can follow, just like an XML or RDF
-            Schema.</para>
+                >PatternForSemanticChronology</emphasis>). This feature asserts patterns that
+            Semantic components can follow, similar to an XML or RDF Schema.</para>
         <para>
             <figure>
                 <title>Semantic Definition</title>
                 <mediaobject>
                     <imageobject>
+                        <?oxy_comment_start author="timowilliams" timestamp="20210218T215307-0600" comment="I think we need to update the Field Definition to have a field for Meaning, Datatype, and purpose"?>
                         <imagedata fileref="Semantic_Definition.png" format="PNG" scalefit="1"
-                            width="100%" contentdepth="100%"/>
+                            width="100%" contentdepth="100%"/><?oxy_comment_end?>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -268,10 +330,10 @@
     <section>
         <title>Coordinate</title>
         <para>Tinkar supports and encourages the storage of time series data that utilizes multiple
-            dimensions, for example: STAMP, source or content [SNOMED,LOINC,RxNORM, etc], Language,
-            Dialect, clinical domains. The ability to efficiently search, display, and navigate
-            concepts and semantics requires the ability to calculate particular combinations of
-            content based on one or more of these different dimensions.  </para>
+            dimensions, for example: STAMP, Language, Dialect, clinical domains, etc. The ability to
+            efficiently search, display, and navigate concepts and semantics requires the ability to
+            calculate particular combinations of content based on one or more of these different
+            dimensions. </para>
         <para>Types of Coordinates:<itemizedlist>
                 <listitem>
                     <para>STAMP coordinates are the most basic type of coordinate that all content
