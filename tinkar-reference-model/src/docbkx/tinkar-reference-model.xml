@@ -8,7 +8,7 @@
     <para> </para>
     <section>
         <title>Model Representation</title>
-        <para>The Tinkar Referene Model is a logical model described herein using the Object
+        <para>The Tinkar Reference Model is a logical model described herein using the Object
             Management Group (OMG) Unified Modeling Language (UML) 2.0 notation to describe the
             structure of integrated data representation and change management for biomedical
             terminologies. </para>
@@ -57,7 +57,7 @@
                         other identifying information. (Requirement 23) </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Path:</emphasis> Specification of a branch within an
+                    <para><emphasis role="bold">Path:</emphasis> Specification of a branch within a
                         terminology development lifecycle, e.g., for distributed development,
                         testing, staging, or production. A path is identified by a concept, which
                         may be annotated with other identifying information. A core set of paths is
@@ -66,10 +66,11 @@
                 </listitem>
             </orderedlist>
         </para>
-                    <para>These elements together are referred to by the acronym “STAMP.” Every new
-            assertion, whether a new component or a change to an existing component, must have a
-            STAMP in order to determine when it is to be used. The STAMP properties support the
-            ability to apply terminology components for specific purposes. For example, <itemizedlist>
+                    <para>These elements together are referred to by the acronym “<emphasis
+                role="bold">STAMP</emphasis>”. Every new assertion, whether a new component or a
+            change to an existing component, must have a STAMP in order to determine when it is to
+            be used. The STAMP properties support the ability to apply terminology components for
+            specific purposes. For example, <itemizedlist>
                 <listitem>
                     <para>“Path” can be used to test provisional content without physically swapping
                         out systems.</para>
@@ -104,7 +105,7 @@
             </caption>
         </figure>
         <para>A Components Chronology only has properties inasmuch as they are attributed to it by
-            its versions. Looking at the IdentifedComponent through different sets of changes
+            its versions. Looking at the IdentifiedComponent through different sets of changes
             (published version, geographically defined set of modules, historical timestamp) may
             reveal substantially different IdentifedComponents. </para>
     </section>
@@ -164,7 +165,7 @@
     </section>
     <section>
         <title>Data Types</title>
-        <para> Tinkar supports the following data types for use with Semantics.<itemizedlist>
+        <para> Tinkar supports the following field data types for use with Semantics.<itemizedlist>
                 <listitem>
                     <para>String - a sequence of characters, either as a literal constant or as some
                         kind of variable. Strings could be used to represent terms from code systems
@@ -246,9 +247,9 @@
         </para>
         <?oxy_comment_start author="timowilliams" timestamp="20210202T170910-0600" comment="inserting an image would be helpful here"?>
         <para>Using this mechanism Semantics of varying structures can be defined using the
-            PatternForSemantic.  The PatternForSemantic is used to define each field as to what its
-            purpose, data type, and meaning.  For example, if a field within a semantic is used to
-            descibe an SDO's website, the Meaning would be "URL, DataType of "String", and Purpose
+            PatternForSemantic. The PatternForSemantic is used to define each field as to what its
+            purpose, data type, and meaning. For example, if a field within a semantic is used to
+            describe an SDO's website, the Meaning would be "URL, DataType of "String", and Purpose
             of "Website".<?oxy_comment_end?></para>
     </section>
     <section>
@@ -307,7 +308,7 @@
                 </listitem>
                 <listitem>
                     <para>Relationships between concepts have domain (based on hierarchy) and range
-                        (the hieararchy(s) of values that a relationship takes)</para>
+                        (the hierarchy(s) of values that a relationship takes)</para>
                 </listitem>
                 <listitem>
                     <para>Modeling templates can be specified to ensure that new content that is
@@ -323,7 +324,7 @@
             Semantic also ensures they have a STAMP so they are versioned over time, captures author
             information and allows them to be tested and progressed over different modules and
             paths.</para>
-        <para>Implementing Constaints would depend upon how the Constraints are written and
+        <para>Implementing Constraints would depend upon how the Constraints are written and
             formatted. For example, Implementers could utilize a Rete algorithm through something
             like Drools to implement Constraints.</para>
     </section>
@@ -383,7 +384,7 @@
                 </listitem>
             </itemizedlist></para>
         <para>Define data for coordinates</para>
-        <para>Define behaviour of coordinates</para>
+        <para>Define behavior of coordinates</para>
         <para>
             <figure>
                 <title>A “latest” Instance view</title>
