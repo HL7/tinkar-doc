@@ -164,7 +164,7 @@
             ensure the changes can be identified consistently.</para>
     </section>
     <section>
-        <title>Data Types</title>
+        <title>Field Data Types</title>
         <para> Tinkar supports the following field data types for use with Semantics.<itemizedlist>
                 <listitem>
                     <para>String - a sequence of characters, either as a literal constant or as some
@@ -188,12 +188,12 @@
                     <para>Object Array - an array of objects</para>
                 </listitem>
                 <listitem>
-                    <para>Directed Graph or Digraph - A graph whose edges are ordered pairs of
+                    <para>Directed Graph or Digraph - a graph whose edges are ordered pairs of
                         vertices. That is, each edge can be followed from one vertex to another
                         vertex.</para>
                 </listitem>
                 <listitem>
-                    <para>Instant - models a single instantaneous point on the time-line.</para>
+                    <para>Instant - models a single instantaneous point on a timeline.</para>
                 </listitem>
                 <listitem>
                     <para>Planar Point - </para>
@@ -202,21 +202,20 @@
                     <para>Spatial Point -</para>
                 </listitem>
                 <listitem>
-                    <para>Ditree - </para>
+                    <para>Directed Tree or Ditree - a graph obtained from an undirected tree by
+                        replacing each undirected edge by two directed edges with opposite
+                        directions.</para>
                 </listitem>
                 <listitem>
-                    <para>Vertex - </para>
+                    <para>Vertex - The fundamental unit of data that makes up a graph or
+                        tree.</para>
                 </listitem>
-            </itemizedlist>
-        </para>
-        <?oxy_comment_start author="timowilliams" timestamp="20210218T185928-0600" comment="Where do these fit into the model?"?>
-        <para>Mentioned, but exist elsewhere: <itemizedlist>
-                <listitem>
-                    <para>COMPONENT_ID_LIST</para>
-                </listitem>
-                <listitem>
-                    <para>COMPONENT_ID_SET<?oxy_comment_end?></para>
-                </listitem>
+            <listitem>
+                <para>Component ID List - an ordered list of Component ID's</para>
+            </listitem>
+            <listitem>
+                <para>Component ID Set - an unordered list of Component ID's</para>
+            </listitem>
             </itemizedlist>
         </para>
     </section>
@@ -335,6 +334,12 @@
             efficiently search, display, and navigate concepts and semantics requires the ability to
             calculate particular combinations of content based on one or more of these different
             dimensions. </para>
+        <para>A versioned graph enables us to recover the state of the graph at a particular point
+            in time. Most graph databases don’t support versioning as a first-class concept: it is
+            possible, however, to create a versioning scheme inside the graph model whereby nodes
+            and relationships are timestamped and archived whenever they are modified.2 The downside
+            of such versioning schemes is that they leak into any queries written against the graph,
+            adding a layer of complexity to even the simplest query.</para>
         <para>Types of Coordinates:<itemizedlist>
                 <listitem>
                     <para>STAMP coordinates are the most basic type of coordinate that all content
@@ -405,6 +410,4 @@
             </figure>
         </para>
     </section>
-    
-
 </chapter>

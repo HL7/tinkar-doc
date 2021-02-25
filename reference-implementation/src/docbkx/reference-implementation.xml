@@ -3,17 +3,19 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Reference Implementation of Tinkar</title>
-    <para>This section shall include user documentation for a reference implementation of the
-        Terminology Knowledge Base standard, referred to as Komet ( insert hyperlink ), and how
-        various terminologies, such as SNOMED, LOINC, RxNorm, and HL7 terminologies shall be
-        reproducibly represented using the Terminology Knowledge Base standard.  Using the Komet browser we can view the search concepts, view the concept details, and navigate hierarchies among many other functions that are outside the scope of this ballot.</para>
+    <title>Example Implementation of Tinkar</title>
+    <para>This section includes user documentation for an example implementation of the Terminology
+        Knowledge Base standard, referred to as Komet ( insert hyperlink ), and how various
+        terminologies, such as SNOMED, LOINC, RxNorm, and HL7 terminologies shall be reproducibly
+        represented using the Terminology Knowledge Base standard. Using the Komet browser we can
+        view the search concepts, view the concept details, and navigate hierarchies among many
+        other functions that are outside the scope of this ballot.</para>
   <section>
       <title>Concept Detail</title>
-      <para>Below we see the details for the LOINC concept Homocystine [Mass/time] in 24 hour Urine.
-            You can see the LOINC ID, data from the LOINC table, Solor assigned Names, and
-            relationships from the LOINC - SNOMED CT Cooperation Project.</para>
       <para>
+          Below we see the details for the LOINC concept Homocystine [Mass/time] in 24 hour Urine.
+          You can see the LOINC ID, data from the LOINC table, Solor assigned Names, and
+          relationships from the LOINC - SNOMED CT Cooperation Project.
           <figure>
               <title>Concept Details</title>
               <mediaobject>
@@ -27,6 +29,7 @@
           </figure>
       </para>
       <para>
+          In the following image we can see the latest STAMP information for the LOINC concept Homocystine [Mass/time] in 24 hour Urine.
           <figure>
               <title>STAMP</title>
               <mediaobject>
@@ -39,26 +42,30 @@
               </caption>
           </figure>
       </para>
-        <para>The Identifiers associated with Components are deliberately hidden within KOMET. To
-            access the UUIDs  you can copy them by right clicking on the Concept Name at the top of
-            the Concept Details Panel.</para>
-      <para>
-          <figure>
-              <title>Accessing UUID's</title>
-              <mediaobject>
-                  <imageobject>
-                      <imagedata fileref="Finding_UUID.png"  scalefit="1" width="100%" contentdepth="100%"/>
-                  </imageobject>
-              </mediaobject>
-              <caption>
-                  <para><emphasis role="italics">Accessing UUID's</emphasis></para>
-              </caption>
-          </figure>
-      </para>
+      <para> The Identifiers associated with Components are deliberately hidden within Komet. To
+            access the UUIDs you can copy them by right clicking on the Concept Name at the top of
+            the Concept Details Panel. <figure>
+                <title>Accessing UUID's</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Finding_UUID.png" scalefit="1" width="100%"
+                            contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Accessing UUID's</emphasis></para>
+                </caption>
+            </figure>
+        </para>
   </section>
     <section>
         <title>Navigator View</title>
         <para>
+            In this example we see the results of combining the LOINC - SNOMED CT
+            Cooperation Project module with the latest SNOMED CT and LOINC releases.
+            You can then visualize and navigate the SNOMED CT hierarchy and arrive at
+            associated LOINC codes that would be reached by the Urine homocystine
+            measurement concept.
             <figure>
                 <title>Navigation View</title>
                 <mediaobject>
@@ -71,57 +78,195 @@
                 </caption>
             </figure>
         </para>
-        <para>In this example we see the results of combining the LOINC - SNOMED CT
-            Cooperation Project module with the latest SNOMED CT and LOINC releases.
-            You can then visualize and navigate the SNOMED CT hierarchy and arrive at
-            associated LOINC codes that would be reached by the Urine homocystine
-            measurement concept.</para>
     </section>
   <section>
       <title>Versioning in Komet</title>
-    <para>
-        <figure>
-            <title>Latest View with Active Status versus Latest View with Any Status</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="active_vs_inactive.png"  scalefit="1" width="100%" contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-            <caption>
-                <para><emphasis role="italics">Latest View with Active Status versus Latest View with Any Status</emphasis></para>
-            </caption>
-        </figure>
-    </para>
-    <para> </para>
-    <para></para>
-    <para>
-        <figure>
-            <title>Concept Definition History</title>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="definition_history.png"  scalefit="1" width="100%" contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
-            <caption>
-                <para><emphasis role="italics">Concept Definition History</emphasis></para>
-            </caption>
-        </figure>
-    </para>
-    <para> In this example, the definition marked as 1 represents the most recent and active version
-        of the Concept Definition.  Below the current definition is the change history where each of
-        the previous versions of Concept Definitions are represented.</para>
+    <para> Representing all versions of components within Tinkar allows for the ability to view both
+            Active and Inactive components and compare the representations across time.  The image
+            below shows only the Active components for the concept Fibromyalgia compared to all
+            previous versions of Fibromyalgia over time. <figure>
+                <title>Latest View with Active Status versus Latest View with Any Status</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="active_vs_inactive.png" scalefit="1" width="100%"
+                            contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Latest View with Active Status versus Latest View
+                            with Any Status</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+    <para>The image below shows the inferred definition marked as 1 that represents the most recent
+            and active version of the Concept Definition. Below the current definition is the change
+            history where each of the previous versions of Concept Definitions are represented. <figure>
+                <title>Concept Definition History</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="definition_history.png" scalefit="1" width="100%"
+                            contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Concept Definition History</emphasis></para>
+                </caption>
+            </figure>
+        </para>
   </section>
     <section>
-        <title>SNOMED Example</title>
+        <title>SNOMED CT Example</title>
+        <para>
+            <figure>
+                <title>SNOMED CT Concept</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="SNOMED_concept.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">SNOMED CT Concept</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>
+            <figure>
+                <title>SNOMED CT Descriptions</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="SNOMED_desc.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">SNOMED CT Descriptions</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>
+            <figure>
+                <title>SNOMED CT Relationships</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="SNOMED_rels.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">SNOMED CT Relationships</emphasis></para>
+                </caption>
+            </figure>
+        </para>
     </section>
     <section>
         <title>LOINC Example</title>
+        <para>
+            <figure>
+                <title>LOINC Concept</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="LOINC_concept.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">LOINC Concept</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>
+            <figure>
+                <title>LOINC Descriptions</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="LOINC_desc.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">LOINC Descriptions</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>
+            <figure>
+                <title>LOINC Inferred Relationships</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="LOINC_rels1.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">LOINC Inferred Relationships</emphasis></para>
+                </caption>
+            </figure>
+            <figure>
+                <title>LOINC Stated Relationships</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="LOINC_rels2.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">LOINC Stated Relationships</emphasis></para>
+                </caption>
+            </figure>
+        </para>
     </section>
     <section>
         <title>RxNorm Example</title>
+        <para>
+            <figure>
+                <title>RxNorm Concept</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="RxNorm_concept.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">RxNorm Concept</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>
+            <figure>
+                <title>RxNorm Descriptions</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="RxNorm_desc.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">RxNorm Descriptions</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+        <para>
+            <figure>
+                <title>RxNorm Relationships</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="RxNorm_rels.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">RxNorm Relationships</emphasis></para>
+                </caption>
+            </figure>
+        </para>
     </section>
     <section>
         <title>Equivalences between Modules</title>
+        <para>
+            <figure>
+                <title>Equivalencies Detected by Classifier</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="equivalents.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Equivalencies Detected by
+                        Classifier</emphasis></para>
+                </caption>
+            </figure>
+        </para>
         <para>
             <figure>
                 <title>SNOMED CT Equivalences between Modules</title>
