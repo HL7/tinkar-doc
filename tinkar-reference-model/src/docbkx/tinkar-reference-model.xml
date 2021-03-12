@@ -32,23 +32,24 @@
         <para>The Tinkar Reference Model fulfills the requirement of capturing a complete record of
             all changes, including relevant context information
             (<?oxy_comment_start author="timowilliams" timestamp="20210218T094737-0600" comment="Add links back to the requirement chapter for each of these"?>Requirement
-            18<?oxy_comment_end?>): </para>
+            18<?oxy_comment_end?>).  This is captured via the STAMP class using the following
+            fields: </para>
         <para>
             <orderedlist>
                 <listitem>
-                    <para><emphasis role="bold">Status of the component:</emphasis> A status is
-                        identified by a concept, which may be annotated with other identifying
-                        information. For example: active or inactive (Requirement 20)</para>
+                    <para><emphasis role="bold">Status:</emphasis> A status is identified by a
+                        concept, which may be annotated with other identifying information. For
+                        example: active or inactive (Requirement 20)</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Time of change:</emphasis> Timestamps must employ a
-                        common standard, which must support precision and time zone. (Requirement
+                    <para><emphasis role="bold">Time:</emphasis> Timestamps must employ a common
+                        standard, which must support precision and time zone. (Requirement
                         21)</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Author of change:</emphasis> An author is identified
-                        by a concept, which may be annotated with other identifying information.
-                        (Requirement 22)</para>
+                    <para><emphasis role="bold">Author:</emphasis> An author is identified by a
+                        concept, which may be annotated with other identifying information as
+                        required. (Requirement 22)</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Module: </emphasis>Assignment to the appropriate
@@ -91,19 +92,7 @@
         <para>All IdentifedComponents in the knowledge base will consist of a series of change
             records, called ComponentVersions, (beginning with the “Create” version), all associated
             to an underlying ComponentChronology.</para>
-        <figure>
-            <title>A “Chronology” Instance view</title>
-            <mediaobject>
-                <imageobject>
-                    <?oxy_comment_start author="timowilliams" timestamp="20210218T105212-0600" comment="Need new image removing the ImmutableList"?>
-                    <imagedata fileref="clip_image004_88487584.png" scalefit="1" width="100%"
-                        contentdepth="100%"/><?oxy_comment_end?>
-                </imageobject>
-            </mediaobject>
-            <caption>
-                <para><emphasis role="italics">A “Chronology” Instance view</emphasis></para>
-            </caption>
-        </figure>
+        
         <para>A Components Chronology only has properties inasmuch as they are attributed to it by
             its versions. Looking at the IdentifiedComponent through different sets of changes
             (published version, geographically defined set of modules, historical timestamp) may
@@ -111,25 +100,28 @@
     </section>
     <section>
         <title>Component Types</title>
-        <para>Requirement 19 states that the design must support all known and unknown properties,
-            so it must be a meta-model. In addition, components must be identifiable. </para>
         <para>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="clip_image008_1535615720.png" scalefit="1" width="100%"
+                    <imagedata fileref="Identified_Components.png" scalefit="1" width="100%"
                         contentdepth="100%"/>
                 </imageobject>
             </mediaobject>
         </para>
-        <para>Both Concepts and the Semantics that describe them are uniquely identified using
-            UUIDs.  To assemble groups of assertions and to provide information about Concepts,
-            Tinkar uses a construct called a <emphasis role="bold">Semantic</emphasis>. A Semantic
-            is a collection of values that supports the specification of value sets, compositional
+        <para>All Components in Tinkar are uniquely identified using UUIDs. A Component will be
+            represented by an array of UUID's with at least one UUID, but can be represented by more
+            than one UUID in the case of a concept being derived from multiple sources. For example,
+            the concept Acetaminophen (which exists in SNOMED, LOINC, and RxNorm) would have a UUID
+            from each terminology and be represented as an array of UUID's for this single concept
+            within a TINKAR implementation. </para>
+        <para>To assemble groups of assertions and to provide information about Concepts, Tinkar
+            uses a construct called a <emphasis role="bold">Semantic</emphasis>. A Semantic is a
+            collection of values that supports the specification of value sets, compositional
             definitions, and other components requiring internal structure, and it specifies the
             nature of the compositional relationship explicitly. </para>
-        <para>The Semantic uses a Concept to define the relationship between the value(s) and the
-            Concept; the value itself may be either a concept or some other kind of data type, such
-            as a string. We then create the ability to assemble assertions into more complex
+        <para>The Semantic class uses a Concept to define the relationship between the value(s) and
+            the Concept; the value itself may be either a concept or some other kind of data type,
+            such as a string. We then create the ability to assemble assertions into more complex
             structures. <figure>
                 <title>Compositional Semantics</title>
                 <mediaobject>
@@ -234,9 +226,8 @@
                 <title>Semantic Definition</title>
                 <mediaobject>
                     <imageobject>
-                        <?oxy_comment_start author="timowilliams" timestamp="20210218T215307-0600" comment="I think we need to update the Field Definition to have a field for Meaning, Datatype, and purpose"?>
                         <imagedata fileref="Semantic_Definition.png" format="PNG" scalefit="1"
-                            width="100%" contentdepth="100%"/><?oxy_comment_end?>
+                            width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -249,7 +240,8 @@
             PatternForSemantic. The PatternForSemantic is used to define each field as to what its
             purpose, data type, and meaning. For example, if a field within a semantic is used to
             describe an SDO's website, the Meaning would be "URL, DataType of "String", and Purpose
-            of "Website".<?oxy_comment_end?></para>
+            of "Website".<?oxy_comment_end?>  The PatternForSemantic would then contain an array of
+            these FieldDefinitions.</para>
     </section>
     <section>
         <title/>
@@ -267,6 +259,7 @@
             </figure></para>
     </section>
     <section>
+        <?oxy_comment_start author="timowilliams" timestamp="20210312T141353-0600" comment="Needs to be moved to the Requirements Chapter"?>
         <title>Constraints</title>
         <para>Constraints are required to:<itemizedlist>
                 <listitem>
@@ -325,7 +318,7 @@
             paths.</para>
         <para>Implementing Constraints would depend upon how the Constraints are written and
             formatted. For example, Implementers could utilize a Rete algorithm through something
-            like Drools to implement Constraints.</para>
+            like Drools to implement Constraints.<?oxy_comment_end?></para>
     </section>
     <section>
         <title>Coordinate</title>
@@ -337,7 +330,7 @@
         <para>A versioned graph enables us to recover the state of the graph at a particular point
             in time. Most graph databases don’t support versioning as a first-class concept: it is
             possible, however, to create a versioning scheme inside the graph model whereby nodes
-            and relationships are timestamped and archived whenever they are modified.2 The downside
+            and relationships are timestamped and archived whenever they are modified. The downside
             of such versioning schemes is that they leak into any queries written against the graph,
             adding a layer of complexity to even the simplest query.</para>
         <para>Types of Coordinates:<itemizedlist>
@@ -378,7 +371,8 @@
                     </itemizedlist>
                 </listitem>
                 <listitem>
-                    <para>Navigation coordinates are used <itemizedlist>
+                    <para>Navigation coordinates are used to assist in the viewing and searching for
+                        a particular concept.  Examples of these would be:<itemizedlist>
                             <listitem>
                                 <para>Stated vs inferred relationships from SNOMED</para>
                             </listitem>
@@ -388,26 +382,40 @@
                         </itemizedlist></para>
                 </listitem>
             </itemizedlist></para>
-        <para>Define data for coordinates</para>
-        <para>Define behavior of coordinates</para>
+        <section>
+            <title>Calculating Coordinates</title>
+            <para>The ComponentChronology contains all the versions of a component from the date is
+                was instantiated until the most recent version. Components only get a new version
+                whenever something about the component changes. To calculate the latest version
+                requires the ability to find the most recent version of each component.  Utilizing
+                the STAMP Coordinates supports calculating all other coordinates:</para>
         <para>
-            <figure>
-                <title>A “latest” Instance view</title>
-                <mediaobject>
-                    <imageobject>
-                        <?oxy_comment_start author="timowilliams" timestamp="20210126T130544-0600" comment="I don&apos;t see this table in the overall architecture?  Is this just a view we are calculating?  "?>
-                        <imagedata fileref="clip_image006_1731007892.png"  scalefit="1" width="100%" contentdepth="100%"/><?oxy_comment_end?>
-                    </imageobject>
-                </mediaobject>
-                <caption>
-                    <para><emphasis role="italics">A “latest” Instance view</emphasis></para>
-                    <para>The ComponentChronology contains all the versions of a component from the
-                        date is was instantiated until the most recent version. Components only get
-                        a new version whenever something about the component changes.  To calculate
-                        the latest version requires the ability to find the most recent version of
-                        each component.</para>
-                </caption>
-            </figure>
+            <itemizedlist>
+                <listitem>
+                    <para>Identify the Module(s) you would like to view/search/modify</para>
+                </listitem>
+                <listitem>
+                    <para>Identify the Path you would like to view/search/modify</para>
+                </listitem>
+                <listitem>
+                    <para>Identify the Status or Statuses you would like to
+                        view/search/modify</para>
+                </listitem>
+                <listitem>
+                    <para>If relevant, identify the Author(s) you would like to
+                        view/search/modify</para>
+                </listitem>
+                <listitem>
+                    <para>The last piece of the STAMP coordinate (time) is the most difficult to
+                        calculate.  In most cases you will need to find the most recent version of
+                        the component as of the current time in order to calculate this point of the
+                        coordinate.  However, since Tinkar supports and encourages the
+                        representation of historical, you may need to calculate the most recent
+                        version as of a different point in time.  </para>
+                </listitem>
+            </itemizedlist>
         </para>
+        <para>After the STAMP Coordinates have been calculated additional coordinates can then be applied as well. For example, applying a language and dialect coordinate will be important not only for viewing and searching, but also to determine the appropriate preferred name for displaying a hieararchy. </para>
+        </section>
     </section>
 </chapter>
