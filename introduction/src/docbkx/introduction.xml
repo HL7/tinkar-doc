@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-  <title>Introduction</title>
+  <title>Tinkar Overview</title>
   <para>Over the past decades, biomedical terminologies have increasingly been recognized as key
     resources for knowledge management, data integration, and decision support (<link
       xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6115234/">1</link> – REF).
