@@ -165,11 +165,9 @@
         </listitem>
       </orderedlist>
     </para>
-    <para><emphasis role="bold">Consider the following examples of things that have gone wrong: </emphasis>
-      <link linkend="bib3">[3]</link><link linkend="bib4">[4]</link>
-      <link linkend="bib5">[5]</link>
-      <link linkend="bib6">[6]</link>
-      <link linkend="bib7">[7]</link></para>
+    <para><emphasis role="bold">Consider the following examples of things that have gone wrong:
+        </emphasis><link linkend="bib4">[4]</link><link linkend="bib5">[5]</link><link
+        linkend="bib6">[6]</link><link linkend="bib7">[7]</link></para>
     <itemizedlist>
       <listitem>
         <emphasis role="bold">Computer error may have led to incorrect prescribing of statins to
