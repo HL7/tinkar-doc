@@ -76,7 +76,8 @@
           vaccines from FDA are not represented in either RxNorm or CVX or SNOMED</para>
       </listitem>
       <listitem>
-        <para>HL7 gender codes, maybe COVID-19 rather than gender</para>
+        <para>Representation of COVID-19 result codes (e.g., detected, undetected, positive,
+          negative, etc.)</para>
       </listitem>
     </itemizedlist>
     <para>As a result of these complexities, there are many ways to say the same thing using
@@ -91,128 +92,159 @@
       understanding of the importance of the quality of clinical data, there is currently a lack of
       integration and management of clinical terminologies across the healthcare enterprise. </para>
     <para>Tinkar intends to integrate clinical terminology and local concepts in order to support
-      interoperable information and increased data quality for clinical information. Quality
-      clinical data enables healthcare systems across the enterprise to enhance quality of care
-      across all medical facilities, conduct robust and meaningful data analysis, and increase
-      overall interoperability:</para>
-    <para><emphasis role="bold">Improved Patient Outcomes</emphasis></para>
-    <para>Quality clinical data enables healthcare providers to enhance quality of care across all
-      medical facilities, conduct robust and meaningful data analysis, and increase overall
-      interoperability</para>
-    <para><emphasis role="bold">Meaningful Data Analysis </emphasis></para>
-    <para>Medical facilities will be able to easily query specific health factors to gain necessary
-      insights, draw conclusions, and make recommendations based on patient data</para>
-    <para><emphasis role="bold">Increased Interoperability</emphasis></para>
-    <para>Health IT will have more interoperable capabilities, opening the door for future
-      opportunities to integrate patient data with other agencies, community partners, and the
-      private sector</para>
-    <section>
-      <title>The Problem Tinkar Addresses </title>
-      <para>The following 3 high level potential deficiencies describe preventable harm that Tinkar
-        aims to address related to poorly integrated terminology and inefficient change management : </para>
-      <para><emphasis role="bold">Inability to recognize equivalence </emphasis></para>
-      <itemizedlist>
+      increased data quality for interoperable clinical information. Quality clinical data enables
+      healthcare systems across the enterprise to conduct robust and meaningful data analysis and
+      increase overall interoperability, which ultimately enhances quality of care across all
+      medical facilities. <inlinemediaobject>
+        <imageobjectco>
+          <imageobject>
+            <imagedata fileref="Tinkar_1,1.png"/>
+          </imageobject>
+        </imageobjectco>
+      </inlinemediaobject></para>
+  </section>
+  <section>
+    <title>The Problem Tinkar Addresses </title>
+    <para>The following 3 high level potential deficiencies related to poorly integrated terminology
+      and inefficient change management describe preventable harm that Tinkar aims to
+      address:</para>
+    <para>
+      <orderedlist>
         <listitem>
-          <para>Difficulty with determining that codes/terms using standard terminologies from
-            disparate health IT systems represent a common clinical idea/concept (e.g., “COVID-19
-            negative test result”. </para>
+          <para><emphasis role="bold">Inability to recognize equivalence.</emphasis>
+          </para>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Difficulty with determining that codes/terms using standard terminologies from
+                  disparate health IT systems represent a common clinical idea/concept (e.g.,
+                  “COVID-19 negative test result”.</para>
+              </listitem>
+            </itemizedlist>
+          </para>
         </listitem>
-      </itemizedlist>
-      <para><emphasis role="bold">Inability to represent a pertinent phenomenon</emphasis></para>
-      <itemizedlist>
         <listitem>
-          <para>A new set of local terminology may be managed with value sets and concept gaps
-            addressed in quick iterations (e.g., COVID-19 laboratory test results). </para>
+          <para><emphasis role="bold">Inability to represent a pertinent
+            phenomenon</emphasis></para>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>A new set of local terminology may be managed with value sets and concept gaps
+                  addressed in quick iterations (e.g., COVID-19 laboratory test results).</para>
+              </listitem>
+            </itemizedlist>
+          </para>
         </listitem>
-      </itemizedlist>
-      <para><emphasis role="bold">Flawed information</emphasis></para>
-      <itemizedlist>
         <listitem>
-          <para>Incorrect usage or representation of clinical ideas/concepts from standard
-            terminologies due to a lack of harmonization and multiple representations that currently
-            exist (e.g., an incorrectly coded COVID-19 test result) </para>
-          <para><emphasis role="underline">Consider the following examples of things that have gone
-              wrong: (</emphasis><link
-              xlink:href="https://www.systmoneusergroup.co.uk/qrisk2-update/"
-              >https://www.systmoneusergroup.co.uk/qrisk2-update/</link>; <link
-              xlink:href="https://www.bmj.com/content/353/bmj.i2742"
-              >https://www.bmj.com/content/353/bmj.i2742</link>; <link
-              xlink:href="https://www.gov.uk/government/news/mhra-information-on-tpp-and-qrisk2"
-              >https://www.gov.uk/government/news/mhra-information-on-tpp-and-qrisk2</link>; <link
-              xlink:href="https://www.healthcareitnews.com/news/clinical-decision-support-malfunctions-are-widespread-and-persistent-amia-says"
-              >https://www.healthcareitnews.com/news/clinical-decision-support-malfunctions-are-widespread-and-persistent-amia-says</link><emphasis
-              role="underline">) – REF</emphasis></para>
-          <para><emphasis role="bold">Computer error may have led to incorrect prescribing of
-              statins to thousands of patients</emphasis></para>
-          <itemizedlist>
-            <listitem>
-              <para>Thousands of patients in England may have been incorrectly prescribed or taken
-                off statins because of a major IT glitch. </para>
-            </listitem>
-            <listitem>
-              <para>Underlying cause: code mapping errors, brittle means for determining
-                equivalence</para>
-            </listitem>
-          </itemizedlist>
-          <para><emphasis role="bold">Alert for monitoring thyroid function when taking Amiodarone
-              stopped working</emphasis></para>
-          <itemizedlist>
-            <listitem>
-              <para>Amiodarone is associated with several side effects, including thyroid
-                dysfunction, which is due to amiodarone's high iodine content and its direct toxic
-                effect on the thyroid</para>
-            </listitem>
-            <listitem>
-              <para>Underlying cause: the identifier for the drug amiodarone was changed in another
-                system, brittle means for determining equivalence</para>
-            </listitem>
-          </itemizedlist>
-          <para><emphasis role="bold">62% of CDS malfunctions were attributable to changes in
-              underlying codes or data fields</emphasis></para>
-          <itemizedlist>
-            <listitem>
-              <para>Change is a constant feature of providing healthcare </para>
-            </listitem>
-            <listitem>
-              <para>Underlying cause: poorly managed change</para>
-            </listitem>
-          </itemizedlist>
-          <para>Tinkar addresses challenges/problems from these implementation examples:</para>
-          <itemizedlist>
-            <listitem>
-              <para>Challenge: Brittle terminology integration frequently breaks across
+          <para><emphasis role="bold">Flawed information</emphasis></para>
+          <para>
+            <itemizedlist>
+              <listitem>
+                <para>Incorrect usage or representation of clinical ideas/concepts from standard
+                  terminologies due to a lack of harmonization and multiple representations that
+                  currently exist (e.g., an incorrectly coded COVID-19 test result)</para>
+              </listitem>
+            </itemizedlist>
+          </para>
+        </listitem>
+      </orderedlist>
+    </para>
+    <para><emphasis role="bold">Consider the following examples of things that have gone wrong:
+      </emphasis></para>
+    <para>(https://www.systmoneusergroup.co.uk/qrisk2-update/;
+      https://www.bmj.com/content/353/bmj.i2742;
+      https://www.gov.uk/government/news/mhra-information-on-tpp-and-qrisk2;</para>
+    <para>https://www.healthcareitnews.com/news/clinical-decision-support-malfunctions-are-widespread-andpersistent-amia-says)
+      – REF</para>
+    <itemizedlist>
+      <listitem>
+        <emphasis role="bold">Computer error may have led to incorrect prescribing of statins to
+          thousands of patients</emphasis>
+        <itemizedlist>
+          <listitem>
+            <para>Thousands of patients in England may have been incorrectly prescribed or taken off
+              statins because of a major IT glitch.</para>
+          </listitem>
+          <listitem>
+            <para>Underlying cause: code mapping errors, brittle means for determining
+              equivalence</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <emphasis role="bold">Alert for monitoring thyroid function when taking Amiodarone stopped
+          working</emphasis>
+        <itemizedlist>
+          <listitem>
+            <para>Amiodarone is associated with several side effects, including thyroid dysfunction,
+              which is due to amiodarone's high iodine content and its direct toxic effect on the
+              thyroid</para>
+          </listitem>
+          <listitem>
+            <para>Underlying cause: the identifier for the drug amiodarone was changed in another
+              system, brittle means for determining equivalence</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <emphasis role="bold">62% of CDS malfunctions were attributable to changes in underlying
+          codes or data fields</emphasis>
+        <itemizedlist>
+          <listitem>
+            <para>Change is a constant feature of providing healthcare</para>
+          </listitem>
+          <listitem>
+            <para>Underlying cause: poorly managed change </para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>Tinkar addresses challenges/problems from these implementation examples:</para>
+      </listitem>
+    </itemizedlist>
+    <informaltable>
+      <tgroup cols="2">
+        <colspec colnum="1" colname="col1"/>
+        <colspec colnum="2" colname="col2"/>
+        <tbody>
+          <row>
+            <entry>
+              <itemizedlist>
+                <listitem>
+                  <emphasis role="bold">Challenge</emphasis>
+                </listitem>
+              </itemizedlist>
+            </entry>
+            <entry>
+              <itemizedlist>
+                <listitem>
+                  <emphasis role="bold">Tinkar Solution</emphasis>
+                </listitem>
+              </itemizedlist>
+            </entry>
+          </row>
+          <row>
+            <entry>Brittle terminology integration frequently breaks across systems</entry>
+            <entry>
+              <para>Standardize (and facilitate sharing) of terminology representation across
                 systems</para>
-              <itemizedlist>
-                <listitem>
-                  <para>TInkar Solution: Standardize (and facilitate sharing) of terminology
-                    representation across systems</para>
-                </listitem>
-              </itemizedlist>
-            </listitem>
-            <listitem>
-              <para>Challenge: Management of change over time</para>
-              <itemizedlist>
-                <listitem>
-                  <para>Tinkar Solution: Consistent representation and configuration
-                    management</para>
-                </listitem>
-              </itemizedlist>
-            </listitem>
-            <listitem>
-              <para>Challenge: SNOMED CT’s proprietary aspects prevents use as a common format for
-                LOINC and similar</para>
-              <itemizedlist>
-                <listitem>
-                  <para>Tinkar Solution: Build on existing SNOMED CT foundation, rather than
-                    reinvent, using an open-source initiative approved permissive licenses (i.e.,
-                    Apache 2)</para>
-                </listitem>
-              </itemizedlist>
-            </listitem>
-          </itemizedlist>
-        </listitem>
-      </itemizedlist>
-    </section>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>Management of change over time</para>
+            </entry>
+            <entry>Consistent representation and configuration management</entry>
+          </row>
+          <row>
+            <entry>SNOMED CT’s proprietary aspects prevents use as a common format for LOINC and
+              similar</entry>
+            <entry>Build on existing SNOMED CT foundation, rather than reinvent, using an opensource
+              initiative approved permissive licenses (i.e., Apache 2) </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
   </section>
   <section>
     <title>About Tinkar</title>
@@ -236,20 +268,20 @@
           that business analysts, developers can understand and apply it correctly.</para>
       </listitem>
     </orderedlist>
-    <section>
-      <title>Tinkar Objectives and Purpose – Manage Terminology and Change Better</title>
-      <para>This specification is describing the requirements and characteristics of systems
-        required to manage terminology produced by a variety of organizations across a healthcare
-        enterprise. This foundation must allow enterprise to extend terminology standards and
-        implement extensions in a timely fashion.</para>
-      <para>This specification is intended to support healthcare organizations standard terminology
-        modules, value sets, and coding systems as well as local terms and equivalence
-        mappings.</para>
-      <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification would be
-        necessary to support the operation of a variety of systems intended to deliver knowledge
-        management for terminology to vendors, providers, and even standards-development
-        organizations like HL7. </para>
-    </section>
+  </section>
+  <section>
+    <title>Tinkar Objectives and Purpose – Manage Terminology and Change Better</title>
+    <para>This specification is describing the requirements and characteristics of systems required
+      to manage terminology produced by a variety of organizations across a healthcare enterprise.
+      This foundation must allow enterprise to extend terminology standards and implement extensions
+      in a timely fashion.</para>
+    <para>This specification is intended to support healthcare organizations standard terminology
+      modules, value sets, and coding systems as well as local terms and equivalence
+      mappings.</para>
+    <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification would be
+      necessary to support the operation of a variety of systems intended to deliver knowledge
+      management for terminology to vendors, providers, and even standards-development organizations
+      like HL7. </para>
   </section>
   <section>
     <title>Related Efforts</title>
@@ -275,8 +307,22 @@
     <para>Tinkar is intended to provide an architecture that delivers integrated terminology to the
       enterprise and its information systems, that addresses the differences in management and
       structure across reference terminology and with local concepts and code lists/value sets. </para>
-    <para>In a subsequent chapter &lt;insert link>, we include a more details gap analysis between
-      Tinkar and other models such as CTS2, EVS, etc. ...</para>
+    <para>The UMLS is a compilation of multiple sources organized into ‘concepts’ that contain terms
+      from multiple sources. The terms within a concept are declared synonyms by UMLS editors.
+      However, its use in terminology systems has limited utility for several reasons. First, UMLS
+      concepts are created on lexically-based rules and uses very little of the additional
+      information (relationships between concepts) that may be available from the source
+      terminology. It does not permit classification to identify cases of possible missed synonymy.
+      Secondly, issues of currency occur because of dysynchrony of release dates between source
+      terminologies and the UMLS itself. And finally, though there are editing guidelines in place,
+      there may be substantial variation in editing practices between the individual editors. UMLS
+      is not an architecture for terminology management, it may only serve as a reference, within
+      the aforementioned parameters.</para>
+    <para>CTS2 is an architecture for terminology management that supports history retrieval, though
+      it does not support an arbitrarily granular change set model for versioning. The Tinkar
+      Specification, in contrast, provides that every new assertion, whether a new component or a
+      change to an existing component, must have a STAMP. CTS2 asserts a specific terminology model,
+      and does not support unanticipated properties with a self-describing model.</para>
   </section>
   <section>
     <title>Benefits of Self-Describing Architecture</title>
@@ -433,19 +479,22 @@
   </section>
   <section>
     <title>About this Document</title>
-    <para>This document describes how information systems can improve encoded clinical data with
-      managing terminology and changes to terminology using a standardized model. </para>
-    <para>In the following chapter we enumerate business requirements for Tinkar followed by
-      chapters containing the Tinkar Reference Model and illustrative examples of terminology
-      content represented by Tinkar. Subsequently, we compare/contrast Tinkar to other models and
-      present a reference implementation of Tinkar to demonstrate Tinkar in action. Finally, we
-      discuss implications of Tinkar on data quality, clinical decision support and patient safety
-      and outcomes. </para>
-    <note>
-      <para>(Placeholder - NEED TO UPDATE)</para>
-      <para>Being on the right side of IP” – language to refer to the fact that different sources
-        have different requirements and we want to help meet end users needs – limit to how Tinkar
-        could help navigating/managing</para>
-    </note>
+    <para>This document describes how encoded clinical data can be improved with a terminology
+      management model. This terminology can be unified for HL7 and non-HL7 systems. The Terminology
+      Knowledge Architecture known as Tinkar treats terminology in a common way for managing
+      enhanced patient care and improved record keeping. The unification of models such as SNOMED,
+      LOINC, and RxNorm will allow more robust computable medical records. The following sections
+      contain the TINKAR Reference Model, along with illustrative examples as to the complexity and
+      necessity of type of structure. </para>
+    <para>The following chapters enumerate the business requirements for Tinkar followed by chapters
+      containing the TInkar Reference Model and examples of terminology content. Subsequently,
+      Tinkar is compared to other models. Finally, we discuss implications of Tinkar on data
+      quality, clinical decision support and patient safely and outcomes.</para>
+    <para>Tinkar will take different language sources and cohesively manage terminology data.
+      Section 2 lays out the specific business requirements necessary for this task. The model
+      representation is outlined in Section 3. Tinkar also brings together the biomedical
+      terminologies by a common description format (Section 4). Tinkar is used to fill the gaps
+      between the common HL7 Terminologies and outliers like SNOMED, RxNORM, UCUM, etc. The result
+      is the distribution and sharing of cohesive data across all platforms. </para>
   </section>
 </chapter>

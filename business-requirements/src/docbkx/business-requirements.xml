@@ -2,12 +2,12 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <?oxy_comment_start author="jcoyle" timestamp="20190622T100303-0400" comment="I think this chapter should be restructured with the Editorial rules or groups of editorial rules forming a section, and then the examples used within. Currently there is an old itemizedList that stretches throughout the entire chapter that is being used to separate things. Thus, you end up with a bullet item that seems like it is floating in space." flag="done"?><?oxy_comment_end?>
     <title>Business Requirements</title>
-    <para>Draft: </para>
+    <para>This section details specific business requirements that a Terminology Knowledge
+        Architecture (Tinkar) logical model must meet.</para>
     <section>
         <title><anchor xml:id="_Toc64480038"/>Clinical Requirements</title>
-        <section>
+        
             <para>The ultimate goal of this effort is to <emphasis role="underline">support the
                     coordination of safe, effective medicine (1)</emphasis>. This goal requires
                     <emphasis role="underline">quality information in the patient record
@@ -44,7 +44,6 @@
                                     contexts).</para>
                                 <para>If the available terminology does not support the provider's
                                     needs, the provider may assert a need for a new term.</para>
-                                <para> </para>
                                 <itemizedlist>
                                     <listitem>
                                         <emphasis role="bold">Propose Terminology Change</emphasis>
@@ -58,7 +57,6 @@
                                     assist the authoring process. The system will convey at least
                                     the text and the identity of the clinician to the
                                     terminologist.</para>
-                                <para> </para>
                                 <itemizedlist>
                                     <listitem>
                                         <emphasis role="bold">Review Patient Data</emphasis>
@@ -79,7 +77,6 @@
                                         could affect record interpretation will be indicated
                                         (10)</emphasis>, along with a way to identify the change and
                                     its effect.</para>
-                                <para> </para>
                                 <itemizedlist>
                                     <listitem>
                                         <emphasis role="bold">Review KB changes relevant to
@@ -92,7 +89,6 @@
                                         >see available values and CDS results for specific dates and
                                         contexts (11)</emphasis>, including those under which the
                                     data was recorded or specific decisions were made.</para>
-                                <para> </para>
                             </entry>
                         </row>
                     </tbody>
@@ -101,11 +97,10 @@
             <para><emphasis role="italic">Table 1: Clinical Use Cases</emphasis></para>
             <para>The key capability for a clinician should be <emphasis role="underline">to record
                     and review data quickly and accurately (5)</emphasis>, taking advantage of
-                up-to-date classifications while recording and decision support rules while
-                reviewing, but also <emphasis role="underline">knowing when a change in the
-                    knowledge base might affect a record (6)</emphasis>. The change management
-                capability that supports these operations should be as unobtrusive as possible to
-                patients and care providers, but always readily available.</para>
+                up-to-date classifications and decision support rules. This should be accomplished
+                by knowing when a change in the knowledge base might affect a record. The change
+                management capability that supports these operations should be as unobtrusive as
+                possible to patients and care providers, but always readily available.</para>
             <para>These operations depend on the availability not only of currently accurate
                 terminology assets, but also <emphasis role="underline">assets from prior points in
                     time (12)</emphasis>. These may include assets as <emphasis role="underline"
@@ -117,268 +112,468 @@
                 clinical systems must <emphasis role="underline">manage change systematically
                     (14)</emphasis>, and it must do so for both internally managed and externally
                 sourced assets. </para>
-        </section>
-        <section>
-            <title><anchor xml:id="_Toc64480039"/>Asset Curation Requirements</title>
-            <para>Curation of these assets requires detailed change data. The evolution and
-                maturation of knowledge happens at different times and places, so keeping standards
-                and relationships to standards current is a complex undertaking. A health system may
-                subscribe to dozens of standard and commercial terminologies, each of which may
-                publish scheduled updates several times a year, and any of which may push out an
-                emergency update at any time. All of these assets have different designs, so
-                ensuring they continue to work together as intended is expensive and time-consuming,
-                and the necessary transformations introduce risk. Systematic management of change
-                requires granular representation of the assets and their changes.</para>
-            <para>There are best-practice capabilities in knowledge asset maintenance, and we
-                propose to adopt them for clinical data standards. These include the following:
-                [edited from Architecture for Managing Knowledge Artifacts]</para>
+    </section>
+    <section>
+        <title><anchor xml:id="_Toc64480039"/>Asset Curation Requirements</title>
+        <para>Curation of these assets requires detailed change data. The evolution and maturation
+            of knowledge happens at different times and places, so keeping standards and
+            relationships to standards current is a complex undertaking. A health system may
+            subscribe to dozens of standard and commercial terminologies, each of which may publish
+            scheduled updates several times a year, and any of which may push out an emergency
+            update at any time. All of these assets have different designs, so ensuring they
+            continue to work together as intended is expensive and time-consuming, and the necessary
+            transformations introduce risk. Systematic management of change requires granular
+            representation of the assets and their changes.</para>
+        <para>There are best-practice capabilities in knowledge asset maintenance, and we propose to
+            adopt them for clinical data standards. These include the following: [edited from
+            Architecture for Managing Knowledge Artifacts]</para>
+        <para>
             <itemizedlist>
                 <listitem>
-                    <para><emphasis role="underline">Unique object identification</emphasis><para>.
-                            Every object under version control must have a unique identifier, and
-                            the identifier must remain unchanged as the object is modified and
-                            different versions of it are created and saved. </para>Knowledge
-                        artifacts developed at different VHA facilities should be assigned
-                        identifiers in different namespaces to maintain global uniqueness among them
-                        all.</para>
+                    <para><emphasis role="underline">Unique object identification</emphasis> Every
+                        object under version control must have a unique identifier, and the
+                        identifier must remain unchanged as the object is modified and different
+                        versions of it are created and saved. </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Version history retention</emphasis><para>.
-                            Each version of an object must be persisted as the object changes over
-                            time, along with meta-data indicating its [version identifier,] time of
-                            creation, creating author, and branch of the version control system on
-                            which it was created </para>(see below)<para>. Further, every version of
-                            each object must remain available for retrieval and
-                        inspection.</para></para>
+                    <para><emphasis role="underline">Version history retention.</emphasis> Each
+                        version of an object must be persisted as the object changes over time,
+                        along with meta-data indicating its [version identifier,] time of creation,
+                        creating author, and branch of the version control system on which it was
+                        created. Further, every version of each object must remain available for
+                        retrieval and inspection.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Version comparison</emphasis><para>. It must be
-                            easy to compare two versions of the same object and identify all
-                            differences between them. Among other things, this capability is
-                            important to determine whether updates to a sub-artifact have changed
-                            its semantics in a way that may affect the behavior of one or more of
-                            its parent artifacts. Ready comparison is also important when merging
-                            two or more concurrent development efforts involving the same knowledge
-                            artifacts</para> (see below)<para>.</para></para>
+                    <para><emphasis role="underline">Version comparison</emphasis>. It must be easy
+                        to compare two versions of the same object and identify all differences
+                        between them. Among other things, this capability is important to determine
+                        whether updates to a sub-artifact have changed its semantics in a way that
+                        may affect the behavior of one or more of its parent artifacts. Ready
+                        comparison is also important when merging two or more concurrent development
+                        efforts involving the same knowledge artifacts.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Branching capabilities</emphasis><para>. It
-                            must be possible to create a virtual copy of the entire version-control
-                            repository, or a defined subset, in a new “branch,” such that changes
-                            made to objects in this branch do not appear in the original repository.
-                            This capability allows individual knowledge engineers to make and test
-                            changes to knowledge artifacts without affecting the work of other
-                            knowledge engineers or the integrity of knowledge artifacts currently in
-                            production. This facility is critical to the orderly and safe management
-                            of a clinical decision support system </para>(see example
-                            below)<para>.</para></para>
+                    <para><emphasis role="underline">Branchin capabilites.</emphasis> It must be
+                        possible to create a virtual copy of the entire version-control repository,
+                        or a defined subset, in a new “branch,” such that changes made to objects in
+                        this branch do not appear in the original repository. This capability allows
+                        individual knowledge engineers to make and test changes to knowledge
+                        artifacts without affecting the work of other knowledge engineers or the
+                        integrity of knowledge artifacts currently in production. This facility is
+                        critical to the orderly and safe management of a clinical decision support
+                        system.</para>
                 </listitem>
                 <listitem>
-                    <emphasis role="underline">Merging capabilities</emphasis>
-                    <para>. It must be possible to incorporate all of the changes made on one branch
-                        of the version-control repository into another branch, such that any
-                        conflicts between different versions of the same objects are detected and
-                        resolved. This capability is important to enable work done by multiple
-                        knowledge engineers concurrently to be combined and incorporated into the
-                        main branch of the repository. The merging capability is also important to
-                        allow knowledge engineers to update their local branches of the repository
-                        with changes that may have been made by others to the main branch, enabling
-                        them to ensure that their own changes will remain compatible with the latest
+                    <para><emphasis role="underline">Merging capabilites.</emphasis>It must be
+                        possible to incorporate all of the changes made on one branch of the
+                        version-control repository into another branch, such that any conflicts
+                        between different versions of the same objects are detected and resolved.
+                        This capability is important to enable work done by multiple knowledge
+                        engineers concurrently to be combined and incorporated into the main branch
+                        of the repository. The merging capability is also important to allow
+                        knowledge engineers to update their local branches of the repository with
+                        changes that may have been made by others to the main branch, enabling them
+                        to ensure that their own changes will remain compatible with the latest
                         version of the system.</para>
                 </listitem>
             </itemizedlist>
-            <para>These core properties support authoring and maintenance operations: at a high
-                level, this means <emphasis role="underline">modifying the enterprise terminologies
-                    (16)</emphasis>, <emphasis role="underline">importing standard terminologies
-                    (15)</emphasis>, and <emphasis role="underline">publishing the enterprise
-                    terminologies (17)</emphasis> to the client clinical systems. The standard
-                terminology publisher has the same needs around modification and publishing as the
-                enterprise, and some standards import other standards as well (e.g., MedRT, which
-                publishes relationships among other standards). </para>
-            <para>We distinguish between the Enterprise Terminologist and the Standards Development
-                Organization (SDO) Terminologist. The Enterprise Terminologist is responsible for
-                ensuring that the terminology resources provided to clinical systems are current and
-                accurate. This involves managing the consumption of external terminologies as well
-                as maintenance of assets defined within the enterprise. The SDO Terminologist is
-                responsible for ensuring that the terminology resources provided to other
-                terminology systems are current and accurate. This may involve managing the
-                consumption of external terminologies as well as maintenance of assets defined
-                within the SDO.</para>
-            <informaltable>
-                <tgroup cols="1">
-                    <colspec colnum="1" colname="col1"/>
-                    <tbody>
-                        <row>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <emphasis role="bold">Modify Enterprise
-                                            Terminology</emphasis>
-                                    </listitem>
-                                </itemizedlist>
-                                <para>A user adds, modifies, or deactivates content in the
-                                    terminology assets of the enterprise, including assets provided
-                                    to clinical systems as well as management data used only within
-                                    the knowledge base.</para>
-                                <para> </para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <emphasis role="bold">Publish Enterprise
-                                            Terminology</emphasis>
-                                    </listitem>
-                                </itemizedlist>
-                                <para>A user manages the publication process that supports the
-                                    automated provision of terminology content to clinical
-                                    systems.</para>
-                                <para> </para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <emphasis role="bold">Import Standard Terminology</emphasis>
-                                    </listitem>
-                                </itemizedlist>
-                                <para>A user incorporates a new standard terminology or new version
-                                    of a standard terminology into the enterprise terminology.
-                                    During this process, functionality supports the assessment and
-                                    management of impacts on existing enterprise assets.</para>
-                                <para> </para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <emphasis role="bold">Publish Standard
-                                            Terminology</emphasis>
-                                    </listitem>
-                                </itemizedlist>
-                                <para>A user manages the publication process that supports the
-                                    automated provision of terminology content to client terminology
-                                    servers.</para>
-                                <para> </para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <emphasis role="bold">Modify Standard Terminology</emphasis>
-                                    </listitem>
-                                </itemizedlist>
-                                <para>A user adds, modifies, or deactivates content in the
-                                    terminology assets of the standard, including assets provided to
-                                    client terminology systems as well as management data used only
-                                    within the knowledge base.</para>
-                            </entry>
-                        </row>
-                    </tbody>
-                </tgroup>
-            </informaltable>
-            <para><emphasis role="italic">Table 2: Asset Curation Use Cases</emphasis></para>
-            <para>A key difficulty comes in when we examine the publish and consume cases. Clinical
-                systems consume terminologies today, but the interfaces are point-to-point. In order
-                to assert or assess new information, the tools must already understand all relevant
-                interface models. Since an external organization may modify that model at any time,
-                the ability to consume external assets involves ongoing manual efforts to understand
-                or confirm the model and the design of transformations to support consumption. This
-                is expensive and risky.</para>
-            <para>We propose a “data-driven” architecture to support self-describing terminology
-                assets. With a globally consistent design, all changes can be programmatically
-                managed. That management may involve human review, but it can leverage pattern-based
-                recognition of specific change types for automated handling, leaving a smaller
-                number of cases that require human judgement. This information design will support a
-                common representation of all terminologies. There are two key requirements for this
-                design:</para>
-            <orderedlist>
-                <listitem>
-                    <emphasis role="underline">A complete record of all changes, including relevant
-                        change context information (18)</emphasis>
-                </listitem>
-                <listitem>
-                    <emphasis role="underline">A single syntax to support the representation of all
-                        terminology assets, known and future (19)</emphasis>
-                </listitem>
-            </orderedlist>
-            <para>The context information of the first requirement includes the following:</para>
-            <orderedlist>
-                <listitem>
-                    <para>The </para>
-                    <emphasis role="underline">Time</emphasis>
-                    <para> of the change, specified with a time zone and at an appropriate precision
-                        (21),</para>
-                </listitem>
-                <listitem>
-                    <para>The </para>
-                    <emphasis role="underline">Author</emphasis>
-                    <para> of the creation or change, unambiguously identified (22),</para>
-                </listitem>
-                <listitem>
-                    <para>The domain or organizational name of the larger asset within which the
-                        component is meaningful, such as code system or edition (a.k.a., </para>
-                    <emphasis role="underline">Module</emphasis>
-                    <para>) (23),</para>
-                </listitem>
-                <listitem>
-                    <para>The production branch of that organization, e.g., for distributed
-                        development, testing, staging, or production (a.k.a., </para>
-                    <emphasis role="underline">Path</emphasis>
-                    <para>) (24), and</para>
-                </listitem>
-                <listitem>
-                    <para>The</para>
-                    <emphasis role="underline"> Status</emphasis>
-                    <para> of the asset: whether it should be considered active or inactive in the
-                        context of these other attributes (20). </para>
-                </listitem>
-            </orderedlist>
-            <para>These elements together are referred to by the acronym “<emphasis role="bold"
-                    >STAMP</emphasis>.” Every new assertion, whether a new asset or a change to an
-                existing asset, must have a STAMP in order to determine when it is to be used. The
-                STAMP properties support the ability to apply terminology assets for specific
-                purposes. For example,</para>
+        </para>
+        <para>These core properties support authoring and maintenance operations: at a high level,
+            this means <emphasis role="underline">modifying the enterprise terminologies
+                (16)</emphasis>, <emphasis role="underline">importing standard terminologies
+                (15)</emphasis> and <emphasis role="underline">publishing the enterprise
+                terminologies (17)</emphasis> to the client clinical systems. The standard
+            terminology publisher has the same needs around modification and publishing as the
+            enterprise, and some standards import other standards as well (e.g., MedRT, which
+            publishes relationships among other standards). </para>
+        <para>We distinguish between the Enterprise Terminologist and the Standards Development
+            Organization (SDO) Terminologist. The Enterprise Terminologist is responsible for
+            ensuring that the terminology resources provided to clinical systems are current and
+            accurate. This involves managing the consumption of external terminologies as well as
+            maintenance of assets defined within the enterprise. The SDO Terminologist is
+            responsible for ensuring that the terminology resources provided to other terminology
+            systems are current and accurate. This may involve managing the consumption of external
+            terminologies as well as maintenance of assets defined within the SDO.</para>
+        <informaltable>
+            <tgroup cols="1">
+                <colspec colnum="1" colname="col1"/>
+                <tbody>
+                    <row>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <emphasis role="bold">Modify Enterprise Terminology</emphasis>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user adds, modifies, or deactivates content in the terminology
+                                assets of the enterprise, including assets provided to clinical
+                                systems as well as management data used only within the knowledge
+                                base.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <emphasis role="bold">Publish Enterprise Terminology</emphasis>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user manages the publication process that supports the automated
+                                provision of terminology content to clinical systems.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <emphasis role="bold">Import Standard Terminology</emphasis>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user incorporates a new standard terminology or new version of a
+                                standard terminology into the enterprise terminology. During this
+                                process, functionality supports the assessment and management of
+                                impacts on existing enterprise assets.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <emphasis role="bold">Publish Standard Terminology</emphasis>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user manages the publication process that supports the automated
+                                provision of terminology content to client terminology
+                                servers.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <emphasis role="bold">Modify Standard Terminology</emphasis>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A user adds, modifies, or deactivates content in the terminology
+                                assets of the standard, including assets provided to client
+                                terminology systems as well as management data used only within the
+                                knowledge base.</para>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para><emphasis role="italic">Table 2: Asset Curation Use Cases</emphasis></para>
+        <para>A key difficulty comes in when we examine the publish and consume cases. Clinical
+            systems consume terminologies today, but the interfaces are point-to-point. In order to
+            assert or assess new information, the tools must already understand all relevant
+            interface models. Since an external organization may modify that model at any time, the
+            ability to consume external assets involves ongoing manual efforts to understand or
+            confirm the model and the design of transformations to support consumption. This is
+            expensive and risky.</para>
+        <para>We propose a “data-driven” architecture to support self-describing terminology assets.
+            With a globally consistent design, all changes can be programmatically managed. That
+            management may involve human review, but it can leverage pattern-based recognition of
+            specific change types for automated handling, leaving a smaller number of cases that
+            require human judgement. This information design will support a common representation of
+            all terminologies. There are two key requirements for this design:</para>
+        <orderedlist>
+            <listitem>
+                <emphasis role="underline">A complete record of all changes, including relevant
+                    change context information (18)</emphasis>
+            </listitem>
+            <listitem>
+                <emphasis role="underline">A single syntax to support the representation of all
+                    terminology assets, known and future (19)</emphasis>
+            </listitem>
+        </orderedlist>
+        <para>The context information of the first requirement includes the following:</para>
+        <orderedlist>
+            <listitem>
+                <para>The <emphasis role="underline">Time</emphasis> of the change, specified with a
+                    time zone and at an appropriate precision (21),</para>
+            </listitem>
+            <listitem>
+                <para>The <emphasis role="underline">Author</emphasis> of the creation or change,
+                    unambiguously identified (22),</para>
+            </listitem>
+            <listitem>
+                <para>The domain or organizational name of the larger asset within which the
+                    component is meaningful, such as code system or edition (a.k.a., <emphasis
+                        role="underline">Module</emphasis>) (23),</para>
+            </listitem>
+            <listitem>
+                <para>The production branch of that organization, e.g., for distributed development,
+                    testing, staging, or production (a.k.a., </para>
+                <emphasis role="underline">Path) (24), and</emphasis>
+            </listitem>
+            <listitem>
+                <para>The <emphasis role="underline"> Status</emphasis> of the asset: whether it
+                    should be considered active or inactive in the context of these other attributes
+                    (20). </para>
+            </listitem>
+        </orderedlist>
+        <para>These elements together are referred to by the acronym “<emphasis role="bold"
+                >STAMP</emphasis>.” Every new assertion, whether a new asset or a change to an
+            existing asset, must have a STAMP in order to determine when it is to be used. The STAMP
+            properties support the ability to apply terminology assets for specific purposes. For
+            example,</para>
+        <itemizedlist>
+            <listitem>
+                <para>“Path” can be used to test provisional content without physically swapping out
+                    systems. </para>
+            </listitem>
+            <listitem>
+                <para>“Module” can be used to select work that has been authorized be the
+                    enterprise. </para>
+            </listitem>
+            <listitem>
+                <para>“Time” supports the ability to apply CDS rules as they would have looked in
+                    the past.</para>
+            </listitem>
+        </itemizedlist>
+        <para>A further requirement is that not only must the architecture support these properties,
+            but that <emphasis role="underline">it must require</emphasis> them for all assets under
+            curation. Without consistent application of this rule, the foundational capability of
+            detailed version management is impossible. </para>
+        <para>Additionally, in order for an asset to support a record of changes, each <emphasis
+                role="underline">asset must itself be identifiable</emphasis> (25).</para>
+        <para>The “single syntax” requirement is harder to satisfy. One approach would be to define
+            a syntax that addresses the data elements all known terminologies. This would be a very
+            heavy specification, difficult to maintain, and it would fail to capture new elements as
+            they are added in the future.</para>
+        <para>The other approach is to use a “self-describing” or “meta-modeling” approach, where
+            the syntax defines not only the content but what the content means. “Rigid” or “brittle”
+            specifications determine in advance where information belongs: a database may use column
+            names to suggest what belongs in a column, but there is no way to determine whether the
+            name is a good one, or whether an instance value meets the criterion implied by the
+            name. But flexible specifications support data definition. XML (a subset of SGML)
+            provides a way to specify types of data and structural (not semantic) relationships. RDF
+            goes one step further by making the relationship between an element and its containing
+            class an explicit part of every triplet. If this relationship is specified in a
+            controlled terminology, then assertions can be tested for validity. E.g., if an RDF
+            Schema specification (RDFS) asserts that the finding site of a lesion must be an
+            anatomical feature, then assertions about actual lesions can be tested for valid finding
+            sites. Furthermore, this logic specifies a “range” in the same syntactic structure as
+            the instance assertion: changes to the knowledge base do not affect the syntactical
+            representation of the knowledge. Systems that adopt this approach will require effort to
+            take advantage of new features of terminologies, but they won’t have to rebuild their
+            infrastructure when changes are made.</para>
+        <para>Having change data in discrete tagged change sets will allow the software to hide most
+            of the complexity of version management from the human managers, allowing them to focus
+            on significant decisions.</para>
+    </section>
+    <section>
+        <title><anchor xml:id="_Toc64480040"/>Configuration Requirements</title>
+        <para>A granular self-describing model will support any statement that can be made using
+            concepts in a subject-predicate-object structure, and its compositional aspect permits
+            compound predicates: it is difficult to imagine a proposition that cannot be supported.
+            This power, however, means that there are multiple ways to support any specific kind of
+            statement that a terminology knowledge base must support. This section addresses best
+            practices for these cases. </para>
+        <para>First, we provide more detail on use cases for terminology management operations. Then
+            we describe a set of foundational patterns required to support these operations.
+            [Finally we list specific assets to be included in a basic Tinkar implementation,
+            including “bootstrap” equivalences to support importation of key terminology
+            systems.]</para>
+        <section>
+            <title><anchor xml:id="_Toc64480041"/>Operations</title>
+            <para><emphasis role="bold">Import</emphasis>: A user may identify <emphasis
+                    role="underline">content from another system and write it into the Terminology
+                    Repository</emphasis>. When this happens, the new content will be recorded in
+                the common, self-describing format. When a set of content is imported, rules
+                asserted by the source steward or the Terminology Repository steward may be used to
+                    <emphasis role="underline">assert structural equivalence</emphasis> in the
+                repository – i.e., different source concepts may be represented as alternate
+                representations of the same root concept. During importation of subsequent versions
+                of a system, changes to assets on which other enterprise assets depend must be
+                    <emphasis role="underline">identified and managed as directed</emphasis> by
+                documented policies. The import operation will usually identify sets of such changes
+                which require prioritization to prevent redundant processing.</para>
+            <para><emphasis role="bold">Search</emphasis>: A user may use lexical or concept-based
+                parameters to search for a set of matching assets.</para>
+            <para><emphasis role="bold">View</emphasis>: A user may view an asset, the view
+                consisting of related information associated in visually appropriate ways. This view
+                may omit information not appropriate to the user’s context. </para>
+            <para><emphasis role="bold">Compare</emphasis>: A user may view related assets,
+                including versions of component, in a form designed to support analytical
+                comparison, e.g., side-by-side display.</para>
+            <para><emphasis role="bold">Auhtoring/Maintenance</emphasis>: A user may modify existing
+                content or add new content. To preserve prior states, all modifications are recorded
+                as new versions of content: prior versions will remain unchanged. Any time a change
+                is made, the system will identify dependent assets and rules for handling
+                them.</para>
             <itemizedlist>
                 <listitem>
-                    <para>“Path” can be used to test provisional content without physically swapping
-                        out systems. </para>
+                    <para>An addition is a new version with a new chronology UUID. Patterns may
+                        assert constraints for additions, which may be specific to context (Modules,
+                        Paths, Languages, etc.). </para>
                 </listitem>
                 <listitem>
-                    <para>“Module” can be used to select work that has been authorized be the
-                        enterprise. </para>
+                    <para>An inactivation is a new version of an existing chronology with status set
+                        to “inactive.” Patterns may assert rules for deletions, which may be
+                        specific to context.</para>
                 </listitem>
                 <listitem>
-                    <para>“Time” supports the ability to apply CDS rules as they would have looked
-                        in the past.</para>
+                    <para>A change is a new version of an existing chronology with the new value(s),
+                        distinguishable by STAMP value. A change may involve only a STAMP value;
+                        e.g., deactivation, or import of a concept to a new module or path.</para>
                 </listitem>
             </itemizedlist>
-            <para>A further requirement is that not only must the architecture support these
-                properties, but that <emphasis role="underline">it must require</emphasis> them for
-                all assets under curation. Without consistent application of this rule, the
-                foundational capability of detailed version management is impossible. </para>
-            <para>One other requirement is that in order for an asset to support a record of
-                changes, each <emphasis role="underline">asset must itself be
-                    identifiable</emphasis> (25).</para>
-            <para>The “single syntax” requirement is harder to satisfy. One approach would be to
-                define a syntax that addresses the data elements all known terminologies. This would
-                be a very heavy specification, difficult to maintain, and it would fail to capture
-                new elements as they are added in the future.</para>
-            <para>The other approach is to use a “self-describing” or “meta-modeling” approach,
-                where the syntax defines not only the content but what the content means. “Rigid” or
-                “brittle” specifications determine in advance where information belongs: a database
-                may use column names to suggest what belongs in a column, but there is no way to
-                determine whether the name is a good one, or whether an instance value meets the
-                criterion implied by the name. But flexible specifications support data definition.
-                XML (a subset of SGML) provides a way to specify types of data and structural (not
-                semantic) relationships. RDF goes one step further by making the relationship
-                between an element and its containing class an explicit part of every triplet. If
-                this relationship is specified in a controlled terminology, then assertions can be
-                tested for validity. E.g., if an RDF Schema specification (RDFS) asserts that the
-                finding site of a lesion must be an anatomical feature, then assertions about actual
-                lesions can be tested for valid finding sites. Furthermore, this logic specifies a
-                “range” in the same syntactic structure as the instance assertion: changes to the
-                knowledge base do not affect the syntactical representation of the knowledge.
-                Systems that adopt this approach will require effort to take advantage of new
-                features of terminologies, but they won’t have to rebuild their infrastructure when
-                changes are made.</para>
-            <para>The Tinkar architecture requires such self-description. It diverges from RDF in
-                one key respect: while RDF can use blank nodes to assemble groups of assertions
-                about a resource, the versioning requirement means that all <emphasis
-                    role="underline">assets in Tinkar must be identifiable</emphasis> (28).
-                Information that might be communicated in RDF blank nodes will, in Tinkar, be
-                assigned to identified groups. </para>
-            <para>Having change data in discrete tagged change sets will allow the software to hide
-                most of the complexity of version management from the human managers, allowing them
-                to focus on significant decisions.</para>
+            <para><emphasis role="bold">Classify</emphasis>: A user may select a logical profile and
+                classifier and use classification logic to test equivalence and subsumption of
+                identified assets, or to generate a set of inferred relationships from a set of
+                stated relationships. An inferred set may be persisted.</para>
+            <para><emphasis role="bold">Publish</emphasis>: A user may promote content into a
+                “publication” path and produce a transmissible payload of content that can be
+                consumed by other repositories. This promotion is a change, and may require
+                resolution of constraints on membership in that path.</para>
+        </section>
+        <section>
+            <title><anchor xml:id="_Toc64480042"/>Patterns</title>
+            <para>The data architecture must support patterns for the representation of many kinds
+                of assets. A minimal list includes the following.</para>
+            <itemizedlist>
+                <listitem>
+                    <para>A <emphasis role="bold">term</emphasis> must have </para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>A string representation</para>
+                        </listitem>
+                        <listitem>
+                            <para>A language, possibly including refinements </para>
+                        </listitem>
+                        <listitem>
+                            <para>An indicator of case sensitivity (or is this a property of the
+                                relationship to a concept?)</para>
+                        </listitem>
+                        <listitem>
+                            <para>A type (ditto)</para>
+                        </listitem>
+                        <listitem>
+                            <para>An audience (ditto)</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>A <emphasis role="bold">concept</emphasis> must have </para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>at least one term</para>
+                        </listitem>
+                        <listitem>
+                            <para>at least one parent, with the exception of root concepts</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>A <emphasis role="bold">logical definition</emphasis> must have</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>A definitional status</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <emphasis role="bold">STAMP values must include</emphasis>
+                    <itemizedlist>
+                        <listitem>
+                            <para>“Active” and “inactive” status concepts</para>
+                        </listitem>
+                        <listitem>
+                            <para>At least one “default” author</para>
+                        </listitem>
+                        <listitem>
+                            <para>At least one “root” module</para>
+                        </listitem>
+                        <listitem>
+                            <para>Paths supporting “development” and “publication”</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>An <emphasis role="bold">inferred classification</emphasis> must
+                        indicate</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>The classifier used for its generation</para>
+                        </listitem>
+                        <listitem>
+                            <para>The logic profile used for its generation</para>
+                        </listitem>
+                        <listitem>
+                            <para>The stated asset(s)</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <para>The <emphasis role="bold">module dependency</emphasis> graph</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>Identifies the root module</para>
+                        </listitem>
+                        <listitem>
+                            <para>Lists all other modules, indicating dependency</para>
+                        </listitem>
+                        <listitem>
+                            <para>Must be acyclical</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+            </itemizedlist>
+            <para>Many other patterns may be present. Implementations are expected to support</para>
+            <itemizedlist>
+                <listitem><emphasis role="bold">Any Semantic</emphasis> associating one concept with
+                    another must have<itemizedlist>
+                        <listitem>
+                            <para>At least one default rule (constraint) for handling changes (e.g.,
+                                whether assets dependent on changed assets can be automatically
+                                handled or require intervention) </para>
+                        </listitem>
+                    </itemizedlist></listitem>
+                <listitem><emphasis role="bold">Any Semantic</emphasis> may include components that
+                    are themselves semantics</listitem>
+                <listitem><emphasis role="bold">Value sets </emphasis> may include<itemizedlist>
+                        <listitem>
+                            <para>Rule-based member inclusions</para>
+                        </listitem>
+                        <listitem>
+                            <para>Enumerated members</para>
+                        </listitem>
+                    </itemizedlist></listitem>
+                <listitem>
+                    <para>System-specific <emphasis role="bold">import rules</emphasis></para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>System equivalences for Tinkar attribute and other infrastructure
+                                concepts</para>
+                        </listitem>
+                        <listitem>
+                            <para>Specified exclusions of logical assertions to support
+                                equivalence-on-import inferences irrespective of administrative
+                                metadata</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem>
+                    <emphasis role="bold">Maps</emphasis>
+                    <itemizedlist>
+                        <listitem>
+                            <para>relationships for equivalence assertions</para>
+                        </listitem>
+                        <listitem>
+                            <para>relationships for subsumption assertions</para>
+                        </listitem>
+                        <listitem>
+                            <para>relationships for other functions, e.g., CDC Reportable Condition
+                                Mapping Table</para>
+                        </listitem>
+                    </itemizedlist>
+                </listitem>
+                <listitem><emphasis role="bold">Constraints </emphasis> on asset patterns, including<itemizedlist>
+                        <listitem>
+                            <para>Logical composition constraints on concepts, e.g., the SNOMED CT
+                                concept model</para>
+                        </listitem>
+                        <listitem>
+                            <para>Syntactic compositional constraints on strings, e.g., MIME types,
+                                ISO languages, or UCUM units</para>
+                        </listitem>
+                        <listitem>
+                            <para>Pattern constraints, e.g., presence of exactly one name classified
+                                as “fully specified,” or names in specified languages</para>
+                        </listitem>
+                        <listitem>
+                            <para>Rules that may govern modifications to other assets, e.g.,
+                                incremental addition of effort estimates based on known problematic
+                                terms.</para>
+                        </listitem>
+                    </itemizedlist></listitem>
+            </itemizedlist>
             <para>One other feature is the set of concepts that the application will use to
                 determine how to present the data to the user. A key dimension is the STAMP
                 information defined above. In addition, we require three other “coordinates” for
@@ -393,326 +588,55 @@
                 </listitem>
                 <listitem>
                     <para>Navigation. A user may select the parameters for presentation of the
-                        logical classification [distinguish these better]</para>
+                        logical classification </para>
                 </listitem>
             </itemizedlist>
             <para>Like other concepts, these can be represented by the core data architecture; the
                 application implementing Tinkar must be able to identify those concepts appropriate
                 for these uses.</para>
-            <para>[is there a need to distinguish the requirements for these from other concepts?
-                I.e., do they need to be versioned?]</para>
-            <para> </para>
         </section>
         <section>
-            <title><anchor xml:id="_Toc64480040"/>Configuration Requirements</title>
-            <para>A granular self-describing model will support any statement that can be made using
-                concepts in a subject-predicate-object structure, and its compositional aspect
-                permits compound predicates: it is difficult to imagine a proposition that cannot be
-                supported. This power, however, means that there are multiple ways to support any
-                specific kind of statement that a terminology knowledge base must support. This
-                section addresses best practices for these cases. </para>
-            <para>First, we provide more detail on use cases for terminology management operations.
-                Then we describe a set of foundational patterns required to support these
-                operations. [Finally we list specific assets to be included in a basic Tinkar
-                implementation, including “bootstrap” equivalences to support importation of key
-                terminology systems.]</para>
-            <section>
-                <title><anchor xml:id="_Toc64480041"/>Operations</title>
-                <para><emphasis role="bold">Import</emphasis>: A user may identify <emphasis
-                        role="underline">content from another system and write it into the
-                        Terminology Repository</emphasis>. When this happens, the new content will
-                    be recorded in the common, self-describing format. When a set of content is
-                    imported, rules asserted by the source steward or the Terminology Repository
-                    steward may be used to <emphasis role="underline">assert structural
-                        equivalence</emphasis> in the repository – i.e., different source concepts
-                    may be represented as alternate representations of the same root concept. During
-                    importation of subsequent versions of a system, changes to assets on which other
-                    enterprise assets depend must be <emphasis role="underline">identified and
-                        managed as directed</emphasis> by documented policies. The import operation
-                    will usually identify sets of such changes which require prioritization to
-                    prevent redundant processing.</para>
-                <para><emphasis role="bold">Search</emphasis>: A user may use lexical or
-                    concept-based parameters to search for a set of matching assets.</para>
-                <para><emphasis role="bold">View</emphasis>: A user may view an asset, the view
-                    consisting of related information associated in visually appropriate ways. This
-                    view may omit information not appropriate to the user’s context. </para>
-                <para><emphasis role="bold">Compare</emphasis>: A user may view related assets,
-                    including versions of component, in a form designed to support analytical
-                    comparison, e.g., side-by-side display.</para>
-                <para><emphasis role="bold">Modify</emphasis>: A user may modify existing content.
-                    To preserve prior states, all modifications are recorded as new versions of
-                    content: prior versions will remain unchanged. Any time a change is made, the
-                    system will identify dependent assets and rules for handling them.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para>An addition is a new version with a new chronology UUID. Patterns may
-                            assert constraints for additions, which may be specific to context
-                            (Modules, Paths, Languages, etc.). </para>
-                    </listitem>
-                    <listitem>
-                        <para>A deletion is a new version of an existing chronology with status set
-                            to “inactive.” Patterns may assert rules for deletions, which may be
-                            specific to context.</para>
-                    </listitem>
-                    <listitem>
-                        <para>A change is a new version of an existing chronology with the new
-                            value(s), distinguishable by STAMP value. A change may involve only a
-                            STAMP value; e.g., deactivation, or import of a concept to a new module
-                            or path.</para>
-                    </listitem>
-                </itemizedlist>
-                <para><emphasis role="bold">Classify</emphasis>: A user may select a logical profile
-                    and classifier and use classification logic to test equivalence and subsumption
-                    of identified assets, or to generate a set of inferred relationships from a set
-                    of stated relationships. An inferred set may be persisted.</para>
-                <para><emphasis role="bold">Publish</emphasis>: A user may promote content into a
-                    “publication” path and produce a transmissible payload of content that can be
-                    consumed by other repositories. This promotion is a change, and may require
-                    resolution of constraints on membership in that path.</para>
-            </section>
-            <section>
-                <title><anchor xml:id="_Toc64480042"/>Patterns</title>
-                <para>The data architecture must support patterns for the representation of many
-                    kinds of assets. A minimal list includes the following.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para>A </para>
-                        <emphasis role="bold">term</emphasis>
-                        <para> must have </para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>A string representation</para>
-                            </listitem>
-                            <listitem>
-                                <para>A language, possibly including refinements (do we specify IETF
-                                    BCP 47?)</para>
-                            </listitem>
-                            <listitem>
-                                <para>An indicator of case sensitivity (or is this a property of the
-                                    relationship to a concept?)</para>
-                            </listitem>
-                            <listitem>
-                                <para>A type (ditto)</para>
-                            </listitem>
-                            <listitem>
-                                <para>An audience (ditto)</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>A </para>
-                        <emphasis role="bold">concept</emphasis>
-                        <para> must have </para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>at least one term</para>
-                            </listitem>
-                            <listitem>
-                                <para>at least one parent, with the exception of root
-                                    concepts</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>A </para>
-                        <emphasis role="bold">logical definition</emphasis>
-                        <para> must have</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>A definitional status</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <emphasis role="bold">STAMP</emphasis>
-                        <para> values must include</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>“Active” and “inactive” status concepts</para>
-                            </listitem>
-                            <listitem>
-                                <para>At least one “default” author</para>
-                            </listitem>
-                            <listitem>
-                                <para>At least one “root” module</para>
-                            </listitem>
-                            <listitem>
-                                <para>Paths supporting “development” and “publication”</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>An </para>
-                        <emphasis role="bold">inferred classification</emphasis>
-                        <para> must indicate</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>The classifier used for its generation</para>
-                            </listitem>
-                            <listitem>
-                                <para>The logic profile used for its generation</para>
-                            </listitem>
-                            <listitem>
-                                <para>The stated asset(s)</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>The </para>
-                        <emphasis role="bold">module dependency</emphasis>
-                        <para> graph</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>Identifies the root module</para>
-                            </listitem>
-                            <listitem>
-                                <para>Lists all other modules, indicating dependency</para>
-                            </listitem>
-                            <listitem>
-                                <para>Must be acyclical</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
-                <para>Many other patterns may be present. Implementations are expected to
-                    support</para>
-                <itemizedlist>
-                    <listitem>
-                        <emphasis role="bold">Any Semantic</emphasis>
-                        <para> associating one concept with another must have</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>At least one default rule (constraint) for handling changes
-                                    (e.g., whether assets dependent on changed assets can be
-                                    automatically handled or require intervention) </para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <emphasis role="bold">Any Semantic</emphasis>
-                        <para> may include components that are themselves semantics</para>
-                    </listitem>
-                    <listitem>
-                        <emphasis role="bold">Value sets</emphasis>
-                        <para> may include</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>Rule-based member inclusions</para>
-                            </listitem>
-                            <listitem>
-                                <para>Enumerated members</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <para>System-specific </para>
-                        <emphasis role="bold">import rules</emphasis>
-                        <itemizedlist>
-                            <listitem>
-                                <para>System equivalences for Tinkar attribute and other
-                                    infrastructure concepts</para>
-                            </listitem>
-                            <listitem>
-                                <para>Specified exclusions of logical assertions to support
-                                    equivalence-on-import inferences irrespective of administrative
-                                    metadata</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <emphasis role="bold">Maps</emphasis>
-                        <itemizedlist>
-                            <listitem>
-                                <para>relationships for equivalence assertions</para>
-                            </listitem>
-                            <listitem>
-                                <para>relationships for subsumption assertions</para>
-                            </listitem>
-                            <listitem>
-                                <para>relationships for other functions, e.g., CDC Reportable
-                                    Condition Mapping Table</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                    <listitem>
-                        <emphasis role="bold">Constraints</emphasis>
-                        <para> on asset patterns, including</para>
-                        <itemizedlist>
-                            <listitem>
-                                <para>Logical composition constraints on concepts, e.g., the SNOMED
-                                    CT concept model</para>
-                            </listitem>
-                            <listitem>
-                                <para>Syntactic compositional constraints on strings, e.g., MIME
-                                    types, ISO languages, or UCUM units</para>
-                            </listitem>
-                            <listitem>
-                                <para>Pattern constraints, e.g., presence of exactly one name
-                                    classified as “fully specified,” or names in specified
-                                    languages</para>
-                            </listitem>
-                            <listitem>
-                                <para>Rules that may govern modifications to other assets, e.g.,
-                                    incremental addition of effort estimates based on known
-                                    problematic terms.</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
-                <para> </para>
-            </section>
-            <section>
-                <title><anchor xml:id="_Toc64480043"/>Bootstrap Assets</title>
-                <para>A Tinkar implementation must be furnished with the following content:</para>
-                <itemizedlist>
-                    <listitem>
-                        <emphasis role="underline">One root concept</emphasis>
-                    </listitem>
-                    <listitem>
-                        <emphasis role="underline">One module dependency graph</emphasis>
-                    </listitem>
-                    <listitem>
-                        <emphasis role="underline">Infrastructure concepts</emphasis>
-                        <para> to support the core patterns listed above (see appendix X)</para>
-                    </listitem>
-                    <listitem>
-                        <emphasis role="underline">Import rules</emphasis>
-                        <para> to support import of standard terminologies, including</para>
-                        <itemizedlist>
-                            <listitem>
-                                <emphasis role="underline">Equivalences</emphasis>
-                                <para> to support semantic integration of terminologies (e.g., that
-                                    a LOINC “system” instantiates the same relationship concept as
-                                    the SNOMED CT “inheres in” attribute)</para>
-                            </listitem>
-                            <listitem>
-                                <emphasis role="underline">Exclusions</emphasis>
-                                <para> to support removal of non-semantic properties from
-                                    classification (e.g., RxNorm Translated CDs)</para>
-                            </listitem>
-                        </itemizedlist>
-                    </listitem>
-                </itemizedlist>
-            </section>
-            <section>
-                <title><anchor xml:id="_Toc64480044"/>Specific Assets</title>
-                <para>We provide import rules (see appendix X) for the following assets:</para>
-                <itemizedlist>
-                    <listitem>
-                        <para>Properties published in SNOMED CT RF2, including Machine Readable
-                            Concept Model (MRCM)</para>
-                    </listitem>
-                    <listitem>
-                        <para>LOINC properties published in [Access | RELMA | Parts table]</para>
-                    </listitem>
-                    <listitem>
-                        <para>RxNorm properties </para>
-                    </listitem>
-                    <listitem>
-                        <para>MedRT relationships</para>
-                    </listitem>
-                </itemizedlist>
-            </section>
+            <title><anchor xml:id="_Toc64480043"/>Bootstrap Assets</title>
+            <para>A Tinkar implementation must be furnished with the following content:</para>
+            <itemizedlist>
+                <listitem>
+                    <emphasis role="underline">One root concept</emphasis>
+                </listitem>
+                <listitem>
+                    <emphasis role="underline">One module dependency graph</emphasis>
+                </listitem>
+                <listitem><emphasis role="underline">Infrastructure concepts</emphasis> to support
+                    the core patterns listed above</listitem>
+                <listitem><emphasis role="underline">Import rules</emphasis> to support import of
+                    standard terminologies, including<itemizedlist>
+                        <listitem><emphasis role="underline">Equivalences</emphasis> to support
+                            semantic integration of terminologies (e.g., that a LOINC “system”
+                            instantiates the same relationship concept as the SNOMED CT “inheres in”
+                            attribute)</listitem>
+                        <listitem><emphasis role="underline">Exclusions</emphasis> to support
+                            removal of non-semantic properties from classification (e.g., RxNorm
+                            Translated CDs)</listitem>
+                    </itemizedlist></listitem>
+            </itemizedlist>
+        </section>
+        <section>
+            <title><anchor xml:id="_Toc64480044"/>Specific Assets</title>
+            <para>We provide import rules (see appendix X) for the following assets:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Properties published in SNOMED CT RF2, including Machine Readable Concept
+                        Model (MRCM)</para>
+                </listitem>
+                <listitem>
+                    <para>LOINC properties published in [Access | RELMA | Parts table]</para>
+                </listitem>
+                <listitem>
+                    <para>RxNorm properties </para>
+                </listitem>
+                <listitem>
+                    <para>MedRT relationships</para>
+                </listitem>
+            </itemizedlist>
         </section>
     </section>
 </chapter>

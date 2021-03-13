@@ -100,18 +100,16 @@
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
   
   
-  <!--  5.	FHIR-->
+  <!--  5.	Next Steps-->
   <xi:include
     href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
   
-
-<!--  6.	Gap Analysis with other models (CTS2, FHIR R4, HL7v2, EVS, and others TBD)-->
+  <!--  6.	Next Steps-->
   <xi:include
-          href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/gap-analysis/gap-analysis.xml"
-          xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
-
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/gap-analysis/gap-analysis.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
 <!--  7.	Next Steps and Conclusion-->
   <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"
