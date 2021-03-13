@@ -4,7 +4,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
   <preface>
-    <title>Preface</title>
+    <title>Summary</title>
     <para>This specification describes the requirements to manage terminology produced by a variety
       of organizations across the healthcare enterprise. A Terminology foundation is required that
       allows the enterprise to extend terminology standards and implement extensions in a timely
