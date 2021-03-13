@@ -25,9 +25,28 @@
           <para><emphasis role="bold">Keith E. Campbell, MD, PhD</emphasis> - Director of
             Informatics Architecture, Knowledge Based Systems, Veterans Health Administration</para>
         </listitem>
+        <listitem>
+          <para><emphasis role="bold">Carol Macumber, MS, PMP, FAMIA</emphasis> - HL7 Vocabulary
+            Work Group co-chair &amp; HL7 Terminology Authority vice chair</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Penni Hernandez, RN, ND, APN</emphasis> - Nurse, Associate
+            Director, Clinical Data Representation, Knowledge Based Systems, Veterans Health
+            Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Jonathan Nebeker, MD, MS</emphasis> - Deputy Chief Medical
+            Informatics Officer, Veterans Health Administration</para>
+        </listitem>
+        <listitem>
+          <para><emphasis role="bold">Steven Brown, MD, MS </emphasis>- Director of Knowledge Based
+            Systems, Veterans Health Administration</para>
+        </listitem>
       </itemizedlist>
     </para>
-    <para>Contributions from the following people:</para>
+    <para/>
+    <para>The Tinkar ballot received contributions and assistance from the following
+      individuals:</para>
     <para>
       <informaltable frame="none" rowsep="0" colsep="0">
         <tgroup cols="2" align="left">
@@ -38,16 +57,30 @@
               <entry>
                 <para>&#x2003;&#x2003;&#x2003;Keith Campbell<superscript>1</superscript></para>
               </entry>
-              <entry>
-                <para>TBD<superscript>2</superscript></para>
-              </entry>
+              <entry>Jessica Bota<superscript>2</superscript></entry>
             </row>
             <row>
-              <entry/>
-              <entry/>
+              <entry>&#x2003;&#x2003;&#x2003;Kurt W. Allen<superscript>3</superscript></entry>
+              <entry>Raja Cholan<superscript>4</superscript></entry>
             </row>
             <row>
-              <entry/>
+              <entry>&#x2003;&#x2003;&#x2003;Richard Esmond<superscript>3</superscript></entry>
+              <entry>H. Alpha Garrett Jr.<superscript>5</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;Jay Lyle<superscript>5</superscript></entry>
+              <entry>Galen Mulrooney<superscript>5</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;Akila Namasivayam<superscript>4</superscript></entry>
+              <entry>Andrew Sills <superscript>4</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;Ioana Singureanu<superscript>1</superscript></entry>
+              <entry>Karen Thullner<superscript>3</superscript></entry>
+            </row>
+            <row>
+              <entry>&#x2003;&#x2003;&#x2003;Tim Williams <superscript>4</superscript></entry>
               <entry/>
             </row>
             <row>
@@ -58,13 +91,12 @@
         </tgroup>
       </informaltable>
     </para>
-    <para> </para>
-    <para/>
     <para/>
     <para/>
     <para><superscript>1</superscript>Veterans Health Administration;
-      <superscript>2</superscript>Deloitte Consulting LLP; <superscript>3</superscript>JP Systems,
-      Inc; <superscript>4</superscript>HL7 **** Work Group; <superscript>5</superscript></para>
+      <superscript>2</superscript>HL7 Vocab Work Group;
+        <superscript>3</superscript>PenRad;<superscript>4</superscript>Deloitte Consulting
+        LLP;<superscript>5</superscript>J P Systems, Inc</para>
     <para/>
     <para/>
     <para>This work was primarily funded by the Veterans Health Administration Clinical Informatics
