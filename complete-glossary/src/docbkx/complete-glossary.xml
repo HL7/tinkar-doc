@@ -2,6 +2,104 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <glossary xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="gloss">
     <title>Glossary</title>
-
-
+    <informaltable>
+        <tgroup cols="2">
+            <colspec colnum="1" colname="col1"/>
+            <colspec colnum="2" colname="col2"/>
+            <tbody>
+                <row>
+                    <entry>Term</entry>
+                    <entry>Definition</entry>
+                </row>
+                <row>
+                    <entry>Capability maturity model</entry>
+                    <entry>A development model that can be viewed as a set of structured levels that
+                        describe how well the behaviors, practices and processes of an organization
+                        can reliably and sustainably produce required outcomes. There are five
+                        levels defined along the continuum of the capability maturity model; the
+                        model provides a theoretical continuum along which process maturity can be
+                        developed incrementally from one level to the next.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Foundation Layer of Knowledge Architecture </para>
+                        <para> </para>
+                    </entry>
+                    <entry>The Foundation layer of the Knowledge Architecture provides the common
+                        elements of interoperability such as object identity, versioning,
+                        modularity, and knowledge representation. It includes (a) the foundation and
+                        building blocks of the common model; (b) how the repeatable transformation
+                        process of disparate standards into the common model promotes
+                        interoperability with other environments; and (c) how the modules of the
+                        architecture are tightly version controlled over time.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Logical Model</para>
+                        <para> </para>
+                    </entry>
+                    <entry>A model expressed independently of a particular implementation
+                        technology.</entry>
+                </row>
+                <row>
+                    <entry>Komet (Knowledge Management Environement)</entry>
+                    <entry>
+                        <para>Komet is an example implementation of the Tinkar standard,  and how
+                            various terminologies, such as SNOMED, LOINC, RxNorm, and HL7
+                            terminologies shall be reproducibly represented. Using the Komet browser
+                            we can view the search concepts, view the concept details, and navigate
+                            hierarchies among many other functions that are outside the scope of
+                            this ballot.</para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Terminology Knowledge Layer of Knowledge Architecture </para>
+                        <para> </para>
+                    </entry>
+                    <entry>The Terminology Knowledge layer is responsible for structured sets of
+                        medical terms and codes that define concepts of interest, including
+                        descriptions, dialects, language, and semantic hierarchy. SNOMED CT, LOINC,
+                        and RxNorm are part of this layer.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Tinkar Reference Model</para>
+                        <para> </para>
+                    </entry>
+                    <entry>The Tinkar Reference Model, is a logical model that describes the
+                        standardized model for terminology and change management.</entry>
+                </row>
+                <row>
+                    <entry>Separation of Concerns</entry>
+                    <entry>A design principle that allows a complete system to be subdivided into
+                        distinct sections or components with well-defined functionality and
+                        dependencies. If successful, this approach allows individual sections to be
+                        able to be reused, as well as worked on and updated independently to address
+                        new requirements and use cases.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Solor</para>
+                        <para> </para>
+                    </entry>
+                    <entry>A project sponsored by the Department of Veterans Affairs and Logica
+                        Health (formerly HSPC) that represents and brings together different
+                        terminology standards by using a single model that can encompass any
+                        customized content. Solor allows informaticists and developers to convert
+                        user-supplied terminologies into a single model using open source software
+                        to produce Solor content. For more information please see solor.io.</entry>
+                </row>
+                <row>
+                    <entry>UML (Unified Modeling Language)</entry>
+                    <entry>Unified Modeling Language is an Object Management Group (OMG)
+                        specification defining a graphical language for visualizing, specifying,
+                        constructing, and documenting the artifacts of distributed object
+                        systems.</entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
+    
+    
 </glossary>
