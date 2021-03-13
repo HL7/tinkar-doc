@@ -3,8 +3,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>Tinkar Overview</title>
   <para>Over the past decades, biomedical terminologies have increasingly been recognized as key
-    resources for knowledge management, data integration, and decision support (<link
-      xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6115234/">1</link> – REF).
+    resources for knowledge management, data integration, and decision support <link linkend="bib1">[1]</link>.
     Acceleration and development of Electronic Health Record (EHR) systems has precipitated the
     emergence of “standard terminologies” and their widespread adoption in the clinical community.
     These include Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT), the Logical
@@ -28,7 +27,7 @@
     these terminologies closer together. However, while this evolution leads to greater
     compatibility and interoperability, integration of SNOMED CT, LOINC, and RxNorm in non-trivial
     as these terminologies have different semantics models, and use different formalisms and tools
-    for their representation, have separate release cycles, and different versioning mechanisms.
+    for their representation, have separate release cycles, and different versioning mechanisms <link linkend="bib1">[1]</link>.
     There is little recognition that terminology standards are not standardized at the exchange
     level. Even HL7 has three dissimilar ways to represent concepts, value sets, and code systems. </para>
   <para>In this document, we focus on the need for – and logical specification of – a Terminology
@@ -39,27 +38,46 @@
     standardized model for terminology and change management. </para>
   <para>A Tinkar Specification could provide a single representation for all terminologies required
     in the U.S. that meet the following criteria for managing change from the capability maturity
-    model (REF needed): </para>
-  <para><emphasis role="bold">Initial</emphasis> – Tinkar aims to reduce and eliminate challenges
-    with management of changes to terminology being unpredictable, poorly controlled, and
-    reactive</para>
-  <para><emphasis role="bold">Repeatable</emphasis> – Tinkar provides the foundation for robust
-    configuration management and quality assurance for terminologies</para>
-  <para><emphasis role="bold">Defined</emphasis> – Tinkar allows terminologies to have standardized
-    update and extension processes</para>
-  <para><emphasis role="bold">Managed</emphasis> – Tinkar represenents updates and changes to
-    terminologies so that the changes can be measured and controlled</para>
-  <para><emphasis role="bold">Optimizing</emphasis> – Tinkar aims to allow multiple stakeholders to
-    apply and retrieve changes to shared terminology content with equivalent and harmonized
-    results</para>
+    model. <link linkend="bib2">[2]</link></para>
+  <para>
+    <orderedlist>
+      <listitem>
+        <para><emphasis role="bold">Initial</emphasis> – Tinkar aims to reduce and eliminate
+          challenges with management of changes to terminology being unpredictable, poorly
+          controlled, and reactive</para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="bold">Repeatable</emphasis>– Tinkar provides the foundation for robust
+          configuration management and quality assurance for terminologies</para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="bold">Defined</emphasis>– Tinkar allows terminologies to have
+          standardized update and extension processes</para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="bold">Managed</emphasis> –Tinkar represenents updates and changes to
+          terminologies so that the changes can be measured and controlled</para>
+      </listitem>
+      <listitem>
+        <para><emphasis role="bold">Optimizing</emphasis> – Tinkar aims to allow multiple
+          stakeholders to apply and retrieve changes to shared terminology content with equivalent
+          and harmonized results</para>
+      </listitem>
+    </orderedlist>
+  </para>
+  <para>The Capability Maturity Model is a development model and can be viewed as a set of
+    structured levels that describe how well the behaviors, practices and processes of an
+    organization can reliably and sustainably produce required outcomes.There are five levels
+    defined along the continuum of the capability maturity model; the model provides a theoretical
+    continuum along which process maturity can be developed incrementally from one level to the
+    next. </para>
   <para>Tinkar aims to adhere to the following statement from a publication about developments in
-    clinical terminologies in the 2018 Yearbook of Medical Informatics (<link
-      xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6115234/">2</link> --REF): “The
-    benefits of the integrated terminologies in terms of homogenous semantics and inherent
-    interoperability should, however, outweigh the complexity added to the system.” This
-    specification provides the foundation of a knowledge architecture that is intended to integrate
-    reference terminology from distributors (e.g. SNOMED CT, LOINC, RxNorm) with local concepts in
-    order to support interoperable information semantics across the enterprise. </para>
+    clinical terminologies in the 2018 Yearbook of Medical Informatics (<link linkend="bib1"
+      >[1]</link>): “The benefits of the integrated terminologies in terms of homogenous semantics
+    and inherent interoperability should, however, outweigh the complexity added to the system.”
+    This specification provides the foundation of a knowledge architecture that is intended to
+    integrate reference terminology from distributors (e.g. SNOMED CT, LOINC, RxNorm) with local
+    concepts in order to support interoperable information semantics across the enterprise. </para>
   <section>
     <title>Motivation: Why Tinkar?</title>
     <para>Information systems that are used across the healthcare enterprise record and manage
@@ -86,9 +104,7 @@
         Care</emphasis> highlighted the unintended consequences of health IT-induced harm that can
       result in serious injury and death due to dosing errors, failing to detect serious illnesses,
       and delaying treatment due to poor human-computer interactions, confusing clinical
-      terminology, or unreliable data quality ([Institute of Medicine (2012). <emphasis
-        role="italic">Health IT and Patient Safety. Building Safer Systems for Better
-        Care</emphasis>. Washington, DC: National Academies Press] --REF ). Despite the widespread
+      terminology, or unreliable data quality  <link linkend="bib3">[3]</link>. Despite the widespread
       understanding of the importance of the quality of clinical data, there is currently a lack of
       integration and management of clinical terminologies across the healthcare enterprise. </para>
     <para>Tinkar intends to integrate clinical terminology and local concepts in order to support
@@ -149,13 +165,11 @@
         </listitem>
       </orderedlist>
     </para>
-    <para><emphasis role="bold">Consider the following examples of things that have gone wrong:
-      </emphasis></para>
-    <para>(https://www.systmoneusergroup.co.uk/qrisk2-update/;
-      https://www.bmj.com/content/353/bmj.i2742;
-      https://www.gov.uk/government/news/mhra-information-on-tpp-and-qrisk2;</para>
-    <para>https://www.healthcareitnews.com/news/clinical-decision-support-malfunctions-are-widespread-andpersistent-amia-says)
-      – REF</para>
+    <para><emphasis role="bold">Consider the following examples of things that have gone wrong: </emphasis>
+      <link linkend="bib3">[3]</link><link linkend="bib4">[4]</link>
+      <link linkend="bib5">[5]</link>
+      <link linkend="bib6">[6]</link>
+      <link linkend="bib7">[7]</link></para>
     <itemizedlist>
       <listitem>
         <emphasis role="bold">Computer error may have led to incorrect prescribing of statins to
@@ -327,9 +341,8 @@
   <section>
     <title>Benefits of Self-Describing Architecture</title>
     <para>Tinkar aims to be both self-describing and completely machine processed. Key advantages of
-      a self-describing architecture (or metadata driven architecture) include the following details
-        (<link xlink:href="https://www.claysys.com/blog/metadata-driven-application-development/"/>
-      – REF): </para>
+      a self-describing architecture (or metadata driven architecture)<link linkend="bib8"
+        >[8]</link> include the following details: </para>
     <para><emphasis role="bold">Changes can be reviewed immediately</emphasis> – every action or
       change by end users can be immediately previewed or tested, without needing any compilation or
       deployment process. And the review can also be done before saving or publishing the changes,
@@ -347,9 +360,8 @@
       connected to the system.</para>
     <para><emphasis role="bold">Define granular coordinates and configuration management</emphasis>
       – The functionality for defining granular user defined settings and controls for granular
-      elements of clinical terminology management are supported. This includes
-      Create/Read/Update/Delete (CRUD) settings, as well as management of individual elements like
-      fields or other controls. </para>
+      elements of clinical terminology management are supported. This includes Create, Read, and
+      Update settings, as well as management of individual elements like fields or other controls. </para>
     <para><emphasis role="bold">Faster extensions and updates – </emphasis>A benefit of a
       self-describing architecture is that it can abstract away a lot of the deep internal plumbing
       complexities that makes development of standard terminologies complicated. This approach can
@@ -406,17 +418,18 @@
       identity, versioning, modularity, and knowledge representation. It includes a) the foundation
       and building blocks of the common model; (b) how the repeatable transformation process of
       disparate standards into the common model promotes interoperability with other environments;
-      and (c) how the modules of the architecture are tightly version controlled over time.</para>
-    <para> Terminology Knowledge - The Terminology Knowledge layer is responsible for structured
-      sets of medical terms and codes that <emphasis>define</emphasis> concepts of interest,
-      including descriptions, dialects, language, and semantic hierarchy. SNOMED CT, LOINC, and
-      RxNorm are part of this layer. It defines what valid codes or expressions may be used by
-      higher level layers </para>
+      and (c) how the modules of the architecture are tightly version controlled over time. The
+      Tinkar Reference Model belongs in this layer. </para>
+    <para>
+      <emphasis role="bold">Terminology Knowledge </emphasis>- The Terminology Knowledge layer is
+      responsible for structured sets of medical terms and codes that <emphasis>define</emphasis>
+      concepts of interest, including descriptions, dialects, language, and semantic hierarchy.
+      SNOMED CT, LOINC, and RxNorm are part of this layer. It defines what valid codes or
+      expressions may be used by higher level layers </para>
     <para><emphasis role="bold">Statement Model</emphasis> – The Statement Model layer is
-      responsible for defining how data elements are combined to create a statement. ANF Reference
-      Model belongs in this layer. Other standards-based clinical statements are discussed later in
-      this chapter. This layer reuses the artifacts defined in the Terminology Knowledge
-      layer.</para>
+      responsible for defining how data elements are combined to create a statement. This layer
+      reuses the artifacts defined in the Terminology Knowledge layer. The ANF Reference Model <link
+        linkend="bib9">[9]</link>  belongs in this layer.</para>
     <para><emphasis role="bold">Assertional Knowledge</emphasis> – The Assertional Knowledge layer
       makes use of the Terminology Knowledge layer concepts to specify
         <emphasis>non-defining</emphasis> facts that may be used by procedural knowledge algorithms.
@@ -484,10 +497,10 @@
       Knowledge Architecture known as Tinkar treats terminology in a common way for managing
       enhanced patient care and improved record keeping. The unification of models such as SNOMED,
       LOINC, and RxNorm will allow more robust computable medical records. The following sections
-      contain the TINKAR Reference Model, along with illustrative examples as to the complexity and
+      contain the Tinkar Reference Model, along with illustrative examples as to the complexity and
       necessity of type of structure. </para>
     <para>The following chapters enumerate the business requirements for Tinkar followed by chapters
-      containing the TInkar Reference Model and examples of terminology content. Subsequently,
+      containing the Tinkar Reference Model and examples of terminology content. Subsequently,
       Tinkar is compared to other models. Finally, we discuss implications of Tinkar on data
       quality, clinical decision support and patient safely and outcomes.</para>
     <para>Tinkar will take different language sources and cohesively manage terminology data.

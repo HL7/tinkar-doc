@@ -26,8 +26,8 @@
             Informatics Architecture, Knowledge Based Systems, Veterans Health Administration</para>
         </listitem>
         <listitem>
-          <para><emphasis role="bold">Carol Macumber, MS, PMP, FAMIA</emphasis> - HL7 Vocabulary
-            Work Group co-chair &amp; HL7 Terminology Authority vice chair</para>
+          <para><emphasis role="bold">Carol Macumber, MS,  FAMIA</emphasis> - HL7 Vocabulary Work
+            Group co-chair &amp; HL7 Terminology Authority vice chair</para>
         </listitem>
         <listitem>
           <para><emphasis role="bold">Penni Hernandez, RN, ND, APN</emphasis> - Nurse, Associate
@@ -60,31 +60,28 @@
               <entry>Jessica Bota<superscript>2</superscript></entry>
             </row>
             <row>
-              <entry>&#x2003;&#x2003;&#x2003;Kurt W. Allen<superscript>3</superscript></entry>
-              <entry>Raja Cholan<superscript>4</superscript></entry>
+              <entry>&#x2003;&#x2003;&#x2003;Raja Cholan<superscript>3</superscript></entry>
+              <entry>Richard Esmond<superscript>4</superscript></entry>
             </row>
             <row>
-              <entry>&#x2003;&#x2003;&#x2003;Richard Esmond<superscript>3</superscript></entry>
-              <entry>H. Alpha Garrett Jr.<superscript>5</superscript></entry>
+              <entry>&#x2003;&#x2003;&#x2003;H. Alpha Garrett
+                Jr.<superscript>5</superscript></entry>
+              <entry>Jay Lyle<superscript>5</superscript></entry>
             </row>
             <row>
-              <entry>&#x2003;&#x2003;&#x2003;Jay Lyle<superscript>5</superscript></entry>
-              <entry>Galen Mulrooney<superscript>5</superscript></entry>
+              <entry>&#x2003;&#x2003;&#x2003;Galen Mulrooney<superscript>5</superscript></entry>
+              <entry>Akila Namasivayam<superscript>3</superscript></entry>
             </row>
             <row>
-              <entry>&#x2003;&#x2003;&#x2003;Akila Namasivayam<superscript>4</superscript></entry>
-              <entry>Andrew Sills <superscript>4</superscript></entry>
+              <entry>&#x2003;&#x2003;&#x2003;Andrew Sills <superscript>3</superscript></entry>
+              <entry>Ioana Singureanu<superscript>1</superscript></entry>
             </row>
             <row>
-              <entry>&#x2003;&#x2003;&#x2003;Ioana Singureanu<superscript>1</superscript></entry>
-              <entry>Karen Thullner<superscript>3</superscript></entry>
+              <entry>&#x2003;&#x2003;&#x2003;Karen Thullner<superscript>4</superscript></entry>
+              <entry>Tim Williams <superscript>3</superscript></entry>
             </row>
             <row>
-              <entry>&#x2003;&#x2003;&#x2003;Tim Williams <superscript>4</superscript></entry>
-              <entry/>
-            </row>
-            <row>
-              <entry/>
+              <entry>&#x2003;&#x2003;&#x2003;Kurt W. Allen<superscript>4</superscript></entry>
               <entry/>
             </row>
           </tbody>
@@ -94,9 +91,9 @@
     <para/>
     <para/>
     <para><superscript>1</superscript>Veterans Health Administration;
-      <superscript>2</superscript>HL7 Vocab Work Group;
-        <superscript>3</superscript>PenRad;<superscript>4</superscript>Deloitte Consulting
-        LLP;<superscript>5</superscript>J P Systems, Inc</para>
+      <superscript>2</superscript>HL7 Vocab Work Group; <superscript>3</superscript>Deloitte
+      Consulting LLP;<superscript>4</superscript>PenRad;<superscript>5</superscript>J P Systems,
+      Inc</para>
     <para/>
     <para/>
     <para>This work was primarily funded by the Veterans Health Administration Clinical Informatics
