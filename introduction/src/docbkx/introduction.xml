@@ -210,10 +210,8 @@
           </listitem>
         </itemizedlist>
       </listitem>
-      <listitem>
-        <para>Tinkar addresses challenges/problems from these implementation examples:</para>
-      </listitem>
     </itemizedlist>
+    <para>Tinkar addresses challenges/problems from these implementation examples:</para>
     <informaltable>
       <tgroup cols="2">
         <colspec colnum="1" colname="col1"/>
@@ -498,9 +496,9 @@
       contain the Tinkar Reference Model, along with illustrative examples as to the complexity and
       necessity of type of structure. </para>
     <para>The following chapters enumerate the business requirements for Tinkar followed by chapters
-      containing the Tinkar Reference Model and examples of terminology content. Subsequently,
-      Tinkar is compared to other models. Finally, we discuss implications of Tinkar on data
-      quality, clinical decision support and patient safely and outcomes.</para>
+      containing the Tinkar Reference Model and examples of terminology content. Finally, we discuss
+      implications of Tinkar on data quality, clinical decision support and patient safely and
+      outcomes.</para>
     <para>Tinkar will take different language sources and cohesively manage terminology data.
       Section 2 lays out the specific business requirements necessary for this task. The model
       representation is outlined in Section 3. Tinkar also brings together the biomedical

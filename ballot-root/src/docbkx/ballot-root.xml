@@ -140,7 +140,11 @@
   <xi:include
           href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"
           xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  
+  <!--7.	References-->
   <xi:include
-          href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/appendices/appendices.xml"
-          xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/abbreviated-glossary/abbreviated-glossary.xml"/>
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/appendices/appendices.xml"
+    xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </book>

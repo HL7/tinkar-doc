@@ -5,11 +5,12 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Example Implementation of Tinkar</title>
     <para>This section includes user documentation for an example implementation of the Terminology
-        Knowledge Base standard, referred to as Komet ( insert hyperlink ), and how various
-        terminologies, such as SNOMED, LOINC, RxNorm, and HL7 terminologies shall be reproducibly
-        represented using the Terminology Knowledge Base standard. Using the Komet browser we can
-        view the search concepts, view the concept details, and navigate hierarchies among many
-        other functions that are outside the scope of this ballot.</para>
+        Knowledge Base standard, referred to as Komet (<link
+            xlink:href="https://github.com/logicahealth/komet"/>), and how various terminologies,
+        such as SNOMED, LOINC, RxNorm, and HL7 terminologies shall be reproducibly represented using
+        the Terminology Knowledge Base standard. Using the Komet browser we can view the search
+        concepts, view the concept details, and navigate hierarchies among many other functions that
+        are outside the scope of this ballot.</para>
   <section>
       <title>Concept Detail</title>
       <para>

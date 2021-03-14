@@ -3,19 +3,17 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Business Requirements</title>
-    <para>This section details specific business requirements that a Terminology Knowledge
-        Architecture (Tinkar) logical model must meet.</para>
+    <para>This section details specific business requirements for a Tinkar logical model.</para>
     <section>
         <title><anchor xml:id="_Toc64480038"/>Clinical Requirements</title>
         
             <para>The ultimate goal of this effort is to <emphasis role="underline">support the
-                    coordination of safe, effective medicine (1)</emphasis>. This goal requires
-                    <emphasis role="underline">quality information in the patient record
-                    (2)</emphasis>, wherever it comes from, and the increasingly distributed nature
-                of care requires that we use <emphasis role="underline">commonly understood data
-                    standards (3)</emphasis> to ensure mutual comprehension across the care team and
-                over time. </para>
-            <para>We outline four clinical use cases:</para>
+                coordination of safe, effective medicine (1)</emphasis>. This goal requires
+                <emphasis role="underline">quality information in the patient record (2)</emphasis>,
+            wherever it comes from, and the increasingly distributed nature of care requires that we
+            use <emphasis role="underline">commonly understood data standards (3)</emphasis> to
+            ensure mutual comprehension across the care team and over time. We outline four clinical
+            use cases:</para>
             <informaltable>
                 <tgroup cols="1">
                     <colspec colnum="1" colname="col1"/>
@@ -79,9 +77,9 @@
                                     its effect.</para>
                                 <itemizedlist>
                                     <listitem>
-                                        <emphasis role="bold">Review KB changes relevant to
-                                            record</emphasis>
-                                    </listitem>
+                                    <emphasis role="bold">Review Knowledge Base changes relevant to
+                                        record</emphasis>
+                                </listitem>
                                 </itemizedlist>
                                 <para>If the system identifies a relevant change, the provider may
                                     request further information. </para>
@@ -130,13 +128,13 @@
         <para>
             <itemizedlist>
                 <listitem>
-                    <para><emphasis role="underline">Unique object identification</emphasis> Every
+                    <para><emphasis role="underline">Unique object identification</emphasis>. Every
                         object under version control must have a unique identifier, and the
                         identifier must remain unchanged as the object is modified and different
                         versions of it are created and saved. </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Version history retention.</emphasis> Each
+                    <para><emphasis role="underline">Version history retention</emphasis>. Each
                         version of an object must be persisted as the object changes over time,
                         along with meta-data indicating its [version identifier,] time of creation,
                         creating author, and branch of the version control system on which it was
@@ -153,7 +151,7 @@
                         efforts involving the same knowledge artifacts.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Branchin capabilites.</emphasis> It must be
+                    <para><emphasis role="underline">Branching capabilites</emphasis>. It must be
                         possible to create a virtual copy of the entire version-control repository,
                         or a defined subset, in a new “branch,” such that changes made to objects in
                         this branch do not appear in the original repository. This capability allows
@@ -164,7 +162,7 @@
                         system.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Merging capabilites.</emphasis>It must be
+                    <para><emphasis role="underline">Merging capabilites</emphasis>. It must be
                         possible to incorporate all of the changes made on one branch of the
                         version-control repository into another branch, such that any conflicts
                         between different versions of the same objects are detected and resolved.

@@ -8,11 +8,36 @@
             <colspec colnum="2" colname="col2"/>
             <tbody>
                 <row>
-                    <entry>Capability maturity model</entry>
-                    <entry>A development model that can be viewed as a set of structured levels that
-                        describe how well  behaviors, practices and processes of an organization can
-                        reliably and sustainably produce required outcomes. The model provides a
-                        theoretical continuum for process maturity.</entry>
+                    <entry>Tinkar</entry>
+                    <entry>Terminology Knowledge Architecture (Tinkar) is intended to provide an
+                        architecture that delivers integrated terminology to the enterprise and its
+                        information systems, that addresses the differences in management and
+                        structure across reference terminology and with local concepts and code
+                        lists/value sets.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Tinkar Reference Model</para>
+                        <para> </para>
+                    </entry>
+                    <entry>A logical model that describes the standardized model for terminology and
+                        change management.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Logical Model</para>
+                        <para> </para>
+                    </entry>
+                    <entry>A model expressed independently of a particular implementation
+                        technology.</entry>
+                </row>
+                <row>
+                    <entry>Separation of Concerns</entry>
+                    <entry>A design principle that allows a complete system to be subdivided into
+                        distinct sections or components with well-defined functionality and
+                        dependencies. This approach allows individual sections to be able to be
+                        reused, as well as worked on and updated independently to address new
+                        requirements and use cases.</entry>
                 </row>
                 <row>
                     <entry>
@@ -27,23 +52,6 @@
                 </row>
                 <row>
                     <entry>
-                        <para>Logical Model</para>
-                        <para> </para>
-                    </entry>
-                    <entry>A model expressed independently of a particular implementation
-                        technology.</entry>
-                </row>
-                <row>
-                    <entry>Komet (Knowledge Management Environement)</entry>
-                    <entry>
-                        <para>Komet is an example implementation of the Tinkar model, and shows how
-                            terminologies like SNOMED, LOINC, RxNorm shall be represented. Using the
-                            Komet browser we can view &amp; search concepts, view concept details,
-                            and navigate hierarchies among many other functions.</para>
-                    </entry>
-                </row>
-                <row>
-                    <entry>
                         <para>Terminology Knowledge Layer of Knowledge Architecture </para>
                         <para> </para>
                     </entry>
@@ -53,20 +61,13 @@
                         CT, LOINC, and RxNorm are part of this layer.</entry>
                 </row>
                 <row>
+                    <entry>Komet (Knowledge Management Environement)</entry>
                     <entry>
-                        <para>Tinkar Reference Model</para>
-                        <para> </para>
+                        <para>Komet is an example implementation of the Tinkar model, and shows how
+                            terminologies like SNOMED, LOINC, RxNorm shall be represented. Using the
+                            Komet browser we can view &amp; search concepts, view concept details,
+                            and navigate hierarchies among many other functions.</para>
                     </entry>
-                    <entry>A logical model that describes the standardized model for terminology and
-                        change management.</entry>
-                </row>
-                <row>
-                    <entry>Separation of Concerns</entry>
-                    <entry>A design principle that allows a complete system to be subdivided into
-                        distinct sections or components with well-defined functionality and
-                        dependencies. This approach allows individual sections to be able to be
-                        reused, as well as worked on and updated independently to address new
-                        requirements and use cases.</entry>
                 </row>
                 <row>
                     <entry>
