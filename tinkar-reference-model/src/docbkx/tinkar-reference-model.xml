@@ -251,6 +251,28 @@
                     <para><emphasis role="italics">Overall Tinkar Architecture</emphasis></para>
                 </caption>
             </figure></para>
+        <para>Class Definitions: </para>
+        <para><emphasis role="bold">Concept</emphasis> - An identifier for a concept or instance.
+            The identifier contains no information; all information specifying or describing the
+            concept is asserted with Semantics.</para>
+        <para><emphasis role="bold">ConceptVersion </emphasis>– A single instance of an identifier
+            for a concept with a STAMP. </para>
+        <para><emphasis role="bold">ConceptChronology</emphasis> - The set of STAMPed versions for a
+            concept. A concept identifier specifies a ConceptChronology; specifying a ConceptVersion
+            requires a rule or parameter for selecting among STAMP values.</para>
+        <para><emphasis role="bold">Semantic</emphasis> - A class containing a set of predicates and
+            objects about a subject. Semantics perform the descriptive work in Tinkar.</para>
+        <para><emphasis role="bold">SemanticVersion</emphasis> - A single instance of an Semantic
+            with a STAMP.</para>
+        <para><emphasis role="bold">SemanticChronology</emphasis> - The set of STAMPed versions for
+            a Semantic. </para>
+        <para><emphasis role="bold">TypePattern</emphasis> - A class defining a set of predicates
+            and object types that can be asserted about a class of subjects. All Semantics follow
+            Patterns.</para>
+        <para><emphasis role="bold">TypePatternVersion</emphasis> - A single instance of a pattern
+            with a STAMP.</para>
+        <para><emphasis role="bold">TypePatternChronology</emphasis> - The set of STAMPed versions
+            for a pattern. </para>
     </section>
     <section>
         <title>Coordinate</title>

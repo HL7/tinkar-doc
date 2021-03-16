@@ -32,6 +32,78 @@
                         technology.</entry>
                 </row>
                 <row>
+                    <entry>Terminology</entry>
+                    <entry>A set of concept identifiers, descriptors, and relationships for use in
+                        capturing domain information in an information system</entry>
+                </row>
+                <row>
+                    <entry>Standard terminology</entry>
+                    <entry>A terminology developed and published for use across organizational
+                        boundaries</entry>
+                </row>
+                <row>
+                    <entry>Enterprise terminology</entry>
+                    <entry>The set of terminology assets that are specific to and maintained by a
+                        healthcare organization, including, e.g., locations and services and their
+                        relationships to standard terminologies</entry>
+                </row>
+                <row>
+                    <entry>Branch</entry>
+                    <entry> A common synonym for “path.” “Branch” implies an acyclical graph, which
+                        is inaccurate, but it is widely used. </entry>
+                </row>
+                <row>
+                    <entry>STAMP – (status, time, author, module, path)</entry>
+                    <entry>The precise version coordinates that govern granular change control for
+                        Tinkar assets </entry>
+                </row>
+                <row>
+                    <entry>Path</entry>
+                    <entry>A set of assets under version control that can be managed distinctly from
+                        other assets. Paths “branch” from other paths when they are established, and
+                        they can be “merged” with other paths as well.</entry>
+                </row>
+                <row>
+                    <entry>Coordinate</entry>
+                    <entry>A dimension of context in which a user wishes to view terminology
+                        assets</entry>
+                </row>
+                <row>
+                    <entry>Publish</entry>
+                    <entry>To move a set of assets to a “published” branch and support its export to
+                        an interoperable payload technology. Publication implies that the publisher
+                        has exercised some editorial judgment and warrants the validity and
+                        consistency of the publication. </entry>
+                </row>
+                <row>
+                    <entry>Export</entry>
+                    <entry>To serialize a set of content to an interoperable payload technology.
+                        Export does not carry the same quality expectations as publication.</entry>
+                </row>
+                <row>
+                    <entry>Import</entry>
+                    <entry>To replicate an exported set of content into a repository. This activity
+                        implies the implementation of rules and constraints asserted by both native
+                        and imported content. </entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Configuration requirements</para>
+                    </entry>
+                    <entry>Functionality required to make a Tinkar repository operational.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Foundational assets</para>
+                    </entry>
+                    <entry>The set of minimal content assets a Tinkar repository must implement in
+                        order to support operations.</entry>
+                </row>
+                <row>
+                    <entry>Infrastructure concepts</entry>
+                    <entry>Foundational assets that are concepts</entry>
+                </row>
+                <row>
                     <entry>Separation of Concerns</entry>
                     <entry>A design principle that allows a complete system to be subdivided into
                         distinct sections or components with well-defined functionality and
@@ -61,15 +133,6 @@
                         CT, LOINC, and RxNorm are part of this layer.</entry>
                 </row>
                 <row>
-                    <entry>Komet (Knowledge Management Environement)</entry>
-                    <entry>
-                        <para>Komet is an example implementation of the Tinkar model, and shows how
-                            terminologies like SNOMED, LOINC, RxNorm shall be represented. Using the
-                            Komet browser we can view &amp; search concepts, view concept details,
-                            and navigate hierarchies among many other functions.</para>
-                    </entry>
-                </row>
-                <row>
                     <entry>
                         <para>Solor</para>
                         <para> </para>
@@ -79,6 +142,15 @@
                         any customized content. Solor allows informaticists and developers to
                         convert user-supplied terminologies into a single model using open source
                         software to produce Solor content.</entry>
+                </row>
+                <row>
+                    <entry>Komet (Knowledge Management Environement)</entry>
+                    <entry>
+                        <para>Komet is an example implementation of the Tinkar model, and shows how
+                            terminologies like SNOMED, LOINC, RxNorm shall be represented. Using the
+                            Komet browser we can view &amp; search concepts, view concept details,
+                            and navigate hierarchies among many other functions.</para>
+                    </entry>
                 </row>
                 <row>
                     <entry>UML (Unified Modeling Language)</entry>
