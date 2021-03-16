@@ -158,15 +158,15 @@
               <listitem>
                 <para>Incorrect usage or representation of clinical ideas/concepts from standard
                   terminologies due to a lack of harmonization and multiple representations that
-                  currently exist (e.g., an incorrectly coded COVID-19 test result)</para>
+                  currently exist (e.g., an incorrectly coded COVID-19 test result).</para>
               </listitem>
             </itemizedlist>
           </para>
         </listitem>
       </orderedlist>
     </para>
-    <para><emphasis role="bold">Consider the following examples of things that have gone wrong:
-        </emphasis><link linkend="bib4">[4]</link><link linkend="bib5">[5]</link><link
+    <para><emphasis role="bold">Consider the following examples of implementations that have gone
+        wrong: </emphasis><link linkend="bib4">[4]</link><link linkend="bib5">[5]</link><link
         linkend="bib6">[6]</link><link linkend="bib7">[7]</link></para>
     <itemizedlist>
       <listitem>
@@ -179,7 +179,7 @@
           </listitem>
           <listitem>
             <para>Underlying cause: code mapping errors, brittle means for determining
-              equivalence</para>
+              equivalence.</para>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -190,11 +190,11 @@
           <listitem>
             <para>Amiodarone is associated with several side effects, including thyroid dysfunction,
               which is due to amiodarone's high iodine content and its direct toxic effect on the
-              thyroid</para>
+              thyroid.</para>
           </listitem>
           <listitem>
             <para>Underlying cause: the identifier for the drug amiodarone was changed in another
-              system, brittle means for determining equivalence</para>
+              system, brittle means for determining equivalence.</para>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -203,10 +203,10 @@
           codes or data fields</emphasis>
         <itemizedlist>
           <listitem>
-            <para>Change is a constant feature of providing healthcare</para>
+            <para>Change is a constant feature of providing healthcare.</para>
           </listitem>
           <listitem>
-            <para>Underlying cause: poorly managed change </para>
+            <para>Underlying cause: poorly managed change.</para>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -305,7 +305,7 @@
     <itemizedlist>
       <listitem>
         <para>Clinical applications require integrated terminology to create interoperable clinical
-          statements organized into messages, documents, or resources.</para>
+          statements organized into messages, documents, or resources</para>
       </listitem>
       <listitem>
         <para>Data analysis and research require integrated terminology to analyze aggregated
@@ -337,7 +337,7 @@
   <section>
     <title>Benefits of Self-Describing Architecture</title>
     <para>Tinkar aims to be both self-describing and completely machine processed. Key advantages of
-      a self-describing architecture (or metadata driven architecture)<link linkend="bib8"
+      a self-describing architecture (or metadata driven architecture) <link linkend="bib8"
         >[8]</link> include the following details: </para>
     <para><emphasis role="bold">Changes can be reviewed immediately</emphasis> – every action or
       change by end users can be immediately previewed or tested, without needing any compilation or

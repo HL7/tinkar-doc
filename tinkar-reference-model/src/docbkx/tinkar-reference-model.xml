@@ -161,13 +161,13 @@
                 </listitem>
                 <listitem>
                     <para>Integer - data type that represents some range of mathematical
-                        integers.</para>
+                        integers</para>
                 </listitem>
                 <listitem>
                     <para>Float - represents values as high-precision fractional values</para>
                 </listitem>
                 <listitem>
-                    <para>Boolean - represents the values true and false.</para>
+                    <para>Boolean - represents the values true and false</para>
                 </listitem>
                 <listitem>
                     <para>Byte Array - an array of 8-bit signed two's complement integers</para>
@@ -181,22 +181,21 @@
                         vertex.</para>
                 </listitem>
                 <listitem>
-                    <para>Instant - models a single instantaneous point on a timeline.</para>
+                    <para>Instant - models a single instantaneous point on a timeline</para>
                 </listitem>
                 <listitem>
-                    <para>Planar Point - </para>
+                    <para>Planar Point - position in a two dimensional space (a plane)</para>
                 </listitem>
                 <listitem>
-                    <para>Spatial Point -</para>
+                    <para>Spatial Point - position in a three dimensional space</para>
                 </listitem>
                 <listitem>
                     <para>Directed Tree or Ditree - a graph obtained from an undirected tree by
                         replacing each undirected edge by two directed edges with opposite
-                        directions.</para>
+                        directions</para>
                 </listitem>
                 <listitem>
-                    <para>Vertex - The fundamental unit of data that makes up a graph or
-                        tree.</para>
+                    <para>Vertex - The fundamental unit of data that makes up a graph or tree</para>
                 </listitem>
             <listitem>
                 <para>Component ID List - an ordered list of Component ID's</para>
@@ -231,12 +230,10 @@
             </figure>
         </para>
         <?oxy_comment_start author="timowilliams" timestamp="20210202T170910-0600" comment="inserting an image would be helpful here"?>
-        <para>Using this
-            <?oxy_comment_start author="rcholan" timestamp="20210315T173606-0400" comment="Is there a missing word here?"?>mechanism
-            Semantics<?oxy_comment_end?> of varying structures can be defined using the TypePattern.
-            The TypePattern is used to define each field as to what its purpose, data type, and
-            meaning. For example, if a field within a semantic is used to describe an SDO's website,
-            the Meaning would be "URL, DataType of "String", and Purpose of
+        <para>Using this mechanism Semantics of varying structures can be defined using the
+            TypePattern. The TypePattern is used to define each field as to what its purpose, data
+            type, and meaning. For example, if a field within a semantic is used to describe an
+            SDO's website, the Meaning would be "URL, DataType of "String", and Purpose of
             "Website".<?oxy_comment_end?> The TypePattern would then contain an array of these
             FieldDefinitions.</para>
     </section>
@@ -270,8 +267,9 @@
             adding a layer of complexity to even the simplest query.</para>
         <para>Types of Coordinates:<itemizedlist>
                 <listitem>
-                    <para>STAMP coordinates are the most basic type of coordinate that all content
-                        should be filtered. Example of STAMP coordinates are:<itemizedlist>
+                    <para>STAMP coordinates are the most basic type of coordinate
+                        <?oxy_comment_start author="rcholan" timestamp="20210315T201119-0400" comment="STAMP coordinates are the most basic type of coordinate on which content should be filtered. ?"?>that<?oxy_comment_end?>
+                        all content should be filtered. Example of STAMP coordinates are:<itemizedlist>
                             <listitem>
                                 <para>most recent version</para>
                             </listitem>
@@ -350,7 +348,7 @@
                     </listitem>
                 </itemizedlist>
             </para>
-            <para>After the STAMP Coordinates have been calculated additional coordinates can then
+            <para>After the STAMP Coordinates have been calculated, additional coordinates can then
                 be applied as well. For example, applying a language and dialect coordinate will be
                 important not only for viewing and searching, but also to determine the appropriate
                 preferred name for displaying a hieararchy.</para>
