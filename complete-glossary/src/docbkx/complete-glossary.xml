@@ -140,16 +140,16 @@
                     <entry>A project sponsored by the VA and Logica Health that represents and
                         brings together terminology standards in a single model that can encompass
                         any customized content. Solor allows informaticists and developers to
-                        convert user-supplied terminologies into a single model using open source
+                        convert user-supplied terminologies into a single model using open-source
                         software to produce Solor content.</entry>
                 </row>
                 <row>
-                    <entry>Komet (Knowledge Management Environement)</entry>
+                    <entry>Komet (Knowledge Management Environment)</entry>
                     <entry>
                         <para>Komet is an example implementation of the Tinkar model, and shows how
-                            terminologies like SNOMED, LOINC, RxNorm shall be represented. Using the
-                            Komet browser we can view &amp; search concepts, view concept details,
-                            and navigate hierarchies among many other functions.</para>
+                            terminologies like SNOMED, LOINC<sup>®</sup>, RxNorm shall be represented. Using
+                            the Komet browser we can view &amp; search concepts, view concept
+                            details, and navigate hierarchies among many other functions.</para>
                     </entry>
                 </row>
                 <row>

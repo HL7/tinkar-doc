@@ -14,7 +14,8 @@
       mappings.</para>
     <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification is necessary to
       support the operation of a variety of systems intended to deliver knowledge management for
-      terminology to vendors, providers, and standards-development organizations like HL7. </para>
+      terminology to vendors, providers, and standards-development organizations like Health Level
+      Seven International (HL7). </para>
   </preface>
   <preface>
     <title>Acknowledgements</title>
@@ -55,12 +56,12 @@
           <tbody>
             <row>
               <entry>
-                <para>&#x2003;&#x2003;&#x2003;Keith Campbell <superscript>1</superscript></para>
+                <para>&#x2003;&#x2003;&#x2003;Keith E. Campbell <superscript>1</superscript></para>
               </entry>
               <entry>Jessica Bota <superscript>2</superscript></entry>
             </row>
             <row>
-              <entry>&#x2003;&#x2003;&#x2003;Raja Cholan <superscript>3</superscript></entry>
+              <entry>&#x2003;&#x2003;&#x2003;Raja A. Cholan <superscript>3</superscript></entry>
               <entry>Richard Esmond <superscript>4</superscript></entry>
             </row>
             <row>

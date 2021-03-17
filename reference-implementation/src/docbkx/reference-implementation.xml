@@ -7,45 +7,43 @@
     <para>This section includes user documentation for an example implementation of the Terminology
         Knowledge Base standard, referred to as Komet (<link
             xlink:href="https://github.com/logicahealth/komet"/>), and how various terminologies,
-        such as SNOMED, LOINC, RxNorm, and HL7 terminologies shall be reproducibly represented using
-        the Terminology Knowledge Base standard. Using the Komet browser we can view the search
-        concepts, view the concept details, and navigate hierarchies among many other functions that
-        are outside the scope of this ballot.</para>
+        such as SNOMED, LOINC<sup>®</sup>, RxNorm, and HL7 terminologies shall be reproducibly
+        represented using the Terminology Knowledge Base standard. Using the Komet browser we can
+        view the search concepts, view the concept details, and navigate hierarchies among many
+        other functions that are outside the scope of this ballot.</para>
   <section>
       <title>Concept Detail</title>
-      <para>
-          Below we see the details for the LOINC concept Homocystine [Mass/time] in 24 hour Urine.
-          You can see the LOINC ID, data from the LOINC table, Solor assigned Names, and
-          relationships from the LOINC - SNOMED CT Cooperation Project.
-          <figure>
-              <title>Concept Details</title>
-              <mediaobject>
-                  <imageobject>
-                      <imagedata fileref="concept_detail.png"  scalefit="1" width="100%" contentdepth="100%"/>
-                  </imageobject>
-              </mediaobject>
-              <caption>
-                  <para><emphasis role="italics">Concept Details</emphasis></para>
-              </caption>
-          </figure>
-      </para>
-      <para>
-          In the following image we can see the latest STAMP information for the LOINC concept Homocystine [Mass/time] in 24 hour Urine.
-          <figure>
-              <title>STAMP</title>
-              <mediaobject>
-                  <imageobject>
-                      <imagedata fileref="stamp.png"  scalefit="1" width="100%" contentdepth="100%"/>
-                  </imageobject>
-              </mediaobject>
-              <caption>
-                  <para><emphasis role="italics">STAMP</emphasis></para>
-              </caption>
-          </figure>
-      </para>
-      <para> The Identifiers associated with Components are deliberately hidden within Komet. To
-            access the UUIDs you can copy them by right clicking on the Concept Name at the top of
-            the Concept Details Panel. <figure>
+      <para>Below we see the details for the LOINC<sup>®</sup> concept Homocystine [Mass/time] in 24
+            hour Urine. You can see the LOINC<sup>®</sup> ID, data from the LOINC<sup>®</sup> table,
+            Solor assigned Names, and relationships from the LOINC<sup>®</sup> - SNOMED CT
+            Cooperation Project. <figure>
+                <title>Concept Details</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="concept_detail.png" scalefit="1" width="100%"
+                            contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Concept Details</emphasis></para>
+                </caption>
+            </figure>
+        </para>
+      <para>In the following image we can see the latest STAMP information for the LOINC<sup>®</sup>
+            concept Homocystine [Mass/time] in 24 hour Urine. <figure>
+                <title>STAMP</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="stamp.png" scalefit="1" width="100%" contentdepth="100%"
+                        />
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">STAMP</emphasis></para>
+                </caption>
+            </figure>The Identifiers associated with Components are deliberately hidden within
+            Komet. To access the UUIDs you can copy them by right clicking on the Concept Name at
+            the top of the Concept Details Panel. <figure>
                 <title>Accessing UUID's</title>
                 <mediaobject>
                     <imageobject>
@@ -61,17 +59,16 @@
   </section>
     <section>
         <title>Navigator View</title>
-        <para>
-            In this example we see the results of combining the LOINC - SNOMED CT
-            Cooperation Project module with the latest SNOMED CT and LOINC releases.
-            You can then visualize and navigate the SNOMED CT hierarchy and arrive at
-            associated LOINC codes that would be reached by the Urine homocystine
-            measurement concept.
-            <figure>
+        <para>In this example we see the results of combining the LOINC<sup>®</sup> - SNOMED CT
+            Cooperation Project module with the latest SNOMED CT and LOINC<sup>®</sup> releases. You
+            can then visualize and navigate the SNOMED CT hierarchy and arrive at associated
+                LOINC<sup>®</sup> codes that would be reached by the Urine homocystine measurement
+            concept. <figure>
                 <title>Navigation View</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="navigation_example.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="navigation_example.png" scalefit="1" width="100%"
+                            contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -82,8 +79,8 @@
     </section>
   <section>
       <title>Versioning in Komet</title>
-    <para> Representing all versions of components within Tinkar allows for the ability to view both
-            Active and Inactive components and compare the representations across time.  The image
+    <para>Representing all versions of components within Tinkar allows for the ability to view both
+            Active and Inactive components and comparing the representations across time. The image
             below shows only the Active components for the concept Fibromyalgia compared to all
             previous versions of Fibromyalgia over time. <figure>
                 <title>Latest View with Active Status versus Latest View with Any Status</title>
@@ -99,9 +96,10 @@
                 </caption>
             </figure>
         </para>
-    <para>The image below shows the inferred definition marked as 1 that represents the most recent
-            and active version of the Concept Definition. Below the current definition is the change
-            history where each of the previous versions of Concept Definitions are represented. <figure>
+    <para>The image below shows the inferred definition marked as "1" that represents the most
+            recent and active version of the Concept Definition. Below the current definition is the
+            change history where each of the previous versions of Concept Definitions are
+            represented. <figure>
                 <title>Concept Definition History</title>
                 <mediaobject>
                     <imageobject>
@@ -158,54 +156,54 @@
         </para>
     </section>
     <section>
-        <title>LOINC Example</title>
+        <title>LOINC<sup>®</sup> Example</title>
         <para>
             <figure>
-                <title>LOINC Concept</title>
+                <title>LOINC<sup>®</sup> Concept</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_concept.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC Concept</emphasis></para>
+                    <para><emphasis role="italics">LOINC<sup>®</sup> Concept</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>LOINC Descriptions</title>
+                <title>LOINC<sup>®</sup> Descriptions</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_desc.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC Descriptions</emphasis></para>
+                    <para><emphasis role="italics">LOINC<sup>®</sup> Descriptions</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>LOINC Inferred Relationships</title>
+                <title>LOINC<sup>®</sup> Inferred Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels1.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC Inferred Relationships</emphasis></para>
+                    <para><emphasis role="italics">LOINC<sup>®</sup> Inferred Relationships</emphasis></para>
                 </caption>
             </figure>
             <figure>
-                <title>LOINC Stated Relationships</title>
+                <title>LOINC<sup>®</sup> Stated Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels2.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC Stated Relationships</emphasis></para>
+                    <para><emphasis role="italics">LOINC<sup>®</sup> Stated Relationships</emphasis></para>
                 </caption>
             </figure>
         </para>
@@ -254,12 +252,12 @@
     </section>
     <section>
         <title>Equivalences between Modules</title>
-        <para> Komet includes the capability to use a description logic classifier to create
-            inferred views and detect equivalencies and other errors. The following image shows the
-            results of the classifier after merging the January 2021 version of the SNOMED CT
-            International release with the September 2020 version of the SNOMED CT US Edition.  The
-            classifier has detected that there is an equivalency between the concepts "Ankylosis of
-            bilateral knee joints (disorder)" and "Ankylosis of both knee joints (disorder)".<figure>
+        <para>Komet includes the capability to use a description logic classifier to create inferred
+            views and detect equivalencies and other errors. The following image shows the results
+            of the classifier after merging the January 2021 version of the SNOMED CT International
+            release with the September 2020 version of the SNOMED CT US Edition. The classifier has
+            detected that there is an equivalency between the concepts "Ankylosis of bilateral knee
+            joints (disorder)" and "Ankylosis of both knee joints (disorder)".<figure>
                 <title>Equivalencies Detected by Classifier</title>
                 <mediaobject>
                     <imageobject>
@@ -273,12 +271,12 @@
                 </caption>
             </figure>
         </para>
-        <para> We can then open two Concept Detail Panels and view the two concepts side by side to
+        <para>We can then open two Concept Detail Panels and view the two concepts side by side to
             understand the differences and similarities between the two concepts, their origins, and
             understand how to correct the equivalencies between the two concepts. In this case, the
             concept "Ankylosis of bilateral knee joints (disorder)" would need to be retired as it
             belongs to the US Edition and the "Ankylosis of both knee joints (disorder)" concept is
-            contained in the SNOMED CT International Release.  <figure>
+            contained in the SNOMED CT International Release. <figure>
                 <title>SNOMED CT Equivalences between Modules</title>
                 <mediaobject>
                     <imageobject>

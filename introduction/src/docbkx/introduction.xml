@@ -3,38 +3,39 @@
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>Tinkar Overview</title>
   <para>Over the past decades, biomedical terminologies have increasingly been recognized as key
-    resources for knowledge management, data integration, and decision support <link linkend="bib1">[1]</link>.
-    Acceleration and development of Electronic Health Record (EHR) systems has precipitated the
-    emergence of “standard terminologies” and their widespread adoption in the clinical community.
-    These include Systematized Nomenclature of Medicine Clinical Terms (SNOMED CT), the Logical
-    Observation Identifiers, Names, and Codes (LOINC®) and RxNorm. The availability of these
-    clinical terminologies through the unified terminology services of FHIR is facilitating their
-    usage in support of interoperability in healthcare. </para>
+    resources for knowledge management, data integration, and decision support <link linkend="bib1"
+      >[1]</link>. Acceleration and development of Electronic Health Record (EHR) systems has
+    precipitated the emergence of “standard terminologies” and their widespread adoption in the
+    clinical community. These include Systematized Nomenclature of Medicine Clinical Terms (SNOMED
+    CT), the Logical Observation Identifiers, Names, and Codes (LOINC<sup>®</sup>) and RxNorm. The
+    availability of these clinical terminologies through the terminology services of FHIR is
+    facilitating their usage in support of interoperability in healthcare. </para>
   <para>Interoperability requires standardized semantics based on reference terminology provided by
     standards development organizations, professional organizations, or government agencies. These
     organizations publish their content with the intention of licensing it to health IT vendors,
     providers, and research organizations. In the U.S., the core clinical reference terminology is
-    based on SNOMED CT, LOINC, and RxNorm. Healthcare organizations have to adopt and integrate
-    subsets or modules of various reference terminology and manage references, dependencies,
-    versions, and releases. It is important for the integrity of medical records that the change
-    history of concepts and value sets can be managed and tracked to allow the exchange of either
-    current or retrospective health records. Therefore, enterprise terminology requires integrated
-    terminology using a common representation and management.</para>
+    based on SNOMED CT, LOINC<sup>®</sup>, and RxNorm. Healthcare organizations must adopt and
+    integrate subsets or modules of various reference terminology and manage references,
+    dependencies, versions, and releases. It is important for the integrity of medical records that
+    the change history of concepts and value sets can be managed and tracked to allow the exchange
+    of either current or retrospective health records. Therefore, enterprise terminology requires
+    integrated terminology using a common representation and management.</para>
   <para>Despite the need to use standard terminologies in a highly integrated way, there is no
-    standard representation across SNOMED CT, LOINC, RxNorm, etc. Some partnerships have been
-    created among development teams to facilitate interoperability and minimize duplication of
+    standard representation across SNOMED CT, LOINC<sup>®</sup>, RxNorm, etc. Some partnerships have
+    been created among development teams to facilitate interoperability and minimize duplication of
     effort. Further integration has been proposed but will require additional resources to bring
     these terminologies closer together. However, while this evolution leads to greater
-    compatibility and interoperability, integration of SNOMED CT, LOINC, and RxNorm in non-trivial
-    as these terminologies have different semantics models, and use different formalisms and tools
-    for their representation, have separate release cycles, and different versioning mechanisms <link linkend="bib1">[1]</link>.
-    There is little recognition that terminology standards are not standardized at the exchange
-    level. Even HL7 has three dissimilar ways to represent concepts, value sets, and code systems. </para>
+    compatibility and interoperability, integration of SNOMED CT, LOINC<sup>®</sup>, and RxNorm in
+    non-trivial as these terminologies have different semantics, models, and use different
+    formalisms and tools for their representation, have separate release cycles, and different
+    versioning mechanisms <link linkend="bib1">[1]</link>. While there is recognition that
+    terminology standards are not standardized at the exchange level, there is no consensus about
+    harmonized next steps to solve the challenges. </para>
   <para>In this document, we focus on the need for – and logical specification of – a Terminology
     Knowledge Architecture (Tinkar). Tinkar is intended to provide an architecture that delivers
     integrated terminology to the enterprise and its information systems, that addresses the
     differences in management and structure across reference terminology and with local concepts and
-    code lists/value sets. The Tinkar Reference Model, is a logical model that describes the
+    code lists/value sets. The Tinkar Reference Model is a logical model that describes the
     standardized model for terminology and change management. </para>
   <para>A Tinkar Specification could provide a single representation for all terminologies required
     in the U.S. that meet the following criteria for managing change from the capability maturity
@@ -44,30 +45,30 @@
       <listitem>
         <para><emphasis role="bold">Initial</emphasis> – Tinkar aims to reduce and eliminate
           challenges with management of changes to terminology being unpredictable, poorly
-          controlled, and reactive</para>
+          controlled, and reactive.</para>
       </listitem>
       <listitem>
         <para><emphasis role="bold">Repeatable</emphasis>– Tinkar provides the foundation for robust
-          configuration management and quality assurance for terminologies</para>
+          configuration management and quality assurance for terminologies.</para>
       </listitem>
       <listitem>
         <para><emphasis role="bold">Defined</emphasis>– Tinkar allows terminologies to have
-          standardized update and extension processes</para>
+          standardized update and extension processes.</para>
       </listitem>
       <listitem>
         <para><emphasis role="bold">Managed</emphasis> –Tinkar represents updates and changes to
-          terminologies so that the changes can be measured and controlled</para>
+          terminologies so that the changes can be measured and controlled.</para>
       </listitem>
       <listitem>
         <para><emphasis role="bold">Optimizing</emphasis> – Tinkar aims to allow multiple
           stakeholders to apply and retrieve changes to shared terminology content with equivalent
-          and harmonized results</para>
+          and harmonized results.</para>
       </listitem>
     </orderedlist>
   </para>
   <para>The capability maturity model is a development model and can be viewed as a set of
-    structured levels that describe how well the behaviors, practices and processes of an
-    organization can reliably and sustainably produce required outcomes.There are five levels
+    structured levels that describe how well the behaviors, practices, and processes of an
+    organization can reliably and sustainably produce required outcomes. There are five levels
     defined along the continuum of the capability maturity model; the model provides a theoretical
     continuum along which process maturity can be developed incrementally from one level to the
     next. </para>
@@ -76,12 +77,12 @@
       >[1]</link>): “The benefits of the integrated terminologies in terms of homogenous semantics
     and inherent interoperability should, however, outweigh the complexity added to the system.”
     This specification provides the foundation of a knowledge architecture that is intended to
-    integrate reference terminology from distributors (e.g. SNOMED CT, LOINC, RxNorm) with local
-    concepts in order to support interoperable information semantics across the enterprise. </para>
+    integrate reference terminology from distributors (e.g., SNOMED CT, LOINC<sup>®</sup>, RxNorm)
+    with local concepts to support interoperable information semantics across the enterprise. </para>
   <section>
     <title>Motivation: Why Tinkar?</title>
     <para>Information systems that are used across the healthcare enterprise record and manage
-      clinical data using clinical statements and clinical terminologies in non standardized ways.
+      clinical data using clinical statements and clinical terminologies in non-standardized ways.
       Interoperability specifications aim to require terminology bindings to concepts, code systems,
       and reusable value sets. Currently, we see variation in clinical data exchange across the
       enterprise, as current payloads and clinical statements use inconsistent and highly variable
@@ -107,11 +108,11 @@
       terminology, or unreliable data quality  <link linkend="bib3">[3]</link>. Despite the widespread
       understanding of the importance of the quality of clinical data, there is currently a lack of
       integration and management of clinical terminologies across the healthcare enterprise. </para>
-    <para>Tinkar intends to integrate clinical terminology and local concepts in order to support
-      increased data quality for interoperable clinical information. Quality clinical data enables
-      healthcare systems across the enterprise to conduct robust and meaningful data analysis and
-      increase overall interoperability, which ultimately enhances quality of care across all
-      medical facilities. <inlinemediaobject>
+    <para>Tinkar intends to integrate clinical terminology and local concepts to support increased
+      data quality for interoperable clinical information. Quality clinical data enables healthcare
+      systems across the enterprise to conduct robust and meaningful data analysis and increase
+      overall interoperability, which ultimately enhances quality of care across all medical
+      facilities. <inlinemediaobject>
         <imageobjectco>
           <imageobject>
             <imagedata fileref="Tinkar_1,1.png" scale="40" align="center"/>
@@ -141,7 +142,7 @@
         </listitem>
         <listitem>
           <para><emphasis role="bold">Inability to represent a pertinent
-            phenomenon</emphasis></para>
+            phenomenon.</emphasis></para>
           <para>
             <itemizedlist>
               <listitem>
@@ -154,13 +155,14 @@
           </para>
         </listitem>
         <listitem>
-          <para><emphasis role="bold">Flawed information</emphasis></para>
+          <para><emphasis role="bold">Flawed information.</emphasis></para>
           <para>
             <itemizedlist>
               <listitem>
                 <para>Incorrect usage or representation of clinical ideas/concepts from standard
                   terminologies due to a lack of harmonization and multiple representations that
-                  currently exist (e.g., LOINC and SNOMED have overlapping concepts).</para>
+                  currently exist (e.g., LOINC<sup>®</sup> and SNOMED have overlapping
+                  concepts).</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -173,7 +175,7 @@
     <itemizedlist>
       <listitem>
         <emphasis role="bold">Computer error may have led to incorrect prescribing of statins to
-          thousands of patients</emphasis>
+          thousands of patients.</emphasis>
         <itemizedlist>
           <listitem>
             <para>Thousands of patients in England may have been incorrectly prescribed or taken off
@@ -187,7 +189,7 @@
       </listitem>
       <listitem>
         <emphasis role="bold">Alert for monitoring thyroid function when taking Amiodarone stopped
-          working</emphasis>
+          working.</emphasis>
         <itemizedlist>
           <listitem>
             <para>Amiodarone is associated with several side effects, including thyroid dysfunction,
@@ -202,7 +204,7 @@
       </listitem>
       <listitem>
         <emphasis role="bold">62% of Clinical Decision Support (CDS) malfunctions were attributable
-          to changes in underlying codes or data fields</emphasis>
+          to changes in underlying codes or data fields.</emphasis>
         <itemizedlist>
           <listitem>
             <para>Change is a constant feature of providing healthcare.</para>
@@ -249,8 +251,8 @@
             <entry>Consistent representation and configuration management</entry>
           </row>
           <row>
-            <entry>SNOMED CT’s proprietary aspects prevents use as a common format for LOINC and
-              similar</entry>
+            <entry>SNOMED CT’s proprietary aspects prevents use as a common format for
+                LOINC<sup>®</sup> and similar</entry>
             <entry>Build on existing SNOMED CT foundation, rather than reinvent, using an opensource
               initiative approved permissive licenses (i.e., Apache 2) </entry>
           </row>
@@ -261,8 +263,8 @@
   <section>
     <title>About Tinkar</title>
     <para>Tinkar provides the foundation of a knowledge architecture that is intended to integrate
-      reference terminology from distributors (e.g. SNOMED CT, LOINC, RxNorm) with local concepts in
-      order to support interoperable information semantics across the enterprise.</para>
+      reference terminology from distributors (e.g., SNOMED CT, LOINC<sup>®</sup>, RxNorm) with
+      local concepts to support interoperable information semantics across the enterprise.</para>
     <para>This specification introduces an agile approach to terminology design and formatting that
       promotes the use of self-describing data. It is a shift from hard-coded models that have been
       favored due to their prescriptive nature but have shown limited flexibility and extensibility.
@@ -313,7 +315,7 @@
         <para>Data analysis and research require integrated terminology to analyze aggregated
           information. Interoperability, clinical decision support, or other types of automation
           require common semantics based on a set of integrated models across reference standards
-          (e.g. SNOMED CT, LOINC, RxNorm, etc)</para>
+          (e.g. SNOMED CT, LOINC<sup>®</sup>, RxNorm, etc.)</para>
       </listitem>
     </itemizedlist>
     <para>Tinkar is intended to provide an architecture that delivers integrated terminology to the
@@ -325,7 +327,7 @@
       concepts are created on lexically-based rules and uses very little of the additional
       information (relationships between concepts) that may be available from the source
       terminology. It does not permit classification to identify cases of possible missed synonymy.
-      Secondly, issues of currency occur because of dysynchrony of release dates between source
+      Secondly, issues of currency occur because of desynchrony of release dates between source
       terminologies and the UMLS itself. And finally, though there are editing guidelines in place,
       there may be substantial variation in editing practices between the individual editors. UMLS
       is not an architecture for terminology management, it may only serve as a reference, within
@@ -351,8 +353,8 @@
       changes are made, the historic versions of the metadata files are maintained. This enables
       easy version control and rollback when necessary. What this mean is that every time a change
       is made to a Form or any artifact of an application, the prior version that existed is
-      archived. So as and when you need to rollback to the prior version, it can be achieved through
-      a single click of a button.</para>
+      archived. So as and when you need to roll back to the prior version, it can be achieved
+      through a single click of a button.</para>
     <para><emphasis role="bold">Any data source can be added </emphasis>– A self-describing
       architecture facilitates the ability for multiple types of terminology data sources to be
       connected to the system.</para>
@@ -371,7 +373,7 @@
       Systems, requires standardized medical terminology to encode health information consistently
       across systems and enterprises. Clinicians require not only objective quantitative
       measurements (e.g. 90 beats per minute for a patient's pulse) but also contextual or
-      procedural context (e.g. pulse oximetry, manual) about past observations or requests for
+      procedural context (e.g., pulse oximetry, manual) about past observations or requests for
       future interventions. While two quantitative measurements may be the same, the procedural
       information could indicate meaningful semantic differences and lead to different clinical
       interpretation and treatment. As information is exchanged across systems, the solution
@@ -380,7 +382,7 @@
       address an aspect and, together they need to address the requirements of clinicians. Current
       HL7 standard implementations rely on profiles and templates to disambiguate statement and
       terminology, and provide sufficient precision for transactions, documents, and standards-based
-      APIs. Therefore the architectural approach described here would be applicable to standards
+      APIs. Therefore, the architectural approach described here would be applicable to standards
       organizations developing interoperability-enterprise, and project-specific implementations in
       equal measure. </para>
     <para>Functional decomposition—often referred to as a <glossterm
@@ -422,8 +424,8 @@
       <emphasis role="bold">Terminology Knowledge </emphasis>- The Terminology Knowledge layer is
       responsible for structured sets of medical terms and codes that <emphasis>define</emphasis>
       concepts of interest, including descriptions, dialects, language, and semantic hierarchy.
-      SNOMED CT, LOINC, and RxNorm are part of this layer. It defines what valid codes or
-      expressions may be used by higher level layers </para>
+      SNOMED CT, LOINC<sup>®</sup>, and RxNorm are part of this layer. It defines what valid codes
+      or expressions may be used by higher level layers </para>
     <para><emphasis role="bold">Statement Model</emphasis> – The Statement Model layer is
       responsible for defining how data elements are combined to create a statement. This layer
       reuses the artifacts defined in the Terminology Knowledge layer. The ANF Reference Model <link
@@ -439,18 +441,18 @@
       determining a hypertension treatment plan by analyzing a combination of a patient's ANF
       statements, and the available assertional knowledge. The procedural knowledge is responsible
       for information about standard ways to carry out specific procedures as well as other
-      procedural guidelines, e.g. treatment protocols for diseases and order sets focused on
-      particular patient situations. Procedural knowledge, together with assertional knowledge,
-      enables clinical decision support, quality measurement, and supports patient safety. This
-      layer relies on the architectural foundation and terminology layers, incorporates the
-      statement model for information retrieval, and uses the assertional knowledge. Procedural
-      knowledge artifacts may include clinical alert rules, reminders, etc. that trigger actions or
-      recommend interventions.</para>
+      procedural guidelines, e.g., treatment protocols for diseases and order sets focused on
+      certain patient situations. Procedural knowledge, together with assertional knowledge, enables
+      clinical decision support, quality measurement, and supports patient safety. This layer relies
+      on the architectural foundation and terminology layers, incorporates the statement model for
+      information retrieval, and uses the assertional knowledge. Procedural knowledge artifacts may
+      include clinical alert rules, reminders, etc. that trigger actions or recommend
+      interventions.</para>
     <para>Examining a clinical procedure for controlling hypertension illustrates each of the layers
       of the informatics architectural separation of concerns. <itemizedlist>
         <listitem>
           <para>At the Terminology Knowledge layer, there may be various codes and terms from
-            disparate source terminologies to define a concept (e.g. hypertension). Ideally, these
+            disparate source terminologies to define a concept (e.g., hypertension). Ideally, these
             overlapping codes and terms would be oriented to the same parent concept during the
             transformation and integration process at the Foundational Architecture layer (e.g.,
               <glossterm>Solor</glossterm>).</para>
@@ -460,22 +462,22 @@
             values (e.g., systolic BP = 140 mmHg) or the categorical data (e.g., pregnancy induced
             hypertension vs. renal hypertension) within a standard data structure to facilitate
             information exchange or retrieval, such as within a standards-based clinical statement
-            (i.e. CIMI, CDA, FHIR, ANF, etc.). </para>
+            (i.e., CIMI, CDA, FHIR, ANF, etc.). </para>
         </listitem>
         <listitem>
-          <para> The Assertional Knowledge layer represents non-procedural statements, or facts,
-            such as "Stage 2 high blood pressure is over 140 systolic or 90 diastolic," or that
+          <para>The Assertional Knowledge layer represents non-procedural statements, or facts, such
+            as "Stage 2 high blood pressure is over 140 systolic or 90 diastolic," or that
             beta-blockers and ACE inhibitors may be used to treat hypertension, or that
             beta-blockers are contraindicated in patients with a diagnosis of reactive airway
             disease. </para>
         </listitem>
         <listitem>
-          <para> Finally, the Procedural Knowledge layer provides algorithms to analyze ANF
+          <para>Finally, the Procedural Knowledge layer provides algorithms to analyze ANF
             statements about a patient, in combination with the Assertional Knowledge, to recommend
             a treatment protocol for different kinds of hypertension, including the considerations
-            of, e.g. patient age, co-morbidities etc., which can be generated by an electronic
+            of, e.g., patient age, co-morbidities etc., which can be generated by an electronic
             clinical decision support system (Statement + Assertional layers). This layer adds
-            support for workflow and conditional logic (i.e. if-then-else).</para>
+            support for workflow and conditional logic (i.e., if-then-else).</para>
         </listitem>
       </itemizedlist></para>
     <para>A clear separation of concerns enables the isosemantic transformation of standards-based
@@ -494,9 +496,9 @@
       management model. This terminology can be unified for HL7 and non-HL7 systems. The Terminology
       Knowledge Architecture known as Tinkar treats terminology in a common way for managing
       enhanced patient care and improved record keeping. The unification of models such as SNOMED,
-      LOINC, and RxNorm will allow more robust computable medical records. The following sections
-      contain the Tinkar Reference Model, along with illustrative examples as to the complexity and
-      necessity of type of structure. </para>
+        LOINC<sup>®</sup>, and RxNorm will allow more robust computable medical records. The
+      following sections contain the Tinkar Reference Model, along with illustrative examples as to
+      the complexity and necessity of type of structure. </para>
     <para>The following chapters enumerate the business requirements for Tinkar followed by chapters
       containing the Tinkar Reference Model and examples of terminology content. Finally, we discuss
       implications of Tinkar on data quality, clinical decision support and patient safely and
@@ -505,7 +507,7 @@
       Section 2 lays out the specific business requirements necessary for this task. The model
       representation is outlined in Section 3. Tinkar also brings together the biomedical
       terminologies by a common description format (Section 4). Tinkar is used to fill the gaps
-      between the common HL7 Terminologies and outliers like SNOMED, RxNORM, UCUM, etc. The result
+      between the common HL7 Terminologies and outliers like SNOMED, RxNorm, UCUM, etc. The result
       is the distribution and sharing of cohesive data across all platforms. </para>
   </section>
 </chapter>

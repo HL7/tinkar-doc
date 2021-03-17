@@ -14,9 +14,8 @@
         <para>Tinkar will include a serialization format that will serialize any or all the
             information stored in a Tinkar system. This serialization format will allow third
             parties to read data created by a Tinkar compliant system. A serialized Tinkar file can
-            also be used to transfer information between different Tinkar systems.</para>
-        <para>All Tinkar data will be included in the serialization, such that Tinkar data output
-            and then read back in will have no Tinkar data lost.</para>
+            also be used to transfer information between different Tinkar systems. This will ensure
+            that no Tinkar data is lost. </para>
         <para>C# and Java code implementations of the Tinkar Data Model will be made available to
             integrators allowing third parties to more easily use the Tinkar.</para>
         <para>Specifically, third party implementers can in java or C3</para>
@@ -41,7 +40,7 @@
         <para>Tinkar data items lost in FHIR conversion:</para>
         <orderedlist>
             <listitem>
-                <para>Stamp data. Loss of the Stamp data means that the ability to look at a
+                <para>STAMP data. Loss of the Stamp data means that the ability to look at a
                     terminology at specific point in time is lost. The FHIR data is a snapshot at a
                     fixed point in time.</para>
             </listitem>
@@ -92,8 +91,8 @@
                 <listitem>
                     <para><emphasis role="bold">Unified Terminology Governance (UTG)</emphasis>: A
                         process with associated tooling to support the process strictly for
-                        governance of HL7 terminological content. UTG is the the maintenance process
-                        to keep it up to date in and manage change. </para>
+                        governance of HL7 terminological content. UTG is the maintenance process to
+                        keep it up to date in and manage change. </para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">HL7 terminological content (THO)</emphasis>: HL7
@@ -113,7 +112,7 @@
             </itemizedlist>
         </para>
         <para>The aim of these HL7 groups, to provide standardized HL7 terminology in a consistent
-            format, is very similar to the goal of Tinkar.</para>
+            format, is similar to the goal of Tinkar.</para>
         <para>If HL7 so desired, Tinkar could be used as the format by which all HL7 terminology
             content could be exported. It is believed that current HL7 content can be converted to
             Tinkar with no loss; further work would need to be done to verify that if HL7 was
@@ -121,7 +120,7 @@
         <para>Conversion of HL7 common terminology data to Tinkar would allow:</para>
         <orderedlist>
             <listitem>
-                <para>Use of tools like KOMET to import, export, maintain and validate hl7
+                <para>Use of tools like KOMET to import, export, maintain and validate HL7
                     terminology data.</para>
             </listitem>
             <listitem>

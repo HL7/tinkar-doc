@@ -106,22 +106,21 @@
                 sets of assumptions, e.g., whether a disorder meets a criterion defined by a
                 standard terminology, a payor, a professional society, or a locally chartered board
                 of specialists.</para>
-            <para>In order to support these needs, the Enterprise Terminology that supports the
-                clinical systems must <emphasis role="underline">manage change systematically
-                    (14)</emphasis>, and it must do so for both internally managed and externally
-                sourced assets. </para>
+            <para>To support these needs, the Enterprise Terminology that supports the clinical
+            systems must <emphasis role="underline">manage change systematically (14)</emphasis>,
+            and it must do so for both internally managed and externally sourced assets. </para>
     </section>
     <section>
         <title><anchor xml:id="_Toc64480039"/>Asset Curation Requirements</title>
         <para>Curation of these assets requires detailed change data. The evolution and maturation
-            of knowledge happens at different times and places, so keeping standards and
-            relationships to standards current is a complex undertaking. A health system may
-            subscribe to dozens of standard and commercial terminologies, each of which may publish
-            scheduled updates several times a year, and any of which may push out an emergency
-            update at any time. All of these assets have different designs, so ensuring they
-            continue to work together as intended is expensive and time-consuming, and the necessary
-            transformations introduce risk. Systematic management of change requires granular
-            representation of the assets and their changes.</para>
+            of knowledge happens at different times and places. Keeping standards and relationships
+            to standards current is a complex undertaking. A health system may subscribe to dozens
+            of standard and commercial terminologies, each of which may publish scheduled updates
+            several times a year, and any of which may push out an emergency update at any time. All
+            of these assets have different designs, so ensuring they continue to work together as
+            intended is expensive and time-consuming, and the necessary transformations introduce
+            risk. Systematic management of change requires granular representation of the assets and
+            their changes.</para>
         <para>There are best-practice capabilities in knowledge asset maintenance, and we propose to
             adopt them for clinical data standards. These include the following: [edited from
             Architecture for Managing Knowledge Artifacts]</para>
@@ -151,7 +150,7 @@
                         efforts involving the same knowledge artifacts.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Branching capabilites</emphasis>. It must be
+                    <para><emphasis role="underline">Branching capabilities</emphasis>. It must be
                         possible to create a virtual copy of the entire version-control repository,
                         or a defined subset, in a new “branch,” such that changes made to objects in
                         this branch do not appear in the original repository. This capability allows
@@ -162,7 +161,7 @@
                         system.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Merging capabilites</emphasis>. It must be
+                    <para><emphasis role="underline">Merging capabilities</emphasis>. It must be
                         possible to incorporate all of the changes made on one branch of the
                         version-control repository into another branch, such that any conflicts
                         between different versions of the same objects are detected and resolved.
@@ -179,7 +178,7 @@
         <para>These core properties support authoring and maintenance operations: at a high level,
             this means <emphasis role="underline">modifying the enterprise terminologies
                 (16)</emphasis>, <emphasis role="underline">importing standard terminologies
-                (15)</emphasis> and <emphasis role="underline">publishing the enterprise
+                (15)</emphasis>, and <emphasis role="underline">publishing the enterprise
                 terminologies (17)</emphasis> to the client clinical systems. The standard
             terminology publisher has the same needs around modification and publishing as the
             enterprise, and some standards import other standards as well (e.g., MedRT, which
@@ -239,20 +238,25 @@
                             <para>A user adds, modifies, or deactivates content in the terminology
                                 assets of the standard, including assets provided to client
                                 terminology systems as well as management data used only within the
-                                knowledge base.</para>
+                                knowledge base (e.g., changing SNOMED relationships, inserting a
+                                concept in between two existing concepts). Note that a standard can
+                                only be modified by the standard owner. A client enterprise may add
+                                to or modify the content in an "overlay," but those changes are part
+                                of the local enterprise assets. They don't actually modify the
+                                standard.</para>
                         </entry>
                     </row>
                 </tbody>
             </tgroup>
         </informaltable>
         <para><emphasis role="italic">Table 2: Asset Curation Use Cases</emphasis></para>
-        <para>A key difficulty comes in when we examine the publish and consume cases. Clinical
-            systems consume terminologies today, but the interfaces are point-to-point. In order to
+        <para>A key difficulty comes in when we examine the publish and consume cases.
+            Today,clinical systems consume terminologies, but the interfaces are point-to-point. To
             assert or assess new information, the tools must already understand all relevant
             interface models. Since an external organization may modify that model at any time, the
             ability to consume external assets involves ongoing manual efforts to understand or
             confirm the model and the design of transformations to support consumption. This is
-            expensive and risky.</para>
+            potentially expensive and risky.</para>
         <para>We propose a “data-driven” architecture to support self-describing terminology assets.
             With a globally consistent design, all changes can be programmatically managed. That
             management may involve human review, but it can leverage pattern-based recognition of
@@ -297,7 +301,7 @@
         </orderedlist>
         <para>These elements together are referred to by the acronym “<emphasis role="bold"
                 >STAMP</emphasis>.” Every new assertion, whether a new asset or a change to an
-            existing asset, must have a STAMP in order to determine when it is to be used. The STAMP
+            existing asset, must have a STAMP to determine when it is to be used. The STAMP
             properties support the ability to apply terminology assets for specific purposes. For
             example,</para>
         <itemizedlist>
@@ -318,7 +322,7 @@
             but that <emphasis role="underline">it must require</emphasis> them for all assets under
             curation. Without consistent application of this rule, the foundational capability of
             detailed version management is impossible. </para>
-        <para>Additionally, in order for an asset to support a record of changes, each <emphasis
+        <para>Additionally, for an asset to support a record of changes, each <emphasis
                 role="underline">asset must itself be identifiable</emphasis> (25).</para>
         <para>The “single syntax” requirement is harder to satisfy. One approach would be to define
             a syntax that addresses the data elements all known terminologies. This would be a very
@@ -333,8 +337,8 @@
             provides a way to specify types of data and structural (not semantic) relationships. RDF
             goes one step further by making the relationship between an element and its containing
             class an explicit part of every triplet. If this relationship is specified in a
-            controlled terminology, then assertions can be tested for validity. E.g., if an RDF
-            Schema specification (RDFS) asserts that the finding site of a lesion must be an
+            controlled terminology, then assertions can be tested for validity. For example, if an
+            RDF Schema specification (RDFS) asserts that the finding site of a lesion must be an
             anatomical feature, then assertions about actual lesions can be tested for valid finding
             sites. Furthermore, this logic specifies a “range” in the same syntactic structure as
             the instance assertion: changes to the knowledge base do not affect the syntactical
@@ -355,9 +359,10 @@
             practices for these cases. </para>
         <para>First, we provide more detail on use cases for terminology management operations. Then
             we describe a set of foundational patterns required to support these operations.
-            [Finally we list specific assets to be included in a basic Tinkar implementation,
-            including “bootstrap” equivalences to support importation of key terminology
-            systems.]</para>
+            <?oxy_comment_start author="rcholan" timestamp="20210317T162718-0400" comment="Add specific assets back? See how to meld with Starter kit and Infrastructure concepts"?>Finally
+            we list specific assets to be included in a basic Tinkar implementation, including
+            “bootstrap” equivalences to support importation of key terminology
+            systems.<?oxy_comment_end?></para>
         <section>
             <title><anchor xml:id="_Toc64480041"/>Operations</title>
             <para><emphasis role="bold">Import</emphasis>: A user may identify <emphasis
@@ -380,7 +385,7 @@
             <para><emphasis role="bold">Compare</emphasis>: A user may view related assets,
                 including versions of component, in a form designed to support analytical
                 comparison, e.g., side-by-side display.</para>
-            <para><emphasis role="bold">Auhtoring/Maintenance</emphasis>: A user may modify existing
+            <para><emphasis role="bold">Authoring/Maintenance</emphasis>: A user may modify existing
                 content or add new content. To preserve prior states, all modifications are recorded
                 as new versions of content: prior versions will remain unchanged. Any time a change
                 is made, the system will identify dependent assets and rules for handling
@@ -398,7 +403,7 @@
                 </listitem>
                 <listitem>
                     <para>A change is a new version of an existing chronology with the new value(s),
-                        distinguishable by STAMP value. A change may involve only a STAMP value;
+                        distinguishable by STAMP value. A change may involve only a STAMP value,
                         e.g., deactivation, or import of a concept to a new module or path.</para>
                 </listitem>
             </itemizedlist>
@@ -427,7 +432,8 @@
                         </listitem>
                         <listitem>
                             <para>An indicator of case sensitivity (or is this a property of the
-                                relationship to a concept?)</para>
+                                relationship to a
+                                concept?<?oxy_comment_start author="rcholan" timestamp="20210317T162415-0400" comment="Need to resolve"?>)<?oxy_comment_end?></para>
                         </listitem>
                         <listitem>
                             <para>A type (ditto)</para>
@@ -444,7 +450,7 @@
                             <para>at least one term</para>
                         </listitem>
                         <listitem>
-                            <para>at least one parent, with the exception of root concepts</para>
+                            <para>at least one parent, except for root concepts</para>
                         </listitem>
                     </itemizedlist>
                 </listitem>
@@ -503,7 +509,8 @@
                     </itemizedlist>
                 </listitem>
             </itemizedlist>
-            <para>Many other patterns may be present. Implementations are expected to support</para>
+            <para>Many other patterns may be present. Implementations are expected to
+                support:</para>
             <itemizedlist>
                 <listitem><emphasis role="bold">Any Semantic</emphasis> associating one concept with
                     another must have<itemizedlist>
@@ -608,7 +615,7 @@
                 <listitem><emphasis role="underline">Import rules</emphasis> to support import of
                     standard terminologies, including<itemizedlist>
                         <listitem><emphasis role="underline">Equivalences</emphasis> to support
-                            semantic integration of terminologies (e.g., that a LOINC “system”
+                            semantic integration of terminologies (e.g., that a LOINC<sup>®</sup> “system”
                             instantiates the same relationship concept as the SNOMED CT “inheres in”
                             attribute)</listitem>
                         <listitem><emphasis role="underline">Exclusions</emphasis> to support
@@ -688,7 +695,7 @@
                             Concept Model (MRCM)</para>
                     </listitem>
                     <listitem>
-                        <para>LOINC properties published in [Access | RELMA | Parts table]</para>
+                        <para>LOINC<sup>®</sup> properties published in [Access | RELMA | Parts table]</para>
                     </listitem>
                     <listitem>
                         <para>RxNorm properties </para>

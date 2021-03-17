@@ -3,7 +3,8 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Tinkar Reference Model</title>
     <para>This section describes classes of objects that support a common foundational framework for
-        terminology and knowledge base systems (e.g. SNOMED CT, LOINC, RxNorm, HL7, etc.). </para>
+        terminology and knowledge base systems (e.g. SNOMED CT, LOINC<sup>®</sup>, RxNorm, HL7,
+        etc.). </para>
     <para>Model Representation - The Tinkar Reference Model is a logical model described herein
         using the Object Management Group (OMG) Unified Modeling Language (UML) 2.0 notation to
         describe the structure of integrated data representation and change management for
@@ -81,10 +82,10 @@
                         in the past. </para>
                 </listitem>
             </itemizedlist>The Tinkar model does not merely support the ability to “STAMP”
-            components: it asserts a requirement that all changes be STAMPed. STAMP assertions are
+            components: it asserts a requirement that all changes have a STAMP. STAMP assertions are
             unversioned IdentifiedComponents that are referenced by the components they scope. Since
-            STAMP uses versioned (and STAMPED) concepts, having the STAMP as a versioned component
-            would lead to an infinite regress. </para>
+            STAMP uses versioned concepts (that have a STAMP), having the STAMP as a versioned
+            component would lead to an infinite regress. </para>
         <para>All IdentifedComponents in the knowledge base will consist of a series of change
             records, called ComponentVersions, (beginning with the “Create” version), all associated
             to an underlying ComponentChronology.</para>
@@ -155,25 +156,25 @@
         <title>Field Data Types</title>
         <para> Tinkar supports the following field data types for use with Semantics.<itemizedlist>
                 <listitem>
-                    <para>String - a sequence of characters, either as a literal constant or as some
-                        kind of variable. Strings could be used to represent terms from code systems
-                        or things like URLs, textual definitions, etc.</para>
+                    <para>String - a sequence of characters, either as a literal constant or as a
+                        variable. Strings could be used to represent terms from code systems or
+                        things like URLs, textual definitions, etc.</para>
                 </listitem>
                 <listitem>
                     <para>Integer - data type that represents some range of mathematical
-                        integers</para>
+                        integers.</para>
                 </listitem>
                 <listitem>
-                    <para>Float - represents values as high-precision fractional values</para>
+                    <para>Float - represents values as high-precision fractional values.</para>
                 </listitem>
                 <listitem>
-                    <para>Boolean - represents the values true and false</para>
+                    <para>Boolean - represents the values true and false.</para>
                 </listitem>
                 <listitem>
-                    <para>Byte Array - an array of 8-bit signed two's complement integers</para>
+                    <para>Byte Array - an array of 8-bit signed two's complement integers.</para>
                 </listitem>
                 <listitem>
-                    <para>Object Array - an array of objects</para>
+                    <para>Object Array - an array of objects.</para>
                 </listitem>
                 <listitem>
                     <para>Directed Graph or Digraph - a graph whose edges are ordered pairs of
@@ -181,30 +182,30 @@
                         vertex.</para>
                 </listitem>
                 <listitem>
-                    <para>Instant - models a single instantaneous point on a timeline</para>
+                    <para>Instant - models a single instantaneous point on a timeline.</para>
                 </listitem>
                 <listitem>
-                    <para>Planar Point - position in a two dimensional space (a plane)</para>
+                    <para>Planar Point - position in a two dimensional space (a plane).</para>
                 </listitem>
                 <listitem>
-                    <para>Spatial Point - position in a three dimensional space</para>
+                    <para>Spatial Point - position in a three dimensional space.</para>
                 </listitem>
                 <listitem>
                     <para>Directed Tree or Ditree - a graph obtained from an undirected tree by
                         replacing each undirected edge by two directed edges with opposite
-                        directions</para>
+                        directions.</para>
                 </listitem>
                 <listitem>
-                    <para>Vertex - The fundamental unit of data that makes up a graph or tree</para>
+                    <para>Vertex - The fundamental unit of data that makes up a graph or
+                        tree.</para>
                 </listitem>
-            <listitem>
-                <para>Component ID List - an ordered list of Component ID's</para>
-            </listitem>
-            <listitem>
-                <para>Component ID Set - an unordered list of Component ID's</para>
-            </listitem>
-            </itemizedlist>
-        </para>
+                <listitem>
+                    <para>Component ID List - an ordered list of Component ID's.</para>
+                </listitem>
+                <listitem>
+                    <para>Component ID Set - an unordered list of Component ID's</para>
+                </listitem>
+            </itemizedlist></para>
     </section>
     <section>
         <title>Type Patterns</title>
@@ -214,7 +215,7 @@
             repetitive information, we have chosen to define another first-class feature of the
             model, the TypePattern (<emphasis role="bold">TypePatternVersion</emphasis> and
                 <emphasis role="bold">TypePatternChronology</emphasis>). This feature asserts
-            patterns that Semantic components can follow, similar to an XML or RDF Schema.</para>
+            patterns that Semantic components can follow, like an XML or RDF Schema.</para>
         <para>
             <figure>
                 <title>Semantic Definition</title>
@@ -257,32 +258,32 @@
             concept is asserted with Semantics.</para>
         <para><emphasis role="bold">ConceptVersion </emphasis>– A single instance of an identifier
             for a concept with a STAMP. </para>
-        <para><emphasis role="bold">ConceptChronology</emphasis> - The set of STAMPed versions for a
-            concept. A concept identifier specifies a ConceptChronology; specifying a ConceptVersion
-            requires a rule or parameter for selecting among STAMP values.</para>
+        <para><emphasis role="bold">ConceptChronology</emphasis> - The set of versions having a
+            STAMP for a concept. A concept identifier specifies a ConceptChronology; specifying a
+            ConceptVersion requires a rule or parameter for selecting among STAMP values.</para>
         <para><emphasis role="bold">Semantic</emphasis> - A class containing a set of predicates and
             objects about a subject. Semantics perform the descriptive work in Tinkar.</para>
         <para><emphasis role="bold">SemanticVersion</emphasis> - A single instance of an Semantic
             with a STAMP.</para>
-        <para><emphasis role="bold">SemanticChronology</emphasis> - The set of STAMPed versions for
-            a Semantic. </para>
+        <para><emphasis role="bold">SemanticChronology</emphasis> - The set of versions having a
+            STAMP for a Semantic. </para>
         <para><emphasis role="bold">TypePattern</emphasis> - A class defining a set of predicates
             and object types that can be asserted about a class of subjects. All Semantics follow
             Patterns.</para>
         <para><emphasis role="bold">TypePatternVersion</emphasis> - A single instance of a pattern
             with a STAMP.</para>
-        <para><emphasis role="bold">TypePatternChronology</emphasis> - The set of STAMPed versions
-            for a pattern. </para>
+        <para><emphasis role="bold">TypePatternChronology</emphasis> - The set of versions having a
+            STAMP for a pattern. </para>
     </section>
     <section>
         <title>Coordinate</title>
         <para>Tinkar supports and encourages the storage of time series data that utilizes multiple
             dimensions, for example: STAMP, Language, Dialect, clinical domains, etc. The ability to
             efficiently search, display, and navigate concepts and semantics requires the ability to
-            calculate particular combinations of content based on one or more of these different
-            dimensions. </para>
-        <para>A versioned graph enables us to recover the state of the graph at a particular point
-            in time. Most graph databases don’t support versioning as a first-class concept: it is
+            calculate combinations of content based on one or more of these different dimensions. </para>
+        <para><?oxy_comment_start author="rcholan" timestamp="20210317T164638-0400" comment="Add brief high-level definition/explanation of versioned graphi and how it would be used. "?>A<?oxy_comment_end?>
+            versioned graph enables us to recover the state of the graph at a particular point in
+            time. Most graph databases do not support versioning as a first-class concept: it is
             possible, however, to create a versioning scheme inside the graph model whereby nodes
             and relationships are timestamped and archived whenever they are modified. The downside
             of such versioning schemes is that they leak into any queries written against the graph,
@@ -347,24 +348,24 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>Identify the Module(s) you would like to view/search/modify</para>
+                        <para>Identify the Module(s) you would like to view/search/modify.</para>
                     </listitem>
                     <listitem>
-                        <para>Identify the Path you would like to view/search/modify</para>
+                        <para>Identify the Path you would like to view/search/modify.</para>
                     </listitem>
                     <listitem>
                         <para>Identify the Status or Statuses you would like to
-                            view/search/modify</para>
+                            view/search/modify.</para>
                     </listitem>
                     <listitem>
                         <para>If relevant, identify the Author(s) you would like to
-                            view/search/modify</para>
+                            view/search/modify.</para>
                     </listitem>
                     <listitem>
                         <para>The last piece of the STAMP coordinate (time) is the most difficult to
                             calculate. In most cases you will need to find the most recent version
-                            of the component as of the current time in order to calculate this point
-                            of the coordinate. However, since Tinkar supports and encourages the
+                            of the component as of the current time to calculate this point of the
+                            coordinate. However, since Tinkar supports and encourages the
                             representation of historical, you may need to calculate the most recent
                             version as of a different point in time. </para>
                     </listitem>
@@ -373,7 +374,7 @@
             <para>After the STAMP Coordinates have been calculated, additional coordinates can then
                 be applied as well. For example, applying a language and dialect coordinate will be
                 important not only for viewing and searching, but also to determine the appropriate
-                preferred name for displaying a hieararchy.</para>
+                preferred name for displaying a hierarchy.</para>
         </section>
     </section>
 </chapter>
