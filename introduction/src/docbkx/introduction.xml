@@ -55,7 +55,7 @@
           standardized update and extension processes</para>
       </listitem>
       <listitem>
-        <para><emphasis role="bold">Managed</emphasis> –Tinkar represenents updates and changes to
+        <para><emphasis role="bold">Managed</emphasis> –Tinkar represents updates and changes to
           terminologies so that the changes can be measured and controlled</para>
       </listitem>
       <listitem>
@@ -94,8 +94,8 @@
           vaccines from FDA are not represented in either RxNorm or CVX or SNOMED</para>
       </listitem>
       <listitem>
-        <para>Representation of COVID-19 result codes (e.g., detected, undetected, positive,
-          negative, etc.)</para>
+        <para>Representation of COVID-19 result codes are inconsistent and are not equivalent (e.g.,
+          detected, undetected, positive, negative, etc.)</para>
       </listitem>
     </itemizedlist>
     <para>As a result of these complexities, there are many ways to say the same thing using
@@ -134,7 +134,7 @@
               <listitem>
                 <para>Difficulty with determining that codes/terms using standard terminologies from
                   disparate health IT systems represent a common clinical idea/concept (e.g.,
-                  “COVID-19 negative test result”.</para>
+                  “COVID-19 negative test result”).</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -146,7 +146,9 @@
             <itemizedlist>
               <listitem>
                 <para>A new set of local terminology may be managed with value sets and concept gaps
-                  addressed in quick iterations (e.g., COVID-19 laboratory test results).</para>
+                  addressed in quick iterations (e.g., COVID-19 laboratory test results, or gaps
+                  like "mild anemia" which was refused for inclusion by both the international and
+                  US SNOMED release).</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -158,7 +160,7 @@
               <listitem>
                 <para>Incorrect usage or representation of clinical ideas/concepts from standard
                   terminologies due to a lack of harmonization and multiple representations that
-                  currently exist (e.g., an incorrectly coded COVID-19 test result).</para>
+                  currently exist (e.g., LOINC and SNOMED have overlapping concepts).</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -199,8 +201,8 @@
         </itemizedlist>
       </listitem>
       <listitem>
-        <emphasis role="bold">62% of CDS malfunctions were attributable to changes in underlying
-          codes or data fields</emphasis>
+        <emphasis role="bold">62% of Clinical Decision Support (CDS) malfunctions were attributable
+          to changes in underlying codes or data fields</emphasis>
         <itemizedlist>
           <listitem>
             <para>Change is a constant feature of providing healthcare.</para>
@@ -271,11 +273,11 @@
       <listitem>
         <para>Self-describing in a machine-readable representation of terminology such that if an
           application can process the metadata, it should be able to import the content/concepts and
-          present make it available to enterprise applications.</para>
+          make it available to enterprise applications.</para>
       </listitem>
       <listitem>
-        <para>The machine-readable terminology could to generate human-readable documentation, so
-          that business analysts, developers can understand and apply it correctly.</para>
+        <para>The machine-readable terminology could generate human-readable documentation, so that
+          business analysts and developers can understand and apply it correctly.</para>
       </listitem>
     </orderedlist>
   </section>

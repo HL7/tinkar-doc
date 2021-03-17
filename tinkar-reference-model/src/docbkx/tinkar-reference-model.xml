@@ -109,7 +109,7 @@
             than one UUID in the case of a concept being derived from multiple sources. For example,
             the concept Acetaminophen (which exists in SNOMED, LOINC, and RxNorm) would have a UUID
             from each terminology and be represented as an array of UUID's for this single concept
-            within a TINKAR implementation. </para>
+            within a Tinkar implementation. </para>
         <para>To assemble groups of assertions and to provide information about Concepts, Tinkar
             uses a construct called a <emphasis role="bold">Semantic</emphasis>. A Semantic is a
             collection of values that supports the specification of value sets, compositional

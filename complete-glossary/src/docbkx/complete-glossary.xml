@@ -34,18 +34,18 @@
                 <row>
                     <entry>Terminology</entry>
                     <entry>A set of concept identifiers, descriptors, and relationships for use in
-                        capturing domain information in an information system</entry>
+                        capturing domain information in an information system.</entry>
                 </row>
                 <row>
                     <entry>Standard terminology</entry>
                     <entry>A terminology developed and published for use across organizational
-                        boundaries</entry>
+                        boundaries.</entry>
                 </row>
                 <row>
                     <entry>Enterprise terminology</entry>
                     <entry>The set of terminology assets that are specific to and maintained by a
                         healthcare organization, including, e.g., locations and services and their
-                        relationships to standard terminologies</entry>
+                        relationships to standard terminologies.</entry>
                 </row>
                 <row>
                     <entry>Branch</entry>
@@ -55,7 +55,7 @@
                 <row>
                     <entry>STAMP – (status, time, author, module, path)</entry>
                     <entry>The precise version coordinates that govern granular change control for
-                        Tinkar assets </entry>
+                        Tinkar assets. </entry>
                 </row>
                 <row>
                     <entry>Path</entry>
@@ -66,7 +66,7 @@
                 <row>
                     <entry>Coordinate</entry>
                     <entry>A dimension of context in which a user wishes to view terminology
-                        assets</entry>
+                        assets.</entry>
                 </row>
                 <row>
                     <entry>Publish</entry>
@@ -101,7 +101,7 @@
                 </row>
                 <row>
                     <entry>Infrastructure concepts</entry>
-                    <entry>Foundational assets that are concepts</entry>
+                    <entry>Foundational assets that are concepts.</entry>
                 </row>
                 <row>
                     <entry>Separation of Concerns</entry>
