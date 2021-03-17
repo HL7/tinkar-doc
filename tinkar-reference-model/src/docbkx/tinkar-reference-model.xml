@@ -3,8 +3,8 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Tinkar Reference Model</title>
     <para>This section describes classes of objects that support a common foundational framework for
-        terminology and knowledge base systems (e.g. SNOMED CT, LOINC<sup>®</sup>, RxNorm, HL7,
-        etc.). </para>
+        terminology and knowledge base systems (e.g. SNOMED CT, LOINC<superscript>®</superscript>,
+        RxNorm, HL7, etc.). </para>
     <para>Model Representation - The Tinkar Reference Model is a logical model described herein
         using the Object Management Group (OMG) Unified Modeling Language (UML) 2.0 notation to
         describe the structure of integrated data representation and change management for

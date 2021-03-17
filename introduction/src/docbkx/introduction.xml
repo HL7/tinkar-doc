@@ -7,30 +7,30 @@
       >[1]</link>. Acceleration and development of Electronic Health Record (EHR) systems has
     precipitated the emergence of “standard terminologies” and their widespread adoption in the
     clinical community. These include Systematized Nomenclature of Medicine Clinical Terms (SNOMED
-    CT), the Logical Observation Identifiers, Names, and Codes (LOINC<sup>®</sup>) and RxNorm. The
-    availability of these clinical terminologies through the terminology services of FHIR is
-    facilitating their usage in support of interoperability in healthcare. </para>
+    CT), the Logical Observation Identifiers, Names, and Codes (LOINC<superscript>®</superscript>)
+    and RxNorm. The availability of these clinical terminologies through the terminology services of
+    FHIR is facilitating their usage in support of interoperability in healthcare. </para>
   <para>Interoperability requires standardized semantics based on reference terminology provided by
     standards development organizations, professional organizations, or government agencies. These
     organizations publish their content with the intention of licensing it to health IT vendors,
     providers, and research organizations. In the U.S., the core clinical reference terminology is
-    based on SNOMED CT, LOINC<sup>®</sup>, and RxNorm. Healthcare organizations must adopt and
-    integrate subsets or modules of various reference terminology and manage references,
+    based on SNOMED CT, LOINC<superscript>®</superscript>, and RxNorm. Healthcare organizations must
+    adopt and integrate subsets or modules of various reference terminology and manage references,
     dependencies, versions, and releases. It is important for the integrity of medical records that
     the change history of concepts and value sets can be managed and tracked to allow the exchange
     of either current or retrospective health records. Therefore, enterprise terminology requires
     integrated terminology using a common representation and management.</para>
   <para>Despite the need to use standard terminologies in a highly integrated way, there is no
-    standard representation across SNOMED CT, LOINC<sup>®</sup>, RxNorm, etc. Some partnerships have
-    been created among development teams to facilitate interoperability and minimize duplication of
-    effort. Further integration has been proposed but will require additional resources to bring
-    these terminologies closer together. However, while this evolution leads to greater
-    compatibility and interoperability, integration of SNOMED CT, LOINC<sup>®</sup>, and RxNorm in
-    non-trivial as these terminologies have different semantics, models, and use different
-    formalisms and tools for their representation, have separate release cycles, and different
-    versioning mechanisms <link linkend="bib1">[1]</link>. While there is recognition that
-    terminology standards are not standardized at the exchange level, there is no consensus about
-    harmonized next steps to solve the challenges. </para>
+    standard representation across SNOMED CT, LOINC<superscript>®</superscript>, RxNorm, etc. Some
+    partnerships have been created among development teams to facilitate interoperability and
+    minimize duplication of effort. Further integration has been proposed but will require
+    additional resources to bring these terminologies closer together. However, while this evolution
+    leads to greater compatibility and interoperability, integration of SNOMED CT,
+      LOINC<superscript>®</superscript>, and RxNorm in non-trivial as these terminologies have
+    different semantics, models, and use different formalisms and tools for their representation,
+    have separate release cycles, and different versioning mechanisms <link linkend="bib1"
+      >[1]</link>. While there is recognition that terminology standards are not standardized at the
+    exchange level, there is no consensus about harmonized next steps to solve the challenges. </para>
   <para>In this document, we focus on the need for – and logical specification of – a Terminology
     Knowledge Architecture (Tinkar). Tinkar is intended to provide an architecture that delivers
     integrated terminology to the enterprise and its information systems, that addresses the
@@ -77,8 +77,9 @@
       >[1]</link>): “The benefits of the integrated terminologies in terms of homogenous semantics
     and inherent interoperability should, however, outweigh the complexity added to the system.”
     This specification provides the foundation of a knowledge architecture that is intended to
-    integrate reference terminology from distributors (e.g., SNOMED CT, LOINC<sup>®</sup>, RxNorm)
-    with local concepts to support interoperable information semantics across the enterprise. </para>
+    integrate reference terminology from distributors (e.g., SNOMED CT,
+      LOINC<superscript>®</superscript>, RxNorm) with local concepts to support interoperable
+    information semantics across the enterprise. </para>
   <section>
     <title>Motivation: Why Tinkar?</title>
     <para>Information systems that are used across the healthcare enterprise record and manage
@@ -161,8 +162,8 @@
               <listitem>
                 <para>Incorrect usage or representation of clinical ideas/concepts from standard
                   terminologies due to a lack of harmonization and multiple representations that
-                  currently exist (e.g., LOINC<sup>®</sup> and SNOMED have overlapping
-                  concepts).</para>
+                  currently exist (e.g., LOINC<superscript>®</superscript>, and SNOMED have
+                  overlapping concepts).</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -252,7 +253,7 @@
           </row>
           <row>
             <entry>SNOMED CT’s proprietary aspects prevents use as a common format for
-                LOINC<sup>®</sup> and similar</entry>
+                LOINC<superscript>®</superscript> and similar</entry>
             <entry>Build on existing SNOMED CT foundation, rather than reinvent, using an opensource
               initiative approved permissive licenses (i.e., Apache 2) </entry>
           </row>
@@ -263,8 +264,9 @@
   <section>
     <title>About Tinkar</title>
     <para>Tinkar provides the foundation of a knowledge architecture that is intended to integrate
-      reference terminology from distributors (e.g., SNOMED CT, LOINC<sup>®</sup>, RxNorm) with
-      local concepts to support interoperable information semantics across the enterprise.</para>
+      reference terminology from distributors (e.g., SNOMED CT, LOINC<superscript>®</superscript>,
+      RxNorm) with local concepts to support interoperable information semantics across the
+      enterprise.</para>
     <para>This specification introduces an agile approach to terminology design and formatting that
       promotes the use of self-describing data. It is a shift from hard-coded models that have been
       favored due to their prescriptive nature but have shown limited flexibility and extensibility.
@@ -315,7 +317,7 @@
         <para>Data analysis and research require integrated terminology to analyze aggregated
           information. Interoperability, clinical decision support, or other types of automation
           require common semantics based on a set of integrated models across reference standards
-          (e.g. SNOMED CT, LOINC<sup>®</sup>, RxNorm, etc.)</para>
+          (e.g. SNOMED CT, LOINC<superscript>®</superscript>, RxNorm, etc.)</para>
       </listitem>
     </itemizedlist>
     <para>Tinkar is intended to provide an architecture that delivers integrated terminology to the
@@ -424,8 +426,8 @@
       <emphasis role="bold">Terminology Knowledge </emphasis>- The Terminology Knowledge layer is
       responsible for structured sets of medical terms and codes that <emphasis>define</emphasis>
       concepts of interest, including descriptions, dialects, language, and semantic hierarchy.
-      SNOMED CT, LOINC<sup>®</sup>, and RxNorm are part of this layer. It defines what valid codes
-      or expressions may be used by higher level layers </para>
+      SNOMED CT, LOINC<superscript>®</superscript>, and RxNorm are part of this layer. It defines
+      what valid codes or expressions may be used by higher level layers </para>
     <para><emphasis role="bold">Statement Model</emphasis> – The Statement Model layer is
       responsible for defining how data elements are combined to create a statement. This layer
       reuses the artifacts defined in the Terminology Knowledge layer. The ANF Reference Model <link
@@ -496,9 +498,9 @@
       management model. This terminology can be unified for HL7 and non-HL7 systems. The Terminology
       Knowledge Architecture known as Tinkar treats terminology in a common way for managing
       enhanced patient care and improved record keeping. The unification of models such as SNOMED,
-        LOINC<sup>®</sup>, and RxNorm will allow more robust computable medical records. The
-      following sections contain the Tinkar Reference Model, along with illustrative examples as to
-      the complexity and necessity of type of structure. </para>
+        LOINC<superscript>®</superscript>, and RxNorm will allow more robust computable medical
+      records. The following sections contain the Tinkar Reference Model, along with illustrative
+      examples as to the complexity and necessity of type of structure. </para>
     <para>The following chapters enumerate the business requirements for Tinkar followed by chapters
       containing the Tinkar Reference Model and examples of terminology content. Finally, we discuss
       implications of Tinkar on data quality, clinical decision support and patient safely and

@@ -615,7 +615,7 @@
                 <listitem><emphasis role="underline">Import rules</emphasis> to support import of
                     standard terminologies, including<itemizedlist>
                         <listitem><emphasis role="underline">Equivalences</emphasis> to support
-                            semantic integration of terminologies (e.g., that a LOINC<sup>®</sup> “system”
+                            semantic integration of terminologies (e.g., that a LOINC<superscript>®</superscript> “system”
                             instantiates the same relationship concept as the SNOMED CT “inheres in”
                             attribute)</listitem>
                         <listitem><emphasis role="underline">Exclusions</emphasis> to support
@@ -695,7 +695,8 @@
                             Concept Model (MRCM)</para>
                     </listitem>
                     <listitem>
-                        <para>LOINC<sup>®</sup> properties published in [Access | RELMA | Parts table]</para>
+                        <para>LOINC<superscript>®</superscript> properties published in [Access |
+                            RELMA | Parts table]</para>
                     </listitem>
                     <listitem>
                         <para>RxNorm properties </para>

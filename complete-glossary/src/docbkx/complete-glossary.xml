@@ -147,7 +147,7 @@
                     <entry>Komet (Knowledge Management Environment)</entry>
                     <entry>
                         <para>Komet is an example implementation of the Tinkar model, and shows how
-                            terminologies like SNOMED, LOINC<sup>®</sup>, RxNorm shall be represented. Using
+                            terminologies like SNOMED, LOINC<superscript>®</superscript>, RxNorm shall be represented. Using
                             the Komet browser we can view &amp; search concepts, view concept
                             details, and navigate hierarchies among many other functions.</para>
                     </entry>

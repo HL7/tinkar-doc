@@ -7,16 +7,16 @@
     <para>This section includes user documentation for an example implementation of the Terminology
         Knowledge Base standard, referred to as Komet (<link
             xlink:href="https://github.com/logicahealth/komet"/>), and how various terminologies,
-        such as SNOMED, LOINC<sup>®</sup>, RxNorm, and HL7 terminologies shall be reproducibly
-        represented using the Terminology Knowledge Base standard. Using the Komet browser we can
-        view the search concepts, view the concept details, and navigate hierarchies among many
-        other functions that are outside the scope of this ballot.</para>
+        such as SNOMED, LOINC<superscript>®</superscript>, RxNorm, and HL7 terminologies shall be
+        reproducibly represented using the Terminology Knowledge Base standard. Using the Komet
+        browser we can view the search concepts, view the concept details, and navigate hierarchies
+        among many other functions that are outside the scope of this ballot.</para>
   <section>
       <title>Concept Detail</title>
-      <para>Below we see the details for the LOINC<sup>®</sup> concept Homocystine [Mass/time] in 24
-            hour Urine. You can see the LOINC<sup>®</sup> ID, data from the LOINC<sup>®</sup> table,
-            Solor assigned Names, and relationships from the LOINC<sup>®</sup> - SNOMED CT
-            Cooperation Project. <figure>
+      <para>Below we see the details for the LOINC<superscript>®</superscript> concept Homocystine
+            [Mass/time] in 24 hour Urine. You can see the LOINC<superscript>®</superscript> ID, data
+            from the LOINC<superscript>®</superscript> table, Solor assigned Names, and
+            relationships from the LOINC<superscript>®</superscript>- SNOMED CT Cooperation Project. <figure>
                 <title>Concept Details</title>
                 <mediaobject>
                     <imageobject>
@@ -29,8 +29,8 @@
                 </caption>
             </figure>
         </para>
-      <para>In the following image we can see the latest STAMP information for the LOINC<sup>®</sup>
-            concept Homocystine [Mass/time] in 24 hour Urine. <figure>
+      <para>In the following image we can see the latest STAMP information for the
+                LOINC<superscript>®</superscript> concept Homocystine [Mass/time] in 24 hour Urine. <figure>
                 <title>STAMP</title>
                 <mediaobject>
                     <imageobject>
@@ -59,11 +59,11 @@
   </section>
     <section>
         <title>Navigator View</title>
-        <para>In this example we see the results of combining the LOINC<sup>®</sup> - SNOMED CT
-            Cooperation Project module with the latest SNOMED CT and LOINC<sup>®</sup> releases. You
-            can then visualize and navigate the SNOMED CT hierarchy and arrive at associated
-                LOINC<sup>®</sup> codes that would be reached by the Urine homocystine measurement
-            concept. <figure>
+        <para>In this example we see the results of combining the LOINC<superscript>®</superscript>-
+            SNOMED CT Cooperation Project module with the latest SNOMED CT and
+                LOINC<superscript>®</superscript> releases. You can then visualize and navigate the
+            SNOMED CT hierarchy and arrive at associated LOINC<superscript>®</superscript> codes
+            that would be reached by the Urine homocystine measurement concept. <figure>
                 <title>Navigation View</title>
                 <mediaobject>
                     <imageobject>
@@ -156,54 +156,58 @@
         </para>
     </section>
     <section>
-        <title>LOINC<sup>®</sup> Example</title>
+        <title>LOINC<superscript>®</superscript> Example</title>
         <para>
             <figure>
-                <title>LOINC<sup>®</sup> Concept</title>
+                <title>LOINC<superscript>®</superscript> Concept</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_concept.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<sup>®</sup> Concept</emphasis></para>
+                    <para><emphasis role="italics">LOINC<superscript>®</superscript>
+                            Concept</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>LOINC<sup>®</sup> Descriptions</title>
+                <title>LOINC<superscript>®</superscript>Descriptions</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_desc.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<sup>®</sup> Descriptions</emphasis></para>
+                    <para><emphasis role="italics"
+                            >LOINC<superscript>®</superscript>Descriptions</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>LOINC<sup>®</sup> Inferred Relationships</title>
+                <title>LOINC<superscript>®</superscript>Inferred Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels1.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<sup>®</sup> Inferred Relationships</emphasis></para>
+                    <para><emphasis role="italics">LOINC<superscript>®</superscript>Inferred
+                            Relationships</emphasis></para>
                 </caption>
             </figure>
             <figure>
-                <title>LOINC<sup>®</sup> Stated Relationships</title>
+                <title>LOINC<superscript>®</superscript> Stated Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels2.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<sup>®</sup> Stated Relationships</emphasis></para>
+                    <para><emphasis role="italics">LOINC<superscript>®</superscript>Stated
+                            Relationships</emphasis></para>
                 </caption>
             </figure>
         </para>
