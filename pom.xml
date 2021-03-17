@@ -204,6 +204,7 @@
 <!--DocBook Integration Dependencies-->
       <module>doc-logging</module>
       <module>docbook-customization</module>
+      <module>document-prepend</module>
    </modules>
    <profiles>
       <profile>

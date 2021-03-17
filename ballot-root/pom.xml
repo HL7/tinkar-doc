@@ -189,6 +189,25 @@
                </execution>
             </executions>
          </plugin>
+         <plugin>
+            <groupId>io.solor.tinkar-doc</groupId>
+            <artifactId>document-prepend</artifactId>
+            <version>${project.version}</version>
+            <executions>
+               <execution>
+                  <id>PrependDocument</id>
+                  <phase>prepare-package</phase>
+                  <configuration>
+                     <sourcePath>${project.build.directory}/site/docbook/ballot-root.pdf</sourcePath>
+                     <sourceXEPPath>${project.build.directory}/site/docbook/ballot-root.xep.pdf</sourceXEPPath>
+                     <coverPath>${project.build.directory}/../../document-storage/Tinkar-Title.pdf</coverPath>
+                  </configuration>
+                  <goals>
+                     <goal>prependdocument</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
       </plugins>
    </build>
 </project>
