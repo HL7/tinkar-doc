@@ -2,13 +2,18 @@
 <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Tinkar Reference Model</title>
-    <para>This section describes classes of objects that support a common foundational framework for
-        terminology and knowledge base systems (e.g. SNOMED CT, LOINC<superscript>®</superscript>,
-        RxNorm, HL7, etc.). </para>
-    <para>Model Representation - The Tinkar Reference Model is a logical model described herein
-        using the Object Management Group (OMG) Unified Modeling Language (UML) 2.0 notation to
+    <para>The Tinkar Reference Model is a logical model described herein using the <emphasis>Object
+            Management Group (OMG) Unified Modeling Language (UML) 2.0</emphasis> notation to
         describe the structure of integrated data representation and change management for
-        biomedical terminologies. </para>
+        biomedical terminologies.  Tinkar provides an architecture that delivers integrated
+        terminology to the enterprise and its information systems. In doing so, it addresses the
+        differences in management and structure across reference terminology, local concepts, and
+        code lists/value sets. This section describes classes of objects that support a common
+        foundational framework for terminology and knowledge base systems (e.g. SNOMED CT,
+            LOINC<superscript>®</superscript>, RxNorm, HL7, etc.). A Tinkar Specification could
+        provide a single representation for all terminologies required in the U.S. to support the
+        operation of a variety of systems intended to deliver knowledge management for terminology
+        to vendors providers, and standards-development organizations like HL7.</para>
     
     <section>
         <title>Standard Class Model</title>
@@ -65,10 +70,10 @@
             </orderedlist>
         </para>
                     <para>These elements together are referred to by the acronym “<emphasis
-                role="bold">STAMP</emphasis>”. Every new assertion, whether a new component or a
-            change to an existing component, must have a STAMP in order to determine when it is to
-            be used. The STAMP properties support the ability to apply terminology components for
-            specific purposes. For example, <itemizedlist>
+                role="bold">STAMP</emphasis>”, as described previously. Every new assertion, whether
+            a new component or a change to an existing component, must have a STAMP in order to
+            determine when it is to be used. The STAMP properties support the ability to apply
+            terminology components for specific purposes. For example, <itemizedlist>
                 <listitem>
                     <para>“Path” can be used to test provisional content without physically swapping
                         out systems.</para>
@@ -98,19 +103,25 @@
     <section>
         <title>Component Types</title>
         <para>
-            <mediaobject>
-                <imageobject>
-                    <imagedata fileref="Identified_Componentsv2.png" scalefit="1" width="100%"
-                        contentdepth="100%"/>
-                </imageobject>
-            </mediaobject>
+            <figure>
+                <title>Component Types</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Identified_Componentsv2.png" scalefit="1" width="100%"
+                            contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Component Types</emphasis></para>
+                </caption>
+            </figure>
         </para>
         <para>All Components in Tinkar are uniquely identified using UUIDs. A Component will be
             represented by an array of UUID's with at least one UUID, but can be represented by more
             than one UUID in the case of a concept being derived from multiple sources. For example,
-            the concept Acetaminophen (which exists in SNOMED, LOINC, and RxNorm) would have a UUID
-            from each terminology and be represented as an array of UUID's for this single concept
-            within a Tinkar implementation. </para>
+            the concept Acetaminophen (which exists in SNOMED CT, LOINC, and RxNorm) would have a
+            UUID from each terminology, and be represented as an array of UUIDs for this single
+            concept within a Tinkar implementation. </para>
         <para>To assemble groups of assertions and to provide information about Concepts, Tinkar
             uses a construct called a <emphasis role="bold">Semantic</emphasis>. A Semantic is a
             collection of values that supports the specification of value sets, compositional
@@ -137,7 +148,7 @@
             as of the prior time, if no other STAMP element has changed) will see the old values;
             users viewing the Concept and associated Semantics in the new context will see the new
             values.</para>
-        <para>Since it is versioned, a Semantic is manifest as a <emphasis role="bold"
+        <para>Since it is versioned, a Semantic is manifested as a <emphasis role="bold"
                 >SemanticChronology</emphasis>, containing a set of <emphasis role="bold"
                 >SemanticVersions</emphasis>. Concepts, too, are manifest as collections: a
                 <emphasis role="bold">ConceptChronology</emphasis> consisting of a set of <emphasis
@@ -158,7 +169,7 @@
                 <listitem>
                     <para>String - a sequence of characters, either as a literal constant or as a
                         variable. Strings could be used to represent terms from code systems or
-                        things like URLs, textual definitions, etc.</para>
+                        URLs, textual definitions, etc.</para>
                 </listitem>
                 <listitem>
                     <para>Integer - data type that represents some range of mathematical
@@ -178,7 +189,7 @@
                 </listitem>
                 <listitem>
                     <para>Directed Graph or Digraph - a graph whose edges are ordered pairs of
-                        vertices. That is, each edge can be followed from one vertex to another
+                        vertices. Each edge can be followed from one vertex to another
                         vertex.</para>
                 </listitem>
                 <listitem>
@@ -231,10 +242,12 @@
             </figure>
         </para>
         <?oxy_comment_start author="timowilliams" timestamp="20210202T170910-0600" comment="inserting an image would be helpful here"?>
-        <para>Using this mechanism Semantics of varying structures can be defined using the
-            TypePattern. The TypePattern is used to define each field as to what its purpose, data
-            type, and meaning. For example, if a field within a semantic is used to describe an
-            SDO's website, the Meaning would be "URL, DataType of "String", and Purpose of
+        <para>Using this
+            <?oxy_comment_start author="rcholan" timestamp="20210320T105152-0400" comment="Wording is a little confusing"?>mechanism
+            Semantics <?oxy_comment_end?>of varying structures can be defined using the TypePattern.
+            The TypePattern is used to define each field as to what its purpose, data type, and
+            meaning. For example, if a field within a semantic is used to describe an SDO's website,
+            the Meaning would be "URL, DataType of "String", and Purpose of
             "Website".<?oxy_comment_end?> The TypePattern would then contain an array of these
             FieldDefinitions.</para>
     </section>
@@ -252,7 +265,7 @@
                     <para><emphasis role="italics">Overall Tinkar Architecture</emphasis></para>
                 </caption>
             </figure></para>
-        <para>Class Definitions: </para>
+        <para><emphasis role="bold">Class Definitions: </emphasis></para>
         <para><emphasis role="bold">Concept</emphasis> - An identifier for a concept or instance.
             The identifier contains no information; all information specifying or describing the
             concept is asserted with Semantics.</para>
@@ -278,7 +291,7 @@
     <section>
         <title>Coordinate</title>
         <para>Tinkar supports and encourages the storage of time series data that utilizes multiple
-            dimensions, for example: STAMP, Language, Dialect, clinical domains, etc. The ability to
+            dimensions, for example, STAMP, Language, Dialect, clinical domains, etc. The ability to
             efficiently search, display, and navigate concepts and semantics requires the ability to
             calculate combinations of content based on one or more of these different dimensions. </para>
         <para><?oxy_comment_start author="rcholan" timestamp="20210317T164638-0400" comment="Add brief high-level definition/explanation of versioned graphi and how it would be used. "?>A<?oxy_comment_end?>
@@ -294,13 +307,13 @@
                         <?oxy_comment_start author="rcholan" timestamp="20210315T201119-0400" comment="STAMP coordinates are the most basic type of coordinate on which content should be filtered. ?"?>that<?oxy_comment_end?>
                         all content should be filtered. Example of STAMP coordinates are:<itemizedlist>
                             <listitem>
-                                <para>most recent version</para>
+                                <para>Most recent version</para>
                             </listitem>
                             <listitem>
-                                <para>set of data from several versions</para>
+                                <para>Set of data from several versions</para>
                             </listitem>
                             <listitem>
-                                <para>all active components only</para>
+                                <para>All active components only</para>
                             </listitem>
                         </itemizedlist></para>
                 </listitem>
@@ -308,10 +321,10 @@
                     <para>Language coordinates are used to control the terms that should be
                         displayed. Examples of Language coordinates are:<itemizedlist>
                             <listitem>
-                                <para>displaying terms based on a language and/or dialect</para>
+                                <para>Displaying terms based on a language and/or dialect</para>
                             </listitem>
                             <listitem>
-                                <para>prioritized list of synonyms based on a particular clinical
+                                <para>Prioritized list of synonyms based on a particular clinical
                                     domain</para>
                             </listitem>
                         </itemizedlist></para>
@@ -319,7 +332,7 @@
                 <listitem>
                     <para>Logic coordinates are used to identify the various results from
                         Description Logic Classifiers as well as the different versions of the
-                        output over time.</para>
+                        output over time:</para>
                     <itemizedlist>
                         <listitem>
                             <para>Result from various Description Logic Classifiers</para>
@@ -348,26 +361,27 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>Identify the Module(s) you would like to view/search/modify.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Identify the Path you would like to view/search/modify.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Identify the Status or Statuses you would like to
+                        <para>Identify the Module(s) the user would like to
                             view/search/modify.</para>
                     </listitem>
                     <listitem>
-                        <para>If relevant, identify the Author(s) you would like to
+                        <para>Identify the Path the user would like to view/search/modify.</para>
+                    </listitem>
+                    <listitem>
+                        <para>Identify the Status or Statuses the user would like to
+                            view/search/modify.</para>
+                    </listitem>
+                    <listitem>
+                        <para>If relevant, identify the Author(s) the user would like to
                             view/search/modify.</para>
                     </listitem>
                     <listitem>
                         <para>The last piece of the STAMP coordinate (time) is the most difficult to
-                            calculate. In most cases you will need to find the most recent version
-                            of the component as of the current time to calculate this point of the
-                            coordinate. However, since Tinkar supports and encourages the
-                            representation of historical, you may need to calculate the most recent
-                            version as of a different point in time. </para>
+                            calculate. In most cases the user will need to find the most recent
+                            version of the component as of the current time to calculate this point
+                            of the coordinate. However, since Tinkar supports and encourages the
+                            representation of historical, the user may need to calculate the most
+                            recent version as of a different point in time. </para>
                     </listitem>
                 </itemizedlist>
             </para>

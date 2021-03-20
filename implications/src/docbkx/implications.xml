@@ -8,7 +8,7 @@
         models and technology. This section will focus on the use of Tinkar alongside preexisting
         HL7 exchange standards. In practice, the Tinkar logical model can be used to create
         practical implementation guidance in the future (e.g., implementation guides, profiles,
-        value sets) and can be applied to design change management solutions.</para>
+        value sets), and can be applied to design change management solutions.</para>
     <section>
         <title>Tinkar Serialization Data</title>
         <para>Tinkar will include a serialization format that will serialize any or all the
@@ -18,7 +18,7 @@
             that no Tinkar data is lost. </para>
         <para>C# and Java code implementations of the Tinkar Data Model will be made available to
             integrators allowing third parties to more easily use the Tinkar.</para>
-        <para>Specifically, third party implementers can in java or C3</para>
+        <para>Specifically, third party implementers can in java or C3:</para>
         <orderedlist>
             <listitem>
                 <para>Read Tinkar data into memory.</para>
@@ -40,12 +40,12 @@
         <para>Tinkar data items lost in FHIR conversion:</para>
         <orderedlist>
             <listitem>
-                <para>STAMP data. Loss of the Stamp data means that the ability to look at a
+                <para>STAMP data: Loss of the Stamp data means that the ability to look at a
                     terminology at specific point in time is lost. The FHIR data is a snapshot at a
                     fixed point in time.</para>
             </listitem>
             <listitem>
-                <para>Semantic data. FHIR data does not contain a concept similar to Tinkar’s
+                <para>Semantic data: FHIR data does not contain a concept similar to Tinkar’s
                     semantic relationships. </para>
             </listitem>
         </orderedlist>
@@ -77,7 +77,7 @@
             generated.</para>
         <para>It is expected that some automated means of creating FHIR ValueSet and CodeSystem
             records from Tinkar will be developed. The automated system could import data from a
-            Tinkar system using the serialization format described above and output desired
+            Tinkar system using the serialization format described above, and output desired
             CodeSystem and ValueSet instances. Modifications to the Tinkar data would require
             regeneration of the FHIR artifacts and subsequent transmission to interested users of
             those resource instances.</para>
@@ -92,11 +92,11 @@
                     <para><emphasis role="bold">Unified Terminology Governance (UTG)</emphasis>: A
                         process with associated tooling to support the process strictly for
                         governance of HL7 terminological content. UTG is the maintenance process to
-                        keep it up to date in and manage change. </para>
+                        keep it up to date and manage change. </para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">HL7 terminological content (THO)</emphasis>: HL7
-                        Terminological content; refers to <emphasis role="underline"
+                        Terminological content refers to <emphasis role="underline"
                             >t</emphasis>erminology.<emphasis role="underline"
                             >h</emphasis>L7.<emphasis role="underline">o</emphasis>rg (THO) which is
                         the domain address of the entry point for the published content. HL7
@@ -113,10 +113,10 @@
         </para>
         <para>The aim of these HL7 groups, to provide standardized HL7 terminology in a consistent
             format, is similar to the goal of Tinkar.</para>
-        <para>If HL7 so desired, Tinkar could be used as the format by which all HL7 terminology
-            content could be exported. It is believed that current HL7 content can be converted to
-            Tinkar with no loss; further work would need to be done to verify that if HL7 was
-            interested in that path.</para>
+        <para>If HL7 so desired, Tinkar could be used as the format by which all HL7 terminology is
+            exported. It is believed that current HL7 content can be converted to Tinkar with no
+            loss; further work would need to be done to verify that if HL7 was interested in that
+            path.</para>
         <para>Conversion of HL7 common terminology data to Tinkar would allow:</para>
         <orderedlist>
             <listitem>

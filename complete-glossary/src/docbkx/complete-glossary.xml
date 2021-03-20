@@ -8,30 +8,6 @@
             <colspec colnum="2" colname="col2"/>
             <tbody>
                 <row>
-                    <entry>Tinkar</entry>
-                    <entry>Terminology Knowledge Architecture (Tinkar) is intended to provide an
-                        architecture that delivers integrated terminology to the enterprise and its
-                        information systems, that addresses the differences in management and
-                        structure across reference terminology and with local concepts and code
-                        lists/value sets.</entry>
-                </row>
-                <row>
-                    <entry>
-                        <para>Tinkar Reference Model</para>
-                        <para> </para>
-                    </entry>
-                    <entry>A logical model that describes the standardized model for terminology and
-                        change management.</entry>
-                </row>
-                <row>
-                    <entry>
-                        <para>Logical Model</para>
-                        <para> </para>
-                    </entry>
-                    <entry>A model expressed independently of a particular implementation
-                        technology.</entry>
-                </row>
-                <row>
                     <entry>Terminology</entry>
                     <entry>A set of concept identifiers, descriptors, and relationships for use in
                         capturing domain information in an information system.</entry>
@@ -44,13 +20,37 @@
                 <row>
                     <entry>Enterprise terminology</entry>
                     <entry>The set of terminology assets that are specific to and maintained by a
-                        healthcare organization, including, e.g., locations and services and their
+                        healthcare organization, including, locations and services and their
                         relationships to standard terminologies.</entry>
                 </row>
                 <row>
-                    <entry>Branch</entry>
-                    <entry> A common synonym for “path.” “Branch” implies an acyclical graph, which
-                        is inaccurate, but it is widely used. </entry>
+                    <entry>Tinkar</entry>
+                    <entry>Terminology Knowledge Architecture (Tinkar) is intended to provide an
+                        architecture that delivers integrated terminology to the enterprise and its
+                        information systems that addresses the differences in management and
+                        structure across reference terminology, and with local concepts and code
+                        lists/value sets.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Logical Model</para>
+                        <para> </para>
+                    </entry>
+                    <entry>A model expressed independently of a particular implementation
+                        technology.</entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>Tinkar Reference Model</para>
+                        <para> </para>
+                    </entry>
+                    <entry>A logical model that describes the standardized model for terminology and
+                        change management.</entry>
+                </row>
+                <row>
+                    <entry>Coordinate</entry>
+                    <entry>A dimension of context in which a user wishes to view terminology
+                        assets.</entry>
                 </row>
                 <row>
                     <entry>STAMP – (status, time, author, module, path)</entry>
@@ -64,9 +64,9 @@
                         they can be “merged” with other paths as well.</entry>
                 </row>
                 <row>
-                    <entry>Coordinate</entry>
-                    <entry>A dimension of context in which a user wishes to view terminology
-                        assets.</entry>
+                    <entry>Branch</entry>
+                    <entry> A common synonym for “path.” “Branch” implies an acyclical graph, which
+                        is inaccurate, but it is widely used. </entry>
                 </row>
                 <row>
                     <entry>Publish</entry>
@@ -107,9 +107,9 @@
                     <entry>Separation of Concerns</entry>
                     <entry>A design principle that allows a complete system to be subdivided into
                         distinct sections or components with well-defined functionality and
-                        dependencies. This approach allows individual sections to be able to be
-                        reused, as well as worked on and updated independently to address new
-                        requirements and use cases.</entry>
+                        dependencies. This approach allows individual sections to be reused, as well
+                        as worked on and updated independently to address new requirements and use
+                        cases.</entry>
                 </row>
                 <row>
                     <entry>
@@ -119,7 +119,7 @@
                     <entry>The Foundation layer of the Knowledge Architecture provides the common
                         elements of interoperability such as object identity, versioning,
                         modularity, and knowledge representation. It includes the foundation and
-                        building blocks of the common model; and how the modules of the architecture
+                        building blocks of the common model and how the modules of the architecture
                         are tightly version controlled over time.</entry>
                 </row>
                 <row>
@@ -127,9 +127,9 @@
                         <para>Terminology Knowledge Layer of Knowledge Architecture </para>
                         <para> </para>
                     </entry>
-                    <entry>The Terminology Knowledge layer of the Knowledge Architecture provides
+                    <entry>The Terminology Knowledge Layer of the Knowledge Architecture provides
                         structured sets of medical terms and codes that define concepts of interest,
-                        including descriptions, dialects, language, and semantic hierarchy. SNOMED
+                        including, descriptions, dialects, language, and semantic hierarchy; SNOMED
                         CT, LOINC<superscript>®</superscript>, and RxNorm are part of this
                         layer.</entry>
                 </row>
@@ -138,25 +138,34 @@
                         <para>Solor</para>
                         <para> </para>
                     </entry>
-                    <entry>A project sponsored by the VA and Logica Health that represents and
-                        brings together terminology standards in a single model that can encompass
-                        any customized content. Solor allows informaticists and developers to
-                        convert user-supplied terminologies into a single model using open-source
-                        software to produce Solor content.</entry>
+                    <entry>A project sponsored by the Department of Veterans Affairs (VA) and Logica
+                        Health that represents and brings together terminology standards in a single
+                        model that can encompass any customized content. Solor allows informaticists
+                        and developers to convert user-supplied terminologies into a single model
+                        using open-source software to produce Solor content.</entry>
                 </row>
                 <row>
                     <entry>Komet (Knowledge Management Environment)</entry>
                     <entry>
                         <para>Komet is an example implementation of the Tinkar model, and shows how
-                            terminologies like SNOMED, LOINC<superscript>®</superscript>, RxNorm shall be represented. Using
-                            the Komet browser we can view &amp; search concepts, view concept
-                            details, and navigate hierarchies among many other functions.</para>
+                            terminologies like SNOMED, LOINC<superscript>®</superscript>, RxNorm
+                            shall be represented. Using the Komet browser we can view and search
+                            concepts, view concept details, and navigate hierarchies, among many
+                            other functions.</para>
                     </entry>
                 </row>
                 <row>
                     <entry>UML (Unified Modeling Language)</entry>
-                    <entry>An OMG specification defining a graphical language for specifying and
-                        documenting the artifacts of systems.</entry>
+                    <entry>
+                        <para>The Object Management Group (OMG) Unified Modeling Language (UML)
+                            specification defines a graphical language for specifying and
+                            documenting the artifacts of systems.</para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>UUID (universally unique identifier)</entry>
+                    <entry>A 128-bit number used to identify information in computer
+                        systems.</entry>
                 </row>
             </tbody>
         </tgroup>

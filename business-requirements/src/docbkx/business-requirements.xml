@@ -12,8 +12,8 @@
                 <emphasis role="underline">quality information in the patient record (2)</emphasis>,
             wherever it comes from, and the increasingly distributed nature of care requires that we
             use <emphasis role="underline">commonly understood data standards (3)</emphasis> to
-            ensure mutual comprehension across the care team and over time. We outline four clinical
-            use cases:</para>
+            ensure mutual comprehension across the care team and over time. There are four outlined
+            clinical use cases:</para>
             <informaltable>
                 <tgroup cols="1">
                     <colspec colnum="1" colname="col1"/>
@@ -94,18 +94,18 @@
             </informaltable>
             <para><emphasis role="italic">Table 1: Clinical Use Cases</emphasis></para>
             <para>The key capability for a clinician should be <emphasis role="underline">to record
-                    and review data quickly and accurately (5)</emphasis>, taking advantage of
-                up-to-date classifications and decision support rules. This should be accomplished
-                by knowing when a change in the knowledge base might affect a record. The change
-                management capability that supports these operations should be as unobtrusive as
-                possible to patients and care providers, but always readily available.</para>
+                and review data quickly and accurately (5)</emphasis>, taking advantage of
+            up-to-date classifications and decision support rules. This should be accomplished by
+            knowing when a change in the knowledge base might affect a record. The change management
+            capability that supports these operations should be as unobtrusive as possible to
+            patients and care providers, and always readily available.</para>
             <para>These operations depend on the availability not only of currently accurate
-                terminology assets, but also <emphasis role="underline">assets from prior points in
-                    time (12)</emphasis>. These may include assets as <emphasis role="underline"
-                    >defined or refined by different stakeholders (13)</emphasis> with different
-                sets of assumptions, e.g., whether a disorder meets a criterion defined by a
-                standard terminology, a payor, a professional society, or a locally chartered board
-                of specialists.</para>
+            terminology assets, but also <emphasis role="underline">assets from prior points in time
+                (12)</emphasis>. These may include assets as <emphasis role="underline">defined or
+                refined by different stakeholders (13)</emphasis> with different sets of
+            assumptions. For instance, whether a disorder meets a criterion defined by a standard
+            terminology, a payor, a professional society or a locally chartered board of
+            specialists.</para>
             <para>To support these needs, the Enterprise Terminology that supports the clinical
             systems must <emphasis role="underline">manage change systematically (14)</emphasis>,
             and it must do so for both internally managed and externally sourced assets. </para>
@@ -123,17 +123,18 @@
             their changes.</para>
         <para>There are best-practice capabilities in knowledge asset maintenance, and we propose to
             adopt them for clinical data standards. These include the following: [edited from
-            Architecture for Managing Knowledge Artifacts]</para>
+            <?oxy_comment_start author="rcholan" timestamp="20210320T095749-0400" comment="Ask Jay about Reference. Is this talking about the Walter Sujansky paper?"?>Architecture
+            for Managing Knowledge Artifacts<?oxy_comment_end?>]</para>
         <para>
             <itemizedlist>
                 <listitem>
-                    <para><emphasis role="underline">Unique object identification</emphasis>. Every
+                    <para><emphasis role="underline">Unique object identification</emphasis>: Every
                         object under version control must have a unique identifier, and the
                         identifier must remain unchanged as the object is modified and different
                         versions of it are created and saved. </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Version history retention</emphasis>. Each
+                    <para><emphasis role="underline">Version history retention</emphasis>: Each
                         version of an object must be persisted as the object changes over time,
                         along with meta-data indicating its [version identifier,] time of creation,
                         creating author, and branch of the version control system on which it was
@@ -141,7 +142,7 @@
                         retrieval and inspection.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Version comparison</emphasis>. It must be easy
+                    <para><emphasis role="underline">Version comparison</emphasis>: It must be easy
                         to compare two versions of the same object and identify all differences
                         between them. Among other things, this capability is important to determine
                         whether updates to a sub-artifact have changed its semantics in a way that
@@ -150,7 +151,7 @@
                         efforts involving the same knowledge artifacts.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Branching capabilities</emphasis>. It must be
+                    <para><emphasis role="underline">Branching capabilities</emphasis>: It must be
                         possible to create a virtual copy of the entire version-control repository,
                         or a defined subset, in a new “branch,” such that changes made to objects in
                         this branch do not appear in the original repository. This capability allows
@@ -161,7 +162,7 @@
                         system.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline">Merging capabilities</emphasis>. It must be
+                    <para><emphasis role="underline">Merging capabilities</emphasis>: It must be
                         possible to incorporate all of the changes made on one branch of the
                         version-control repository into another branch, such that any conflicts
                         between different versions of the same objects are detected and resolved.
@@ -242,7 +243,7 @@
                                 concept in between two existing concepts). Note that a standard can
                                 only be modified by the standard owner. A client enterprise may add
                                 to or modify the content in an "overlay," but those changes are part
-                                of the local enterprise assets. They don't actually modify the
+                                of the local enterprise assets. They do not actually modify the
                                 standard.</para>
                         </entry>
                     </row>
@@ -250,13 +251,13 @@
             </tgroup>
         </informaltable>
         <para><emphasis role="italic">Table 2: Asset Curation Use Cases</emphasis></para>
-        <para>A key difficulty comes in when we examine the publish and consume cases.
-            Today,clinical systems consume terminologies, but the interfaces are point-to-point. To
-            assert or assess new information, the tools must already understand all relevant
-            interface models. Since an external organization may modify that model at any time, the
-            ability to consume external assets involves ongoing manual efforts to understand or
-            confirm the model and the design of transformations to support consumption. This is
-            potentially expensive and risky.</para>
+        <para>A key difficulty comes in when we examine the publish and consume cases. Today,
+            clinical systems consume terminologies, but the interfaces are point-to-point. To assert
+            or assess new information the tools must already understand all relevant interface
+            models. Since an external organization may modify that model at any time, the ability to
+            consume external assets involves ongoing manual efforts to understand or confirm the
+            model and the design of transformations to support consumption. This is potentially
+            expensive and risky.</para>
         <para>We propose a “data-driven” architecture to support self-describing terminology assets.
             With a globally consistent design, all changes can be programmatically managed. That
             management may involve human review, but it can leverage pattern-based recognition of
@@ -276,6 +277,11 @@
         <para>The context information of the first requirement includes the following:</para>
         <orderedlist>
             <listitem>
+                <para>The <emphasis role="underline"> Status</emphasis> of the asset: whether it
+                    should be considered active or inactive in the context of these other attributes
+                    (20). </para>
+            </listitem>
+            <listitem>
                 <para>The <emphasis role="underline">Time</emphasis> of the change, specified with a
                     time zone and at an appropriate precision (21),</para>
             </listitem>
@@ -292,11 +298,6 @@
                 <para>The production branch of that organization, e.g., for distributed development,
                     testing, staging, or production (a.k.a., </para>
                 <emphasis role="underline">Path) (24), and</emphasis>
-            </listitem>
-            <listitem>
-                <para>The <emphasis role="underline"> Status</emphasis> of the asset: whether it
-                    should be considered active or inactive in the context of these other attributes
-                    (20). </para>
             </listitem>
         </orderedlist>
         <para>These elements together are referred to by the acronym “<emphasis role="bold"
@@ -325,15 +326,15 @@
         <para>Additionally, for an asset to support a record of changes, each <emphasis
                 role="underline">asset must itself be identifiable</emphasis> (25).</para>
         <para>The “single syntax” requirement is harder to satisfy. One approach would be to define
-            a syntax that addresses the data elements all known terminologies. This would be a very
-            heavy specification, difficult to maintain, and it would fail to capture new elements as
-            they are added in the future.</para>
+            a syntax that addresses the data elements all known terminologies. This would be a heavy
+            specification, difficult to maintain, and it would fail to capture new elements as they
+            are added in the future.</para>
         <para>The other approach is to use a “self-describing” or “meta-modeling” approach, where
-            the syntax defines not only the content but what the content means. “Rigid” or “brittle”
-            specifications determine in advance where information belongs: a database may use column
-            names to suggest what belongs in a column, but there is no way to determine whether the
-            name is a good one, or whether an instance value meets the criterion implied by the
-            name. But flexible specifications support data definition. XML (a subset of SGML)
+            the syntax defines not only the content but also what the content means. “Rigid” or
+            “brittle” specifications determine in advance where information belongs: a database may
+            use column names to suggest what belongs in a column, but there is no way to determine
+            whether the name is a good one, or whether an instance value meets the criterion implied
+            by the name. But flexible specifications support data definition. XML (a subset of SGML)
             provides a way to specify types of data and structural (not semantic) relationships. RDF
             goes one step further by making the relationship between an element and its containing
             class an explicit part of every triplet. If this relationship is specified in a
@@ -343,7 +344,7 @@
             sites. Furthermore, this logic specifies a “range” in the same syntactic structure as
             the instance assertion: changes to the knowledge base do not affect the syntactical
             representation of the knowledge. Systems that adopt this approach will require effort to
-            take advantage of new features of terminologies, but they won’t have to rebuild their
+            take advantage of new features of terminologies, but they will not have to rebuild their
             infrastructure when changes are made.</para>
         <para>Having change data in discrete tagged change sets will allow the software to hide most
             of the complexity of version management from the human managers, allowing them to focus
@@ -392,9 +393,9 @@
                 them.</para>
             <itemizedlist>
                 <listitem>
-                    <para>An addition is a new version with a new chronology UUID. Patterns may
-                        assert constraints for additions, which may be specific to context (Modules,
-                        Paths, Languages, etc.). </para>
+                    <para>An addition is a new version with a new chronology UUID (universally
+                        unique identifier) . Patterns may assert constraints for additions, which
+                        may be specific to context (Modules, Paths, Languages, etc.). </para>
                 </listitem>
                 <listitem>
                     <para>An inactivation is a new version of an existing chronology with status set
@@ -403,8 +404,9 @@
                 </listitem>
                 <listitem>
                     <para>A change is a new version of an existing chronology with the new value(s),
-                        distinguishable by STAMP value. A change may involve only a STAMP value,
-                        e.g., deactivation, or import of a concept to a new module or path.</para>
+                        distinguishable by STAMP value. A change may involve only a STAMP value. For
+                        example, deactivation, or import of a concept to a new module or
+                        path.</para>
                 </listitem>
             </itemizedlist>
             <para><emphasis role="bold">Classify</emphasis>: A user may select a logical profile and
@@ -436,10 +438,12 @@
                                 concept?<?oxy_comment_start author="rcholan" timestamp="20210317T162415-0400" comment="Need to resolve"?>)<?oxy_comment_end?></para>
                         </listitem>
                         <listitem>
-                            <para>A type (ditto)</para>
+                            <para>A type
+                                (ditto)<?oxy_comment_start author="rcholan" timestamp="20210320T101206-0400" comment="need to resolve"?></para><?oxy_comment_end?>
                         </listitem>
                         <listitem>
-                            <para>An audience (ditto)</para>
+                            <para>An audience
+                                (<?oxy_comment_start author="rcholan" timestamp="20210320T101213-0400" comment="need to resolve"?>ditto<?oxy_comment_end?>)</para>
                         </listitem>
                     </itemizedlist>
                 </listitem>
@@ -585,18 +589,18 @@
                 managing the presentation:</para>
             <itemizedlist>
                 <listitem>
-                    <para>Language. A user may assert a required or preferred language, or a set of
+                    <para>Language: A user may assert a required or preferred language, or a set of
                         ranked language priorities. </para>
                 </listitem>
                 <listitem>
-                    <para>Logic. A user may select the parameters for logical classification.</para>
+                    <para>Logic: A user may select the parameters for logical classification.</para>
                 </listitem>
                 <listitem>
-                    <para>Navigation. A user may select the parameters for presentation of the
+                    <para>Navigation: A user may select the parameters for presentation of the
                         logical classification </para>
                 </listitem>
             </itemizedlist>
-            <para>Like other concepts, these can be represented by the core data architecture; the
+            <para>Like other concepts, these can be represented by the core data architecture. The
                 application implementing Tinkar must be able to identify those concepts appropriate
                 for these uses.</para>
         </section>
@@ -630,24 +634,24 @@
                 <itemizedlist>
                     <para>Constraints are required to:<itemizedlist>
                             <listitem>
-                                <para>ensure that the appropriate level of detail for standard
+                                <para>Ensure that the appropriate level of detail for standard
                                     terminologies are represented within Tinkar</para>
                             </listitem>
                             <listitem>
-                                <para>if extensions are created that they conform to the
+                                <para>If extensions are created that they conform to the
                                     requirements of the standard(s) they are based upon</para>
                             </listitem>
                             <listitem>
-                                <para>perform general quality assurance</para>
+                                <para>Perform general quality assurance</para>
                             </listitem>
                         </itemizedlist>For example, constraints would be used to represent standard
-                        terminology artifacts like the SNOMED CT Machine Readable Concept Model.
+                        terminology artifacts, like the SNOMED CT Machine Readable Concept Model.
                         Additionally, constraints could be used to ensure that terminologies are
                         represented within Tinkar in such a way that they can be completely and
                         consistently queried and displayed. </para>
                     <para>These same constraints can be used with respect to creating new content
-                        within Tinkar to specify what the minimally viable data that would be
-                        required. For example:<itemizedlist>
+                        within Tinkar to specify the minimally viable data that would be required,
+                        for example:<itemizedlist>
                             <listitem>
                                 <para>All concepts must have at least one Fully Qualified Name
                                     within at least one Language or Dialect.</para>
@@ -661,7 +665,7 @@
                                     root concept.</para>
                             </listitem>
                         </itemizedlist></para>
-                    <para>Constraints can be applied (and not applied) based on various criteria to
+                    <para>Constraints can be applied (or not applied) based on various criteria to
                         perform Quality Assurance on content that is represented within Tinkar. For example:<itemizedlist>
                             <listitem>
                                 <para>SNOMED CT FullySpecifiedName hierarchy tags are applied based
@@ -678,9 +682,9 @@
                                     wording and relationships.</para>
                             </listitem>
                         </itemizedlist></para>
-                    <para>Since some Quality Assurance Constraints do not always indicate an error
+                    <para>Since some Quality Assurance Constraints do not always indicate an error,
                         an Allow List could also be represented as a Semantic to record concepts
-                        that are allowed not to conform to a constraint. Constraints would be
+                        that are allowed to not conform to a constraint. Constraints would be
                         represented using semantics as they are self describing and can support
                         multiple different representations for constraints (SNOMED CT Expression
                         Constraint Language, Drools, etc.). Representing Constraints as a Semantic

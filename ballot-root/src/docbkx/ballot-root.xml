@@ -6,7 +6,7 @@
   <preface>
     <title>Summary</title>
     <para>This specification describes the requirements to manage terminology produced by a variety
-      of organizations across the healthcare enterprise. A Terminology foundation is required that
+      of organizations across the healthcare enterprise. A terminology foundation is required that
       allows the enterprise to extend terminology standards and implement extensions in a timely
       fashion.</para>
     <para>This specification is intended to support healthcare organizations' standard terminology
@@ -14,7 +14,7 @@
       mappings.</para>
     <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification is necessary to
       support the operation of a variety of systems intended to deliver knowledge management for
-      terminology to vendors, providers, and standards-development organizations like Health Level
+      terminology to vendors, providers, and standards-development organizations, like Health Level
       Seven International (HL7). </para>
   </preface>
   <preface>
@@ -27,8 +27,9 @@
             Informatics Architecture, Knowledge Based Systems, Veterans Health Administration</para>
         </listitem>
         <listitem>
-          <para><emphasis role="bold">Carol Macumber, MS,  FAMIA</emphasis> - HL7 Vocabulary Work
-            Group co-chair &amp; HL7 Terminology Authority vice chair</para>
+          <para><emphasis role="bold">Carol Macumber, MS, FAMIA</emphasis> - Health Level Seven
+            International (HL7) Vocabulary Work Group co-chair and HL7 Terminology Authority vice
+            chair</para>
         </listitem>
         <listitem>
           <para><emphasis role="bold">Penni Hernandez, RN, ND, APN</emphasis> - Nurse, Associate

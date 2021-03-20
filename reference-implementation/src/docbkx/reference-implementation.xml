@@ -259,14 +259,14 @@
         <para>Komet includes the capability to use a description logic classifier to create inferred
             views and detect equivalencies and other errors. The following image shows the results
             of the classifier after merging the January 2021 version of the SNOMED CT International
-            release with the September 2020 version of the SNOMED CT US Edition. The classifier has
-            detected that there is an equivalency between the concepts "Ankylosis of bilateral knee
-            joints (disorder)" and "Ankylosis of both knee joints (disorder)".<figure>
+            release with the September 2020 version of the SNOMED CT U.S. Edition. The classifier
+            has detected that there is an equivalency between the concepts: "Ankylosis of bilateral
+            knee joints (disorder)" and "Ankylosis of both knee joints (disorder)".<figure>
                 <title>Equivalencies Detected by Classifier</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="equivalents.png" scalefit="1" width="100%"
-                            contentdepth="100%"/>
+                            contentdepth="90%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -279,9 +279,10 @@
             understand the differences and similarities between the two concepts, their origins, and
             understand how to correct the equivalencies between the two concepts. In this case, the
             concept "Ankylosis of bilateral knee joints (disorder)" would need to be retired as it
-            belongs to the US Edition and the "Ankylosis of both knee joints (disorder)" concept is
-            contained in the SNOMED CT International Release. <figure>
-                <title>SNOMED CT Equivalences between Modules</title>
+            belongs to the U.S. Edition and the "Ankylosis of both knee joints (disorder)" concept
+            is contained in the SNOMED CT International Release. <figure>
+                <title>SNOMED CT Equivalences between Modules
+                    <?oxy_comment_start author="rcholan" timestamp="20210320T111535-0400" comment="From Penni: I think this is backward the &quot;both&quot; is the US and the &quot;bilateral&quot; is the International core"?></title><?oxy_comment_end?>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="module_duplication.png" scalefit="1" width="100%"
