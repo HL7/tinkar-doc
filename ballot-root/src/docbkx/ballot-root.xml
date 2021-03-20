@@ -4,7 +4,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
 
   <preface>
-    <title>Summary</title>
+    <title>Purpose</title>
     <para>This specification describes the requirements to manage terminology produced by a variety
       of organizations across the healthcare enterprise. A terminology foundation is required that
       allows the enterprise to extend terminology standards and implement extensions in a timely
@@ -135,17 +135,20 @@
   <xi:include
     href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/implications/implications.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>
-  
-  <!--  6.	Next Steps-->
-  
-<!--  7.	Next Steps and Conclusion-->
+ 
+  <!--Key Takeaways-->
   <xi:include
-          href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"
-          xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/conclusion/conclusion.xml"/>
   
-  <!--7.	References-->
+
+    <!--6.	References-->
   <xi:include
     href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/abbreviated-glossary/abbreviated-glossary.xml"/>
+ 
+  <!--Key Takeaways-->
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/gap-analysis/gap-analysis.xml"/>
+  
   <xi:include
     href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/appendices/appendices.xml"
     xmlns:xi="http://www.w3.org/2001/XInclude"/>

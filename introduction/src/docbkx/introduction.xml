@@ -39,7 +39,7 @@
     concepts, and code lists/value sets. </para>
   <para>A Tinkar Specification could provide a single representation for all terminologies required
     in the U.S. that meet the following criteria for managing change from the capability maturity
-      model<link linkend="bib2">[2]</link> :</para>
+    model <link linkend="bib2">[2]</link>:</para>
   <para>
     <orderedlist>
       <listitem>
@@ -230,7 +230,10 @@
         </itemizedlist>
       </listitem>
     </itemizedlist>
-    <para>Tinkar addresses challenges and problems from these implementation examples:</para>
+   <para> </para>
+    <para> </para>
+    <para> </para>
+    <para>Tinkar addresses challenges and problems from the above implementation examples:</para>
     <informaltable>
       <tgroup cols="2">
         <colspec colnum="1" colname="col1"/>
@@ -413,7 +416,7 @@
       <informalfigure>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="SoC_2021.png" scale="60" align="center"/>
+            <imagedata fileref="SoC_2021.png" scale="70" align="center"/>
           </imageobject>
         </mediaobject>
       </informalfigure>

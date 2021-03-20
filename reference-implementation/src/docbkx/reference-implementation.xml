@@ -21,7 +21,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="concept_detail.png" scalefit="1" width="100%"
-                            contentdepth="100%"/>
+                            contentdepth="55%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -44,7 +44,7 @@
             </figure>The Identifiers associated with Components are deliberately hidden within
             Komet. To access the UUIDs you can copy them by right clicking on the Concept Name at
             the top of the Concept Details Panel. <figure>
-                <title>Accessing UUID's</title>
+                <title>Accessing UUIDs</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="Finding_UUID.png" scalefit="1" width="100%"
@@ -52,7 +52,7 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">Accessing UUID's</emphasis></para>
+                    <para><emphasis role="italics">Accessing UUIDs</emphasis></para>
                 </caption>
             </figure>
         </para>
@@ -266,7 +266,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="equivalents.png" scalefit="1" width="100%"
-                            contentdepth="90%"/>
+                            contentdepth="80%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
