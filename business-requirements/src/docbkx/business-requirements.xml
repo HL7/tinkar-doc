@@ -605,30 +605,6 @@
                 for these uses.</para>
         </section>
         <section>
-            <title><anchor xml:id="_Toc64480043"/>Bootstrap Assets</title>
-            <para>A Tinkar implementation must be furnished with the following content:</para>
-            <itemizedlist>
-                <listitem>
-                    <emphasis role="underline">One root concept</emphasis>
-                </listitem>
-                <listitem>
-                    <emphasis role="underline">One module dependency graph</emphasis>
-                </listitem>
-                <listitem><emphasis role="underline">Infrastructure concepts</emphasis> to support
-                    the core patterns listed above</listitem>
-                <listitem><emphasis role="underline">Import rules</emphasis> to support import of
-                    standard terminologies, including<itemizedlist>
-                        <listitem><emphasis role="underline">Equivalences</emphasis> to support
-                            semantic integration of terminologies (e.g., that a LOINC<superscript>®</superscript> “system”
-                            instantiates the same relationship concept as the SNOMED CT “inheres in”
-                            attribute)</listitem>
-                        <listitem><emphasis role="underline">Exclusions</emphasis> to support
-                            removal of non-semantic properties from classification (e.g., RxNorm
-                            Translated CDs)</listitem>
-                    </itemizedlist></listitem>
-            </itemizedlist>
-        </section>
-        <section>
             <title>Constraints</title>
             <para>
                 <itemizedlist>
@@ -710,6 +686,30 @@
                     </listitem>
                 </itemizedlist>
             </para>
+        </section>
+        <section>
+            <title><anchor xml:id="_Toc64480043"/>Bootstrap Assets</title>
+            <para>A Tinkar implementation must be furnished with the following content:</para>
+            <itemizedlist>
+                <listitem>
+                    <emphasis role="underline">One root concept</emphasis>
+                </listitem>
+                <listitem>
+                    <emphasis role="underline">One module dependency graph</emphasis>
+                </listitem>
+                <listitem><emphasis role="underline">Infrastructure concepts</emphasis> to support
+                    the core patterns listed above</listitem>
+                <listitem><emphasis role="underline">Import rules</emphasis> to support import of
+                    standard terminologies, including<itemizedlist>
+                        <listitem><emphasis role="underline">Equivalences</emphasis> to support
+                            semantic integration of terminologies (e.g., that a LOINC<superscript>®</superscript> “system”
+                            instantiates the same relationship concept as the SNOMED CT “inheres in”
+                            attribute)</listitem>
+                        <listitem><emphasis role="underline">Exclusions</emphasis> to support
+                            removal of non-semantic properties from classification (e.g., RxNorm
+                            Translated CDs)</listitem>
+                    </itemizedlist></listitem>
+            </itemizedlist>
         </section>
     </section>
 </chapter>
