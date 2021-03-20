@@ -380,9 +380,7 @@
   </section>
   <section>
     <title>Approach - Architectural Separation of Concerns</title>
-  </section>
-  <section>
-    <para>Increased reliance on computerized health records, including Electronic Health Records
+     <para>Increased reliance on computerized health records, including Electronic Health Records
       Systems, requires standardized medical terminology to encode health information consistently
       across systems and enterprises. Clinicians require not only objective quantitative
       measurements (e.g. 90 beats per minute for a patient's pulse), but also contextual or
