@@ -117,7 +117,7 @@
             </figure>
         </para>
         <para>All Components in Tinkar are uniquely identified using UUIDs. A Component will be
-            represented by an array of UUID's with at least one UUID, but can be represented by more
+            represented by an array of UUIDs with at least one UUID, but can be represented by more
             than one UUID in the case of a concept being derived from multiple sources. For example,
             the concept Acetaminophen (which exists in SNOMED CT, LOINC, and RxNorm) would have a
             UUID from each terminology, and be represented as an array of UUIDs for this single
@@ -211,10 +211,10 @@
                         tree.</para>
                 </listitem>
                 <listitem>
-                    <para>Component ID List - an ordered list of Component ID's.</para>
+                    <para>Component ID List - an ordered list of Component IDs.</para>
                 </listitem>
                 <listitem>
-                    <para>Component ID Set - an unordered list of Component ID's</para>
+                    <para>Component ID Set - an unordered list of Component IDs</para>
                 </listitem>
             </itemizedlist></para>
     </section>
