@@ -79,12 +79,12 @@
               <entry>Ioana Singureanu <superscript>1</superscript></entry>
             </row>
             <row>
-              <entry>&#x2003;&#x2003;&#x2003;Karen Thullner <superscript>4</superscript></entry>
-              <entry>Tim Williams <superscript>3</superscript></entry>
+              <entry>&#x2003;&#x2003;&#x2003;Walter Sujansky<superscript>6</superscript></entry>
+              <entry>Karen Thullner <superscript>4</superscript></entry>
             </row>
             <row>
-              <entry>&#x2003;&#x2003;&#x2003;Kurt W. Allen <superscript>4</superscript></entry>
-              <entry/>
+              <entry>&#x2003;&#x2003;&#x2003;Tim Williams <superscript>3</superscript></entry>
+              <entry>Kurt W. Allen <superscript>4</superscript></entry>
             </row>
           </tbody>
         </tgroup>
@@ -95,7 +95,8 @@
     <para><superscript>1</superscript>Veterans Health Administration;
       <superscript>2</superscript>HL7 Vocabulary Work Group; <superscript>3</superscript>Deloitte
       Consulting LLP;<superscript>4</superscript>PenRad; </para>
-    <para><superscript>5</superscript>J P Systems, Inc</para>
+    <para><superscript>5</superscript>J P Systems, Inc <superscript>6</superscript>Sujansky &amp;
+      Associates, LLC</para>
     <para/>
     <para/>
     <para>This work was primarily funded by the Veterans Health Administration Clinical Informatics

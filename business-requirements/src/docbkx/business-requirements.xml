@@ -122,9 +122,7 @@
             risk. Systematic management of change requires granular representation of the assets and
             their changes.</para>
         <para>There are best-practice capabilities in knowledge asset maintenance, and we propose to
-            adopt them for clinical data standards. These include the following: [edited from
-            <?oxy_comment_start author="rcholan" timestamp="20210320T095749-0400" comment="Ask Jay about Reference. Is this talking about the Walter Sujansky paper?"?>Architecture
-            for Managing Knowledge Artifacts<?oxy_comment_end?>]</para>
+            adopt them for clinical data standards. These include the following:</para>
         <para>
             <itemizedlist>
                 <listitem>
@@ -433,17 +431,10 @@
                             <para>A language, possibly including refinements </para>
                         </listitem>
                         <listitem>
-                            <para>An indicator of case sensitivity (or is this a property of the
-                                relationship to a
-                                concept?<?oxy_comment_start author="rcholan" timestamp="20210317T162415-0400" comment="Need to resolve"?>)<?oxy_comment_end?></para>
+                            <para>An indicator of case sensitivity </para>
                         </listitem>
                         <listitem>
-                            <para>A type
-                                (ditto)<?oxy_comment_start author="rcholan" timestamp="20210320T101206-0400" comment="need to resolve"?></para><?oxy_comment_end?>
-                        </listitem>
-                        <listitem>
-                            <para>An audience
-                                (<?oxy_comment_start author="rcholan" timestamp="20210320T101213-0400" comment="need to resolve"?>ditto<?oxy_comment_end?>)</para>
+                            <para>A type</para>
                         </listitem>
                     </itemizedlist>
                 </listitem>
