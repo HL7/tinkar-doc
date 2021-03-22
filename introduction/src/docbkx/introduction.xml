@@ -115,13 +115,30 @@
       data quality for interoperable clinical information. Quality clinical data enables healthcare
       systems across the enterprise to conduct robust and meaningful data analysis and increase
       overall interoperability, which ultimately enhances quality of care across all medical
-      facilities. <inlinemediaobject>
-        <imageobjectco>
+      facilities. </para>
+      <!-- <figure> -->
+      <!-- <title>Separation of Concerns: Knowledge Architecture</title> -->
+      <informalfigure>
+        <mediaobject>
           <imageobject>
             <imagedata fileref="Tinkar_1,1.png" scale="40" align="center"/>
           </imageobject>
-        </imageobjectco>
-      </inlinemediaobject></para>
+        </mediaobject>
+      </informalfigure>
+<!--       <caption>
+        <para><emphasis>Separation of concerns is an architectural design principle, whereby a
+            system is divided into distinct sections, such that each section can address separate
+            concerns. In this case, each architectural layer may build upon artifacts from lower
+            layers.</emphasis></para>
+      </caption> -->
+    <!-- </figure> -->
+      <!-- <informalfigure> -->
+        <!-- <imageobject> -->
+<!--           <imageobject>
+            <imagedata fileref="Tinkar_1,1.png" scale="60" align="center"/>
+          </imageobject> -->
+        <!-- </imageobject> -->
+      <!-- </informalfigure> -->
   </section>
   <section>
     <title>The Problem Tinkar Addresses </title>
