@@ -6,6 +6,10 @@
         supports the ability to assert relationships among diverse terminologies and to support
         change in the design of those terminologies. However, it means that there may be more than
         one way to support any specific requirement. That level of flexibility, by permitting
-        divergent designs, actually impedes interoperability. We provide two levels of guidance to
-        avoid this problem.</para>
+        divergent designs, actually impedes interoperability. </para>
+    <para>We propose the following members of the Tinkar Infrastructure Content.</para>
+    <para>Tinkar concepts are defined hierarchically in a directed acyclic graph. This means that
+        every class concept node in the repository has at least one “parent,” or concept
+        relationship of type “is-a,” with the exception of one root node for clinical content and
+        one root node for infrastructure content.</para>
 </appendix>

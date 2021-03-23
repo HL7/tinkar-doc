@@ -680,9 +680,7 @@
         </section>
         <section>
             <title>Bootstrap Assets</title>
-            <para>A Tinkar implementation must be furnished with the following content:</para>
-            <para>
-                <itemizedlist>
+            <para>A Tinkar implementation must be furnished with the following content:<itemizedlist>
                     <listitem>
                         <emphasis role="underline">One root concept</emphasis>
                     </listitem>
@@ -703,13 +701,9 @@
                                     classification (e.g., RxNorm Translated CDs)</para>
                             </listitem>
                         </itemizedlist></listitem>
-                </itemizedlist>
-            </para>
-        </section>
-        <section>
-            <title>Tinkar Model Concepts </title>
-            <para>We provide definitions and import rules (see appendix C) for the Tinkar Model
-                Concepts. </para>
+                </itemizedlist></para>
+            <para>We provide definitions for Tinkar Model Concepts in <link
+                linkend="appendices">Appendix C.</link></para>
         </section>
     </section>
 
@@ -718,8 +712,8 @@
         <title>List of Requirements</title>
         <informaltable>
             <tgroup cols="2">
-                <colspec colnum="1" colname="col1" colwidth="57.5pt"/>
-                <colspec colnum="2" colname="col3" colwidth="341.5pt"/>
+                <colspec colnum="1" colname="col1" colwidth="33pt"/>
+                <colspec colnum="2" colname="col3" colwidth="386.5pt"/>
                 <tbody>
                     <row>
                         <entry><emphasis role="bold">ID</emphasis></entry>

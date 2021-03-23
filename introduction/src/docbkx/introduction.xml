@@ -74,8 +74,8 @@
     continuum along which process maturity can be developed incrementally from one level to the
     next. </para>
   <para>Tinkar aims to adhere to the following statement from a publication about developments in
-    clinical terminologies in the 2018 Yearbook of Medical Informatics (<link linkend="bib1"
-      >[1]</link>): “The benefits of the integrated terminologies in terms of homogenous semantics
+    clinical terminologies in the 2018 Yearbook of Medical Informatics <link linkend="bib1"
+      >[1]</link>: “The benefits of the integrated terminologies in terms of homogenous semantics
     and inherent interoperability should, however, outweigh the complexity added to the system”.
     This specification provides the foundation of a knowledge architecture that is intended to
     integrate reference terminology from distributors (e.g., SNOMED CT,
@@ -359,11 +359,15 @@
       limited utility for several reasons. First, UMLS concepts are created on lexically-based rules
       and use very little of the additional information (relationships between concepts) that may be
       available from the source terminology. It does not permit classification to identify cases of
-      possible missed synonymy. Second, issues of currency occur because of desynchrony of release
-      dates between source terminologies and the UMLS itself. Finally, though there are editing
+      possible missed synonymy. Second, issues of currency occur because of dyssynchrony of release
+      dates between source terminologies and the UMLS itself. Third, though there are editing
       guidelines in place, there may be substantial variation in editing practices between the
-      individual editors. UMLS is not an architecture for terminology management, it may only serve
-      as a reference, within the aforementioned parameters.</para>
+      individual editors. Fourth, the UMLS does not support a contribution model. That is, it is a
+      static file that cannot be amended to support additional terms that may be required to fill
+      gaps in existing terminologies subsumed by the Metathesaurus; it does not support extensions.
+      Lastly, there is no efficient format for sharing integrated Metathesaurus content (though
+      there is RRF). The UMLS is not an architecture for terminology management, it may only serve
+      as a reference, noting the aforementioned limitations. </para>
     <para>CTS2 is an architecture for terminology management that supports history retrieval, though
       it does not support an arbitrarily granular change set model for versioning. The Tinkar
       Specification, in contrast, provides that every new assertion, whether a new component or a
