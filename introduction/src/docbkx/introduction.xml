@@ -38,7 +38,7 @@
     it addresses the differences in management and structure across reference terminology, local
     concepts, and code lists/value sets. </para>
   <para>A Tinkar Specification could provide a single representation for all terminologies required
-    in the U.S. that meet the following criteria for managing change from the capability maturity
+    in the U.S. that meet the following levels for managing change from the capability maturity
     model <link linkend="bib2">[2]</link>:</para>
   <para>
     <orderedlist>
@@ -155,7 +155,7 @@
               <listitem>
                 <para>Difficulty with determining that codes/terms using standard terminologies from
                   disparate health IT systems represent a common clinical idea/concept (e.g.,
-                  “COVID-19 negative test result”).</para>
+                  “COVID-19 positive” and "COVID-19 detected").</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -167,9 +167,9 @@
             <itemizedlist>
               <listitem>
                 <para>A new set of local terminology may be managed with value sets and concept gaps
-                  addressed in quick iterations (e.g., COVID-19 laboratory test results, or gaps
-                  like "mild anemia" which was refused for inclusion by both the international and
-                  U.S. SNOMED release).</para>
+                  addressed in quick iterations (e.g., "COVID-19 negative test result", or gaps like
+                  "mild anemia" which was refused for inclusion by both the international and U.S.
+                  SNOMED release).</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -336,7 +336,7 @@
     <title>Related Efforts</title>
     <para>Previous efforts have attempted to create a common set of terminology capabilities and
       services by specifying a single pre-defined structure for managing terminology. Unfortunately,
-      a hardwired structure that works for one standard may not work for another. The ability of to
+      a hardwired structure that works for one standard may not work for another. The inability to
       integrate content across terminology standards is a barrier to implementing services and
       modules that can deliver integrated concepts, code lists, and value sets required by
       enterprise systems for treatment, research, business process automation, quality measures, and
@@ -366,7 +366,7 @@
       static file that cannot be amended to support additional terms that may be required to fill
       gaps in existing terminologies subsumed by the Metathesaurus; it does not support extensions.
       Lastly, there is no efficient format for sharing integrated Metathesaurus content (though
-      there is RRF). The UMLS is not an architecture for terminology management, it may only serve
+      there is RRF). The UMLS is not an architecture for terminology management. It may only serve
       as a reference, noting the aforementioned limitations. </para>
     <para>CTS2 is an architecture for terminology management that supports history retrieval, though
       it does not support an arbitrarily granular change set model for versioning. The Tinkar
@@ -407,19 +407,18 @@
      <para>Increased reliance on computerized health records, including Electronic Health Records
       Systems, requires standardized medical terminology to encode health information consistently
       across systems and enterprises. Clinicians require not only objective quantitative
-      measurements (e.g. 90 beats per minute for a patient's pulse), but also contextual or
-      procedural context (e.g., pulse oximetry, manual) about past observations or requests for
-      future interventions. While two quantitative measurements may be the same, the procedural
-      information could indicate meaningful semantic differences, and lead to different clinical
-      interpretation and treatment. As information is exchanged across systems, the solution
-      requires a common understanding of data and a method to support knowledge-representation and
-      clinical decision rules based on common terminology and statements. Each component must
-      address an aspect, and together they need to address the requirements of clinicians. Current
-      HL7 standard implementations rely on profiles and templates to disambiguate statement and
-      terminology, and provide sufficient precision for transactions, documents, and standards-based
-      APIs. Therefore, the architectural approach described here is applicable to standards
-      organizations developing interoperability-enterprise and project-specific implementations in
-      equal measure. </para>
+      measurements (e.g. 90 beats per minute for a patient's pulse), but also procedural context
+      (e.g., pulse oximetry, manual) about past observations or requests for future interventions.
+      While two quantitative measurements may be the same, the procedural information could indicate
+      meaningful semantic differences, and lead to different clinical interpretation and treatment.
+      As information is exchanged across systems, the solution requires a common understanding of
+      data and a method to support knowledge-representation and clinical decision rules based on
+      common terminology and statements. Each component must address an aspect, and together they
+      need to address the requirements of clinicians. Current HL7 standard implementations rely on
+      profiles and templates to disambiguate statement and terminology, and provide sufficient
+      precision for transactions, documents, and standards-based APIs. Therefore, the architectural
+      approach described here is applicable to standards organizations developing
+      interoperability-enterprise and project-specific implementations in equal measure. </para>
     <para>Functional decomposition—often referred to as a <glossterm
         baseform="Separation of Concerns">Separation of Concerns</glossterm> (SoC)—across components
       or sections with a specific purpose is a foundational design principle for complex system

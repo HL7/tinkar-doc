@@ -17,7 +17,7 @@
             also be used to transfer information between different Tinkar systems. This will ensure
             that no Tinkar data is lost. </para>
         <para>C# and Java code implementations of the Tinkar Data Model will be made available to
-            integrators allowing third parties to more easily use the Tinkar.</para>
+            integrators allowing third parties to more easily use Tinkar.</para>
         <para>Specifically, third party implementers can in java or C3:</para>
         <orderedlist>
             <listitem>
@@ -40,9 +40,9 @@
         <para>Tinkar data items lost in FHIR conversion:</para>
         <orderedlist>
             <listitem>
-                <para>STAMP data: Loss of the Stamp data means that the ability to look at a
-                    terminology at specific point in time is lost. The FHIR data is a snapshot at a
-                    fixed point in time.</para>
+                <para>STAMP data: Loss of the STAMP data means that the ability to look at
+                    terminology at a specific point in time is lost. The FHIR data is a snapshot at
+                    a fixed point in time.</para>
             </listitem>
             <listitem>
                 <para>Semantic data: FHIR data does not contain a concept similar to Tinkar’s
@@ -60,7 +60,7 @@
             or $translate on a ConceptMap can be used to translate codes when transforming native
             records to a standard format, and so forth.</para>
         <para>FHIR queries against the FHIR terminology server could use Tinkar originated
-            terminology data as well as other non-TINKA generated terminology to fulfill the
+            terminology data as well as other non-Tinkar generated terminology to fulfill the
             requests.</para>
         <para>The serialization file described above would be one way to import data from a Tinkar
             system to a FHIR terminology server. Implementers for each FHIR Terminology Server would
@@ -115,7 +115,7 @@
             format, is similar to the goal of Tinkar.</para>
         <para>If HL7 so desired, Tinkar could be used as the format by which all HL7 terminology is
             exported. It is believed that current HL7 content can be converted to Tinkar with no
-            loss; further work would need to be done to verify that if HL7 was interested in that
+            loss. Further work would need to be done to verify that if HL7 was interested in that
             path.</para>
         <para>Conversion of HL7 common terminology data to Tinkar would allow:</para>
         <orderedlist>

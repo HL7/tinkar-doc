@@ -9,8 +9,8 @@
             <tbody>
                 <row>
                     <entry>Terminology</entry>
-                    <entry>A set of concept identifiers, descriptors, and relationships for use in
-                        capturing domain information in an information system.</entry>
+                    <entry>A set of concept identifiers, descriptors, and relationships for used to
+                        capture domain information in an information system.</entry>
                 </row>
                 <row>
                     <entry>Standard terminology</entry>
@@ -27,7 +27,7 @@
                     <entry>Tinkar</entry>
                     <entry>Terminology Knowledge Architecture (Tinkar) is intended to provide an
                         architecture that delivers integrated terminology to the enterprise and its
-                        information systems that addresses the differences in management and
+                        information systems. Tinkar addresses the differences in management and
                         structure across reference terminology, and with local concepts and code
                         lists/value sets.</entry>
                 </row>

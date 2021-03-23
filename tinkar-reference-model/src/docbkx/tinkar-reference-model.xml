@@ -85,7 +85,7 @@
                         in the past. </para>
                 </listitem>
             </itemizedlist>The Tinkar model does not merely support the ability to “STAMP”
-            components: it asserts a requirement that all changes have a STAMP. STAMP assertions are
+            components; it asserts a requirement that all changes have a STAMP. STAMP assertions are
             unversioned IdentifiedComponents that are referenced by the components they scope. Since
             STAMP uses versioned concepts (that have a STAMP), having the STAMP as a versioned
             component would lead to an infinite regress. </para>
@@ -313,7 +313,7 @@
             calculate combinations of content based on one or more of these different dimensions. </para>
         <para><?oxy_comment_start author="rcholan" timestamp="20210317T164638-0400" comment="Add brief high-level definition/explanation of versioned graphi and how it would be used. "?>A<?oxy_comment_end?>
             versioned graph enables us to recover the state of the graph at a particular point in
-            time. Most graph databases do not support versioning as a first-class concept: it is
+            time. Most graph databases do not support versioning as a first-class concept. It is
             possible, however, to create a versioning scheme inside the graph model whereby nodes
             and relationships are timestamped and archived whenever they are modified. The downside
             of such versioning schemes is that they leak into any queries written against the graph,
@@ -322,7 +322,7 @@
                 <listitem>
                     <para>STAMP coordinates are the most basic type of coordinate
                         <?oxy_comment_start author="rcholan" timestamp="20210315T201119-0400" comment="STAMP coordinates are the most basic type of coordinate on which content should be filtered. ?"?>that<?oxy_comment_end?>
-                        all content should be filtered. Example of STAMP coordinates are:<itemizedlist>
+                        all content should be filtered. Examples of STAMP coordinates are:<itemizedlist>
                             <listitem>
                                 <para>Most recent version</para>
                             </listitem>
@@ -357,8 +357,8 @@
                     </itemizedlist>
                 </listitem>
                 <listitem>
-                    <para>Navigation coordinates are used to assist in the viewing and searching for
-                        a particular concept. Examples of these would be:<itemizedlist>
+                    <para>Navigation coordinates are used to assist in viewing and searching for a
+                        particular concept. Examples of these would be:<itemizedlist>
                             <listitem>
                                 <para>Stated vs inferred relationships from SNOMED</para>
                             </listitem>
@@ -370,7 +370,7 @@
             </itemizedlist></para>
         <section>
             <title>Calculating Coordinates</title>
-            <para>The ComponentChronology contains all the versions of a component from the date is
+            <para>The ComponentChronology contains all the versions of a component from the date it
                 was instantiated until the most recent version. Components only get a new version
                 whenever something about the component changes. To calculate the latest version
                 requires the ability to find the most recent version of each component. Utilizing
