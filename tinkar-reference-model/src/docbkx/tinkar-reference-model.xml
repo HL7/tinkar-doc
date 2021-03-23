@@ -32,40 +32,38 @@
             </figure>
         </para>
         <para>The Tinkar Reference Model fulfills the requirement of capturing a complete record of
-            all changes, including relevant context information
-            (<?oxy_comment_start author="timowilliams" timestamp="20210218T094737-0600" comment="Add links back to the requirement chapter for each of these"?>Requirement
-            18<?oxy_comment_end?>).  This is captured via the STAMP class using the following
-            fields: </para>
+            all changes, including relevant context information  <emphasis role="underline"  linkend="requirement_18">(Requirement 18)</emphasis>. This is captured
+            via the STAMP class using the following fields: </para>
         <para>
             <orderedlist>
                 <listitem>
                     <para><emphasis role="bold">Status:</emphasis> A status is identified by a
                         concept, which may be annotated with other identifying information. For
-                        example: active or inactive (Requirement 20)</para>
+                        example: active or inactive <emphasis role="underline"  linkend="requirement_20">(Requirement 20)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Time:</emphasis> Timestamps must employ a common
-                        standard, which must support precision and time zone. (Requirement
-                        21)</para>
+                        standard, which must support precision and time zone. <emphasis role="underline"  linkend="requirement_20">(Requirement
+                            21)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Author:</emphasis> An author is identified by a
                         concept, which may be annotated with other identifying information as
-                        required. (Requirement 22)</para>
+                        required. <emphasis role="underline"  linkend="requirement_20">(Requirement 22)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Module: </emphasis>Assignment to the appropriate
                         terminology (e.g., LOINC) or terminology component (e.g., SNOMED CT, US
                         Extension). A module is identified by a concept, which may be annotated with
-                        other identifying information. (Requirement 23) </para>
+                        other identifying information. <emphasis role="underline"  linkend="requirement_20">(Requirement 23)</emphasis> </para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Path:</emphasis> Specification of a branch within a
                         terminology development lifecycle, e.g., for distributed development,
                         testing, staging, or production. A path is identified by a concept, which
                         may be annotated with other identifying information. A core set of paths is
-                        necessary to support publication to external organizations. (Requirement
-                        24)</para>
+                        necessary to support publication to external organizations. <emphasis role="underline"  linkend="requirement_20">(Requirement
+                            24)</emphasis></para>
                 </listitem>
             </orderedlist>
         </para>

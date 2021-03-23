@@ -146,9 +146,13 @@
   <xi:include
     href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/abbreviated-glossary/abbreviated-glossary.xml"/>
  
-  <!--Key Takeaways-->
+  <!--Related Works-->
   <xi:include
     href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/gap-analysis/gap-analysis.xml"/>
+  
+  <!--Tinkar Model Concepts-->
+  <xi:include
+    href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/appendices/appendices.xml"/>
   
 <!--   <xi:include
     href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/appendices/appendices.xml"
