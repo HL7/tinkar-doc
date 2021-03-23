@@ -16,7 +16,8 @@
                     <entry><emphasis role="bold">Level</emphasis></entry>
                 </row>
                 <row>
-                    <entry>1</entry>
+                    <entry xml:id="requirement_1"
+            xreflabel="1">1</entry>
                     <entry/>
                     <entry><emphasis role="underline">support the coordination of safe, effective
                             medicine </emphasis></entry>

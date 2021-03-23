@@ -7,7 +7,7 @@
     <section>
         <title><anchor xml:id="_Toc64480038"/>Clinical Requirements</title>
         
-            <para>The ultimate goal of this effort is to <emphasis role="underline">support the
+            <para>The ultimate goal of this effort is to <emphasis role="underline" linkend="requirement_1">support the
                 coordination of safe, effective medicine (1)</emphasis>. This goal requires
                 <emphasis role="underline">quality information in the patient record (2)</emphasis>,
             wherever it comes from, and the increasingly distributed nature of care requires that we
