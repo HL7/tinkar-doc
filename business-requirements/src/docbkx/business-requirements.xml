@@ -817,6 +817,18 @@
                             the component is meaningful, such as code system or edition (a.k.a.,
                             Module)</entry>
                     </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1" colwidth="33pt"/>
+                <colspec colnum="2" colname="col3" colwidth="386.5pt"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">ID</emphasis></entry>
+                        <entry><emphasis role="bold">Requirement</emphasis></entry>
+                    </row>
                     <row>
                         <entry xml:id="requirement_21" xreflabel="21">21</entry>
                         <entry>the production branch of that organization, e.g., for distributed
@@ -835,5 +847,6 @@
                 </tbody>
             </tgroup>
         </informaltable>
+        
     </section>
 </chapter>
