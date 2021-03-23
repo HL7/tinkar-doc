@@ -150,7 +150,7 @@
   <xi:include
     href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/gap-analysis/gap-analysis.xml"/>
   
-  <xi:include
+<!--   <xi:include
     href="../../target/extracted-dependencies/io.solor.tinkar-doc-submission/appendices/appendices.xml"
-    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    xmlns:xi="http://www.w3.org/2001/XInclude"/> -->
 </book>

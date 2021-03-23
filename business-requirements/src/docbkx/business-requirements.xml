@@ -9,9 +9,9 @@
         
             <para>The ultimate goal of this effort is to <emphasis role="underline" linkend="requirement_1">support the
                 coordination of safe, effective medicine (1)</emphasis>. This goal requires
-                <emphasis role="underline">quality information in the patient record (2)</emphasis>,
+                <emphasis role="underline" linkend="requirement_2">quality information in the patient record (2)</emphasis>,
             wherever it comes from, and the increasingly distributed nature of care requires that we
-            use <emphasis role="underline">commonly understood data standards (3)</emphasis> to
+            use <emphasis role="underline" linkend="requirement_3">commonly understood data standards (3)</emphasis> to
             ensure mutual comprehension across the care team and over time. There are four outlined
             clinical use cases:</para>
             <informaltable>
@@ -34,7 +34,7 @@
                                 <para>This operation may initiate workflow processes or automated
                                     processes such as Clinical Decision Support suggestions.</para>
                                 <para>For structured data using standard terminologies, the
-                                        <emphasis role="underline">terms available are appropriate
+                                        <emphasis role="underline" linkend="requirement_7">terms available are appropriate
                                         (7)</emphasis> for the clinical context, for the role (i.e.,
                                     terms may differ for different kinds of users), and for the data
                                     context (i.e., data entry fields may not support inactive or
@@ -48,7 +48,7 @@
                                     </listitem>
                                 </itemizedlist>
                                 <para>If a provider attempts to enter a term that is not supported
-                                    by the enterprise terminology, the <emphasis role="underline"
+                                    by the enterprise terminology, the <emphasis role="underline" linkend="requirement_8"
                                         >effort will be captured (8)</emphasis> as a proposed term. </para>
                                 <para>Systems may capture this information unobtrusively as text, or
                                     they may request further information from the clinician to
@@ -65,13 +65,13 @@
                                     the data for the correct patient, finds and reviews information
                                     in the patient record. </para>
                                 <para>For structured data using standard terminologies, the
-                                        <emphasis role="underline">terms available are appropriate
+                                        <emphasis role="underline" linkend="requirement_9">terms available are appropriate
                                         (9)</emphasis> for the clinical context, for the role (i.e.,
                                     terms may differ for different kinds of users), and for the data
                                     context (i.e., data entry fields may not support inactive or
                                     deprecated terms that would be allowed in search or analytical
                                     contexts).</para>
-                                <para><emphasis role="underline">Changes to the terminology that
+                                <para><emphasis role="underline" linkend="requirement_10">Changes to the terminology that
                                         could affect record interpretation will be indicated
                                         (10)</emphasis>, along with a way to identify the change and
                                     its effect.</para>
@@ -83,7 +83,7 @@
                                 </itemizedlist>
                                 <para>If the system identifies a relevant change, the provider may
                                     request further information. </para>
-                                <para>This will include the ability to <emphasis role="underline"
+                                <para>This will include the ability to <emphasis role="underline" linkend="requirement_11"
                                         >see available values and CDS results for specific dates and
                                         contexts (11)</emphasis>, including those under which the
                                     data was recorded or specific decisions were made.</para>
@@ -93,21 +93,21 @@
                 </tgroup>
             </informaltable>
             <para><emphasis role="italic">Table 1: Clinical Use Cases</emphasis></para>
-            <para>The key capability for a clinician should be <emphasis role="underline">to record
+            <para>The key capability for a clinician should be <emphasis role="underline" linkend="requirement_5">to record
                 and review data quickly and accurately (5)</emphasis>, taking advantage of
             up-to-date classifications and decision support rules. This should be accomplished by
             knowing when a change in the knowledge base might affect a record. The change management
             capability that supports these operations should be as unobtrusive as possible to
             patients and care providers, and always readily available.</para>
             <para>These operations depend on the availability not only of currently accurate
-            terminology assets, but also <emphasis role="underline">assets from prior points in time
-                (12)</emphasis>. These may include assets as <emphasis role="underline">defined or
+            terminology assets, but also <emphasis role="underline"  linkend="requirement_12">assets from prior points in time
+                (12)</emphasis>. These may include assets as <emphasis role="underline"  linkend="requirement_13">defined or
                 refined by different stakeholders (13)</emphasis> with different sets of
             assumptions. For instance, whether a disorder meets a criterion defined by a standard
             terminology, a payor, a professional society or a locally chartered board of
             specialists.</para>
             <para>To support these needs, the Enterprise Terminology that supports the clinical
-            systems must <emphasis role="underline">manage change systematically (14)</emphasis>,
+            systems must <emphasis role="underline"  linkend="requirement_14">manage change systematically (14)</emphasis>,
             and it must do so for both internally managed and externally sourced assets. </para>
     </section>
     <section>
@@ -175,9 +175,9 @@
             </itemizedlist>
         </para>
         <para>These core properties support authoring and maintenance operations: at a high level,
-            this means <emphasis role="underline">modifying the enterprise terminologies
-                (16)</emphasis>, <emphasis role="underline">importing standard terminologies
-                (15)</emphasis>, and <emphasis role="underline">publishing the enterprise
+            this means <emphasis role="underline"  linkend="requirement_16">modifying the enterprise terminologies
+                (16)</emphasis>, <emphasis role="underline"  linkend="requirement_15">importing standard terminologies
+                (15)</emphasis>, and <emphasis role="underline"  linkend="requirement_17">publishing the enterprise
                 terminologies (17)</emphasis> to the client clinical systems. The standard
             terminology publisher has the same needs around modification and publishing as the
             enterprise, and some standards import other standards as well (e.g., MedRT, which
@@ -264,38 +264,38 @@
             all terminologies. There are two key requirements for this design:</para>
         <orderedlist>
             <listitem>
-                <emphasis role="underline">A complete record of all changes, including relevant
+                <emphasis role="underline"  linkend="requirement_18">A complete record of all changes, including relevant
                     change context information (18)</emphasis>
             </listitem>
             <listitem>
-                <emphasis role="underline">A single syntax to support the representation of all
+                <emphasis role="underline"  linkend="requirement_19">A single syntax to support the representation of all
                     terminology assets, known and future (19)</emphasis>
             </listitem>
         </orderedlist>
         <para>The context information of the first requirement includes the following:</para>
         <orderedlist>
             <listitem>
-                <para>The <emphasis role="underline"> Status</emphasis> of the asset: whether it
+                <para>The <emphasis role="underline" linkend="requirement_20"> Status</emphasis> of the asset: whether it
                     should be considered active or inactive in the context of these other attributes
                     (20). </para>
             </listitem>
             <listitem>
-                <para>The <emphasis role="underline">Time</emphasis> of the change, specified with a
+                <para>The <emphasis role="underline" linkend="requirement_21">Time</emphasis> of the change, specified with a
                     time zone and at an appropriate precision (21),</para>
             </listitem>
             <listitem>
-                <para>The <emphasis role="underline">Author</emphasis> of the creation or change,
+                <para>The <emphasis role="underline" linkend="requirement_22">Author</emphasis> of the creation or change,
                     unambiguously identified (22),</para>
             </listitem>
             <listitem>
                 <para>The domain or organizational name of the larger asset within which the
                     component is meaningful, such as code system or edition (a.k.a., <emphasis
-                        role="underline">Module</emphasis>) (23),</para>
+                        role="underline" linkend="requirement_23">Module</emphasis>) (23),</para>
             </listitem>
             <listitem>
                 <para>The production branch of that organization, e.g., for distributed development,
                     testing, staging, or production (a.k.a., </para>
-                <emphasis role="underline">Path) (24), and</emphasis>
+                <emphasis role="underline" linkend="requirement_24">Path) (24), and</emphasis>
             </listitem>
         </orderedlist>
         <para>These elements together are referred to by the acronym “<emphasis role="bold"
@@ -322,7 +322,7 @@
             curation. Without consistent application of this rule, the foundational capability of
             detailed version management is impossible. </para>
         <para>Additionally, for an asset to support a record of changes, each <emphasis
-                role="underline">asset must itself be identifiable</emphasis> (25).</para>
+                role="underline" linkend="requirement_25">asset must itself be identifiable (25)</emphasis>.</para>
         <para>The “single syntax” requirement is harder to satisfy. One approach would be to define
             a syntax that addresses the data elements all known terminologies. This would be a heavy
             specification, difficult to maintain, and it would fail to capture new elements as they
@@ -702,5 +702,606 @@
                     </itemizedlist></listitem>
             </itemizedlist>
         </section>
+    </section>
+
+
+    <section>v <title>Tabular Requirements</title>
+        <informaltable>
+        <tgroup cols="4">
+            <colspec colnum="1" colname="col1"/>
+            <colspec colnum="2" colname="col2"/>
+            <colspec colnum="3" colname="col3"/>
+            <colspec colnum="4" colname="col4"/>
+            <tbody>
+                <row>
+                    <entry><emphasis role="bold">ID</emphasis></entry>
+                    <entry><emphasis role="bold">ID2</emphasis></entry>
+                    <entry><emphasis role="bold">Requirement</emphasis></entry>
+                    <entry><emphasis role="bold">Level</emphasis></entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_1" xreflabel="1">1</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">support the coordination of safe, effective
+                            medicine </emphasis></entry>
+                    <entry>Need</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_2" xreflabel="2">2</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">quality information in the patient
+                            record</emphasis></entry>
+                    <entry>Need</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_3" xreflabel="3">3</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">commonly understood data
+                        standards</emphasis></entry>
+                    <entry>Feature</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_4" xreflabel="4">4</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">support detailed change management on
+                            information assets</emphasis></entry>
+                    <entry>Feature</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_5" xreflabel="5">5</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">to record and review data quickly and
+                            accurately</emphasis></entry>
+                    <entry>Need</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_6" xreflabel="6">6</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">knowing when a change in the knowledge base
+                            might affect a record</emphasis></entry>
+                    <entry>Need</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_7" xreflabel="7">7</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">terms available are
+                        appropriate</emphasis></entry>
+                    <entry>Feature</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_8" xreflabel="8">8</entry>
+                    <entry/>
+                    <entry>a term that is not supported by the enterprise terminology, the <emphasis
+                            role="underline">effort will be captured</emphasis></entry>
+                    <entry>Feature</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_9" xreflabel="9">9</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">terms available are appropriate
+                            (duplicate)</emphasis></entry>
+                    <entry/>
+                </row>
+                <row>
+                    <entry xml:id="requirement_10" xreflabel="10">10</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">Changes to the terminology that could affect
+                            record interpretation will be indicated</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_11" xreflabel="11">11</entry>
+                    <entry/>
+                    <entry>ability to <emphasis role="underline">see available values and CDS
+                            results for specific dates and contexts</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_12" xreflabel="12">12</entry>
+                    <entry/>
+                    <entry>availability of <emphasis role="underline">assets from prior points in
+                            time </emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_13" xreflabel="13">13</entry>
+                    <entry/>
+                    <entry>assets as <emphasis role="underline">defined or refined by different
+                            stakeholders </emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_14" xreflabel="14">14</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">manage change
+                        systematically</emphasis></entry>
+                    <entry>Feature</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_15" xreflabel="15">15</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">importing standard
+                        terminologies</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_16" xreflabel="16">16</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">modifying the enterprise
+                            terminologies</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_17" xreflabel="17">17</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">publishing the enterprise
+                            terminologies</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_18" xreflabel="18">18</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">A complete record of all changes, including
+                            relevant context information</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_19" xreflabel="19">19</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">A single syntax to support the representation
+                            of all terminology assets, known and future</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_20" xreflabel="20">20</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">Status</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_21" xreflabel="21">21</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">Time</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_22" xreflabel="22">22</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">Author</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_23" xreflabel="23">23</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">Module</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_24" xreflabel="24">24</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">Path</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_25" xreflabel="25">25</entry>
+                    <entry/>
+                    <entry><emphasis role="underline">asset must itself be
+                        identifiable</emphasis></entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_26" xreflabel="26">26</entry>
+                    <entry/>
+                    <entry>All Tinkar assets have STAMP values</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_27" xreflabel="27">27</entry>
+                    <entry/>
+                    <entry>assets in Tinkar must be identifiable (duplicate)</entry>
+                    <entry/>
+                </row>
+                <row>
+                    <entry xml:id="requirement_28" xreflabel="28">28</entry>
+                    <entry/>
+                    <entry>Published terminologies, with all existing features</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_29" xreflabel="29">29</entry>
+                    <entry/>
+                    <entry>Enumerated sets of concepts for specified purposes, a.k.a., value sets or
+                        refsets</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_30" xreflabel="30">30</entry>
+                    <entry/>
+                    <entry>Sets of associations or constraints composing an intensional definition
+                        of a value set</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_31" xreflabel="31">31</entry>
+                    <entry/>
+                    <entry>Sets of associations or constraints composing a logical definition of a
+                        concept</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_32" xreflabel="32">32</entry>
+                    <entry/>
+                    <entry>Sets of information about a concept as specified by a system; e.g., names
+                        (long, short, related, synonyms), codes, definitional properties,
+                        recommendations or constraints on use of units, change types</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_33" xreflabel="33">33</entry>
+                    <entry/>
+                    <entry>Sets of information about metadata elements, such as the language of a
+                        term or steward of a module</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_34" xreflabel="34">34</entry>
+                    <entry/>
+                    <entry>Associations among concepts, including relationships defined by member
+                        systems (LOINC system, MedRT mechanism of action, SNOMED CT finding
+                        site).</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_35" xreflabel="35">35</entry>
+                    <entry/>
+                    <entry>Associations among concepts, including classification &amp; equivalence
+                        maps defined to harmonize and coordinate concepts common to different
+                        systems.</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_36" xreflabel="36">36</entry>
+                    <entry/>
+                    <entry>Sets of sets, supporting maps with multiple members. E.g., a set of Names
+                        may include a single preferred name and a contained set of synonyms.
+                        [Specific use cases should illustrate how our Semantics will probably have
+                        several layers]</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_37" xreflabel="37">37</entry>
+                    <entry/>
+                    <entry>Constraints on values</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_37a" xreflabel="37">37</entry>
+                    <entry>a</entry>
+                    <entry>Logical compositional constraints on valid concepts, e.g., the SNOMED CT
+                        concept model</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_37b" xreflabel="37">37</entry>
+                    <entry>b</entry>
+                    <entry>Syntactic compositional constraints on strings, e.g., MIME types, ISO
+                        languages, or UCUM units</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_37c" xreflabel="37">37</entry>
+                    <entry>c</entry>
+                    <entry>[Magnitudes? Dates?]</entry>
+                    <entry/>
+                </row>
+                <row>
+                    <entry xml:id="requirement_37d" xreflabel="37">37</entry>
+                    <entry>d</entry>
+                    <entry>Structural constraints, e.g., presence of exactly one name classified as
+                        “fully specified,” or names in specified languages</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_37e" xreflabel="37">37</entry>
+                    <entry>e</entry>
+                    <entry>Rules that may govern modifications to other assets, e.g., incremental
+                        addition of effort estimates based on known problematic terms.</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_37f" xreflabel="37">37</entry>
+                    <entry>f</entry>
+                    <entry>Constraints depend on (refer to) values to be constrained; values are not
+                        bound to constraints in ways that cannot be filtered out</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_37g" xreflabel="37">37</entry>
+                    <entry>g</entry>
+                    <entry>Users can select contexts in which sets of constraints may or may not be
+                        applied</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38" xreflabel="38">38</entry>
+                    <entry/>
+                    <entry>Modify component</entry>
+                    <entry>Feature</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38a" xreflabel="38">38</entry>
+                    <entry>a</entry>
+                    <entry>An addition is a new version with a new chronology UUID.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38ai" xreflabel="38">38</entry>
+                    <entry>ai</entry>
+                    <entry>Semantics may assert rules for additions to Modules, Paths, or other
+                        sets, e.g.,</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38ai1" xreflabel="38">38</entry>
+                    <entry>ai1</entry>
+                    <entry>A concept must have at least one name</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38ai2" xreflabel="38">38</entry>
+                    <entry>ai2</entry>
+                    <entry>A concept must have at least one parent</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38ai3" xreflabel="38">38</entry>
+                    <entry>ai3</entry>
+                    <entry>A Concept logical definition Semantic must have a definition
+                        status</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38b" xreflabel="38">38</entry>
+                    <entry>b</entry>
+                    <entry>A deletion is a new version of an existing chronology with status set to
+                        “inactive.”</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38bi" xreflabel="38">38</entry>
+                    <entry>bi</entry>
+                    <entry>Semantics may assert rules for deletions from Modules, Paths, or other
+                        sets, e.g.,</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38bi1" xreflabel="38">38</entry>
+                    <entry>bi1</entry>
+                    <entry>Children of deactivated concepts must be assigned a new parent</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38c" xreflabel="38">38</entry>
+                    <entry>c</entry>
+                    <entry>A change is a new version of an existing chronology with the new
+                        value(s), distinguishable by the time (and possibly other STAMP
+                        values).</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38ci" xreflabel="38">38</entry>
+                    <entry>ci</entry>
+                    <entry>A change may involve only a STAMP value; e.g., deactivation, or transfer
+                        of a concept to a new module or path.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_38ci1" xreflabel="38">38</entry>
+                    <entry>ci1</entry>
+                    <entry>Transfer involves a new version and a decision about whether to
+                        deactivate the old one.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39" xreflabel="39">39</entry>
+                    <entry/>
+                    <entry>Any modification must be followed by identification of dependent
+                        relationships.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39a" xreflabel="39">39</entry>
+                    <entry>a</entry>
+                    <entry>A dependent relationship is a Semantic assertion that refers to a prior
+                        version of a changed component.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39b" xreflabel="39">39</entry>
+                    <entry>b</entry>
+                    <entry>Semantics should specify approaches for handling kinds of
+                        changes.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39bi" xreflabel="39">39</entry>
+                    <entry>bi</entry>
+                    <entry>Dependent relationships with rules may be handled automatically.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39bii" xreflabel="39">39</entry>
+                    <entry>bii</entry>
+                    <entry>Dependent relationships without rules must be handled manually.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39c" xreflabel="39">39</entry>
+                    <entry>c</entry>
+                    <entry>Multiple dependent relationships must be ordered to prevent redundant
+                        handling.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39ci" xreflabel="39">39</entry>
+                    <entry>ci</entry>
+                    <entry>If dependent relationship [A] also depends on a second dependent
+                        relationship [B], then dependent relationship [B] should be addressed
+                        first.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39d" xreflabel="39">39</entry>
+                    <entry>d</entry>
+                    <entry>Semantics are specific to module and path, so their rules are as
+                        well.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39di" xreflabel="39">39</entry>
+                    <entry>di</entry>
+                    <entry>Rules may include or exclude modules or paths from their dependency
+                        graphs.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39e" xreflabel="39">39</entry>
+                    <entry>e</entry>
+                    <entry>Rules will be applied at the time the change is recognized.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39ei" xreflabel="39">39</entry>
+                    <entry>ei</entry>
+                    <entry>Terminology authoring activities will apply these rules at the time of
+                        authoring.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39eii" xreflabel="39">39</entry>
+                    <entry>eii</entry>
+                    <entry>Export and publication activities may apply additional rules at the time
+                        of export or publication. These operations may be the equivalent of
+                        modifying the Path of a set of assets (i.e., creating a new set of versions
+                        specifying the new Path).</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39eiii" xreflabel="39">39</entry>
+                    <entry>eiii</entry>
+                    <entry>Import activities may apply import rules at the time of import.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_39eiv" xreflabel="39">39</entry>
+                    <entry>eiv</entry>
+                    <entry>The timeframe for rule disposition may be defined by the rule.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_40" xreflabel="40">40</entry>
+                    <entry/>
+                    <entry>Publication is the copying of a set of Versions with a new Path.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_40a" xreflabel="40">40</entry>
+                    <entry>a</entry>
+                    <entry>Publication may invoke a specified set of rules or a higher level of
+                        stringency for previously applied rules.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_40b" xreflabel="40">40</entry>
+                    <entry>b</entry>
+                    <entry>Publication may or may not imply deactivation of the Versions in the
+                        prior path.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_41" xreflabel="41">41</entry>
+                    <entry/>
+                    <entry>Export is the serialization of a data set (typically a published module
+                        or set of modules) into a file suitable for automated consumption by another
+                        terminology management system.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_41a" xreflabel="41">41</entry>
+                    <entry>a</entry>
+                    <entry>This serialization will conform to [specification]</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_42" xreflabel="42">42</entry>
+                    <entry/>
+                    <entry>Import is the automated consumption of an exported data set by a
+                        terminology management system.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_43" xreflabel="43">43</entry>
+                    <entry/>
+                    <entry>[Context | Coordinate] management</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_43a" xreflabel="43">43</entry>
+                    <entry>a</entry>
+                    <entry>A minimal set of STAMP values (time, module, and path) is required to
+                        determine the validity of any operation or Semantic.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_43ai" xreflabel="43">43</entry>
+                    <entry>ai</entry>
+                    <entry>Author may be used for this purpose, but is unlikely to be
+                        useful.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_43aii" xreflabel="43">43</entry>
+                    <entry>aii</entry>
+                    <entry>Status may be used to distinguish between “active-only” and “all”
+                        views.</entry>
+                    <entry>Implementation</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_43b" xreflabel="43">43</entry>
+                    <entry>b</entry>
+                    <entry>A module dependency Semantic may be used to determine what modules depend
+                        on others – i.e., adopt assertions in the independent module. Such a
+                        Semantic must be acyclic.</entry>
+                    <entry>Design</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_43c" xreflabel="43">43</entry>
+                    <entry>c</entry>
+                    <entry>[similar functionality for Paths?]</entry>
+                    <entry/>
+                </row>
+                <row>
+                    <entry xml:id="requirement_43d" xreflabel="43">43</entry>
+                    <entry>d</entry>
+                    <entry>A user will be able to determine what modules a service supports, with
+                        their dependencies</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_43di" xreflabel="43">43</entry>
+                    <entry>di</entry>
+                    <entry>Within the module, specific paths</entry>
+                    <entry>Requirement</entry>
+                </row>
+                <row>
+                    <entry xml:id="requirement_43dii" xreflabel="43">43</entry>
+                    <entry>dii</entry>
+                    <entry>Within the module, sets of Semantics defined by grouping Semantics, e.g.,
+                        for specific use cases (such as quality measures) or specialties.</entry>
+                    <entry>Requirement</entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </informaltable>
     </section>
 </chapter>
