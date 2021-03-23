@@ -183,9 +183,6 @@
                     <para>Byte Array - an array of 8-bit signed two's complement integers.</para>
                 </listitem>
                 <listitem>
-                    <para>Object Array - an array of objects.</para>
-                </listitem>
-                <listitem>
                     <para>Directed Graph or Digraph - a graph whose edges are ordered pairs of
                         vertices. Each edge can be followed from one vertex to another
                         vertex.</para>
@@ -227,7 +224,7 @@
             patterns that Semantic components can follow, like an XML or RDF Schema.</para>
         <para>
             <figure>
-                <title>Semantic Definition</title>
+                <title>Type Pattern</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="Semantic_Definitionv2.png" format="PNG" scalefit="1"
@@ -235,7 +232,7 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">Semantic Definition</emphasis></para>
+                    <para><emphasis role="italics">Type Pattern</emphasis></para>
                 </caption>
             </figure>
         </para>
