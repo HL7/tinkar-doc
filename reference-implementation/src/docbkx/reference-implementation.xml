@@ -257,7 +257,7 @@
         </para>
         <para>
             <figure>
-                <title>SNOMED CT<superscript>®</superscript>Relationships</title>
+                <title>SNOMED CT<superscript>®</superscript> Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="SNOMED_rels.png"  scalefit="1" width="100%" contentdepth="100%"/>
@@ -378,7 +378,7 @@
             of the SNOMED CT<superscript>®</superscript> U.S. Edition. The classifier has detected
             that there is an equivalence between the Concepts: "Ankylosis of bilateral knee joints
             (disorder)" and "Ankylosis of both knee joints (disorder)".<figure>
-                <title>Equivalencies Detected by Classifier</title>
+                <title>Equivalences Detected by Classifier</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="equivalents.png" scalefit="1" width="100%"
@@ -386,7 +386,7 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">Equivalencies Detected by
+                    <para><emphasis role="italics">Equivalences Detected by
                         Classifier</emphasis></para>
                 </caption>
             </figure>
@@ -397,7 +397,7 @@
             Concept "Ankylosis of bilateral knee joints (disorder)" would need to be retired as it
             belongs to the U.S. Edition and the "Ankylosis of both knee joints (disorder)" Concept
             is contained in the SNOMED CT<superscript>®</superscript> International Release. <figure>
-                <title>SNOMED CT<superscript>®</superscript>Equivalences between Modules
+                <title>SNOMED CT<superscript>®</superscript> Equivalences between Modules
                     <?oxy_comment_start author="rcholan" timestamp="20210320T111535-0400" comment="From Penni: I think this is backward the &quot;both&quot; is the US and the &quot;bilateral&quot; is the International core"?></title><?oxy_comment_end?>
                 <mediaobject>
                     <imageobject>

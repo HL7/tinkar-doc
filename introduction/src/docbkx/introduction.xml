@@ -290,9 +290,9 @@
             <entry>Consistent representation and configuration management</entry>
           </row>
           <row>
-            <entry>SNOMED CT’s proprietary aspects prevents use as a common format for
-                LOINC<superscript>®</superscript> and similar</entry>
-            <entry>Build on existing SNOMED CT<superscript>®</superscript>foundation, rather than
+            <entry>SNOMED CT’s<superscript>®</superscript> proprietary aspects prevents use as a
+              common format for LOINC<superscript>®</superscript> and similar</entry>
+            <entry>Build on existing SNOMED CT<superscript>®</superscript> foundation, rather than
               reinvent, using an opensource initiative approved permissive licenses (i.e., Apache 2) </entry>
           </row>
         </tbody>

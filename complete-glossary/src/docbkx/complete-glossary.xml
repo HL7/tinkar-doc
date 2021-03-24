@@ -139,8 +139,9 @@
                         <entry>The Terminology Knowledge Layer of the Knowledge Architecture
                             provides structured sets of medical terms and codes that define concepts
                             of interest, including, descriptions, dialects, language, and semantic
-                            hierarchy; SNOMED CT, LOINC<superscript>®</superscript>, and RxNorm are
-                            part of this layer.</entry>
+                            hierarchy; SNOMED CT<superscript>®</superscript>,
+                                LOINC<superscript>®</superscript>, and RxNorm are part of this
+                            layer.</entry>
                     </row>
                     <row>
                         <entry>
