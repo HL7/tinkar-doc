@@ -39,6 +39,12 @@
     <xsl:attribute name="hyphenate">false</xsl:attribute>
   </xsl:attribute-set>
 
+  <!-- <xsl:attribute-set name="root.properties">
+    <xsl:attribute name="hyphenate">false</xsl:attribute>
+  </xsl:attribute-set> -->
+
+
+
 <!--==============================================================-->
 <!--  Template customizations                                     -->
 <!--==============================================================-->
@@ -535,6 +541,30 @@ so these templates do nothing-->
       </xsl:otherwise>
     </xsl:choose>
   </fo:block>
+</xsl:template>
+
+<xsl:template name="set.flow.properties">
+  <xsl:param name="element" select="local-name(.)"/>
+  <xsl:param name="master-reference" select="''"/>
+  <xsl:attribute name="hyphenate">false</xsl:attribute>
+
+  <!-- <xsl:choose>
+    <xsl:when test="starts-with($master-reference, 'index') or
+                    starts-with($master-reference, 'titlepage') or
+                    starts-with($master-reference, 'lot') or  
+                    starts-with($master-reference, 'front')">
+      <xsl:attribute name="hyphenate">false</xsl:attribute>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:attribute name="hyphenate">
+        <xsl:value-of select="$hyphenate"/>
+      </xsl:attribute>
+    </xsl:otherwise>
+  </xsl:choose>
+  ...
+
+  -->
+
 </xsl:template>
 
 </xsl:stylesheet>

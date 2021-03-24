@@ -262,18 +262,18 @@
         <tbody>
           <row>
             <entry>
-              <itemizedlist>
-                <listitem>
+              <!-- <itemizedlist> -->
+                <!-- <listitem> -->
                   <emphasis role="bold">Challenge</emphasis>
-                </listitem>
-              </itemizedlist>
+                <!-- </listitem> -->
+              <!-- </itemizedlist> -->
             </entry>
             <entry>
-              <itemizedlist>
-                <listitem>
+              <!-- <itemizedlist> -->
+                <!-- <listitem> -->
                   <emphasis role="bold">Tinkar Solution</emphasis>
-                </listitem>
-              </itemizedlist>
+                <!-- </listitem> -->
+              <!-- </itemizedlist> -->
             </entry>
           </row>
           <row>
