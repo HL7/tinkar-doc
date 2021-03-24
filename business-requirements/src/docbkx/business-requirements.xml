@@ -243,12 +243,12 @@
                             <para>A user adds, modifies, or deactivates content in the terminology
                                 assets of the standard, including assets provided to client
                                 terminology systems as well as management data used only within the
-                                knowledge base (e.g., changing SNOMED relationships, inserting a
-                                concept in between two existing concepts). Note that a standard can
-                                only be modified by the standard owner. A client enterprise may add
-                                to or modify the content in an "overlay," but those changes are part
-                                of the local enterprise assets. They do not actually modify the
-                                standard.</para>
+                                knowledge base (e.g., changing SNOMED CT<superscript>®</superscript>
+                                relationships, inserting a concept in between two existing
+                                concepts). Note that a standard can only be modified by the standard
+                                owner. A client enterprise may add to or modify the content in an
+                                "overlay," but those changes are part of the local enterprise
+                                assets. They do not actually modify the standard.</para>
                         </entry>
                     </row>
                 </tbody>
@@ -556,8 +556,8 @@
                 </listitem>
                 <listitem><emphasis role="bold">Constraints </emphasis> on asset patterns, including<itemizedlist>
                         <listitem>
-                            <para>Logical composition constraints on concepts, e.g., the SNOMED CT
-                                concept model</para>
+                            <para>Logical composition constraints on concepts, e.g., the SNOMED
+                                    CT<superscript>®</superscript> concept model</para>
                         </listitem>
                         <listitem>
                             <para>Syntactic compositional constraints on strings, e.g., MIME types,
@@ -612,10 +612,10 @@
                                 <para>Perform general quality assurance</para>
                             </listitem>
                         </itemizedlist>For example, constraints would be used to represent standard
-                        terminology artifacts, like the SNOMED CT Machine Readable Concept Model.
-                        Additionally, constraints could be used to ensure that terminologies are
-                        represented within Tinkar in such a way that they can be completely and
-                        consistently queried and displayed. </para>
+                        terminology artifacts, like the SNOMED CT<superscript>®</superscript>
+                        Machine Readable Concept Model. Additionally, constraints could be used to
+                        ensure that terminologies are represented within Tinkar in such a way that
+                        they can be completely and consistently queried and displayed. </para>
                     <para>These same constraints can be used with respect to creating new content
                         within Tinkar to specify the minimally viable data that would be required.
                         For example:<itemizedlist>
@@ -635,8 +635,9 @@
                     <para>Constraints can be applied (or not applied) based on various criteria to
                         perform Quality Assurance on content that is represented within Tinkar. For example:<itemizedlist>
                             <listitem>
-                                <para>SNOMED CT FullySpecifiedName hierarchy tags are applied based
-                                    on where a concept exists in a hierarchy</para>
+                                <para>SNOMED CT<superscript>®</superscript> FullySpecifiedName
+                                    hierarchy tags are applied based on where a concept exists in a
+                                    hierarchy</para>
                             </listitem>
                             <listitem>
                                 <para>Relationships between concepts have domain (based on
@@ -653,17 +654,17 @@
                         an Allow List could also be represented as a Semantic to record concepts
                         that are allowed to not conform to a constraint. Constraints would be
                         represented using semantics as they are self describing and can support
-                        multiple different representations for constraints (SNOMED CT Expression
-                        Constraint Language, Drools, etc.). Representing Constraints as a Semantic
-                        also ensures they have a STAMP so they are versioned over time, captures
-                        author information and allows them to be tested and progressed over
-                        different modules and paths.</para>
+                        multiple different representations for constraints (SNOMED
+                            CT<superscript>®</superscript> Expression Constraint Language, Drools,
+                        etc.). Representing Constraints as a Semantic also ensures they have a STAMP
+                        so they are versioned over time, captures author information and allows them
+                        to be tested and progressed over different modules and paths.</para>
                     <para>Implementing Constraints would depend upon how the Constraints are written
                         and formatted. For example, Implementers could utilize a Rete algorithm
                         through something like Drools to implement Constraints.</para>
                     <listitem>
-                        <para>Properties published in SNOMED CT RF2, including Machine Readable
-                            Concept Model (MRCM)</para>
+                        <para>Properties published in SNOMED CT<superscript>®</superscript> RF2,
+                            including Machine Readable Concept Model (MRCM)</para>
                     </listitem>
                     <listitem>
                         <para>LOINC<superscript>®</superscript> properties published in [Access |
@@ -694,7 +695,7 @@
                             <listitem><emphasis role="underline">Equivalences</emphasis> to support
                                 semantic integration of terminologies (e.g., that a
                                     LOINC<superscript>®</superscript> “system” instantiates the same
-                                relationship concept as the SNOMED CT “inheres in”
+                                relationship concept as the SNOMED CT<superscript>®</superscript> “inheres in”
                                 attribute)</listitem>
                             <listitem>
                                 <para>Exclusions to support removal of non-semantic properties from
@@ -733,7 +734,8 @@
                     </row>
                     <row>
                         <entry xml:id="requirement_4" xreflabel="4">4</entry>
-                        <entry>effort will be captured as a proposed term </entry>
+                        <entry>for structured data using standard terminologies, the terms available
+                            are appropriate for the clinical context</entry>
                     </row>
                     <row>
                         <entry xml:id="requirement_5" xreflabel="5">5</entry>

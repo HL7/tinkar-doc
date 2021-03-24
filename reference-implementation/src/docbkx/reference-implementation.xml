@@ -7,10 +7,11 @@
     <para>This section includes user documentation for an example implementation of the Terminology
         Knowledge Base standard, referred to as Komet (<link
             xlink:href="https://github.com/logicahealth/komet"/>), and how various terminologies,
-        such as SNOMED, LOINC<superscript>®</superscript>, RxNorm, and HL7 terminologies shall be
-        reproducibly represented using the Terminology Knowledge Base standard. Using the Komet
-        browser we can view the search Concepts, view the Concept details (Semantics), and navigate
-        hierarchies among many other functions that are outside the scope of this ballot.</para>
+        such as SNOMED CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm,
+        and HL7 terminologies shall be reproducibly represented using the Terminology Knowledge Base
+        standard. Using the Komet browser we can view the search Concepts, view the Concept details
+        (Semantics), and navigate hierarchies, as well as many other functions that are outside the
+        scope of this ballot.</para>
     <para>Java Reference Classes for the Tinkar model can be accessed here:(<link
         xlink:href="https://github.com/HL7/tinkar-java"/>).  C# Reference Classes
         can be accessed here:(<link
@@ -95,8 +96,8 @@
                 <listitem>
                     <para>STR TypePattern: This pattern is used to associate a String to a
                         Component. The type of association to a Component is represented by a Tinkar
-                        Model Concept. In the example below the type of String is SNOMED CT integer
-                        ID.</para>
+                        Model Concept. In the example below the type of String is SNOMED
+                            CT<superscript>®</superscript> integer ID.</para>
                     <figure>
                         <title>STR TypePattern</title>
                         <mediaobject>
@@ -114,8 +115,8 @@
                 <listitem>
                     <para>REF TypePattern: This pattern is used to associate a Concept to a
                         Component. The type of association is also represented by a Tinkar Model
-                        Concept. In the example below the type of association is SNOMED legacy
-                        implication.</para>
+                        Concept. In the example below the type of association is "SNOMED legacy
+                        implication".</para>
                     <figure>
                         <title>REF TypePattern</title>
                         <mediaobject>
@@ -138,7 +139,8 @@
       <para>Below we see the details for the LOINC<superscript>®</superscript> Concept Homocystine
             [Mass/time] in 24 hour Urine. You can see the LOINC<superscript>®</superscript> ID, data
             from the LOINC<superscript>®</superscript> table, Solor assigned Names, and
-            relationships from the LOINC<superscript>®</superscript>- SNOMED CT Cooperation Project. <figure>
+            relationships from the LOINC<superscript>®</superscript>- SNOMED
+                CT<superscript>®</superscript> Cooperation Project. <figure>
                 <title>Concept Details</title>
                 <mediaobject>
                     <imageobject>
@@ -169,10 +171,11 @@
     <section>
         <title>Navigator View</title>
         <para>In this example we see the results of combining the LOINC<superscript>®</superscript>-
-            SNOMED CT Cooperation Project module with the latest SNOMED CT and
-                LOINC<superscript>®</superscript> releases. You can then visualize and navigate the
-            SNOMED CT hierarchy and arrive at associated LOINC<superscript>®</superscript> codes
-            that would be reached by the Urine homocystine measurement Concept. <figure>
+            SNOMED CT<superscript>®</superscript> Cooperation Project module with the latest SNOMED
+                CT<superscript>®</superscript> and LOINC<superscript>®</superscript> releases. You
+            can then visualize and navigate the SNOMED CT<superscript>®</superscript> hierarchy and
+            arrive at associated LOINC<superscript>®</superscript> codes that would be reached by
+            the Urine homocystine measurement Concept. <figure>
                 <title>Navigation View</title>
                 <mediaobject>
                     <imageobject>
@@ -189,7 +192,7 @@
   <section>
       <title>Versioning in Komet</title>
     <para>Representing all versions of components within Tinkar allows for the ability to view both
-            Active and Inactive components and comparing the representations across time. The image
+            Active and Inactive components and to compare the representations across time. The image
             below shows only the Active components for the Concept Fibromyalgia compared to all
             previous versions of Fibromyalgia over time. <figure>
                 <title>Latest View with Active Status versus Latest View with Any Status</title>
@@ -223,43 +226,46 @@
         </para>
   </section>
     <section>
-        <title>SNOMED CT Example</title>
+        <title>SNOMED CT<superscript>®</superscript> Example</title>
         <para>
             <figure>
-                <title>SNOMED CT Concept</title>
+                <title>SNOMED CT<superscript>®</superscript> Concept</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="SNOMED_concept.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">SNOMED CT Concept</emphasis></para>
+                    <para><emphasis role="italics">SNOMED CT<superscript>®</superscript>
+                            Concept</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>SNOMED CT Descriptions</title>
+                <title>SNOMED CT<superscript>®</superscript> Descriptions</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="SNOMED_desc.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">SNOMED CT Descriptions</emphasis></para>
+                    <para><emphasis role="italics">SNOMED CT<superscript>®</superscript>
+                            Descriptions</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>SNOMED CT Relationships</title>
+                <title>SNOMED CT<superscript>®</superscript>Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="SNOMED_rels.png"  scalefit="1" width="100%" contentdepth="100%"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">SNOMED CT Relationships</emphasis></para>
+                    <para><emphasis role="italics">SNOMED CT<superscript>®</superscript>
+                            Relationships</emphasis></para>
                 </caption>
             </figure>
         </para>
@@ -366,11 +372,12 @@
     <section>
         <title>Equivalences between Modules</title>
         <para>Komet includes the capability to use a description logic classifier to create inferred
-            views and detect equivalencies and other errors. The following image shows the results
-            of the classifier after merging the January 2021 version of the SNOMED CT International
-            release with the September 2020 version of the SNOMED CT U.S. Edition. The classifier
-            has detected that there is an equivalency between the Concepts: "Ankylosis of bilateral
-            knee joints (disorder)" and "Ankylosis of both knee joints (disorder)".<figure>
+            views and detect equivalences and other errors. The following image shows the results of
+            the classifier after merging the January 2021 version of the SNOMED
+                CT<superscript>®</superscript> International release with the September 2020 version
+            of the SNOMED CT<superscript>®</superscript> U.S. Edition. The classifier has detected
+            that there is an equivalence between the Concepts: "Ankylosis of bilateral knee joints
+            (disorder)" and "Ankylosis of both knee joints (disorder)".<figure>
                 <title>Equivalencies Detected by Classifier</title>
                 <mediaobject>
                     <imageobject>
@@ -389,8 +396,8 @@
             understand how to correct the equivalencies between the two Concepts. In this case, the
             Concept "Ankylosis of bilateral knee joints (disorder)" would need to be retired as it
             belongs to the U.S. Edition and the "Ankylosis of both knee joints (disorder)" Concept
-            is contained in the SNOMED CT International Release. <figure>
-                <title>SNOMED CT Equivalences between Modules
+            is contained in the SNOMED CT<superscript>®</superscript> International Release. <figure>
+                <title>SNOMED CT<superscript>®</superscript>Equivalences between Modules
                     <?oxy_comment_start author="rcholan" timestamp="20210320T111535-0400" comment="From Penni: I think this is backward the &quot;both&quot; is the US and the &quot;bilateral&quot; is the International core"?></title><?oxy_comment_end?>
                 <mediaobject>
                     <imageobject>
@@ -399,8 +406,8 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">SNOMED CT Equivalences between
-                        Modules</emphasis></para>
+                    <para><emphasis role="italics">SNOMED CT<superscript>®</superscript>
+                            Equivalences between Modules</emphasis></para>
                 </caption>
             </figure>
         </para>

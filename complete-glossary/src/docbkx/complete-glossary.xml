@@ -9,7 +9,7 @@
             <tbody>
                 <row>
                     <entry>Terminology</entry>
-                    <entry>A set of concept identifiers, descriptors, and relationships for used to
+                    <entry>A set of concept identifiers, descriptors, and relationships used to
                         capture domain information in an information system.</entry>
                 </row>
                 <row>
@@ -100,7 +100,7 @@
                         order to support operations.</entry>
                 </row>
                 <row>
-                    <entry>Infrastructure concepts</entry>
+                    <entry>Tinkar Model Concepts (a.k.a Infrastructure concepts)</entry>
                     <entry>Foundational assets that are concepts.</entry>
                 </row>
             </tbody>
@@ -158,10 +158,11 @@
                         <entry>Komet (Knowledge Management Environment)</entry>
                         <entry>
                             <para>Komet is an example implementation of the Tinkar model, and shows
-                                how terminologies like SNOMED, LOINC<superscript>®</superscript>,
-                                RxNorm shall be represented. Using the Komet browser we can view and
-                                search concepts, view concept details, and navigate hierarchies,
-                                among many other functions.</para>
+                                how terminologies like SNOMED CT<superscript>®</superscript>,
+                                    LOINC<superscript>®</superscript>, RxNorm shall be represented.
+                                Using the Komet browser we can view and search concepts, view
+                                concept details, and navigate hierarchies, among many other
+                                functions.</para>
                         </entry>
                     </row>
                     <row>
@@ -176,6 +177,11 @@
                         <entry>UUID (universally unique identifier)</entry>
                         <entry>A 128-bit number used to identify information in computer
                             systems.</entry>
+                    </row>
+                    <row>
+                        <entry>FHIR (Fast Healthcare Interoperability Resources)</entry>
+                        <entry>A standard describing data formats and elements and an application
+                            programming interface for exchanging electronic health records. </entry>
                     </row>
                 </tbody>
             </tgroup>

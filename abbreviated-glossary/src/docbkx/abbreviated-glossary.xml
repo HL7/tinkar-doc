@@ -4,13 +4,12 @@
     <title>References</title>
     
     <para xml:id="bib1">1. Bodenreider O, Cornet R, Vreeman DJ. Recent Developments in Clinical
-        Terminologies - SNOMED CT, LOINC, and RxNorm. Yearb Med Inform. 2018
-        Aug;27(1):129-139. doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID:
-        30157516; PMCID: PMC6115234.Available from: <link
+        Terminologies - SNOMED CT, LOINC, and RxNorm. Yearbook Med Inform. 2018 Aug;27(1):129-139.
+        doi: 10.1055/s-0038-1667077. Epub 2018 Aug 29. PMID: 30157516; PMCID: PMC6115234.Available
+        from: <link
             xlink:href="https://secure-web.cisco.com/1Rt0r8u7T7NY9CEo7VP3m63-0MenkxXzp17zayrPnUBBKiPy82brLyrkAVLvgfg77pzA6vCsGB6dLa4epbGdep_Tz79lu7Y86jqx4kGlBWBUBQzhMbZno3mBVv_79j3dSxrqI8q66U1p2hoLpf3L9Scn0omPn0oKci1hp5VpIJplPvQCnT1uGYJeH_bkRwaOztGifsMt3xqZ-SyMTlOnrD3U1c5rbQ4InoAvOtrSkm5QQcQWYfqZ_PGBhxld0KNE-9QZ4UXm7e9_3frDVUnmBTYa2SqYaCXAVMFqUaw6lSh3xpTdLkluwv16-LAWjejYmcDBOZ-DMHV4GRXC3hd5iw0yyUAUhCi4sbcwil9rEfMUwVI5IJJLqhFo5ul-PvmOcPoTxCb6hXzIzjeVrqMBKHOST-JXfzdLCMDguQl-3jfVnNw2MCD2gCJk3ToZozfotPeHqujW0LsUmNuDfe_cNxtUEsHi47nEN1uMn_utnWB9U8Fu-_wVsSJYwhazRdq-bgs4aYydLH-u_I3RWTUtoNA/https%3A%2F%2Fwww.healthit.gov%2Fsites%2Fdefault%2Ffiles%2Fmedstar_hit_safety_1_29_v2.pdf"
-            ><link
-                xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6115234/"
-            /></link>.</para>
+                ><link xlink:href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6115234/"
+        /></link>.</para>
     
     <para xml:id="bib2">2. Capability Maturity Model Integration (CMMI) for Development, Version
         1.3. Software Engineering Institute; 2010. Available from: <link
