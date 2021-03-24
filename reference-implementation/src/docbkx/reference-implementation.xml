@@ -9,11 +9,133 @@
             xlink:href="https://github.com/logicahealth/komet"/>), and how various terminologies,
         such as SNOMED, LOINC<superscript>®</superscript>, RxNorm, and HL7 terminologies shall be
         reproducibly represented using the Terminology Knowledge Base standard. Using the Komet
-        browser we can view the search concepts, view the concept details, and navigate hierarchies
-        among many other functions that are outside the scope of this ballot.</para>
+        browser we can view the search Concepts, view the Concept details (Semantics), and navigate
+        hierarchies among many other functions that are outside the scope of this ballot.</para>
+    <para>Java Reference Classes for the Tinkar model can be accessed here:(<link
+        xlink:href="https://github.com/HL7/tinkar-java"/>).  C# Reference Classes
+        can be accessed here:(<link
+            xlink:href="https://github.com/HL7/tinkar-cs"/>).</para>
   <section>
+      <title>Concept</title>
+      <para>
+          <figure>
+              <title>Concept</title>
+              <mediaobject>
+                  <imageobject>
+                      <imagedata fileref="Concept.png" scalefit="1" width="100%" contentdepth="100%"/>
+                  </imageobject>
+              </mediaobject>
+              <caption>
+                  <para><emphasis role="italics">Concept</emphasis>
+                  </para>
+              </caption>
+          </figure>
+      </para>
+      <para>The image above represents the Concept “Acute pelvic pain” within the Komet Concept
+            Detail panel. In this part of the Concept Detail Panel, no identifiers are displayed and
+            they can only be accessed by right clicking and copying them. </para>
+      <para>
+          <figure>
+              <title>Accessing Identifiers</title>
+              <mediaobject>
+                  <imageobject>
+                      <imagedata fileref="IdentifierAccess.png" scalefit="1" width="100%" contentdepth="100%"/>
+                  </imageobject>
+              </mediaobject>
+              <caption>
+                  <para><emphasis role="italics">Accessing Identifiers</emphasis>
+                    </para>
+              </caption>
+          </figure>
+      </para>
+        <para>While there is a name displayed for human readable purposes, all information
+            describing the Concept is asserted with Semantics (see below). </para>
+        <para>When viewing Concepts in Komet there are various icons that have different meanings
+            based on certain Semantics that are associated with the Concept. </para>
+      <para>
+          <figure>
+              <title>Concept Icons</title>
+              <mediaobject>
+                  <imageobject>
+                      <imagedata fileref="Concept_Shapes.png" scalefit="1" width="100%" contentdepth="100%"/>
+                  </imageobject>
+              </mediaobject>
+              <caption>
+                  <para><emphasis role="italics">Concept Icons</emphasis>
+                  </para>
+              </caption>
+          </figure>
+      </para>
+  </section>
+    <section>
+        <title>Semantic</title>
+        <para>
+            <figure>
+                <title>Semantics</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Semantics.png" scalefit="1" width="100%" contentdepth="100%"/>
+                    </imageobject>
+                </mediaobject>
+                <caption>
+                    <para><emphasis role="italics">Semantics</emphasis>
+                    </para>
+                </caption>
+            </figure>
+        </para>
+        <para>Semantics are the predicates and objects about a Concept. Semantics perform the
+            descriptive work in Tinkar. ​ ​ Here, we see descriptions and axioms attached to the
+            “Acute pelvic pain” Concept which add information specifying the Concept. ​ ​ A single
+            instance of one of these Semantics is a SemanticVersion (with a STAMP). </para>
+    </section>
+    <section>
+        <title>TypePattern</title>
+        <para>Komet currently doesn't contain functionality to view and edit TypePatterns. Some
+            examples of common patterns that are built into the tooling are:<itemizedlist>
+                <listitem>
+                    <para>STR TypePattern: This pattern is used to associate a String to a
+                        Component. The type of association to a Component is represented by a Tinkar
+                        Model Concept. In the example below the type of String is SNOMED CT integer
+                        ID.</para>
+                    <figure>
+                        <title>STR TypePattern</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="STRPattern.png" scalefit="1" width="100%"
+                                    contentdepth="100%"/>
+                            </imageobject>
+                        </mediaobject>
+                        <caption>
+                            <para><emphasis role="italics">STR TypePattern</emphasis>
+                            </para>
+                        </caption>
+                    </figure>
+                </listitem>
+                <listitem>
+                    <para>REF TypePattern: This pattern is used to associate a Concept to a
+                        Component. The type of association is also represented by a Tinkar Model
+                        Concept. In the example below the type of association is SNOMED legacy
+                        implication.</para>
+                    <figure>
+                        <title>REF TypePattern</title>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="REFPattern.png" scalefit="1" width="100%"
+                                    contentdepth="100%"/>
+                            </imageobject>
+                        </mediaobject>
+                        <caption>
+                            <para><emphasis role="italics">REF TypePattern</emphasis>
+                            </para>
+                        </caption>
+                    </figure>
+                </listitem>
+                
+            </itemizedlist></para>
+    </section>
+    <section>
       <title>Concept Detail</title>
-      <para>Below we see the details for the LOINC<superscript>®</superscript> concept Homocystine
+      <para>Below we see the details for the LOINC<superscript>®</superscript> Concept Homocystine
             [Mass/time] in 24 hour Urine. You can see the LOINC<superscript>®</superscript> ID, data
             from the LOINC<superscript>®</superscript> table, Solor assigned Names, and
             relationships from the LOINC<superscript>®</superscript>- SNOMED CT Cooperation Project. <figure>
@@ -30,7 +152,7 @@
             </figure>
         </para>
       <para>In the following image we can see the latest STAMP information for the
-                LOINC<superscript>®</superscript> concept Homocystine [Mass/time] in 24 hour Urine. <figure>
+                LOINC<superscript>®</superscript> Concept Homocystine [Mass/time] in 24 hour Urine. <figure>
                 <title>STAMP</title>
                 <mediaobject>
                     <imageobject>
@@ -41,19 +163,6 @@
                 <caption>
                     <para><emphasis role="italics">STAMP</emphasis></para>
                 </caption>
-            </figure>The Identifiers associated with Components are deliberately hidden within
-            Komet. To access the UUIDs you can copy them by right clicking on the Concept Name at
-            the top of the Concept Details Panel. <figure>
-                <title>Accessing UUIDs</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="Finding_UUID.png" scalefit="1" width="100%"
-                            contentdepth="100%"/>
-                    </imageobject>
-                </mediaobject>
-                <caption>
-                    <para><emphasis role="italics">Accessing UUIDs</emphasis></para>
-                </caption>
             </figure>
         </para>
   </section>
@@ -63,7 +172,7 @@
             SNOMED CT Cooperation Project module with the latest SNOMED CT and
                 LOINC<superscript>®</superscript> releases. You can then visualize and navigate the
             SNOMED CT hierarchy and arrive at associated LOINC<superscript>®</superscript> codes
-            that would be reached by the Urine homocystine measurement concept. <figure>
+            that would be reached by the Urine homocystine measurement Concept. <figure>
                 <title>Navigation View</title>
                 <mediaobject>
                     <imageobject>
@@ -81,7 +190,7 @@
       <title>Versioning in Komet</title>
     <para>Representing all versions of components within Tinkar allows for the ability to view both
             Active and Inactive components and comparing the representations across time. The image
-            below shows only the Active components for the concept Fibromyalgia compared to all
+            below shows only the Active components for the Concept Fibromyalgia compared to all
             previous versions of Fibromyalgia over time. <figure>
                 <title>Latest View with Active Status versus Latest View with Any Status</title>
                 <mediaobject>
@@ -260,7 +369,7 @@
             views and detect equivalencies and other errors. The following image shows the results
             of the classifier after merging the January 2021 version of the SNOMED CT International
             release with the September 2020 version of the SNOMED CT U.S. Edition. The classifier
-            has detected that there is an equivalency between the concepts: "Ankylosis of bilateral
+            has detected that there is an equivalency between the Concepts: "Ankylosis of bilateral
             knee joints (disorder)" and "Ankylosis of both knee joints (disorder)".<figure>
                 <title>Equivalencies Detected by Classifier</title>
                 <mediaobject>
@@ -275,11 +384,11 @@
                 </caption>
             </figure>
         </para>
-        <para>We can then open two Concept Detail Panels and view the two concepts side by side to
-            understand the differences and similarities between the two concepts, their origins, and
-            understand how to correct the equivalencies between the two concepts. In this case, the
-            concept "Ankylosis of bilateral knee joints (disorder)" would need to be retired as it
-            belongs to the U.S. Edition and the "Ankylosis of both knee joints (disorder)" concept
+        <para>We can then open two Concept Detail Panels and view the two Concepts side by side to
+            understand the differences and similarities between the two Concepts, their origins, and
+            understand how to correct the equivalencies between the two Concepts. In this case, the
+            Concept "Ankylosis of bilateral knee joints (disorder)" would need to be retired as it
+            belongs to the U.S. Edition and the "Ankylosis of both knee joints (disorder)" Concept
             is contained in the SNOMED CT International Release. <figure>
                 <title>SNOMED CT Equivalences between Modules
                     <?oxy_comment_start author="rcholan" timestamp="20210320T111535-0400" comment="From Penni: I think this is backward the &quot;both&quot; is the US and the &quot;bilateral&quot; is the International core"?></title><?oxy_comment_end?>
