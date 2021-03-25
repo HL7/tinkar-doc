@@ -91,8 +91,9 @@
     </section>
     <section>
         <title>TypePattern</title>
-        <para>Komet currently doesn't contain functionality to view and edit TypePatterns. Some
-            examples of common patterns that are built into the tooling are:<itemizedlist>
+        <para>Komet currently does not contain functionality to view and edit TypePatterns. We hope
+            to have that functionality available to demonstrate before the May 2021 HL7 meeting.
+            Some examples of common patterns that are built into the tooling are:<itemizedlist>
                 <listitem>
                     <para>STR TypePattern: This pattern is used to associate a String to a
                         Component. The type of association to a Component is represented by a Tinkar
@@ -103,7 +104,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="STRPattern.png" scalefit="1" width="100%"
-                                    contentdepth="100%" align="center" />
+                                    contentdepth="100%" align="center"/>
                             </imageobject>
                         </mediaobject>
                         <caption>
@@ -131,7 +132,6 @@
                         </caption>
                     </figure>
                 </listitem>
-                
             </itemizedlist></para>
     </section>
     <section>

@@ -171,7 +171,7 @@
               <listitem>
                 <para>A new set of local terminology may be managed with value sets and concept gaps
                   addressed in quick iterations (e.g., "COVID-19 negative test result" was needed in
-                  practical use before offical SDO releases, or gaps like "mild anemia" which was
+                  practical use before official SDO releases, or gaps like "mild anemia" which was
                   refused for inclusion by both the international and U.S. SNOMED
                     CT<superscript>®</superscript> release).</para>
               </listitem>
@@ -254,7 +254,7 @@
     <para> </para>
    <para> Tinkar addresses challenges and problems from the above implementation examples:</para>
     <para> </para>
-    <para> </para>
+    <para> nice </para>
     <informaltable>
       <tgroup cols="2">
         <colspec colnum="1" colname="col1"/>
@@ -293,7 +293,8 @@
             <entry>SNOMED CT’s<superscript>®</superscript> proprietary aspects prevents use as a
               common format for LOINC<superscript>®</superscript> and similar</entry>
             <entry>Build on existing SNOMED CT<superscript>®</superscript> foundation, rather than
-              reinvent, using an opensource initiative approved permissive licenses (i.e., Apache 2) </entry>
+              reinvent, using an open-source initiative approved permissive licenses (i.e., Apache
+              2) </entry>
           </row>
         </tbody>
       </tgroup>
