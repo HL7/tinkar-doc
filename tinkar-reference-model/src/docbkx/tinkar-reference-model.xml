@@ -23,7 +23,7 @@
             <title>Versioned Component</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="VersionedComponent_vF.png" scalefit="1" width="100%" contentdepth="100%"/>
+                    <imagedata fileref="VersionedComponent_vF.png" scalefit="1" width="100%" contentdepth="100%" align="center"/>
                 </imageobject>
             </mediaobject>
             <caption>
@@ -110,7 +110,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="Identified_Componentsv2.png" scalefit="1" width="100%"
-                            contentdepth="100%"/>
+                            contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -137,7 +137,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="Compositional_Semantics.png" format="PNG" scalefit="1"
-                            width="100%" contentdepth="100%"/>
+                            width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -232,7 +232,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="Semantic_Definitionv2.png" format="PNG" scalefit="1"
-                            width="100%" contentdepth="100%"/>
+                            width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -258,7 +258,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="TinkarArchitecture_vF.png" format="PNG" scalefit="1"
-                            width="100%" contentdepth="100%"/>
+                            width="100%" contentdepth="100%" align="center" />
                     </imageobject>
                 </mediaobject>
                 <caption>

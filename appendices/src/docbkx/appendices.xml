@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1" xml:id="tinkar_model_concept_appenidix">
-    <title>Tinkar Model Concepts</title>
+    <title>Tinkar Model Concepts (In Progress)</title>
+    <para>&lt;&lt;IN PROGRESS >> </para>
     <para>The Tinkar core architecture is designed to be extremely flexible. This flexibility
         supports the ability to assert relationships among diverse terminologies and to support
         change in the design of those terminologies. However, it means that there may be more than
-        one way to support any specific requirement. That level of flexibility, by permitting
-        divergent designs, actually impedes interoperability. </para>
-    <para>We propose the following members of the Tinkar Model Content.</para>
-    <para>Tinkar concepts are defined hierarchically in a directed acyclic graph. This means that
-        every class concept node in the repository has at least one “parent,” or concept
-        relationship of type “is-a,” with the exception of one root node for clinical content and
-        one root node for infrastructure content.</para>
+        one way to support any specific requirement. </para>
+    <para>We propose the following members of the Tinkar Model Concepts. </para>
+    <para>Below is an example of a subset of Tinkar Model Concepts. The full list and definitions of
+        the core Tinkar Model Concepts is in progress and will be completed by the ballot submission
+        deadline.</para>
+    <para> </para>
 </appendix>

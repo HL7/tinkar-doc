@@ -6,8 +6,7 @@
     <para>This section details specific business requirements for a Tinkar logical model.</para>
     <section>
         <title>Clinical Requirements</title>
-        
-            <para>The ultimate goal of this effort is to <emphasis role="underline"
+        <para>The ultimate goal of this effort is to <emphasis role="underline"
                 linkend="requirement_1">support the coordination of safe, effective medicine
                 (Requirement 1)</emphasis>. This goal requires <emphasis role="underline"
                 linkend="requirement_2">quality information in the patient record (Requirement
@@ -15,105 +14,103 @@
             care requires that we use <emphasis role="underline" linkend="requirement_3">commonly
                 understood data standards (Requirement 3)</emphasis> to ensure mutual comprehension
             across the care team and over time. There are four outlined clinical use cases:</para>
-            <informaltable>
-                <tgroup cols="1">
-                    <colspec colnum="1" colname="col1"/>
-                    <tbody>
-                        <row>
-                            <entry>
-                                <itemizedlist>
-                                    <listitem>
-                                        <emphasis role="bold">Record Patient Data</emphasis>
-                                    </listitem>
-                                </itemizedlist>
-                                <para>A care provider, already authenticated and authorized to the
-                                    system and using the appropriate context to ensure the system
-                                    records the data for the correct patient, adds or modifies
-                                    information in the patient record. This may include signs,
-                                    symptoms, impressions, diagnoses, orders, notes, or other
-                                    assets.</para>
-                                <para>This operation may initiate workflow processes or automated
-                                    processes such as Clinical Decision Support suggestions.</para>
-                                <para>For structured data using standard terminologies, the
-                                        <emphasis role="underline" linkend="requirement_4">terms available are appropriate
-                                        (Requirement 4)</emphasis> for the clinical context, for the role (i.e.,
-                                    terms may differ for different kinds of users), and for the data
-                                    context (i.e., data entry fields may not support inactive or
-                                    deprecated terms that would be allowed in search or analytical
-                                    contexts).</para>
-                                <para>If the available terminology does not support the provider's
-                                    needs, the provider may assert a need for a new term.</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <emphasis role="bold">Propose Terminology Change</emphasis>
-                                    </listitem>
-                                </itemizedlist>
-                                <para>If a provider attempts to enter a term that is not supported
-                                by the enterprise terminology, the <emphasis role="underline"
-                                    linkend="requirement_5">effort will be captured as a proposed
-                                    term (Requirement 5).</emphasis>
-                            </para>
-                                <para>Systems may capture this information unobtrusively as text, or
-                                    they may request further information from the clinician to
-                                    assist the authoring process. The system will convey at least
-                                    the text and the identity of the clinician to the
-                                    terminologist.</para>
-                                <itemizedlist>
-                                    <listitem>
-                                        <emphasis role="bold">Review Patient Data</emphasis>
-                                    </listitem>
-                                </itemizedlist>
-                                <para>A provider, already authenticated and authorized to the system
-                                    and using the appropriate context to ensure the system records
-                                    the data for the correct patient, finds and reviews information
-                                    in the patient record. </para>
-                                <para>For structured data using standard terminologies, the
-                                   terms available are appropriate for the clinical context,
+        <informaltable>
+            <tgroup cols="1">
+                <colspec colnum="1" colname="col1"/>
+                <tbody>
+                    <row>
+                        <entry>
+                            <itemizedlist>
+                                <listitem>
+                                    <emphasis role="bold">Record Patient Data</emphasis>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A care provider, already authenticated and authorized to the
+                                system and using the appropriate context to ensure the system
+                                records the data for the correct patient, adds or modifies
+                                information in the patient record. This may include signs, symptoms,
+                                impressions, diagnoses, orders, notes, or other assets.</para>
+                            <para>This operation may initiate workflow processes or automated
+                                processes such as Clinical Decision Support suggestions.</para>
+                            <para>For structured data using standard terminologies, the <emphasis
+                                    role="underline" linkend="requirement_4">terms available are
+                                    appropriate (Requirement 4)</emphasis> for the clinical context,
                                 for the role (i.e., terms may differ for different kinds of users),
                                 and for the data context (i.e., data entry fields may not support
                                 inactive or deprecated terms that would be allowed in search or
                                 analytical contexts).</para>
-                                <para><emphasis role="underline" linkend="requirement_6">Changes to
-                                    the terminology that could affect record interpretation will be
+                            <para>If the available terminology does not support the provider's
+                                needs, the provider may assert a need for a new term.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <emphasis role="bold">Propose Terminology Change</emphasis>
+                                </listitem>
+                            </itemizedlist>
+                            <para>If a provider attempts to enter a term that is not supported by
+                                the enterprise terminology, the <emphasis role="underline"
+                                    linkend="requirement_5">effort will be captured as a proposed
+                                    term (Requirement 5).</emphasis>
+                            </para>
+                            <para>Systems may capture this information unobtrusively as text, or
+                                they may request further information from the clinician to assist
+                                the authoring process. The system will convey at least the text and
+                                the identity of the clinician to the terminologist.</para>
+                            <itemizedlist>
+                                <listitem>
+                                    <emphasis role="bold">Review Patient Data</emphasis>
+                                </listitem>
+                            </itemizedlist>
+                            <para>A provider, already authenticated and authorized to the system and
+                                using the appropriate context to ensure the system records the data
+                                for the correct patient, finds and reviews information in the
+                                patient record. </para>
+                            <para>For structured data using standard terminologies, the terms
+                                available are appropriate for the clinical context, for the role
+                                (i.e., terms may differ for different kinds of users), and for the
+                                data context (i.e., data entry fields may not support inactive or
+                                deprecated terms that would be allowed in search or analytical
+                                contexts).</para>
+                            <para><emphasis role="underline" linkend="requirement_6">Changes to the
+                                    terminology that could affect record interpretation will be
                                     indicated (Requirement 6)</emphasis>, along with a way to
                                 identify the change and its effect.</para>
-                                <itemizedlist>
-                                    <listitem>
+                            <itemizedlist>
+                                <listitem>
                                     <emphasis role="bold">Review Knowledge Base changes relevant to
                                         record</emphasis>
                                 </listitem>
-                                </itemizedlist>
-                                <para>If the system identifies a relevant change, the provider may
-                                    request further information. </para>
-                                <para>This will include the ability to <emphasis role="underline"
-                                    linkend="requirement_7">see available values and CDS results
-                                    for specific dates and contexts (Requirement 7)</emphasis>,
+                            </itemizedlist>
+                            <para>If the system identifies a relevant change, the provider may
+                                request further information. </para>
+                            <para>This will include the ability to <emphasis role="underline"
+                                    linkend="requirement_7">see available values and CDS results for
+                                    specific dates and contexts (Requirement 7)</emphasis>,
                                 including those under which the data was recorded or specific
                                 decisions were made.</para>
-                            </entry>
-                        </row>
-                    </tbody>
-                </tgroup>
-            </informaltable>
-            <para><emphasis role="italic">Table 1: Clinical Use Cases</emphasis></para>
-            <para>The key capability for a clinician should be <emphasis role="underline"
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para><emphasis role="italic"> Clinical Use Cases</emphasis></para>
+        <para>The key capability for a clinician should be <emphasis role="underline"
                 linkend="requirement_8">to record and review data quickly and accurately
                 (Requirement 8)</emphasis>, taking advantage of up-to-date classifications and
             decision support rules. This should be accomplished by knowing when a change in the
             knowledge base might affect a record. The change management capability that supports
             these operations should be as unobtrusive as possible to patients and care providers,
             and always readily available.</para>
-            <para>These operations depend on the availability not only of currently accurate
-            terminology assets, but also <emphasis role="underline" linkend="requirement_9">assets
-                from prior points in time (Requirement 9)</emphasis>. These may include assets as
-                <emphasis role="underline" linkend="requirement_10">defined or refined by different
+        <para>These operations depend on the availability not only of currently accurate terminology
+            assets, but also <emphasis role="underline" linkend="requirement_9">assets from prior
+                points in time (Requirement 9)</emphasis>. These may include assets as <emphasis
+                role="underline" linkend="requirement_10">defined or refined by different
                 stakeholders (Requirement 10)</emphasis> with different sets of assumptions. For
             instance, whether a disorder meets a criterion defined by a standard terminology, a
             payor, a professional society or a locally chartered board of specialists.</para>
-            <para>To support these needs, the Enterprise Terminology that supports the clinical
-            systems must <emphasis role="underline" linkend="requirement_11">manage change
-                systematically (Requirement 11)</emphasis>, and it must do so for both internally
-            managed and externally sourced assets. </para>
+        <para>To support these needs, the Enterprise Terminology that supports the clinical systems
+            must <emphasis role="underline" linkend="requirement_11">manage change systematically
+                (Requirement 11)</emphasis>, and it must do so for both internally managed and
+            externally sourced assets. </para>
     </section>
     <section>
         <title>Asset Curation Requirements</title>
@@ -254,7 +251,7 @@
                 </tbody>
             </tgroup>
         </informaltable>
-        <para><emphasis role="italic">Table 2: Asset Curation Use Cases</emphasis></para>
+        <para><emphasis role="italic">Asset Curation Use Cases</emphasis></para>
         <para>A key difficulty comes in when we examine the publish and consume cases. Today,
             clinical systems consume terminologies, but the interfaces are point-to-point. To assert
             or assess new information the tools must already understand all relevant interface
@@ -270,33 +267,37 @@
             all terminologies. There are two key requirements for this design:</para>
         <orderedlist>
             <listitem>
-                <emphasis role="underline"  linkend="requirement_15">A complete record of all changes, including relevant
-                    change context information (Requirement 15)</emphasis>
+                <emphasis role="underline" linkend="requirement_15">A complete record of all
+                    changes, including relevant change context information (Requirement
+                    15)</emphasis>
             </listitem>
             <listitem>
-                <emphasis role="underline"  linkend="requirement_16">A single syntax to support the representation of all
-                    terminology assets, known and future (Requirement 16)</emphasis>
+                <emphasis role="underline" linkend="requirement_16">A single syntax to support the
+                    representation of all terminology assets, known and future (Requirement
+                    16)</emphasis>
             </listitem>
         </orderedlist>
         <para>The context information of the first requirement includes the following:</para>
         <orderedlist>
             <listitem>
-                <para>The <emphasis role="underline" linkend="requirement_17"> Status</emphasis> of the asset: whether it
-                    should be considered active or inactive in the context of these other attributes
-                    (Requirement 17). </para>
+                <para>The <emphasis role="underline" linkend="requirement_17"> Status</emphasis> of
+                    the asset: whether it should be considered active or inactive in the context of
+                    these other attributes (Requirement 17). </para>
             </listitem>
             <listitem>
-                <para>The <emphasis role="underline" linkend="requirement_18">Time</emphasis> of the change, specified with a
-                    time zone and at an appropriate precision (Requirement 18),</para>
+                <para>The <emphasis role="underline" linkend="requirement_18">Time</emphasis> of the
+                    change, specified with a time zone and at an appropriate precision (Requirement
+                    18),</para>
             </listitem>
             <listitem>
-                <para>The <emphasis role="underline" linkend="requirement_19">Author</emphasis> of the creation or change,
-                    unambiguously identified (Requirement 19),</para>
+                <para>The <emphasis role="underline" linkend="requirement_19">Author</emphasis> of
+                    the creation or change, unambiguously identified (Requirement 19),</para>
             </listitem>
             <listitem>
                 <para>The domain or organizational name of the larger asset within which the
                     component is meaningful, such as code system or edition (a.k.a., <emphasis
-                        role="underline" linkend="requirement_20">Module</emphasis>) (Requirement 20),</para>
+                        role="underline" linkend="requirement_20">Module</emphasis>) (Requirement
+                    20),</para>
             </listitem>
             <listitem>
                 <para>The production branch of that organization, e.g., for distributed development,
@@ -366,16 +367,16 @@
         <section>
             <title>Operations</title>
             <para><emphasis role="bold">Import</emphasis>: A user may identify content from another
-                system and write it into the Terminology Repository. When this
-                happens, the new content will be recorded in the common, self-describing format.
-                When a set of content is imported, rules asserted by the source steward or the
-                Terminology Repository steward may be used to assert structural equivalence in the
-                repository – i.e., different source concepts may be represented as alternate
-                representations of the same root concept. During importation of subsequent versions
-                of a system, changes to assets on which other enterprise assets depend must be
-                identified and managed as directed by documented policies. The import operation will
-                usually identify sets of such changes which require prioritization to prevent
-                redundant processing.</para>
+                system and write it into the Terminology Repository. When this happens, the new
+                content will be recorded in the common, self-describing format. When a set of
+                content is imported, rules asserted by the source steward or the Terminology
+                Repository steward may be used to assert structural equivalence in the repository –
+                i.e., different source concepts may be represented as alternate representations of
+                the same root concept. During importation of subsequent versions of a system,
+                changes to assets on which other enterprise assets depend must be identified and
+                managed as directed by documented policies. The import operation will usually
+                identify sets of such changes which require prioritization to prevent redundant
+                processing.</para>
             <para><emphasis role="bold">Search</emphasis>: A user may use lexical or concept-based
                 parameters to search for a set of matching assets.</para>
             <para><emphasis role="bold">View</emphasis>: A user may view an asset, the view
@@ -442,10 +443,10 @@
                     <para>A <emphasis role="bold">concept</emphasis> must have </para>
                     <itemizedlist>
                         <listitem>
-                            <para>at least one term</para>
+                            <para>At least one term</para>
                         </listitem>
                         <listitem>
-                            <para>at least one parent, except for root concepts</para>
+                            <para>At least one parent, except for root concepts</para>
                         </listitem>
                     </itemizedlist>
                 </listitem>
@@ -543,13 +544,13 @@
                     <emphasis role="bold">Maps</emphasis>
                     <itemizedlist>
                         <listitem>
-                            <para>relationships for equivalence assertions</para>
+                            <para>Relationships for equivalence assertions</para>
                         </listitem>
                         <listitem>
-                            <para>relationships for subsumption assertions</para>
+                            <para>Relationships for subsumption assertions</para>
                         </listitem>
                         <listitem>
-                            <para>relationships for other functions, e.g., CDC Reportable Condition
+                            <para>Relationships for other functions, e.g., CDC Reportable Condition
                                 Mapping Table</para>
                         </listitem>
                     </itemizedlist>
@@ -682,20 +683,15 @@
         <section>
             <title>Bootstrap Assets</title>
             <para>A Tinkar implementation must be furnished with the following content:<itemizedlist>
-                    <listitem>
-                        <emphasis role="underline">One root concept</emphasis>
-                    </listitem>
-                    <listitem>
-                        <emphasis role="underline">One module dependency graph</emphasis>
-                    </listitem>
-                    <listitem><emphasis role="underline">Infrastructure concepts</emphasis> to
-                        support the core patterns listed above</listitem>
-                    <listitem><emphasis role="underline">Import rules</emphasis> to support import
-                        of standard terminologies, including<itemizedlist>
-                            <listitem><emphasis role="underline">Equivalences</emphasis> to support
-                                semantic integration of terminologies (e.g., that a
-                                    LOINC<superscript>®</superscript> “system” instantiates the same
-                                relationship concept as the SNOMED CT<superscript>®</superscript> “inheres in”
+                    <listitem>One root concept</listitem>
+                    <listitem>One module dependency graph</listitem>
+                    <listitem>Infrastructure concepts a.k.a Tinkar Model Concepts to support the core patterns listed
+                        above</listitem>
+                    <listitem>Import rules to support import of standard terminologies, including:<itemizedlist>
+                            <listitem>Equivalences to support semantic integration of terminologies
+                                (e.g., that a LOINC<superscript>®</superscript> “system”
+                                instantiates the same relationship concept as the SNOMED
+                                    CT<superscript>®</superscript> “inheres in”
                                 attribute)</listitem>
                             <listitem>
                                 <para>Exclusions to support removal of non-semantic properties from
@@ -704,11 +700,9 @@
                         </itemizedlist></listitem>
                 </itemizedlist></para>
             <para>We provide definitions for Tinkar Model Concepts in <link
-                linkend="tinkar_model_concept_appenidix">Appendix C.</link></para>
+                    linkend="tinkar_model_concept_appenidix">Appendix C.</link></para>
         </section>
     </section>
-
-
     <section>
         <title>List of Requirements</title>
         <informaltable>
@@ -736,6 +730,19 @@
                         <entry xml:id="requirement_4" xreflabel="4">4</entry>
                         <entry>for structured data using standard terminologies, the terms available
                             are appropriate for the clinical context</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        
+        <informaltable>
+            <tgroup cols="2">
+                <colspec colnum="1" colname="col1" colwidth="33pt"/>
+                <colspec colnum="2" colname="col3" colwidth="386.5pt"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">ID</emphasis></entry>
+                        <entry><emphasis role="bold">Requirement</emphasis></entry>
                     </row>
                     <row>
                         <entry xml:id="requirement_5" xreflabel="5">5</entry>
@@ -819,30 +826,18 @@
                             the component is meaningful, such as code system or edition (a.k.a.,
                             Module)</entry>
                     </row>
-                </tbody>
-            </tgroup>
-        </informaltable>
-        <informaltable>
-            <tgroup cols="2">
-                <colspec colnum="1" colname="col1" colwidth="33pt"/>
-                <colspec colnum="2" colname="col3" colwidth="386.5pt"/>
-                <tbody>
                     <row>
-                        <entry><emphasis role="bold">ID</emphasis></entry>
-                        <entry><emphasis role="bold">Requirement</emphasis></entry>
-                    </row>
-                    <row>
-                        <entry xml:id="requirement_21" xreflabel="21">21</entry>
+                        <entry xreflabel="21">21</entry>
                         <entry>the production branch of that organization, e.g., for distributed
                             development, testing, staging, or production (a.k.a., Path)</entry>
                     </row>
                     <row>
-                        <entry xml:id="requirement_22" xreflabel="22">22</entry>
+                        <entry xreflabel="22">22</entry>
                         <entry>to support a record of changes, each asset must itself be
                             identifiable </entry>
                     </row>
                     <row>
-                        <entry xml:id="requirement_23" xreflabel="23">23</entry>
+                        <entry xreflabel="23">23</entry>
                         <entry>import is the automated consumption of an exported data set by a
                             terminology management system.</entry>
                     </row>

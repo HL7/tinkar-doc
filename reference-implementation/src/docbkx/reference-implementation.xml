@@ -23,7 +23,7 @@
               <title>Concept</title>
               <mediaobject>
                   <imageobject>
-                      <imagedata fileref="Concept.png" scalefit="1" width="100%" contentdepth="100%"/>
+                      <imagedata fileref="Concept.png" scalefit="1" width="100%" contentdepth="100%" align="center"/>
                   </imageobject>
               </mediaobject>
               <caption>
@@ -40,7 +40,7 @@
               <title>Accessing Identifiers</title>
               <mediaobject>
                   <imageobject>
-                      <imagedata fileref="IdentifierAccess.png" scalefit="1" width="100%" contentdepth="100%"/>
+                      <imagedata fileref="IdentifierAccess.png" scalefit="1" width="100%" contentdepth="100%" align="center"/>
                   </imageobject>
               </mediaobject>
               <caption>
@@ -58,7 +58,7 @@
               <title>Concept Icons</title>
               <mediaobject>
                   <imageobject>
-                      <imagedata fileref="Concept_Shapes.png" scalefit="1" width="100%" contentdepth="100%"/>
+                      <imagedata fileref="Concept_Shapes.png" scalefit="1" width="100%" contentdepth="100%" align="center"/>
                   </imageobject>
               </mediaobject>
               <caption>
@@ -75,7 +75,7 @@
                 <title>Semantics</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Semantics.png" scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="Semantics.png" scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -103,7 +103,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="STRPattern.png" scalefit="1" width="100%"
-                                    contentdepth="100%"/>
+                                    contentdepth="100%" align="center" />
                             </imageobject>
                         </mediaobject>
                         <caption>
@@ -122,7 +122,7 @@
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="REFPattern.png" scalefit="1" width="100%"
-                                    contentdepth="100%"/>
+                                    contentdepth="100%" align="center"/>
                             </imageobject>
                         </mediaobject>
                         <caption>
@@ -145,7 +145,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="concept_detail.png" scalefit="1" width="100%"
-                            contentdepth="55%"/>
+                            contentdepth="55%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -159,7 +159,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="stamp.png" scalefit="1" width="100%" contentdepth="100%"
-                        />
+                            align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -180,7 +180,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="navigation_example.png" scalefit="1" width="100%"
-                            contentdepth="100%"/>
+                            contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -199,7 +199,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="active_vs_inactive.png" scalefit="1" width="100%"
-                            contentdepth="100%"/>
+                            contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -216,7 +216,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="definition_history.png" scalefit="1" width="100%"
-                            contentdepth="100%"/>
+                            contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -232,7 +232,7 @@
                 <title>SNOMED CT<superscript>®</superscript> Concept</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="SNOMED_concept.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="SNOMED_concept.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -246,7 +246,7 @@
                 <title>SNOMED CT<superscript>®</superscript> Descriptions</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="SNOMED_desc.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="SNOMED_desc.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -260,7 +260,7 @@
                 <title>SNOMED CT<superscript>®</superscript> Relationships</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="SNOMED_rels.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="SNOMED_rels.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -277,7 +277,7 @@
                 <title>LOINC<superscript>®</superscript> Concept</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="LOINC_concept.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="LOINC_concept.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -288,28 +288,28 @@
         </para>
         <para>
             <figure>
-                <title>LOINC<superscript>®</superscript>Descriptions</title>
+                <title>LOINC<superscript>®</superscript> Descriptions</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="LOINC_desc.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="LOINC_desc.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics"
-                            >LOINC<superscript>®</superscript>Descriptions</emphasis></para>
+                    <para><emphasis role="italics">LOINC<superscript>®</superscript>
+                            Descriptions</emphasis></para>
                 </caption>
             </figure>
         </para>
         <para>
             <figure>
-                <title>LOINC<superscript>®</superscript>Inferred Relationships</title>
+                <title>LOINC<superscript>®</superscript> Inferred Relationships</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="LOINC_rels1.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="LOINC_rels1.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<superscript>®</superscript>Inferred
+                    <para><emphasis role="italics">LOINC<superscript>®</superscript> Inferred
                             Relationships</emphasis></para>
                 </caption>
             </figure>
@@ -317,11 +317,11 @@
                 <title>LOINC<superscript>®</superscript> Stated Relationships</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="LOINC_rels2.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="LOINC_rels2.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">LOINC<superscript>®</superscript>Stated
+                    <para><emphasis role="italics">LOINC<superscript>®</superscript> Stated
                             Relationships</emphasis></para>
                 </caption>
             </figure>
@@ -334,7 +334,7 @@
                 <title>RxNorm Concept</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="RxNorm_concept.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="RxNorm_concept.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -347,7 +347,7 @@
                 <title>RxNorm Descriptions</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="RxNorm_desc.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="RxNorm_desc.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -360,7 +360,7 @@
                 <title>RxNorm Relationships</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="RxNorm_rels.png"  scalefit="1" width="100%" contentdepth="100%"/>
+                        <imagedata fileref="RxNorm_rels.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -382,7 +382,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="equivalents.png" scalefit="1" width="100%"
-                            contentdepth="80%"/>
+                            contentdepth="80%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -402,7 +402,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="module_duplication.png" scalefit="1" width="100%"
-                            contentdepth="100%"/>
+                            contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
