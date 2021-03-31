@@ -216,7 +216,7 @@
                         directions.</para>
                 </listitem>
                 <listitem>
-                    <para>DiGraph: A graph in which a set of objects are connected togetherd where
+                    <para>DiGraph: A graph in which a set of objects are connected together where
                         all the edges are directed from one vertex to another. </para>
                 </listitem>
                 <listitem>
@@ -255,22 +255,14 @@
                                 concept is Antiplatelet agent. In this output, one can see a
                                 sufficient set and necessary set. Bulleted items are properties in
                                 the node. </para>
-                            <para> Field 1: [</para>
-                            <para>EL++ Stated terminological axioms: DiTreeEntity{</para>
-                            <para> [0]➞[8] Definition root</para>
-                            <para>     [8]➞[7] Necessary set</para>
-                            <para>         [7]➞[5,1,6] And</para>
-                            <para>             [5]➞[4] Role type: Role group</para>
-                            <para>                 •Role operator: Existential restriction</para>
-                            <para>                 [4]➞[3] And</para>
-                            <para>                     [3]➞[2] Role type: Is modification of</para>
-                            <para>                         •Role operator: Existential
-                                restriction</para>
-                            <para>                         [2] Concept reference: Acetylsalicylic
-                                acid</para>
-                            <para>             [1] Concept reference: Salicylate</para>
-                            <para>             [6] Concept reference: Antiplatelet agent</para>
-                            <para>}]</para>
+                            <code> Field 1:
+                                [ EL++ Stated terminological axioms: DiTreeEntity{ [0]➞[8]
+                                Definition root [8]➞[7] Necessary set [7]➞[5,1,6] And [5]➞[4] Role
+                                type: Role group •Role operator: Existential restriction [4]➞[3] And
+                                [3]➞[2] Role type: Is modification of •Role operator: Existential
+                                restriction [2] Concept reference: Acetylsalicylic acid [1] Concept
+                                reference: Salicylate [6] Concept reference: Antiplatelet agent
+                                }]</code>
                         </listitem>
                     </itemizedlist>
                 </listitem>
@@ -312,7 +304,7 @@
                 <title>Overall Tinkar Architecture</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="TinkarArchitecture_vF.png" format="PNG" scalefit="1"
+                        <imagedata fileref="6 Tinkar Architecture_FINAL.png" format="PNG" scalefit="1"
                             width="100%" contentdepth="100%" align="center" />
                     </imageobject>
                 </mediaobject>
