@@ -109,7 +109,7 @@
                 <title>Component Types</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Identified_Componentsv2.png" scalefit="1" width="100%"
+                        <imagedata fileref="Semantic Definition Simple neither.png" scalefit="1" width="100%"
                             contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
@@ -231,7 +231,7 @@
                 <title>Type Pattern</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Semantic_Definitionv2.png" format="PNG" scalefit="1"
+                        <imagedata fileref="TypePattern neither.png" format="PNG" scalefit="1"
                             width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
