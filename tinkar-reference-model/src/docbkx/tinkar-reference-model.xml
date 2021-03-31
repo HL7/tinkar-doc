@@ -213,7 +213,11 @@
                     <para>Component ID List - an ordered list of Component IDs.</para>
                 </listitem>
                 <listitem>
-                    <para>Component ID Set - an unordered list of Component IDs</para>
+                    <para>Component ID Set - an unordered list of Component IDs.</para>
+                </listitem>
+                <listitem>
+                    <para>UUID (Universally unique identifier) - A 128-bit number used to identify
+                        information in computer systems.</para>
                 </listitem>
             </itemizedlist></para>
     </section>
