@@ -201,15 +201,6 @@
                     <para>Spatial Point - position in a three dimensional space.</para>
                 </listitem>
                 <listitem>
-                    <para>Directed Tree or Ditree - a graph obtained from an undirected tree by
-                        replacing each undirected edge by two directed edges with opposite
-                        directions.</para>
-                </listitem>
-                <listitem>
-                    <para>Vertex - The fundamental unit of data that makes up a graph or
-                        tree.</para>
-                </listitem>
-                <listitem>
                     <para>Component ID List - an ordered list of Component IDs.</para>
                 </listitem>
                 <listitem>
@@ -218,6 +209,70 @@
                 <listitem>
                     <para>UUID (Universally unique identifier) - A 128-bit number used to identify
                         information in computer systems.</para>
+                </listitem>
+                <listitem>
+                    <para>Directed Tree or Ditree - a graph obtained from an undirected tree by
+                        replacing each undirected edge by two directed edges with opposite
+                        directions.</para>
+                </listitem>
+                <listitem>
+                    <para>DiGraph: A graph in which a set of objects are connected togetherd where
+                        all the edges are directed from one vertex to another. </para>
+                </listitem>
+                <listitem>
+                    <para>Vertex - The fundamental unit of data that makes up a graph or
+                        tree.</para>
+                    <itemizedlist>
+                        <listitem>
+                            <para>In Tinkar, property graphs are used as a general purpose data
+                                pattern to represent an abstract syntax tree (AST), such as OWL
+                                EL++. </para>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>An AST may be used "during semantic analysis, where the
+                                        compiler checks for correct usage of the elements of the
+                                        program and the language. The compiler also generates symbol
+                                        tables based on the AST during semantic analysis. A complete
+                                        traversal of the tree allows verification of the correctness
+                                        of the program. After verifying correctness, the AST serves
+                                        as the base for code generation. The AST is often used to
+                                        generate an intermediate representation, sometimes called an
+                                        intermediate language, for the code generation."  <link
+                                            linkend="bib11">[11]</link>
+                                    </para>
+                                </listitem>
+                                <listitem>
+                                    <para>An AST is made up of nodes and branches. In Tinkar, every
+                                        tree must have a root called Definition root. Each node must
+                                        have 0 or more children. This allows for data types without
+                                        requiring custom nodes. </para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                        <listitem>
+                            <para>Here is an example of Tinkar output of semantics that reference
+                                multiple concepts. One concept is Acetylsalicylic acid. The other
+                                concept is Antiplatelet agent. In this output, one can see a
+                                sufficient set and necessary set. Bulleted items are properties in
+                                the node. </para>
+                            <para> Field 1: [</para>
+                            <para>EL++ Stated terminological axioms: DiTreeEntity{</para>
+                            <para> [0]➞[8] Definition root</para>
+                            <para>     [8]➞[7] Necessary set</para>
+                            <para>         [7]➞[5,1,6] And</para>
+                            <para>             [5]➞[4] Role type: Role group</para>
+                            <para>                 •Role operator: Existential restriction</para>
+                            <para>                 [4]➞[3] And</para>
+                            <para>                     [3]➞[2] Role type: Is modification of</para>
+                            <para>                         •Role operator: Existential
+                                restriction</para>
+                            <para>                         [2] Concept reference: Acetylsalicylic
+                                acid</para>
+                            <para>             [1] Concept reference: Salicylate</para>
+                            <para>             [6] Concept reference: Antiplatelet agent</para>
+                            <para>}]</para>
+                        </listitem>
+                    </itemizedlist>
                 </listitem>
             </itemizedlist></para>
     </section>
@@ -324,9 +379,8 @@
             adding a layer of complexity to even the simplest query.</para>
         <para>Types of Coordinates:<itemizedlist>
                 <listitem>
-                    <para>STAMP coordinates are the most basic type of coordinate
-                        <?oxy_comment_start author="rcholan" timestamp="20210315T201119-0400" comment="STAMP coordinates are the most basic type of coordinate on which content should be filtered. ?"?>that<?oxy_comment_end?>
-                        all content should be filtered. Examples of STAMP coordinates are:<itemizedlist>
+                    <para>STAMP coordinates are the most basic type of coordinate on which all
+                        content should be filtered. Examples of STAMP coordinates are:<itemizedlist>
                             <listitem>
                                 <para>Most recent version</para>
                             </listitem>

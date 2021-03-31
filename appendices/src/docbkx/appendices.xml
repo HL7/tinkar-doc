@@ -1,66 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?> <?xml-model href="../../../docbook-customization/src/docbkx-stylesheet/common/komet.rnc" type="application/relax-ng-compact-syntax"?>
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1" xml:id="tinkar_model_concept_appenidix">
-    <title>Tinkar Model Concepts (In Progress)</title>
-    <para>&lt;&lt;IN PROGRESS; DRAFT >> </para>
+    <title>Tinkar Model Concepts</title>
     <para>The Tinkar core architecture is designed to be extremely flexible. This flexibility
         supports the ability to assert relationships among diverse terminologies and to support
         change in the design of those terminologies. However, it means that there may be more than
         one way to support any specific requirement. </para>
     <para>We propose the following members of the Tinkar Model Concepts (a.k.a. infrastructure
         concepts). </para>
-    <para>Below is an example of a subset of Tinkar Model Concepts. The full list and definitions of
-        the core Tinkar Model Concepts is in progress and will be completed by the ballot submission
-        deadline.</para>
-    <para>
-        <itemizedlist>
-            <listitem>
-                <para>User: An agent that may be responsible for authoring a change.</para>
-            </listitem>
-            <listitem>
-                <para>Content license: Official permission to use intellectual property.<itemizedlist>
-                        <listitem>
-                            <para>Apache 2 license: A permissive free software license written by
-                                the Apache Software Foundation.</para>
-                        </listitem>
-                        <listitem>
-                            <para> CC_BY_LICENSE: A license used when an author wants to give other
-                                people the right to share, use, and build upon a work that they have
-                                created.</para>
-                        </listitem>
-                    </itemizedlist></para>
-            </listitem>
-            <listitem>
-                <para>Copyright: A type of intellectual property that gives its owner the exclusive
-                    right to make copies of a creative work, usually for a limited time.</para>
-            </listitem>
-            <listitem>
-                <para> Description semantic set: A semantic set specifying how a concept is
-                    described.</para>
-            </listitem>
-            <listitem>
-                <para> Dependency management semantic set: A semantic set specifying how modules
-                    depend on one another.</para>
-            </listitem>
-            <listitem>
-                <para> Dialect semantic set: A semantic set enumerating descriptions in a specified
-                    dialect.</para>
-                <itemizedlist>
-                    <listitem>
-                        <para> GB English dialect: A semantic set enumerating descriptions in GB
-                            English.</para>
-                    </listitem>
-                    <listitem>
-                        <para> US English dialect: A semantic set enumerating descriptions in US
-                            English.</para>
-                    </listitem>
-                    <listitem>
-                        <para> US Nursing dialect: A semantic set enumerating descriptions in US
-                            English tailored for nursing use.</para>
-                    </listitem>
-                </itemizedlist>
-            </listitem>
-        </itemizedlist>
-    </para>
-    
 </appendix>
