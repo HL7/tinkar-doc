@@ -5,9 +5,8 @@
     <para>The Tinkar core architecture is designed to be extremely flexible. This flexibility
         supports the ability to assert relationships among diverse terminologies and to support
         change in the design of those terminologies. However, it means that there may be more than
-        one way to support any specific requirement. </para>
-    <para>We propose the following members of the Tinkar Model Concepts (a.k.a. infrastructure
-        concepts). </para>
+        one way to support any specific requirement. We propose the following members of the Tinkar
+        Model Concepts (a.k.a. infrastructure concepts). </para>
     <section>
         <title>Standard Class Model</title>
     
@@ -104,17 +103,14 @@
                     <para>Master path: A default path for components. </para>
                 </listitem>
                 <listitem>
-                    <para>Sandbox path: A path for components under testing. </para>
+                    <para>Sandbox path: A path for components under testing.  </para>
                 </listitem>
             </itemizedlist>
         </listitem>
     </itemizedlist>
-    <para> </para>
     </section>
     <section>
-        <title>Compositional Semantics</title>
-    <para><emphasis role="bold">Field</emphasis>
-    </para>
+        <title>Compositional Semantics (Fields)</title>
     <itemizedlist>
         <listitem>
             <para>Description type: Descriptions associate human-readable terms with a concept that
@@ -296,12 +292,15 @@
             <itemizedlist>
                 <listitem>
                         <?oxy_comment_start author="timowilliams" timestamp="20210331T142338-0500" comment="Unclear about this. A membership type that identifies 1 or more parent for a component."?>
-                        <para>Marked parent:  <?oxy_comment_end?></para>
+                        <?oxy_custom_start type="oxy_content_highlight" color="255,255,0" mid="1"?>
+                        <para>Marked parent: <?oxy_comment_end?><?oxy_custom_end mid="1"?> A
+                            membership type that identifies 1 or more parent for a component.</para>
                     </listitem>
                 <listitem>
                         <?oxy_comment_start author="timowilliams" timestamp="20210331T142346-0500" comment="Unclear about this. Is there an abnormal member? "?>
-                        <para>Normal member:<?oxy_comment_end?>
-                        </para>
+                        <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0" mid="3"?>Normal
+                            member:<?oxy_comment_end?> &lt;Unclear> <?oxy_custom_end mid="3"?>Is
+                            there an abnormal member? </para>
                     </listitem>
             </itemizedlist>
         </listitem>
@@ -361,12 +360,11 @@
     </section>
     <section>
         <title>Description Logic concepts</title>
-        <para>2-3 sentences in the DL here is an example of how we represent examples such as
-            represented by OWL EL </para>
-        <para>a similar approach can be taken for other standards, such as BPMN (DMN etc). </para>
-        <para>We created a concept for each operator and for other standards such as BPMN could
-            create concept for various nodes (action, </para>
-        <para> </para>
+        <para>Below is an example of how we represent Description Logic concepts such as those
+            represented by OWL EL++. A similar approach can be taken for other standards, such as
+            BPM+ Health. Tinkar Model Concepts include a concept for each logical operator in the EL
+            profile; for other standards such as BPM+, Tinkar could include concepts for various
+            nodes. </para>
         <itemizedlist>
             <listitem>
                 <para>EL profile set operator </para>
@@ -423,7 +421,7 @@
                         <?oxy_comment_start author="timowilliams" timestamp="20210331T144658-0500" comment="I can&apos;t think of one of these that are used right now."?>
                         <para>Functional property: A property is functional, for a given object if
                             there can be at most one object that is related to the object via the
-                            property.  <?oxy_comment_end?></para>
+                            property. <?oxy_comment_end?></para>
                     </listitem>
                     <listitem>
                         <para>Inverse property: Any logic property that is used to link two objects
@@ -524,7 +522,7 @@
             </listitem>
             <listitem>
                 <para>Description-logic classifier:Concept used to organize the available classifier
-                    used within Tinkar.  For example:</para>
+                    used within Tinkar. For example:</para>
                 <itemizedlist>
                     <listitem>
                         <para>SnoRocket classifier: Concept used to identify the SnoRocket
@@ -562,18 +560,20 @@
                 </itemizedlist>
             </listitem>
         </itemizedlist>
-        <para> </para>
         <?oxy_comment_start author="timowilliams" timestamp="20210331T213349-0500" comment="No children.  Why do we need it?"?>
         <itemizedlist>
             <listitem>
-                <para>Property pattern implication <?oxy_comment_end?></para>
+                <para>Property pattern implication<?oxy_comment_end?>:
+                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>&lt;Do we
+                    need this?><?oxy_custom_end?></para>
             </listitem>
         </itemizedlist>
-        <para> </para>
         <itemizedlist>
             <listitem>
                 <?oxy_comment_start author="timowilliams" timestamp="20210331T211626-0500" comment="What&apos;s the difference between this and the ones above?"?>
-                <para>Sufficient concept definition operator </para>
+                <para>Sufficient concept definition operator:
+                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>&lt;What is
+                    the difference between this and the ones above?><?oxy_custom_end?></para>
                 <itemizedlist>
                     <listitem>
                         <para>Necessary but not sufficient concept definition </para>
@@ -584,7 +584,6 @@
                 </itemizedlist>
             </listitem>
         </itemizedlist>
-        <para> </para>
     </section>
     <section>
         <title>Type Patterns</title>
@@ -625,7 +624,6 @@
             <para>Semantic version: A single instance of an Semantic with a STAMP. </para>
         </listitem>
     </itemizedlist>
-    <para> </para>
     <itemizedlist>
         <listitem>
             <para>String: A sequence of characters, either as a literal constant or as a variable.
@@ -664,72 +662,60 @@
                 information in computer systems. </para>
         </listitem>
         <listitem>
-            <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Property graph:
-                    <?oxy_custom_end?>A type of graph model where data are organized as nodes,
+            <para>Property graph: A type of graph model where data are organized as nodes,
                     relationships, and properties (data stored on the nodes or relationships). </para>
         </listitem>
-        <listitem>
-            <para>Vertex: The fundamental unit of data that makes up a graph or tree. </para>
-        </listitem>
-        <listitem>
-            <para>Ditree: A graph obtained from an undirected tree by replacing each undirected edge
-                by two directed edges with opposite directions. In a DiTree, each node has 1 parent.
-            </para>
-        </listitem>
-        <listitem>
-            <para>DiGraph: A graph in which a set of objects are connected together where all the
-                    edges are directed from one vertex to another. </para>
-            <itemizedlist>
-                <listitem>
-                    <para>In Tinkar, property graphs are used as a general purpose data pattern to
-                        represent an abstract syntax tree (AST), such as OWL EL++. </para>
-                    <itemizedlist>
-                        <listitem>
-                            <para>An AST may be used "during semantic analysis, where the compiler
-                                checks for correct usage of the elements of the program and the
-                                language. The compiler also generates symbol tables based on the AST
-                                during semantic analysis. A complete traversal of the tree allows
-                                verification of the correctness of the program. After verifying
-                                correctness, the AST serves as the base for code generation. The AST
-                                is often used to generate an intermediate representation, sometimes
-                                called an intermediate language, for the code generation." (ref -
-                                    <link
-                                    xlink:href="https://en.wikipedia.org/wiki/Abstract_syntax_tree"
-                                    >https://en.wikipedia.org/wiki/Abstract_syntax_tree</link>)
-                            </para>
-                        </listitem>
-                        <listitem>
-                            <para>An AST is made up of nodes and branches. In Tinkar, every tree
-                                must have a root called Definition root. Each node must have 0 or
-                                more children. This allows for data types without requiring custom
-                                nodes. </para>
-                        </listitem>
-                    </itemizedlist>
-                </listitem>
-            </itemizedlist>
-            <itemizedlist>
-                <listitem>
-                    <para>Here is an example of output of semantics that reference multiple
-                        concepts. One concept is Acetylsalicylic acid. The other concept is
-                        Antiplatelet agent. In this output, one can see a sufficient set and
-                        necessary set. Bulleted items are properties in the node. </para>
-                </listitem>
-            </itemizedlist>
-            <para>Field 1: [ </para>
-            <para>EL++ Stated terminological axioms: DiTreeEntity{ </para>
-            <para> [0]➞[8] Definition root </para>
-            <para> [8]➞[7] Necessary set </para>
-            <para> [7]➞[5,1,6] And </para>
-            <para> [5]➞[4] Role type: Role group </para>
-            <para> •Role operator: Existential restriction </para>
-            <para> [4]➞[3] And </para>
-            <para> [3]➞[2] Role type: Is modification of </para>
-            <para> •Role operator: Existential restriction </para>
-            <para> [2] Concept reference: Acetylsalicylic acid </para>
-            <para> [1] Concept reference: Salicylate </para>
-            <para> [6] Concept reference: Antiplatelet agent </para>
-            <para>}] </para>
-        </listitem>
+            <listitem>
+                <para>Directed Tree or Ditree - a graph obtained from an undirected tree by
+                    replacing each undirected edge by two directed edges with opposite
+                    directions.</para>
+            </listitem>
+            <listitem>
+                <para>DiGraph: A graph in which a set of objects are connected together where all
+                    the edges are directed from one vertex to another. </para>
+            </listitem>
+            <listitem>
+                <para>Vertex - The fundamental unit of data that makes up a graph or tree.</para>
+                <itemizedlist>
+                    <listitem>
+                        <para>In Tinkar, property graphs are used as a general purpose data pattern
+                            to represent an abstract syntax tree (AST), such as OWL EL++. </para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>An AST may be used "during semantic analysis, where the
+                                    compiler checks for correct usage of the elements of the program
+                                    and the language. The compiler also generates symbol tables
+                                    based on the AST during semantic analysis. A complete traversal
+                                    of the tree allows verification of the correctness of the
+                                    program. After verifying correctness, the AST serves as the base
+                                    for code generation. The AST is often used to generate an
+                                    intermediate representation, sometimes called an intermediate
+                                    language, for the code generation." <link linkend="bib11"
+                                        >[11]</link>
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>An AST is made up of nodes and branches. In Tinkar, every tree
+                                    must have a root called Definition root. Each node must have 0
+                                    or more children. This allows for data types without requiring
+                                    custom nodes. </para>
+                            </listitem>
+                        </itemizedlist>
+                    </listitem>
+                    <listitem>
+                        <para>Here is an example of Tinkar output of semantics that reference
+                            multiple concepts. One concept is Acetylsalicylic acid. The other
+                            concept is Antiplatelet agent. In this output, one can see a sufficient
+                            set and necessary set. Bulleted items are properties in the node. </para>
+                        <code> Field 1: [ EL++ Stated terminological axioms: DiTreeEntity{ [0]➞[8]
+                            Definition root [8]➞[7] Necessary set [7]➞[5,1,6] And [5]➞[4] Role type:
+                            Role group •Role operator: Existential restriction [4]➞[3] And [3]➞[2]
+                            Role type: Is modification of •Role operator: Existential restriction
+                            [2] Concept reference: Acetylsalicylic acid [1] Concept reference:
+                            Salicylate [6] Concept reference: Antiplatelet agent }]</code>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
     </itemizedlist>
     </section>
     <section>
