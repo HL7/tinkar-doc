@@ -359,7 +359,7 @@
     </itemizedlist>
     </section>
     <section>
-        <title>Description Logic concepts</title>
+        <title>Description Logic Concepts</title>
         <para>Below is an example of how we represent Description Logic concepts such as those
             represented by OWL EL++. A similar approach can be taken for other standards, such as
             BPM+ Health. Tinkar Model Concepts include a concept for each logical operator in the EL
