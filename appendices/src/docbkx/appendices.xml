@@ -549,22 +549,22 @@ Set of concrete types to reason over. Difference between role operator and prope
                 <para>Property pattern implication<?oxy_comment_end?>:
                     <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>&lt;Do we
                     need this?><?oxy_custom_end?>
-                    <?oxy_comment_start author="rcholan" timestamp="20210402T125530-0400" comment="Look up &quot;property chaining&quot;"?></para><?oxy_comment_end?>
+                    <?oxy_comment_start author="rcholan" timestamp="20210402T125530-0400" comment="Look up &quot;property chaining&quot;" id="kdg_qnx_dpb"?><?oxy_comment_start author="timowilliams" timestamp="20210402T172742-0500" comment="I think this may be the same, or similar to Transitive property if it is really describing what SNOMED Calls Property Chaining." parentID="kdg_qnx_dpb" mid="7"?></para><?oxy_comment_end?><?oxy_comment_end mid="7"?>
             </listitem>
         </itemizedlist>
         <itemizedlist>
             <listitem>
-                <?oxy_comment_start author="timowilliams" timestamp="20210331T211626-0500" comment="What&apos;s the difference between this and the ones above?"?>
                 <para>Sufficient concept definition operator:
-                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>&lt;What is
-                    the difference between this and the ones
-                    above?><?oxy_custom_end?><?oxy_comment_start author="rcholan" timestamp="20210402T125913-0400" comment="when you look at concept as whole are there only neccesary conditions given or neccesary + sufficient conditions given? tag at level of the concept not at the level of sufficent set"?></para><?oxy_comment_end?>
+                    <?oxy_comment_start author="rcholan" timestamp="20210402T125913-0400" comment="when you look at concept as whole are there only neccesary conditions given or neccesary + sufficient conditions given? tag at level of the concept not at the level of sufficent set"?></para><?oxy_comment_end?>
                 <itemizedlist>
                     <listitem>
-                        <para>Necessary but not sufficient concept definition </para>
+                        <para>Necessary but not sufficient concept definition: Concept used to
+                            identify concepts that have necessary, but not sufficient
+                            definitions.</para>
                     </listitem>
                     <listitem>
-                        <para>Sufficient concept definition <?oxy_comment_end?></para>
+                        <para>Sufficient concept definition: Concept used to identify concepts that
+                            contain sufficient definitions.</para>
                     </listitem>
                 </itemizedlist>
             </listitem>
