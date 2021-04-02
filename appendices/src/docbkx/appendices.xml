@@ -291,16 +291,9 @@
                 with components. </para>
             <itemizedlist>
                 <listitem>
-                        <?oxy_comment_start author="timowilliams" timestamp="20210331T142338-0500" comment="Unclear about this. A membership type that identifies 1 or more parent for a component."?>
-                        <?oxy_custom_start type="oxy_content_highlight" color="255,255,0" mid="1"?>
-                        <para>Marked parent: <?oxy_comment_end?><?oxy_custom_end mid="1"?> A
-                            membership type that identifies 1 or more parent for a component.</para>
-                    </listitem>
-                <listitem>
-                        <?oxy_comment_start author="timowilliams" timestamp="20210331T142346-0500" comment="Unclear about this. Is there an abnormal member? "?>
-                        <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0" mid="3"?>Normal
-                            member:<?oxy_comment_end?> &lt;Unclear> <?oxy_custom_end mid="3"?>Is
-                            there an abnormal member? </para>
+                        <para>Marked parent:  A membership type that identifies 1 or more parent for
+                            a component. In a particular navigation view, this is a parent of a
+                            member. </para>
                     </listitem>
             </itemizedlist>
         </listitem>
@@ -376,7 +369,11 @@
                     </listitem>
                     <listitem>
                         <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Property
-                            set: ? <?oxy_custom_end?></para>
+                            set:
+                            ?<?oxy_comment_start author="rcholan" timestamp="20210402T124133-0400" comment="Look at OWL spec
+
+Set of concrete types to reason over. Difference between role operator and property operators
+" mid="1"?><?oxy_custom_end?><?oxy_comment_end mid="1"?></para>
                     </listitem>
                     <listitem>
                         <para>Sufficient set: a set of characteristics that differentiate a concept
@@ -397,7 +394,10 @@
                     </listitem>
                     <listitem>
                         <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                        <para>Definition root? <?oxy_custom_end?></para>
+                        <para><?oxy_custom_end?>OWL EL Definition root: In a property graph, the 1st
+                            node, index 0, is the definition root. Helps bring together necessary
+                            sets under a common
+                            root/concept.<?oxy_comment_start author="rcholan" timestamp="20210402T124734-0400" comment="Think about name. run by kurt"?></para><?oxy_comment_end?>
                     </listitem>
                     <listitem>
                         <para>Disjoint with: An operator that asserts that two concepts are disjoint
@@ -418,27 +418,9 @@
                 <para>Logical feature: description logic features </para>
                 <itemizedlist>
                     <listitem>
-                        <?oxy_comment_start author="timowilliams" timestamp="20210331T144658-0500" comment="I can&apos;t think of one of these that are used right now."?>
-                        <para>Functional property: A property is functional, for a given object if
-                            there can be at most one object that is related to the object via the
-                            property. <?oxy_comment_end?></para>
-                    </listitem>
-                    <listitem>
                         <para>Inverse property: Any logic property that is used to link two objects
                             can have an inverse. For example, the property IsA can have the inverse
                             property of hasChild. </para>
-                    </listitem>
-                    <?oxy_comment_start author="timowilliams" timestamp="20210331T144719-0500" comment="I can&apos;t think of one of these that are used right now."?>
-                    <listitem>
-                        <para>Reflexive property: A logic property where the property must relate
-                            the object to itself.<?oxy_comment_end?>
-                        </para>
-                    </listitem>
-                    <listitem>
-                        <para><?oxy_comment_start author="timowilliams" timestamp="20210331T145037-0500" comment="I can&apos;t think of one of these that are used right now."?>Symmetric
-                            property: Any logic property that is used to link two objects that must
-                            also apply in reverse.<?oxy_comment_end?>
-                        </para>
                     </listitem>
                     <listitem>
                         <para>Transitive property: A logic property is transitive if a property that
@@ -546,16 +528,17 @@
         </itemizedlist>
         <itemizedlist>
             <listitem>
-                <para>Navigation Operator </para>
+                <para>Navigation Operator: Provides a navigation abstraction for specifying
+                    description logic. </para>
                 <itemizedlist>
+                    <listitem>
+                        <para>Parent of</para>
+                    </listitem>
                     <listitem>
                         <para>Child of </para>
                     </listitem>
                     <listitem>
                         <para>Is a </para>
-                    </listitem>
-                    <listitem>
-                        <para>Logically equivalent to </para>
                     </listitem>
                 </itemizedlist>
             </listitem>
@@ -565,7 +548,8 @@
             <listitem>
                 <para>Property pattern implication<?oxy_comment_end?>:
                     <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>&lt;Do we
-                    need this?><?oxy_custom_end?></para>
+                    need this?><?oxy_custom_end?>
+                    <?oxy_comment_start author="rcholan" timestamp="20210402T125530-0400" comment="Look up &quot;property chaining&quot;"?></para><?oxy_comment_end?>
             </listitem>
         </itemizedlist>
         <itemizedlist>
@@ -573,7 +557,8 @@
                 <?oxy_comment_start author="timowilliams" timestamp="20210331T211626-0500" comment="What&apos;s the difference between this and the ones above?"?>
                 <para>Sufficient concept definition operator:
                     <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>&lt;What is
-                    the difference between this and the ones above?><?oxy_custom_end?></para>
+                    the difference between this and the ones
+                    above?><?oxy_custom_end?><?oxy_comment_start author="rcholan" timestamp="20210402T125913-0400" comment="when you look at concept as whole are there only neccesary conditions given or neccesary + sufficient conditions given? tag at level of the concept not at the level of sufficent set"?></para><?oxy_comment_end?>
                 <itemizedlist>
                     <listitem>
                         <para>Necessary but not sufficient concept definition </para>
