@@ -266,7 +266,7 @@
                         <listitem>
                             <para>In this output, one can see a sufficient set and necessary set.
                                 Bulleted items are properties in the node. The output is printed as
-                                a "depth first search". Each depth, adds 3 characters of padding,
+                                a "depth first search." Each depth, adds 3 characters of padding,
                                 and shows how we represent OWL EL++ definitions using only
                                 terminology and a standard property graph data structure. The 1st
                                 one is node index 0 which has a child of node index 8. Node index 0
@@ -293,11 +293,8 @@
     </section>
     <section>
         <title>Type Patterns</title>
-        <para>It would be possible to support self-description using the Semantic structure, however
-            it would mean associating each definitional assertion with yet another assertion
-            characterizing it as definitional. Because this would result in a great deal of
-            repetitive information, we have chosen to define another first-class feature of the
-            model, the TypePattern (<emphasis role="bold">TypePatternVersion</emphasis> and
+        <para>We have chosen to define a first-class feature of the model, the <emphasis role="bold"
+                >TypePattern </emphasis>(<emphasis role="bold">TypePatternVersion</emphasis> and
                 <emphasis role="bold">TypePatternChronology</emphasis>). This feature asserts
             patterns that Semantic components can follow, like an XML or RDF Schema.</para>
         <para>
@@ -317,7 +314,7 @@
         <para>Using the TypePattern, Semantics with varying fields and data types can be specified
             to represent any structure needed to provide meaning to a concept. For example, if a
             field within a semantic is used to describe an SDO's website, the Meaning would be "URL,
-            DataType of "String", and Purpose of "Website". The TypePattern would then contain an
+            DataType of "String," and Purpose of "Website." The TypePattern would then contain an
             array of these FieldDefinitions.</para>
     </section>
     <section>

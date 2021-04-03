@@ -123,7 +123,7 @@
                 </listitem>
                 <listitem>
                     <para>Regular name description type: There may be descriptions/synonyms marked
-                            as "regular".</para>
+                            as "regular."</para>
                 </listitem>
                 <listitem>
                     <para>Definition: An expression of the meaning of a term. </para>
@@ -712,7 +712,7 @@ Set of concrete types to reason over. Difference between role operator and prope
                     <listitem>
                         <para>In this output, one can see a sufficient set and necessary set.
                             Bulleted items are properties in the node. The output is printed as a
-                            "depth first search". Each depth, adds 3 characters of padding, and
+                            "depth first search." Each depth, adds 3 characters of padding, and
                             shows how we represent OWL EL++ definitions using nothing but
                             terminology using a simple property graph. The 1st one is node index 0
                             which has a child of node index 8. Node index 0 is the OWL EL++

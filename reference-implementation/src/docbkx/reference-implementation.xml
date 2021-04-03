@@ -117,7 +117,7 @@
                     <para>REF TypePattern: This pattern is used to associate a Concept to a
                         Component. The type of association is also represented by a Tinkar Model
                         Concept. In the example below the type of association is "SNOMED legacy
-                        implication".</para>
+                        implication."</para>
                     <figure>
                         <title>REF TypePattern</title>
                         <mediaobject>
@@ -377,7 +377,7 @@
                 CT<superscript>®</superscript> International release with the September 2020 version
             of the SNOMED CT<superscript>®</superscript> U.S. Edition. The classifier has detected
             that there is an equivalence between the Concepts: "Ankylosis of bilateral knee joints
-            (disorder)" and "Ankylosis of both knee joints (disorder)".<figure>
+            (disorder)" and "Ankylosis of both knee joints (disorder)."<figure>
                 <title>Equivalences Detected by Classifier</title>
                 <mediaobject>
                     <imageobject>

@@ -78,7 +78,7 @@
   <para>Tinkar aims to adhere to the following statement from a publication about developments in
     clinical terminologies in the 2018 Yearbook of Medical Informatics <link linkend="bib1"
       >[1]</link>: “The benefits of the integrated terminologies in terms of homogenous semantics
-    and inherent interoperability should, however, outweigh the complexity added to the system”.
+    and inherent interoperability should, however, outweigh the complexity added to the system.”
     This specification provides the foundation of a knowledge architecture that is intended to
     integrate reference terminology from distributors (e.g., SNOMED CT<superscript>®</superscript>,
       LOINC<superscript>®</superscript>, RxNorm) with local concepts to support interoperable
@@ -92,7 +92,7 @@
       enterprise, as current payloads and clinical statements use inconsistent and highly variable
       enterprise terminologies. The management of the concepts, code systems, and value sets is
       non-trivial because developers, implementers, and end users are forced to manage “unnecessary
-      complexity”. For example:</para>
+      complexity.” For example:</para>
     <itemizedlist>
       <listitem>
         <para>Representation of medications: RxNorm codes overlap with CVX codes. Investigational
