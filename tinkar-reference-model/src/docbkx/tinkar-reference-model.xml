@@ -122,13 +122,14 @@
             represented by an array of UUIDs with at least one UUID, but can be represented by more
             than one UUID in the case of a concept being derived from multiple sources. For example,
             the concept Acetaminophen (which exists in SNOMED CT<superscript>®</superscript>, LOINC,
-            and RxNorm) would have a UUID from each terminology, and be represented as an array of
+            and RxNorm) could have a UUID from each terminology, and be represented as an array of
             UUIDs for this single concept within a Tinkar implementation. </para>
         <para>To assemble groups of assertions and to provide information about Concepts, Tinkar
-            uses a construct called a <emphasis role="bold">Semantic</emphasis>. A Semantic is a
-            collection of values that supports the specification of value sets, compositional
-            definitions, and other components requiring internal structure, and it specifies the
-            nature of the compositional relationship explicitly. </para>
+            uses a construct called a <emphasis role="bold">Semantic</emphasis>. A semantic adds
+            meaning to the components it references, through the fields it contains. A Semantic
+            supports the specification of value sets, compositional definitions, and other
+            components requiring internal structure, and it specifies the nature of the
+            compositional relationship explicitly.</para>
         <para>The Semantic class uses a Concept to define the relationship between the value(s) and
             the Concept; the value itself may be either a concept or some other kind of data type,
             such as a string. We then create the ability to assemble assertions into more complex
@@ -243,8 +244,9 @@
                                 </listitem>
                                 <listitem>
                                     <para>An AST is made up of nodes and branches. In Tinkar, every
-                                        tree must have a root called Definition root. Each node must
-                                        have 0 or more children. </para>
+                                        tree will always have roots, but they are specific: "An OWL
+                                        EL root" vs. a "BPMN root", etc. Each node must have 0 or
+                                        more children. </para>
                                 </listitem>
                             </itemizedlist>
                         </listitem>
@@ -265,23 +267,25 @@
                             <para>In this output, one can see a sufficient set and necessary set.
                                 Bulleted items are properties in the node. The output is printed as
                                 a "depth first search". Each depth, adds 3 characters of padding,
-                                and shows how we represent OWL EL++ definitions using nothing but
-                                terminology using a simple property graph. The 1st one is node index
-                                0 which has a child of node index 8. Node index 0 is the OWL EL++
-                                definition root. Node 8 points to Node 7, and the meaning of Node 8
-                                is that it is a necessary set. Node 7 is 'And' and points to Node
-                                5,1,6. Node 5's meaning is 'Role Type', Value is 'Role group', and
-                                its other property is 'Role Operator'. Node 5 points to Node 4. Node
-                                4 is 'And'. Node 3 is 'Role Type'. Node 2 is Concept Reference. 7
-                                also points to 1 and 6 (Concept References). </para>
+                                and shows how we represent OWL EL++ definitions using only
+                                terminology and a standard property graph data structure. The 1st
+                                one is node index 0 which has a child of node index 8. Node index 0
+                                is the OWL EL++ definition root. Node 8 points to Node 7, and the
+                                meaning of Node 8 is that it is a necessary set. Node 7 is 'And' and
+                                points to Node 5,1,6. Node 5's meaning is 'Role Type', Value is
+                                'Role group', and its other property is 'Role Operator'. Node 5
+                                points to Node 4. Node 4 is 'And'. Node 3 is 'Role Type'. Node 2 is
+                                Concept Reference. 7 also points to 1 and 6 (Concept References). </para>
                         </listitem>
                         <listitem>
                             <para>Here using the property graph model, we can show that each vertex
                                 has a meaning. Tinkar can use concepts to represent anything end
                                 users might need at nodes. This allows for data types without
-                                requiring custom nodes. Tinkar could go beyond representation of OWL
-                                EL++ and could represent BPM+ Health, for instance, as well using a
-                                property graph model. </para>
+                                requiring custom nodes. With no changes to the underlying data
+                                structures, Tinkar can represent more than OWL EL++. With updates to
+                                terminology, Tinkar can represent any parsable standard, such as
+                                BPMN and DMN, using this property graph model and a proper set of
+                                terminology concepts and semantics represented using Tinkar.</para>
                         </listitem>
                     </itemizedlist>
                 </listitem>
@@ -476,6 +480,11 @@
                 be applied as well. For example, applying a language and dialect coordinate will be
                 important not only for viewing and searching, but also to determine the appropriate
                 preferred name for displaying a hierarchy.</para>
+        </section>
+        <section>
+            <title>Future Iterations</title>
+            <para>As we continue to iterate on the Tinkar specification and move towards a DSTU and
+                connectathons we will iterate to provide more detail about coordinates.</para>
         </section>
     </section>
 </chapter>

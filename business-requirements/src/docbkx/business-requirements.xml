@@ -152,14 +152,14 @@
                 </listitem>
                 <listitem>
                     <para><emphasis role="underline">Branching capabilities</emphasis>: It must be
-                        possible to create a virtual copy of the entire version-control repository,
-                        or a defined subset, in a new “branch,” such that changes made to objects in
-                        this branch do not appear in the original repository. This capability allows
-                        individual knowledge engineers to make and test changes to knowledge
-                        artifacts without affecting the work of other knowledge engineers or the
-                        integrity of knowledge artifacts currently in production. This facility is
-                        critical to the orderly and safe management of a clinical decision support
-                        system.</para>
+                        possible to create a virtual copy of the entire version-control
+                        configuration, or a defined subset, in a new “path,” such that changes made
+                        to objects in this branch do not appear in the original configuration. This
+                        capability allows individual knowledge engineers to make and test changes to
+                        knowledge artifacts without affecting the work of other knowledge engineers
+                        or the integrity of knowledge artifacts currently in production. This
+                        facility is critical to the orderly and safe management of a clinical
+                        decision support system.</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="underline">Merging capabilities</emphasis>: It must be
@@ -316,8 +316,9 @@
                     systems. </para>
             </listitem>
             <listitem>
-                <para>“Module” can be used to select work that has been authorized by the
-                    enterprise. </para>
+                <para>“Modules” are used to organize content for maintenance and publication
+                    purposes. Modules are the domain or organizational name of the larger asset
+                    within which the component is meaningful, such as code system or edition.</para>
             </listitem>
             <listitem>
                 <para>“Time” supports the ability to apply CDS rules as they would have looked in
@@ -327,7 +328,7 @@
         <para>A further requirement is that not only must the architecture support these properties,
             but that <emphasis role="underline">it must require</emphasis> them for all assets under
             curation. Without consistent application of this rule, the foundational capability of
-            detailed version management is impossible. </para>
+            detailed version management is more difficult. </para>
         <para>Additionally, for an asset to support a record of changes, each <emphasis
                 role="underline" linkend="requirement_22">asset must itself be identifiable
                 (Requirement 22)</emphasis>.</para>

@@ -18,7 +18,7 @@
             that no Tinkar data is lost. </para>
         <para>C# and Java code implementations of the Tinkar Data Model will be made available to
             integrators allowing third parties to more easily use Tinkar.</para>
-        <para>Specifically, third party implementers can in java or C3:</para>
+        <para>Specifically, third party implementers can in java or C#:</para>
         <orderedlist>
             <listitem>
                 <para>Read Tinkar data into memory.</para>

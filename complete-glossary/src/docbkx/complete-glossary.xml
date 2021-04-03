@@ -65,8 +65,13 @@
                 </row>
                 <row>
                     <entry>Branch</entry>
-                    <entry> A common synonym for “path.” “Branch” implies an acyclical graph, which
-                        is inaccurate, but it is widely used. </entry>
+                    <entry>"Branch" as commonly used in version control, implies a tree structure,
+                        where a version configuration is allowed to only have one origin. In many
+                        instances, we want to support a version configuration with more than one
+                        origin. For example, a mapping configuration may have an origin of T1 on
+                        System A, and T2 on System B (based on the release schedules of Systems A
+                        and B). A Path, which is more general, allows multiple origins of a version
+                        configuration.</entry>
                 </row>
                 <row>
                     <entry>Publish</entry>
@@ -125,23 +130,22 @@
                             <para>Foundation Layer of Knowledge Architecture </para>
                             <para> </para>
                         </entry>
-                        <entry>The Foundation layer of the Knowledge Architecture provides the
-                            common elements of interoperability such as object identity, versioning,
-                            modularity, and knowledge representation. It includes the foundation and
-                            building blocks of the common model and how the modules of the
-                            architecture are tightly version controlled over time.</entry>
+                        <entry>The Foundation layer provides the common elements of interoperability
+                            such as object identity, versioning, modularity, and knowledge
+                            representation. It includes the foundation and building blocks of the
+                            common model and how the modules of the architecture are tightly version
+                            controlled over time.</entry>
                     </row>
                     <row>
                         <entry>
                             <para>Terminology Knowledge Layer of Knowledge Architecture </para>
                             <para> </para>
                         </entry>
-                        <entry>The Terminology Knowledge Layer of the Knowledge Architecture
-                            provides structured sets of medical terms and codes that define concepts
-                            of interest. This includes descriptions, dialects, language, and
-                            semantic hierarchy; SNOMED CT<superscript>®</superscript>,
-                                LOINC<superscript>®</superscript>, and RxNorm are part of this
-                            layer.</entry>
+                        <entry>The Terminology Knowledge Layer provides structured sets of medical
+                            terms and codes that define concepts of interest. This includes
+                            descriptions, dialects, language, and semantic hierarchy; SNOMED
+                                CT<superscript>®</superscript>, LOINC<superscript>®</superscript>,
+                            and RxNorm are part of this layer.</entry>
                     </row>
                     <row>
                         <entry>

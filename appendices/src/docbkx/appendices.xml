@@ -8,7 +8,7 @@
         one way to support any specific requirement. We propose the following members of the Tinkar
         Model Concepts (a.k.a. infrastructure concepts). </para>
     <section>
-        <title>Standard Class Model</title>
+        <title>Concepts for Semantic Fields</title>
     
     <itemizedlist>
         <listitem>
@@ -110,7 +110,7 @@
     </itemizedlist>
     </section>
     <section>
-        <title>Compositional Semantics (Fields)</title>
+        <title>Concepts for Descriptions, Language and Dialect</title>
     <itemizedlist>
         <listitem>
             <para>Description type: Descriptions associate human-readable terms with a concept that
@@ -361,7 +361,7 @@
     </itemizedlist>
     </section>
     <section>
-        <title>Description Logic Concepts</title>
+        <title>Concepts for Description Logic Concepts</title>
         <para>Below is an example of how we represent Description Logic concepts such as those
             represented by OWL EL++. A similar approach can be taken for other standards, such as
             BPM+ Health. Tinkar Model Concepts include a concept for each logical operator in the EL
@@ -737,49 +737,51 @@ Set of concrete types to reason over. Difference between role operator and prope
     </section>
     <section>
         <title>Copyright &amp; Content License Concepts</title>
-
-    <itemizedlist>
-        <listitem>
-            <para>Copyright: A type of intellectual property that gives its owner the exclusive
-                right to make copies of a creative work, usually for a limited time. </para>
-            <itemizedlist>
-                <listitem>
-                    <para>SNOMED CT License Agreement: License Agreement between The International
-                        Health Terminology Standards Development Organisation and the person or
-                        organization to which the International Release of SNOMED CT (whether on its
-                        own or as part of a Member’s National Release of SNOMED CT) is distributed
-                        or otherwise made available. </para>
-                </listitem>
-                <listitem>
-                    <para>Regenstrief Public License: License Agreement between Regenstrief
-                        Institute, Inc. for LOINC to be made available for use, modification, and
-                        distribution in accordance with the Regenstrief Public License Version.
-                    </para>
-                </listitem>
-                <listitem>
-                    <para>HL7 License: HL7 licenses its standards and select IP free of charge. HL7
-                        licenses describe the permitted uses of materials. </para>
-                </listitem>
-            </itemizedlist>
-        </listitem>
-        <listitem>
-            <para>Content License: Official permission to use intellectual property. </para>
-            <itemizedlist>
-                <listitem>
-                    <para>Apache 2 license: A permissive free software license written by the Apache
-                        Software Foundation. </para>
-                </listitem>
-                <listitem>
-                    <para>Creative Commons BY license: A license used when an author wants to give
-                        other people the right to share, use, and build upon a work that they have
-                        created. </para>
-                </listitem>
-                <listitem>
-                    <para>US Government Work: A license for US Government information as it is
-                        collected, published, distributed, transmitted, and otherwise used. </para>
-                </listitem>
-            </itemizedlist>
-        </listitem>
-    </itemizedlist>
+        <itemizedlist>
+            <listitem>
+                <para>Copyright: A type of intellectual property that gives its owner the exclusive
+                    right to make copies of a creative work, usually for a limited time. </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SNOMED CT License Agreement: License Agreement between The
+                            International Health Terminology Standards Development Organisation and
+                            the person or organization to which the International Release of SNOMED
+                            CT (whether on its own or as part of a Member’s National Release of
+                            SNOMED CT) is distributed or otherwise made available. </para>
+                    </listitem>
+                    <listitem>
+                        <para>Regenstrief Public License: License Agreement between Regenstrief
+                            Institute, Inc. for LOINC to be made available for use, modification,
+                            and distribution in accordance with the Regenstrief Public License
+                            Version. </para>
+                    </listitem>
+                    <listitem>
+                        <para>HL7 License: HL7 licenses its standards and select IP free of charge.
+                            HL7 licenses describe the permitted uses of materials. </para>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para>Content License: Official permission to use intellectual property. <itemizedlist>
+                        <listitem>
+                            <itemizedlist>
+                                <listitem>
+                                    <para>Apache 2 license: A permissive free software license
+                                        written by the Apache Software Foundation. </para>
+                                </listitem>
+                                <listitem>
+                                    <para>Creative Commons BY license: A license used when an author
+                                        wants to give other people the right to share, use, and
+                                        build upon a work that they have created. </para>
+                                </listitem>
+                            </itemizedlist>
+                        </listitem>
+                    </itemizedlist></para>
+            </listitem>
+            <listitem>
+                <para>US Government Work: A work created by US federal government employees, that is
+                    in the public domain.</para>
+            </listitem>
+        </itemizedlist>
     </section>
 </appendix>
