@@ -214,14 +214,8 @@
                             <para>Korean language </para>
                         </listitem>
                         <listitem>
-                            <para>Lithuanian language </para>
+                            <para>Lithuanian language  </para>
                         </listitem>
-                            <listitem>
-                                <para> </para>
-                            </listitem>
-                            <listitem>
-                                <para> </para>
-                            </listitem>
                         <listitem>
                             <para>Polish language </para>
                         </listitem>
@@ -340,12 +334,8 @@
                     expression are evaluated. </para>
             <itemizedlist>
                     <listitem>
-                        <para> </para>
+                        <para> Path precedence: Determines the order in which the path is evaluated. </para>
                     </listitem>
-                <listitem>
-                    <para>Path precedence: Determines the order in which the path is evaluated.
-                    </para>
-                </listitem>
                 <listitem>
                     <para>Time precedence: : Determines the order in which the time is evaluated.
                     </para>
@@ -719,7 +709,7 @@ Set of concrete types to reason over. Difference between role operator and prope
                             definition root. Node 8 points to Node 7, and the meaning of Node 8 is
                             that it is a necessary set. Node 7 is 'And' and points to Node 5,1,6.
                             Node 5's meaning is 'Role Type', Value is 'Role group', and its other
-                            property is 'Role Operator'. Node 5 points to Node 4. Node 4 is 'And'.
+                            property is 'Role Operator.' Node 5 points to Node 4. Node 4 is 'And'.
                             Node 3 is 'Role Type'. Node 2 is Concept Reference. 7 also points to 1
                             and 6 (Concept References). </para>
                     </listitem>
