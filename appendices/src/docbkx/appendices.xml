@@ -78,9 +78,9 @@
                     purposes. </para>
             <itemizedlist>
                 <listitem>
-                    <para>Tinkar Module: All concepts, semantics, and TypePatterns must belong to
-                            a module. A Tinkar Module would contain a release package of all content
-                            published together. A module can be dependent upon another module.  </para>
+                    <para>Tinkar Module: All concepts, semantics, and TypePatterns must belong to a
+                            module. A Tinkar Module would contain a release package of all content
+                            published together. A module can be dependent upon another module. </para>
                 </listitem>
             </itemizedlist>
         </listitem>
@@ -300,8 +300,8 @@
     </itemizedlist>
     <itemizedlist>
         <listitem>
-            <para>Literal value: A literal is any number, text, or other information that directly
-                represents a value.  </para>
+            <para>Literal value: A literal is any number, text, or other information that directly
+                    represents a value.  </para>
             <itemizedlist>
                 <listitem>
                     <para>Boolean literal: A datatype that represents either true or false. </para>
@@ -314,8 +314,8 @@
                 </listitem>
                 <listitem>
                     <para>Instant literal: A datatype that represents a specific moment on the time
-                        line. The instant is defined as an offset since the origin (called an
-                        epoch). </para>
+                            line. Thn instant is defined as an offset since the origin (called an
+                            epoch). </para>
                 </listitem>
             </itemizedlist>
             <itemizedlist>
@@ -330,7 +330,7 @@
     </itemizedlist>
     <itemizedlist>
         <listitem>
-            <para>Precedence: Precedence determines the order in which the operators in an
+            <para>Precedence: Precedence determines the order in which the operators in an
                     expression are evaluated. </para>
             <itemizedlist>
                 <listitem>
