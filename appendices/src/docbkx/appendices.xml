@@ -38,7 +38,7 @@
                             canceled. </para>
                 </listitem>
                 <listitem>
-                    <para>Primordial– Concept used to represent a status for components that have
+                    <para>Primordial: Concept used to represent a status for components that have
                             not yet been release and exist in their most basic form.</para>
                 </listitem>
                 <listitem>
@@ -74,8 +74,8 @@
     </itemizedlist>
     <itemizedlist>
         <listitem>
-            <para>Module: Modules are used to organize content for maintenance and publication
-                purposes. </para>
+            <para>Module: Modules are used to organize content for maintenance and publication
+                    purposes. </para>
             <itemizedlist>
                 <listitem>
                     <para>Tinkar Module: All concepts, semantics, and TypePatterns must belong to
@@ -123,7 +123,7 @@
                 </listitem>
                 <listitem>
                     <para>Regular name description type: There may be descriptions/synonyms marked
-                        as "regular" </para>
+                            as "regular".</para>
                 </listitem>
                 <listitem>
                     <para>Definition: An expression of the meaning of a term. </para>
@@ -287,8 +287,8 @@
     </itemizedlist>
     <itemizedlist>
         <listitem>
-            <para>Membership type: used to identify the different types of memberships associated
-                with components. </para>
+            <para>Membership type: Used to identify the different types of memberships associated
+                    with components. </para>
             <itemizedlist>
                 <listitem>
                         <para>Marked parent:  A membership type that identifies 1 or more parent for
@@ -330,8 +330,8 @@
     </itemizedlist>
     <itemizedlist>
         <listitem>
-            <para>Precedence: precedence determines the order in which the operators in an
-                expression are evaluated. </para>
+            <para>Precedence: Precedence determines the order in which the operators in an
+                    expression are evaluated. </para>
             <itemizedlist>
                 <listitem>
                     <para>Path precedence: Determines the order in which the path is evaluated.
@@ -664,7 +664,8 @@ Set of concrete types to reason over. Difference between role operator and prope
                 <itemizedlist>
                     <listitem>
                         <para>In Tinkar, property graphs are used as a general purpose data pattern
-                            to represent an abstract syntax tree (AST), such as OWL EL++. </para>
+                            to represent an abstract syntax tree (AST), such as OWL EL++. This
+                            allows for data types without requiring custom nodes. </para>
                         <itemizedlist>
                             <listitem>
                                 <para>An AST may be used "during semantic analysis, where the
@@ -682,8 +683,7 @@ Set of concrete types to reason over. Difference between role operator and prope
                             <listitem>
                                 <para>An AST is made up of nodes and branches. In Tinkar, every tree
                                     must have a root called Definition root. Each node must have 0
-                                    or more children. This allows for data types without requiring
-                                    custom nodes. </para>
+                                    or more children. </para>
                             </listitem>
                         </itemizedlist>
                     </listitem>
@@ -691,7 +691,20 @@ Set of concrete types to reason over. Difference between role operator and prope
                         <para>Here is an example of Tinkar output of semantics that reference
                             multiple concepts. One concept is Acetylsalicylic acid. The other
                             concept is Antiplatelet agent. In this output, one can see a sufficient
-                            set and necessary set. Bulleted items are properties in the node. </para>
+                            set and necessary set. Bulleted items are properties in the node. The
+                            output is printed as a "depth first search". Each depth, adds 3
+                            characters of padding, shows how we represent OWL EL++ definition using
+                            nothing but terminology. This is using a simple property graph. The 1st
+                            one is node index 0 which has a child of node index 8. Node index 0 is
+                            the definition root. Node 8 points to node 7, and the meaning of Node 8
+                            is that it is a necessary set. Node 7 is 'And' and points to Node 5,1,6.
+                            Node 5's meaning is 'Role Type', Value is 'Role group', and its other
+                            property is 'Role Operator'. Node 5 points to Node 4. Node 4 is 'And'.
+                            Node 3 is 'Role Type'. Node 2 is Concept Reference. 7 also points to 1
+                            and 6 (Concept References). Here using the property graph model, we can
+                            show that each vertex has a meaning. Tinkar can use concepts to
+                            represent anything end users might need at nodes. Could go beyond OWL
+                            EL++ and could reresent BPM+ Health, for instance. </para>
                         <code> Field 1: [ EL++ Stated terminological axioms: DiTreeEntity{ [0]➞[8]
                             Definition root [8]➞[7] Necessary set [7]➞[5,1,6] And [5]➞[4] Role type:
                             Role group •Role operator: Existential restriction [4]➞[3] And [3]➞[2]
