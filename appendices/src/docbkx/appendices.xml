@@ -424,7 +424,7 @@ Set of concrete types to reason over. Difference between role operator and prope
         </itemizedlist>
         <itemizedlist>
             <listitem>
-                <para>Logical feature: description logic features </para>
+                <para>Logical feature: Description logic features </para>
                 <itemizedlist>
                     <listitem>
                         <para>Inverse property: Any logic property that is used to link two objects
