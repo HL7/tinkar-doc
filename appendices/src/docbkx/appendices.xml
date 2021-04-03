@@ -329,6 +329,9 @@
         </listitem>
     </itemizedlist>
     <itemizedlist>
+            <listitem>
+                <para> </para>
+            </listitem>
         <listitem>
             <para>Precedence: Precedence determines the order in which the operators in an
                     expression are evaluated. </para>
@@ -752,21 +755,18 @@ Set of concrete types to reason over. Difference between role operator and prope
                 </itemizedlist>
             </listitem>
             <listitem>
-                <para>Content License: Official permission to use intellectual property. <itemizedlist>
-                        <listitem>
-                            <itemizedlist>
-                                <listitem>
-                                    <para>Apache 2 license: A permissive free software license
-                                        written by the Apache Software Foundation. </para>
-                                </listitem>
-                                <listitem>
-                                    <para>Creative Commons BY license: A license used when an author
-                                        wants to give other people the right to share, use, and
-                                        build upon a work that they have created. </para>
-                                </listitem>
-                            </itemizedlist>
-                        </listitem>
-                    </itemizedlist></para>
+                <para>Content License: Official permission to use intellectual property. </para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Apache 2 license: A permissive free software license written by the
+                            Apache Software Foundation. </para>
+                    </listitem>
+                    <listitem>
+                        <para>Creative Commons BY license: A license used when an author wants to
+                            give other people the right to share, use, and build upon a work that
+                            they have created. </para>
+                    </listitem>
+                </itemizedlist>
             </listitem>
             <listitem>
                 <para>US Government Work: A work created by U.S. federal government employees, that
