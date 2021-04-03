@@ -673,8 +673,7 @@ Set of concrete types to reason over. Difference between role operator and prope
                 <itemizedlist>
                     <listitem>
                         <para>In Tinkar, property graphs are used as a general purpose data pattern
-                            to represent an abstract syntax tree (AST), such as OWL EL++. This
-                            allows for data types without requiring custom nodes. </para>
+                            to represent an abstract syntax tree (AST), such as OWL EL++. </para>
                         <itemizedlist>
                             <listitem>
                                 <para>An AST may be used "during semantic analysis, where the
@@ -702,12 +701,12 @@ Set of concrete types to reason over. Difference between role operator and prope
                             concept is Antiplatelet agent. </para>
                     </listitem>
                     <listitem>
-                        <code> Field 1: [ EL++ Stated terminological axioms: DiTreeEntity{ [0]➞[8]
-                            Definition root [8]➞[7] Necessary set [7]➞[5,1,6] And [5]➞[4] Role type:
-                            Role group •Role operator: Existential restriction [4]➞[3] And [3]➞[2]
-                            Role type: Is modification of •Role operator: Existential restriction
-                            [2] Concept reference: Acetylsalicylic acid [1] Concept reference:
-                            Salicylate [6] Concept reference: Antiplatelet agent }]</code>
+                        <mediaobject>
+                            <imageobject>
+                                <imagedata fileref="propertygraph.PNG" format="PNG" scalefit="1"
+                                    width="100%" contentdepth="100%" align="center"/>
+                            </imageobject>
+                        </mediaobject>
                     </listitem>
                     <listitem>
                         <para>In this output, one can see a sufficient set and necessary set.
@@ -726,8 +725,10 @@ Set of concrete types to reason over. Difference between role operator and prope
                     <listitem>
                         <para>Here using the property graph model, we can show that each vertex has
                             a meaning. Tinkar can use concepts to represent anything end users might
-                            need at nodes. Could go beyond OWL EL++ and could reresent BPM+ Health,
-                            for instance. </para>
+                            need at nodes. This allows for data types without requiring custom
+                            nodes. Tinkar could go beyond representation of OWL EL++ and could
+                            reresent BPM+ Health, for instance, as well using a property graph
+                            model. </para>
                     </listitem>
                 </itemizedlist>
             </listitem>
