@@ -248,10 +248,10 @@
                             <para>GB English dialect </para>
                         </listitem>
                         <listitem>
-                            <para>US English dialect </para>
+                            <para>U.S. English dialect </para>
                             <itemizedlist>
                                 <listitem>
-                                    <para>US Nursing dialect </para>
+                                    <para>U.S. Nursing dialect </para>
                                 </listitem>
                             </itemizedlist>
                         </listitem>
@@ -779,8 +779,8 @@ Set of concrete types to reason over. Difference between role operator and prope
                     </itemizedlist></para>
             </listitem>
             <listitem>
-                <para>US Government Work: A work created by US federal government employees, that is
-                    in the public domain.</para>
+                <para>US Government Work: A work created by U.S. federal government employees, that
+                    is in the public domain.</para>
             </listitem>
         </itemizedlist>
     </section>
