@@ -216,6 +216,12 @@
                         <listitem>
                             <para>Lithuanian language </para>
                         </listitem>
+                            <listitem>
+                                <para> </para>
+                            </listitem>
+                            <listitem>
+                                <para> </para>
+                            </listitem>
                         <listitem>
                             <para>Polish language </para>
                         </listitem>
@@ -333,6 +339,9 @@
             <para>Precedence: Precedence determines the order in which the operators in an
                     expression are evaluated. </para>
             <itemizedlist>
+                    <listitem>
+                        <para> </para>
+                    </listitem>
                 <listitem>
                     <para>Path precedence: Determines the order in which the path is evaluated.
                     </para>
