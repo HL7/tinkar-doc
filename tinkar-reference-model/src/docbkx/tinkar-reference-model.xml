@@ -280,7 +280,7 @@
                                 has a meaning. Tinkar can use concepts to represent anything end
                                 users might need at nodes. This allows for data types without
                                 requiring custom nodes. Tinkar could go beyond representation of OWL
-                                EL++ and could reresent BPM+ Health, for instance, as well using a
+                                EL++ and could represent BPM+ Health, for instance, as well using a
                                 property graph model. </para>
                         </listitem>
                     </itemizedlist>

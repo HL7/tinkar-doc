@@ -673,7 +673,8 @@ Set of concrete types to reason over. Difference between role operator and prope
                 <itemizedlist>
                     <listitem>
                         <para>In Tinkar, property graphs are used as a general purpose data pattern
-                            to represent an abstract syntax tree (AST), such as OWL EL++. </para>
+                            to represent an abstract syntax tree (AST), such as OWL EL++. This
+                            allows for data types without requiring custom nodes.</para>
                         <itemizedlist>
                             <listitem>
                                 <para>An AST may be used "during semantic analysis, where the
@@ -727,7 +728,7 @@ Set of concrete types to reason over. Difference between role operator and prope
                             a meaning. Tinkar can use concepts to represent anything end users might
                             need at nodes. This allows for data types without requiring custom
                             nodes. Tinkar could go beyond representation of OWL EL++ and could
-                            reresent BPM+ Health, for instance, as well using a property graph
+                            represent BPM+ Health, for instance, as well using a property graph
                             model. </para>
                     </listitem>
                 </itemizedlist>
