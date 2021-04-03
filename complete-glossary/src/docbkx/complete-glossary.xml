@@ -85,29 +85,6 @@
                     <entry>To serialize a set of content to an interoperable payload technology.
                         Export does not carry the same quality expectations as publication.</entry>
                 </row>
-                <row>
-                    <entry>Import</entry>
-                    <entry>To replicate an exported set of content into a repository. This activity
-                        implies the implementation of rules and constraints asserted by both native
-                        and imported content. </entry>
-                </row>
-                <row>
-                    <entry>
-                        <para>Configuration requirements</para>
-                    </entry>
-                    <entry>Functionality required to make a Tinkar repository operational.</entry>
-                </row>
-                <row>
-                    <entry>
-                        <para>Foundational assets</para>
-                    </entry>
-                    <entry>The set of minimal content assets a Tinkar repository must implement in
-                        order to support operations.</entry>
-                </row>
-                <row>
-                    <entry>Tinkar Model Concepts (a.k.a Infrastructure concepts)</entry>
-                    <entry>Foundational assets that are concepts.</entry>
-                </row>
             </tbody>
         </tgroup>
     </informaltable>
@@ -117,6 +94,30 @@
                 <colspec colnum="1" colname="col1"/>
                 <colspec colnum="2" colname="col2"/>
                 <tbody>
+                    <row>
+                        <entry>Import</entry>
+                        <entry>To replicate an exported set of content into a repository. This
+                            activity implies the implementation of rules and constraints asserted by
+                            both native and imported content. </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>Configuration requirements</para>
+                        </entry>
+                        <entry>Functionality required to make a Tinkar repository
+                            operational.</entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>Foundational assets</para>
+                        </entry>
+                        <entry>The set of minimal content assets a Tinkar repository must implement
+                            in order to support operations.</entry>
+                    </row>
+                    <row>
+                        <entry>Tinkar Model Concepts (a.k.a Infrastructure concepts)</entry>
+                        <entry>Foundational assets that are concepts.</entry>
+                    </row>
                     <row>
                         <entry>Separation of Concerns</entry>
                         <entry>A design principle that allows a complete system to be subdivided

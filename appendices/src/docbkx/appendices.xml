@@ -110,7 +110,7 @@
     </itemizedlist>
     </section>
     <section>
-        <title>Concepts for Descriptions, Language and Dialect</title>
+        <title>Concepts for Descriptions, Language, and Dialect</title>
     <itemizedlist>
         <listitem>
             <para>Description type: Descriptions associate human-readable terms with a concept that
@@ -354,7 +354,7 @@
     </itemizedlist>
     </section>
     <section>
-        <title>Concepts for Description Logic Concepts</title>
+        <title>Concepts for Description Logic</title>
         <para>Below is an example of how we represent Description Logic concepts such as those
             represented by OWL EL++. A similar approach can be taken for other standards, such as
             BPM+ Health. Tinkar Model Concepts include a concept for each logical operator in the EL
@@ -729,7 +729,7 @@ Set of concrete types to reason over. Difference between role operator and prope
     </itemizedlist>
     </section>
     <section>
-        <title>Copyright &amp; Content License Concepts</title>
+        <title>Concepts for Copyright &amp; Content License</title>
         <itemizedlist>
             <listitem>
                 <para>Copyright: A type of intellectual property that gives its owner the exclusive
