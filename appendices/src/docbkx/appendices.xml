@@ -372,7 +372,7 @@
                 <para>EL profile set operator </para>
                 <itemizedlist>
                     <listitem>
-                        <para>Necessary set: a characteristic that is always true of a concept. A
+                        <para>Necessary set: A characteristic that is always true of a concept. A
                             concept that only contains necessary conditions is considered
                             primitive.</para>
                     </listitem>
@@ -385,7 +385,7 @@ Set of concrete types to reason over. Difference between role operator and prope
 " mid="1"?><?oxy_custom_end?><?oxy_comment_end mid="1"?></para>
                     </listitem>
                     <listitem>
-                        <para>Sufficient set: a set of characteristics that differentiate a concept
+                        <para>Sufficient set: A set of characteristics that differentiate a concept
                             and its subtypes from all other concepts. A concept that contains at
                             least one set of necessary and sufficient conditions is considered
                             defined.</para>
@@ -492,28 +492,28 @@ Set of concrete types to reason over. Difference between role operator and prope
                     domain.</para>
                 <itemizedlist>
                     <listitem>
-                        <para>Equal to: value is equal to the concrete domain</para>
+                        <para>Equal to: Value is equal to the concrete domain</para>
                     </listitem>
                     <listitem>
-                        <para>Greater than: the value should be greater than the concrete
+                        <para>Greater than: The value should be greater than the concrete
                             domain</para>
                     </listitem>
                     <listitem>
-                        <para>Greater than or equal to: the value should be greater than or equal to
+                        <para>Greater than or equal to: The value should be greater than or equal to
                             the concrete domain</para>
                     </listitem>
                     <listitem>
-                        <para>Less than: the value should be less than the concrete domain </para>
+                        <para>Less than: The value should be less than the concrete domain </para>
                     </listitem>
                     <listitem>
-                        <para>Less than or equal to: the value should be less than or equal to the
+                        <para>Less than or equal to: The value should be less than or equal to the
                             concrete domain </para>
                     </listitem>
                 </itemizedlist>
             </listitem>
             <listitem>
-                <para>Description-logic classifier:Concept used to organize the available classifier
-                    used within Tinkar. For example:</para>
+                <para>Description-logic classifier: Concept used to organize the available
+                    classifier used within Tinkar. For example:</para>
                 <itemizedlist>
                     <listitem>
                         <para>SnoRocket classifier: Concept used to identify the SnoRocket
@@ -735,7 +735,7 @@ Set of concrete types to reason over. Difference between role operator and prope
     </itemizedlist>
     </section>
     <section>
-        <title>Copyright &amp; Content License</title>
+        <title>Copyright &amp; Content License Concepts</title>
 
     <itemizedlist>
         <listitem>
