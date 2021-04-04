@@ -11,10 +11,11 @@
         code lists/value sets. This section describes classes of objects that support a common
         foundational framework for terminology and knowledge base systems (e.g. SNOMED
             CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm, HL7, etc.). A
-        Tinkar Specification could provide a single representation for all terminologies required in
-        the U.S. to support the operation of a variety of systems intended to deliver knowledge
-        management for terminology to vendors providers, and standards-development organizations
-        like HL7.</para>
+        Tinkar Specification can provide a single representation for all terminologies required in
+        the U.S. and other countries, while also providing a better foundation for maturing how we
+        manage change. Tinkar could support the operation of a variety of systems intended to
+        deliver knowledge management for terminology to vendors providers, and standards-development
+        organizations like HL7.</para>
     
     <section>
         <title>Standard Class Model</title>
