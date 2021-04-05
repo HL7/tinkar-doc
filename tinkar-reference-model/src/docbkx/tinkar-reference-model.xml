@@ -65,11 +65,13 @@
                 <listitem>
                     <para><emphasis role="bold">Path:</emphasis> Specification of an object under
                         version control within a terminology development lifecycle, e.g., for
-                        distributed development, testing, staging, or production. A path is
-                        identified by a concept, which may be annotated with other identifying
-                        information. A core set of paths is necessary to support publication to
-                        external organizations. <emphasis role="underline" linkend="requirement_21"
-                            >(Requirement 21)</emphasis></para>
+                        distributed development, testing, staging, or production. A path is a common
+                        synomyn for "branch" as used in current software version control best
+                        practices/literature. A path is identified by a concept, which may be
+                        annotated with other identifying information. A core set of paths is
+                        necessary to support publication to external organizations. <emphasis
+                            role="underline" linkend="requirement_21">(Requirement
+                        21)</emphasis></para>
                 </listitem>
             </orderedlist>
         </para>
