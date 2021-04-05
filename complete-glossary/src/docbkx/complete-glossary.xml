@@ -109,14 +109,14 @@
                     </row>
                     <row>
                         <entry>
-                            <para>Foundational assets</para>
+                            <para>Minimally required content</para>
                         </entry>
-                        <entry>The set of minimal content assets a Tinkar repository must implement
-                            in order to support operations.</entry>
+                        <entry>The set of minimal content a Tinkar repository must implement in
+                            order to support operations.</entry>
                     </row>
                     <row>
                         <entry>Tinkar Model Concepts (a.k.a Infrastructure concepts)</entry>
-                        <entry>Foundational assets that are concepts.</entry>
+                        <entry>Minimally required content that are concepts.</entry>
                     </row>
                     <row>
                         <entry>Separation of Concerns</entry>

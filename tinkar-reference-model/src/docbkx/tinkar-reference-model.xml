@@ -63,12 +63,13 @@
                     </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Path:</emphasis> Specification of a branch within a
-                        terminology development lifecycle, e.g., for distributed development,
-                        testing, staging, or production. A path is identified by a concept, which
-                        may be annotated with other identifying information. A core set of paths is
-                        necessary to support publication to external organizations. <emphasis role="underline"  linkend="requirement_21">(Requirement
-                            21)</emphasis></para>
+                    <para><emphasis role="bold">Path:</emphasis> Specification of an object under
+                        version control within a terminology development lifecycle, e.g., for
+                        distributed development, testing, staging, or production. A path is
+                        identified by a concept, which may be annotated with other identifying
+                        information. A core set of paths is necessary to support publication to
+                        external organizations. <emphasis role="underline" linkend="requirement_21"
+                            >(Requirement 21)</emphasis></para>
                 </listitem>
             </orderedlist>
         </para>
@@ -383,13 +384,16 @@
             dimensions, for example, STAMP, Language, Dialect, clinical domains, etc. The ability to
             efficiently search, display, and navigate concepts and semantics requires the ability to
             calculate combinations of content based on one or more of these different dimensions. </para>
-        <para><?oxy_comment_start author="rcholan" timestamp="20210317T164638-0400" comment="Add brief high-level definition/explanation of versioned graphi and how it would be used. "?>A<?oxy_comment_end?>
-            versioned graph enables us to recover the state of the graph at a particular point in
-            time. Most graph databases do not support versioning as a first-class concept. It is
-            possible, however, to create a versioning scheme inside the graph model whereby nodes
-            and relationships are timestamped and archived whenever they are modified. The downside
-            of such versioning schemes is that they leak into any queries written against the graph,
-            adding a layer of complexity to even the simplest query.</para>
+        <para>In order to facilitate the computability of various, complex dimensions, including
+            time series data, a graph structure is commonly used in software versioned control
+            systems. A particular type of graph structure that is commly used is a "version graph",
+            such as a directed acylcic graph. A version graph enables us to recover the state of the
+            graph at a particular point in time. Most graph databases do not support versioning as a
+            first-class concept. It is possible, however, to create a versioning scheme inside the
+            graph model whereby nodes and relationships are timestamped and archived whenever they
+            are modified. The downside of such versioning schemes is that they leak into any queries
+            written against the graph, adding a layer of complexity to even the simplest
+            query.</para>
         <para>Types of Coordinates:<itemizedlist>
                 <listitem>
                     <para>STAMP coordinates are the most basic type of coordinate on which all

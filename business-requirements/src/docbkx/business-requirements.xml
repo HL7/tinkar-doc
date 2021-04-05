@@ -682,7 +682,7 @@
             </para>
         </section>
         <section>
-            <title>Bootstrap Assets</title>
+            <title>Minimally Required Content</title>
             <para>A Tinkar implementation must be furnished with the following content:<itemizedlist>
                     <listitem>One root concept</listitem>
                     <listitem>One module dependency graph</listitem>

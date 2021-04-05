@@ -72,7 +72,7 @@
         <title>Semantic</title>
         <para>
             <figure>
-                <title>Semantics</title>
+                <title><?oxy_comment_start author="rcholan" timestamp="20210405T114530-0400" comment="Snagit"?>Semantics<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="Semantics.png" scalefit="1" width="100%" contentdepth="100%" align="center"/>
@@ -142,7 +142,8 @@
             relationships from the LOINC<superscript>®</superscript>- SNOMED
                 CT<superscript>®</superscript> Cooperation Project. <figure>
                 <title>Concept Details</title>
-                <mediaobject>
+                <?oxy_comment_start author="rcholan" timestamp="20210405T114538-0400" comment="Snagit"?>
+                <mediaobject><?oxy_comment_end?>
                     <imageobject>
                         <imagedata fileref="concept_detail.png" scalefit="1" width="100%"
                             contentdepth="55%" align="center"/>
@@ -169,14 +170,15 @@
         </para>
   </section>
     <section>
-        <title>Navigator View</title>
+        <title>Navigation View</title>
         <para>In this example we see the results of combining the LOINC<superscript>®</superscript>-
             SNOMED CT<superscript>®</superscript> Cooperation Project module with the latest SNOMED
                 CT<superscript>®</superscript> and LOINC<superscript>®</superscript> releases. You
             can then visualize and navigate the SNOMED CT<superscript>®</superscript> hierarchy and
             arrive at associated LOINC<superscript>®</superscript> codes that would be reached by
             the Urine homocystine measurement Concept. <figure>
-                <title>Navigation View</title>
+                <title>Navigation
+                    <?oxy_comment_start author="rcholan" timestamp="20210405T114659-0400" comment="Snagit"?>View<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="navigation_example.png" scalefit="1" width="100%"
@@ -195,7 +197,8 @@
             Active and Inactive components and to compare the representations across time. The image
             below shows only the Active components for the Concept Fibromyalgia compared to all
             previous versions of Fibromyalgia over time. <figure>
-                <title>Latest View with Active Status versus Latest View with Any Status</title>
+                <title>Latest View with Active Status versus Latest View with Any
+                    <?oxy_comment_start author="rcholan" timestamp="20210405T114753-0400" comment="Snagit"?>Status<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="active_vs_inactive.png" scalefit="1" width="100%"
@@ -257,7 +260,8 @@
         </para>
         <para>
             <figure>
-                <title>SNOMED CT<superscript>®</superscript> Relationships</title>
+                <title>SNOMED CT<superscript>®</superscript>
+                    <?oxy_comment_start author="rcholan" timestamp="20210405T115005-0400" comment="Snagit"?><?oxy_comment_start author="rcholan" timestamp="20210405T115207-0400" comment="New image to expand" mid="5"?>Relationships<?oxy_comment_end?><?oxy_comment_end mid="5"?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="SNOMED_rels.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
@@ -302,7 +306,8 @@
         </para>
         <para>
             <figure>
-                <title>LOINC<superscript>®</superscript> Inferred Relationships</title>
+                <title>LOINC<superscript>®</superscript> Inferred
+                    <?oxy_comment_start author="rcholan" timestamp="20210405T115238-0400" comment="Snagit"?>Relationships<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels1.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
@@ -314,7 +319,8 @@
                 </caption>
             </figure>
             <figure>
-                <title>LOINC<superscript>®</superscript> Stated Relationships</title>
+                <title>LOINC<superscript>®</superscript> Stated
+                    <?oxy_comment_start author="rcholan" timestamp="20210405T115246-0400" comment="Snagit"?>Relationships<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels2.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
@@ -357,7 +363,8 @@
         </para>
         <para>
             <figure>
-                <title>RxNorm Relationships</title>
+                <title>RxNorm
+                    <?oxy_comment_start author="rcholan" timestamp="20210405T121911-0400" comment="Snagit"?>Relationships<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="RxNorm_rels.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
@@ -393,10 +400,12 @@
         </para>
         <para>We can then open two Concept Detail Panels and view the two Concepts side by side to
             understand the differences and similarities between the two Concepts, their origins, and
-            understand how to correct the equivalencies between the two Concepts. In this case, the
-            Concept "Ankylosis of bilateral knee joints (disorder)" would need to be retired as it
-            belongs to the U.S. Edition and the "Ankylosis of both knee joints (disorder)" Concept
-            is contained in the SNOMED CT<superscript>®</superscript> International Release. <figure>
+            understand how to correct the equivalencies between the two Concepts.
+            <?oxy_comment_start author="rcholan" timestamp="20210405T121533-0400" comment="Solor module content to be retired, US edition to be merged"?>In
+            this case, the Concept "Ankylosis of bilateral knee joints (disorder)" would need to be
+            retired as it belongs to the U.S. Edition and the "Ankylosis of both knee joints
+            (disorder)" Concept is contained in the SNOMED CT<superscript>®</superscript>
+            International Release. <?oxy_comment_end?><figure>
                 <title>SNOMED CT<superscript>®</superscript> Equivalences between Modules
                     <?oxy_comment_start author="rcholan" timestamp="20210320T111535-0400" comment="From Penni: I think this is backward the &quot;both&quot; is the US and the &quot;bilateral&quot; is the International core"?></title><?oxy_comment_end?>
                 <mediaobject>
