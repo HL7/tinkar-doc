@@ -70,9 +70,13 @@
   </section>
     <section>
         <title>Semantic</title>
-        <para>
+       <para>Semantics are the predicates and objects about a Concept. Semantics perform the
+            descriptive work in Tinkar. ​ ​ In the figure below we see (1)concept semantics,
+            (2)descriptions and (3)axioms attached to the “Acute pelvic pain” Concept which add
+            information specifying the Concept. ​ ​ A single instance of one of these Semantics is a
+            SemanticVersion (with a STAMP). </para><para>
             <figure>
-                <title><?oxy_comment_start author="rcholan" timestamp="20210405T114530-0400" comment="Snagit"?>Semantics<?oxy_comment_end?></title>
+                <title><?oxy_comment_start author="rcholan" timestamp="20210405T114530-0400" comment="Snagit" flag="done"?>Semantics<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="Semantics.png" scalefit="1" width="100%" contentdepth="100%" align="center"/>
@@ -84,10 +88,6 @@
                 </caption>
             </figure>
         </para>
-        <para>Semantics are the predicates and objects about a Concept. Semantics perform the
-            descriptive work in Tinkar. ​ ​ Here, we see descriptions and axioms attached to the
-            “Acute pelvic pain” Concept which add information specifying the Concept. ​ ​ A single
-            instance of one of these Semantics is a SemanticVersion (with a STAMP). </para>
     </section>
     <section>
         <title>Pattern</title>
@@ -137,12 +137,12 @@
     <section>
       <title>Concept Detail</title>
       <para>Below we see the details for the LOINC<superscript>®</superscript> Concept Homocystine
-            [Mass/time] in 24 hour Urine. You can see the LOINC<superscript>®</superscript> ID, data
-            from the LOINC<superscript>®</superscript> table, Solor assigned Names, and
-            relationships from the LOINC<superscript>®</superscript>- SNOMED
+            [Mass/time] in 24 hour Urine. You can see the (1)LOINC<superscript>®</superscript> ID,
+            (2)data from the LOINC<superscript>®</superscript> table, (3)Solor assigned Names, and
+            (4)relationships from the LOINC<superscript>®</superscript>- SNOMED
                 CT<superscript>®</superscript> Cooperation Project. <figure>
                 <title>Concept Details</title>
-                <?oxy_comment_start author="rcholan" timestamp="20210405T114538-0400" comment="Snagit"?>
+                <?oxy_comment_start author="rcholan" timestamp="20210405T114538-0400" comment="Snagit" flag="done"?>
                 <mediaobject><?oxy_comment_end?>
                     <imageobject>
                         <imagedata fileref="concept_detail.png" scalefit="1" width="100%"
@@ -178,7 +178,7 @@
             arrive at associated LOINC<superscript>®</superscript> codes that would be reached by
             the Urine homocystine measurement Concept. <figure>
                 <title>Navigation
-                    <?oxy_comment_start author="rcholan" timestamp="20210405T114659-0400" comment="Snagit"?>View<?oxy_comment_end?></title>
+                    <?oxy_comment_start author="rcholan" timestamp="20210405T114659-0400" comment="Snagit" flag="done"?>View<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="navigation_example.png" scalefit="1" width="100%"
@@ -198,7 +198,7 @@
             below shows only the Active components for the Concept Fibromyalgia compared to all
             previous versions of Fibromyalgia over time. <figure>
                 <title>Latest View with Active Status versus Latest View with Any
-                    <?oxy_comment_start author="rcholan" timestamp="20210405T114753-0400" comment="Snagit"?>Status<?oxy_comment_end?></title>
+                    <?oxy_comment_start author="rcholan" timestamp="20210405T114753-0400" comment="Snagit" flag="done"?>Status<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="active_vs_inactive.png" scalefit="1" width="100%"
