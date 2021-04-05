@@ -419,7 +419,7 @@
                 resolution of constraints on membership in that path.</para>
         </section>
         <section>
-            <title>Patterns</title>
+            <title>Patterns for Representing Various Assets</title>
             <para>The data architecture must support patterns for the representation of many kinds
                 of assets. A minimal list includes the following.</para>
             <itemizedlist>

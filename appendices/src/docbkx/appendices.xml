@@ -78,7 +78,7 @@
                     purposes. </para>
             <itemizedlist>
                 <listitem>
-                    <para>Tinkar Module: All concepts, semantics, and TypePatterns must belong to a
+                    <para>Tinkar Module: All concepts, semantics, and Patterns must belong to a
                             module. A Tinkar Module would contain a release package of all content
                             published together. A module can be dependent upon another module. </para>
                 </listitem>
@@ -573,7 +573,7 @@ Set of concrete types to reason over. Difference between role operator and prope
         </itemizedlist>
     </section>
     <section>
-        <title>Type Patterns</title>
+        <title>Patterns</title>
    
     <itemizedlist>
         <listitem>
@@ -582,8 +582,8 @@ Set of concrete types to reason over. Difference between role operator and prope
                 Semantics. </para>
         </listitem>
         <listitem>
-            <para>Type pattern: A class defining a set of predicates and object types that can be
-                asserted about a class of subjects. All Semantics follow Patterns. </para>
+            <para>Pattern: A class defining a set of predicates and object types that can be
+                    asserted about a class of subjects. All Semantics follow Patterns. </para>
         </listitem>
         <listitem>
             <para>Semantic: A class containing a set of predicates and objects about a subject.
@@ -595,7 +595,7 @@ Set of concrete types to reason over. Difference between role operator and prope
                 rule or parameter for selecting among STAMP values. </para>
         </listitem>
         <listitem>
-            <para>Type pattern chronology: The set of versions having a STAMP for a pattern. </para>
+            <para>Pattern chronology: The set of versions having a STAMP for a pattern. </para>
         </listitem>
         <listitem>
             <para>Semantic chronology: The set of versions having a STAMP for a Semantic. </para>
@@ -605,7 +605,7 @@ Set of concrete types to reason over. Difference between role operator and prope
             </para>
         </listitem>
         <listitem>
-            <para>Type pattern version: A single instance of a pattern with a STAMP. </para>
+            <para>Pattern version: A single instance of a pattern with a STAMP. </para>
         </listitem>
         <listitem>
             <para>Semantic version: A single instance of an Semantic with a STAMP. </para>

@@ -294,14 +294,14 @@
             </itemizedlist></para>
     </section>
     <section>
-        <title>Type Patterns</title>
+        <title>Patterns (For Semantics)</title>
         <para>We have chosen to define a first-class feature of the model, the <emphasis role="bold"
-                >TypePattern </emphasis>(<emphasis role="bold">TypePatternVersion</emphasis> and
-                <emphasis role="bold">TypePatternChronology</emphasis>). This feature asserts
-            patterns that Semantic components can follow, like an XML or RDF Schema.</para>
+                >Pattern </emphasis>(<emphasis role="bold">PatternVersion</emphasis> and <emphasis
+                role="bold">PatternChronology</emphasis>). This feature asserts patterns that
+            Semantic components can follow, like an XML or RDF Schema.</para>
         <para>
             <figure>
-                <title>Type Pattern</title>
+                <title>Pattern</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="TypePattern neither.png" format="PNG" scalefit="1"
@@ -309,15 +309,15 @@
                     </imageobject>
                 </mediaobject>
                 <caption>
-                    <para><emphasis role="italics">Type Pattern</emphasis></para>
+                    <para><emphasis role="italics">Pattern</emphasis></para>
                 </caption>
             </figure>
         </para>
-        <para>Using the TypePattern, Semantics with varying fields and data types can be specified
-            to represent any structure needed to provide meaning to a concept. For example, if a
-            field within a semantic is used to describe an SDO's website, the Meaning would be "URL,
-            DataType of "String," and Purpose of "Website." The TypePattern would then contain an
-            array of these FieldDefinitions.</para>
+        <para>Using the Pattern, Semantics with varying fields and data types can be specified to
+            represent any structure needed to provide meaning to a concept. For example, if a field
+            within a semantic is used to describe an SDO's website, the Meaning would be "URL,
+            DataType of "String," and Purpose of "Website." The Pattern would then contain an array
+            of these FieldDefinitions.</para>
     </section>
     <section>
         <title>Overall Tinkar Architecture</title>
@@ -363,14 +363,13 @@
                                     instance of an Semantic with a STAMP.</para>
                                 <para><emphasis role="bold">SemanticChronology</emphasis> - The set
                                     of versions having a STAMP for a Semantic. </para>
-                                <para><emphasis role="bold">TypePattern</emphasis> - A class
-                                    defining a set of predicates and object types that can be
-                                    asserted about a class of subjects. All Semantics follow
-                                    Patterns.</para>
-                                <para><emphasis role="bold">TypePatternVersion</emphasis> - A single
+                                <para><emphasis role="bold">Pattern</emphasis> - A class defining a
+                                    set of predicates and object types that can be asserted about a
+                                    class of subjects. All Semantics follow Patterns.</para>
+                                <para><emphasis role="bold">PatternVersion</emphasis> - A single
                                     instance of a pattern with a STAMP.</para>
-                                <para><emphasis role="bold">TypePatternChronology</emphasis> - The
-                                    set of versions having a STAMP for a pattern. </para>
+                                <para><emphasis role="bold">PatternChronology</emphasis> - The set
+                                    of versions having a STAMP for a pattern. </para>
                             </entry>
                         </row>
                     </tbody>
