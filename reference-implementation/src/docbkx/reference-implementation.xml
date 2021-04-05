@@ -90,17 +90,17 @@
             instance of one of these Semantics is a SemanticVersion (with a STAMP). </para>
     </section>
     <section>
-        <title>TypePattern</title>
-        <para>Komet currently does not contain functionality to view and edit TypePatterns. We hope
-            to have that functionality available to demonstrate before the May 2021 HL7 meeting.
-            Some examples of common patterns that are built into the tooling are:<itemizedlist>
+        <title>Pattern</title>
+        <para>Komet currently does not contain functionality to view and edit Patterns. We hope to
+            have that functionality available to demonstrate before the May 2021 HL7 meeting. Some
+            examples of common patterns that are built into the tooling are:<itemizedlist>
                 <listitem>
-                    <para>STR TypePattern: This pattern is used to associate a String to a
-                        Component. The type of association to a Component is represented by a Tinkar
-                        Model Concept. In the example below the type of String is SNOMED
+                    <para>STR Pattern: This pattern is used to associate a String to a Component.
+                        The type of association to a Component is represented by a Tinkar Model
+                        Concept. In the example below the type of String is SNOMED
                             CT<superscript>®</superscript> integer ID.</para>
                     <figure>
-                        <title>STR TypePattern</title>
+                        <title>STR Pattern</title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="STRPattern.png" scalefit="1" width="100%"
@@ -108,18 +108,18 @@
                             </imageobject>
                         </mediaobject>
                         <caption>
-                            <para><emphasis role="italics">STR TypePattern</emphasis>
+                            <para><emphasis role="italics">STR Pattern</emphasis>
                             </para>
                         </caption>
                     </figure>
                 </listitem>
                 <listitem>
-                    <para>REF TypePattern: This pattern is used to associate a Concept to a
-                        Component. The type of association is also represented by a Tinkar Model
-                        Concept. In the example below the type of association is "SNOMED legacy
+                    <para>REF Pattern: This pattern is used to associate a Concept to a Component.
+                        The type of association is also represented by a Tinkar Model Concept. In
+                        the example below the type of association is "SNOMED legacy
                         implication."</para>
                     <figure>
-                        <title>REF TypePattern</title>
+                        <title>REF Pattern</title>
                         <mediaobject>
                             <imageobject>
                                 <imagedata fileref="REFPattern.png" scalefit="1" width="100%"
@@ -127,7 +127,7 @@
                             </imageobject>
                         </mediaobject>
                         <caption>
-                            <para><emphasis role="italics">REF TypePattern</emphasis>
+                            <para><emphasis role="italics">REF Pattern</emphasis>
                             </para>
                         </caption>
                     </figure>
