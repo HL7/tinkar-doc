@@ -365,20 +365,16 @@
                 <para>EL profile set operator </para>
                 <itemizedlist>
                     <listitem>
-                        <para>Necessary set: A characteristic that is always true of a concept. A
-                            concept that only contains necessary conditions is considered
+                        <para>Necessary set: A set of relationships that is always true of a
+                            concept. A concept that only contains necessary conditions is considered
                             primitive.</para>
                     </listitem>
                     <listitem>
-                        <para><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Property
-                            set:
-                            ?<?oxy_comment_start author="rcholan" timestamp="20210402T124133-0400" comment="Look at OWL spec
-
-Set of concrete types to reason over. Difference between role operator and property operators
-" mid="1"?><?oxy_custom_end?><?oxy_comment_end mid="1"?></para>
+                        <para>Property set: A set of relationships that are non-defining and are not
+                            used by a description logic classifer.</para>
                     </listitem>
                     <listitem>
-                        <para>Sufficient set: A set of characteristics that differentiate a concept
+                        <para>Sufficient set: A set of relationships that differentiate a concept
                             and its subtypes from all other concepts. A concept that contains at
                             least one set of necessary and sufficient conditions is considered
                             defined.</para>
@@ -403,9 +399,9 @@ Set of concrete types to reason over. Difference between role operator and prope
                     </listitem>
                     <listitem>
                         <para>Disjoint with: An operator that asserts that two concepts are disjoint
-                            and cannot have common instances. In an ontology, all classes are
-                            assumed to have potential overlapping instances unless they are
-                            explicitly stated to not have them. </para>
+                            and cannot have common objects. By default, all concepts are assumed to
+                            have potential overlapping classes unless they are explicitly stated to
+                            not have them. </para>
                     </listitem>
                     <listitem>
                         <para>Or: An operator used to assert that at least one of two (or more)
@@ -437,18 +433,17 @@ Set of concrete types to reason over. Difference between role operator and prope
         <itemizedlist>
             <listitem>
                 <para>Role operator: Concept that is used to describe universal vs existential
-                    restrictions</para>
+                    restrictions.  </para>
                 <itemizedlist>
                     <listitem>
-                        <para>Existential restriction (Some): With an existential restriction they
-                            do not mandate that the only relationships for the given property that
-                            can exist must be to individuals that are members of the specified
-                            filler class. </para>
+                        <para>Existential restriction (Some): Existential restrictions describe
+                            objects that participate in at least one relationship along a specified
+                            property to objects of a specified class.</para>
                     </listitem>
                     <listitem>
                         <para>Universal restriction (All): Universal restrictions constrain the
-                            relationships along a given property to individuals that are members of
-                            a specific class.</para>
+                            relationships along a given property to concepts that are members of a
+                            specific class.</para>
                     </listitem>
                 </itemizedlist>
             </listitem>
@@ -545,19 +540,21 @@ Set of concrete types to reason over. Difference between role operator and prope
                 </itemizedlist>
             </listitem>
         </itemizedlist>
-        <?oxy_comment_start author="timowilliams" timestamp="20210331T213349-0500" comment="No children.  Why do we need it?"?>
         <itemizedlist>
             <listitem>
-                <para>Property pattern implication<?oxy_comment_end?>:
-                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>&lt;Do we
-                    need this?><?oxy_custom_end?>
-                    <?oxy_comment_start author="rcholan" timestamp="20210402T125530-0400" comment="Look up &quot;property chaining&quot;" id="kdg_qnx_dpb"?><?oxy_comment_start author="timowilliams" timestamp="20210402T172742-0500" comment="I think this may be the same, or similar to Transitive property if it is really describing what SNOMED Calls Property Chaining." parentID="kdg_qnx_dpb" mid="7"?></para><?oxy_comment_end?><?oxy_comment_end mid="7"?>
+                <para>Property pattern implication: Property pattern implications are used to
+                    represent the description logic feature called property chains.  Property chains
+                    are rules that allows you to infer the existence of a property from a chain of
+                    properties. The current release of SNOMED CT includes one property
+                    chain:<?oxy_comment_start author="rcholan" timestamp="20210402T125530-0400" comment="Look up &quot;property chaining&quot;" id="kdg_qnx_dpb" flag="done"?><?oxy_comment_start author="timowilliams" timestamp="20210402T172742-0500" comment="I think this may be the same, or similar to Transitive property if it is really describing what SNOMED Calls Property Chaining." parentID="kdg_qnx_dpb" flag="done" mid="3"?></para><?oxy_comment_end?><?oxy_comment_end mid="3"?>
+                <para>363701004 |direct substance| <emphasis role="bold">ο</emphasis> 127489000 |has
+                    active ingredient|→ 363701004 |direct substance|</para>
             </listitem>
         </itemizedlist>
         <itemizedlist>
             <listitem>
                 <para>Sufficient concept definition operator:
-                    <?oxy_comment_start author="rcholan" timestamp="20210402T125913-0400" comment="when you look at concept as whole are there only neccesary conditions given or neccesary + sufficient conditions given? tag at level of the concept not at the level of sufficent set"?></para><?oxy_comment_end?>
+                    <?oxy_comment_start author="rcholan" timestamp="20210402T125913-0400" comment="when you look at concept as whole are there only neccesary conditions given or neccesary + sufficient conditions given? tag at level of the concept not at the level of sufficent set" flag="done"?></para><?oxy_comment_end?>
                 <itemizedlist>
                     <listitem>
                         <para>Necessary but not sufficient concept definition: Concept used to
