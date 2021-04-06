@@ -113,7 +113,7 @@
                 <title>Component Types</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Semantic Definition Simple neither.png" scalefit="1" width="100%"
+                        <imagedata fileref="Final_Semantic DefinitionSimple.png" scalefit="1" width="100%"
                             contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
@@ -296,7 +296,7 @@
             </itemizedlist></para>
     </section>
     <section>
-        <title>Patterns (For Semantics)</title>
+        <title>Pattern (For Semantics)</title>
         <para>We have chosen to define a first-class feature of the model, the <emphasis role="bold"
                 >Pattern </emphasis>(<emphasis role="bold">PatternVersion</emphasis> and <emphasis
                 role="bold">PatternChronology</emphasis>). This feature asserts patterns that
@@ -306,7 +306,7 @@
                 <title>Pattern</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="TypePattern neither.png" format="PNG" scalefit="1"
+                        <imagedata fileref="Final_SemanticDefinition.png" format="PNG" scalefit="1"
                             width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
@@ -328,7 +328,7 @@
                 <title>Overall Tinkar Architecture</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="6 Tinkar Architecture_FINAL.png" format="PNG" scalefit="1"
+                        <imagedata fileref="Final_TinkarArchitecture.png" format="PNG" scalefit="1"
                             width="100%" contentdepth="100%" align="center" />
                     </imageobject>
                 </mediaobject>
