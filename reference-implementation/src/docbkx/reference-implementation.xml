@@ -304,26 +304,33 @@
                 </caption>
             </figure>
         </para>
-        <para>
-            <figure>
+        <para>The figure below shows the LOINC<superscript>®</superscript> inferred relationships
+            that are derived from the latest version of the SNOMED CT LOINC Integration files. The
+            parents and attributes represented in the Sufficient and Necessary sets are represented
+            using SNOMED CT concepts based on mappings from the LOINC Part concepts to SNOMED CT concepts.<figure>
                 <title>LOINC<superscript>®</superscript> Inferred
                     <?oxy_comment_start author="rcholan" timestamp="20210405T115238-0400" comment="Snagit"?>Relationships<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="LOINC_rels1.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
+                        <imagedata fileref="LOINC_rels1.png" scalefit="1" width="100%"
+                            contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
                     <para><emphasis role="italics">LOINC<superscript>®</superscript> Inferred
                             Relationships</emphasis></para>
                 </caption>
-            </figure>
-            <figure>
+            </figure>The next figure shows the LOINC<superscript>®</superscript> stated
+            relationships that are contained within the latest version of the SNOMED CT LOINC
+            Integration files. The parents and attributes represented in the Sufficient sets are
+            represented using SNOMED CT concepts based on mappings from the LOINC Part concepts to
+            SNOMED CT concepts <figure>
                 <title>LOINC<superscript>®</superscript> Stated
                     <?oxy_comment_start author="rcholan" timestamp="20210405T115246-0400" comment="Snagit"?>Relationships<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="LOINC_rels2.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
+                        <imagedata fileref="LOINC_rels2.png" scalefit="1" width="100%"
+                            contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -361,13 +368,15 @@
                 </caption>
             </figure>
         </para>
-        <para>
-            <figure>
+        <para> The figure below shows the Inferred and Stated Relationships based on a draft of an
+            OWL release of RxNorm Stated Relationships that are based on the new SNOMED CT drug
+            model.  The relationships are represented using SNOMED CT concepts.<figure>
                 <title>RxNorm
                     <?oxy_comment_start author="rcholan" timestamp="20210405T121911-0400" comment="Snagit"?>Relationships<?oxy_comment_end?></title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="RxNorm_rels.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
+                        <imagedata fileref="RxNorm_rels.png" scalefit="1" width="100%"
+                            contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -382,9 +391,10 @@
             views and detect equivalences and other errors. The following image shows the results of
             the classifier after merging the January 2021 version of the SNOMED
                 CT<superscript>®</superscript> International release with the September 2020 version
-            of the SNOMED CT<superscript>®</superscript> U.S. Edition. The classifier has detected
-            that there is an equivalence between the Concepts: "Ankylosis of bilateral knee joints
-            (disorder)" and "Ankylosis of both knee joints (disorder)."<figure>
+            of the SNOMED CT<superscript>®</superscript> U.S. Edition and a Solor Extension to
+            SNOMED CT. The classifier has detected that there is an equivalence between the
+            Concepts: "Ankylosis of bilateral knee joints (disorder)" and "Ankylosis of both knee
+            joints (disorder)."<figure>
                 <title>Equivalences Detected by Classifier</title>
                 <mediaobject>
                     <imageobject>
@@ -401,13 +411,12 @@
         <para>We can then open two Concept Detail Panels and view the two Concepts side by side to
             understand the differences and similarities between the two Concepts, their origins, and
             understand how to correct the equivalencies between the two Concepts.
-            <?oxy_comment_start author="rcholan" timestamp="20210405T121533-0400" comment="Solor module content to be retired, US edition to be merged"?>In
-            this case, the Concept "Ankylosis of bilateral knee joints (disorder)" would need to be
-            retired as it belongs to the U.S. Edition and the "Ankylosis of both knee joints
-            (disorder)" Concept is contained in the SNOMED CT<superscript>®</superscript>
-            International Release. <?oxy_comment_end?><figure>
+            <?oxy_comment_start author="rcholan" timestamp="20210405T121533-0400" comment="Solor module content to be retired, US edition to be merged" flag="done"?>In
+            this case, the Concept "Ankylosis of both knee joints (disorder)" would need to be
+            retired as it belongs to the Solor Extension and the "Ankylosis of bilateral knee joints
+            (disorder)" Concept is contained in the U.S. Edition. <?oxy_comment_end?><figure>
                 <title>SNOMED CT<superscript>®</superscript> Equivalences between Modules
-                    <?oxy_comment_start author="rcholan" timestamp="20210320T111535-0400" comment="From Penni: I think this is backward the &quot;both&quot; is the US and the &quot;bilateral&quot; is the International core"?></title><?oxy_comment_end?>
+                    <?oxy_comment_start author="rcholan" timestamp="20210320T111535-0400" comment="From Penni: I think this is backward the &quot;both&quot; is the US and the &quot;bilateral&quot; is the International core" flag="done"?></title><?oxy_comment_end?>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="module_duplication.png" scalefit="1" width="100%"
