@@ -4,8 +4,8 @@
     <title>Glossary</title>
     <informaltable>
         <tgroup cols="2">
-            <colspec colnum="1" colname="col1"/>
-            <colspec colnum="2" colname="col2"/>
+            <colspec colnum="1" colname="col1" colwidth="1*"/>
+            <colspec colnum="2" colname="col2" colwidth="1.56*"/>
             <tbody>
                 <row>
                     <entry>Terminology</entry>
@@ -60,17 +60,17 @@
                 <row>
                     <entry>Path</entry>
                     <entry>A set of assets under version control that can be managed distinctly from
-                        other assets. Paths “branch” from other paths when they are established, and
-                        they can be “merged” with other paths as well.</entry>
+                        other assets. Paths “branch” from other paths when established, and can be
+                        “merged” with other paths as well.</entry>
                 </row>
                 <row>
                     <entry>Branch</entry>
                     <entry>"Branch" as commonly used in version control, implies a tree structure,
                         where a version configuration is allowed to only have one origin. In many
-                        instances, we want to support a version configuration with more than one
-                        origin. For example, a mapping configuration may have an origin of T1 on
-                        System A, and T2 on System B (based on the release schedules of Systems A
-                        and B). A Path, which is more general, allows multiple origins of a version
+                        instances, supported version configuration has more than one origin. For
+                        example, a mapping configuration may have an origin of T1 on System A, and
+                        T2 on System B (based on the release schedules of Systems A and B). A Path,
+                        which is more general, allows multiple origins of a version
                         configuration.</entry>
                 </row>
                 <row>
@@ -91,8 +91,8 @@
     <para>
         <informaltable>
             <tgroup cols="2">
-                <colspec colnum="1" colname="col1"/>
-                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="1" colname="col1" colwidth="1*"/>
+                <colspec colnum="2" colname="col2" colwidth="1.56*"/>
                 <tbody>
                     <row>
                         <entry>Import</entry>
@@ -111,12 +111,12 @@
                         <entry>
                             <para>Minimally Required Content</para>
                         </entry>
-                        <entry>The set of minimal content a Tinkar repository must implement in
-                            order to support operations. A Tinkar implementation must be furnished
-                            with the following content: (a) One root concept; (b) One module
-                            dependency graph; (c) Infrastructure concepts a.k.a Tinkar Model
-                            Concepts to support the core patterns listed above; (d) Import rules to
-                            support import of standard terminologies,</entry>
+                        <entry>The set of minimal content a Tinkar repository must implement to
+                            support operations. A Tinkar implementation must be furnished with the
+                            following content: (a) One root concept; (b) One module dependency
+                            graph; (c) Infrastructure concepts a.k.a Tinkar Model Concepts to
+                            support the core patterns listed above; (d) Import rules to support
+                            import of standard terminologies,</entry>
                     </row>
                     <row>
                         <entry>Tinkar Model Concepts (a.k.a Infrastructure concepts)</entry>
@@ -170,7 +170,7 @@
                             <para>Komet is an example implementation of the Tinkar model, and shows
                                 how terminologies like SNOMED CT<superscript>®</superscript>,
                                     LOINC<superscript>®</superscript>, RxNorm shall be represented.
-                                Using the Komet browser we can view and search concepts, view
+                                Using the Komet browser users can view and search concepts, view
                                 concept details, and navigate hierarchies, among many other
                                 functions.</para>
                         </entry>
@@ -184,7 +184,7 @@
                         </entry>
                     </row>
                     <row>
-                        <entry>UUID (universally unique identifier)</entry>
+                        <entry>UUID (Universally Unique Identifier)</entry>
                         <entry>A 128-bit number used to identify information in computer
                             systems.</entry>
                     </row>

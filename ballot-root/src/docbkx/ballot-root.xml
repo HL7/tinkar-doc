@@ -5,11 +5,11 @@
 
   <preface>
     <title>Purpose</title>
-    <para>This specification describes the requirements to manage terminology produced by a variety
-      of organizations across the healthcare enterprise. A terminology foundation is required that
-      allows the enterprise to extend terminology standards and implement extensions in a timely
-      fashion.</para>
-    <para>This specification is intended to support healthcare organizations' standard terminology
+    <para>This specification describes the requirements needed to manage terminology produced by a
+      variety of organizations across the healthcare enterprise. The healthcare enterprise needs an
+      extensive terminology foundation and the ability to implement extensions to support diverse
+      informatics systems. </para>
+    <para>This specification is intended to provide this support by supporting standard terminology
       modules, value sets, and coding systems as well as local terms and equivalence
       mappings.</para>
     <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification is necessary to
@@ -94,8 +94,8 @@
     <para/>
     <para><superscript>1</superscript>Veterans Health Administration;
       <superscript>2</superscript>HL7 Vocabulary Work Group; <superscript>3</superscript>Deloitte
-      Consulting LLP; <superscript>4</superscript>PenRad; </para>
-    <para><superscript>5</superscript>J P Systems, Inc; <superscript>6</superscript>Sujansky &amp;
+      Consulting LLP; <superscript>4</superscript>PenRad Technologies
+        Inc;<superscript>5</superscript>J P Systems, Inc; <superscript>6</superscript>Sujansky &amp;
       Associates, LLC</para>
     <para/>
     <para/>

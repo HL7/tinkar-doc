@@ -12,10 +12,10 @@
         foundational framework for terminology and knowledge base systems (e.g. SNOMED
             CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm, HL7, etc.). A
         Tinkar Specification can provide a single representation for all terminologies required in
-        the U.S. and other countries, while also providing a better foundation for maturing how we
-        manage change. Tinkar could support the operation of a variety of systems intended to
-        deliver knowledge management for terminology to vendors providers, and standards-development
-        organizations like HL7.</para>
+        the U.S. and other countries, while also providing a better foundation for managing change.
+        Tinkar could support the operation of a variety of systems intended to deliver knowledge
+        management for terminology to vendors providers, and standards-development organizations
+        like HL7.</para>
     
     <section>
         <title>Standard Class Model</title>
@@ -77,9 +77,9 @@
         </para>
                     <para>These elements together are referred to by the acronym “<emphasis
                 role="bold">STAMP</emphasis>”, as described previously. Every new assertion, whether
-            a new component or a change to an existing component, must have a STAMP in order to
-            determine when it is to be used. The STAMP properties support the ability to apply
-            terminology components for specific purposes. For example, <itemizedlist>
+            a new component or a change to an existing component, must have a STAMP to determine
+            when it is to be used. The STAMP properties support the ability to apply terminology
+            components for specific purposes. For example, <itemizedlist>
                 <listitem>
                     <para>“Path” can be used to test provisional content without physically swapping
                         out systems.</para>
@@ -101,10 +101,10 @@
             records, called ComponentVersions, (beginning with the “Create” version), all associated
             to an underlying ComponentChronology.</para>
         
-        <para>A Components Chronology only has properties inasmuch as they are attributed to it by
-            its versions. Looking at the IdentifiedComponent through different sets of changes
-            (published version, geographically defined set of modules, historical timestamp) may
-            reveal substantially different IdentifedComponents. </para>
+        <para>A Components Chronology only has properties attributed to it by its versions. Looking
+            at the IdentifiedComponent through different sets of changes (published version,
+            geographically defined set of modules, historical timestamp) may reveal substantially
+            different IdentifedComponents. </para>
     </section>
     <section>
         <title>Component Types</title>
@@ -136,7 +136,7 @@
             compositional relationship explicitly.</para>
         <para>The Semantic class uses a Concept to define the relationship between the value(s) and
             the Concept; the value itself may be either a concept or some other kind of data type,
-            such as a string. We then create the ability to assemble assertions into more complex
+            such as a string. This creates the ability to assemble assertions into more complex
             structures. <figure>
                 <title>Compositional Semantics</title>
                 <mediaobject>
@@ -160,15 +160,16 @@
                 >SemanticVersions</emphasis>. Concepts, too, are manifest as collections: a
                 <emphasis role="bold">ConceptChronology</emphasis> consisting of a set of <emphasis
                 role="bold">ConceptVersions</emphasis>.</para>
-        <para>If other IdentifiedComponents depend on the changed concept, they can be identified by
-            relationships in the Semantics. The Semantics can assert rules for how to manage these
-            changes. A Semantic defining a value set for data entry might automatically accept any
-            deactivations from the source system authority, while a Semantic defining a value set
-            for research might automatically decline to adopt deactivations, or do so based on
-            whether there are extant operational values. Escalating such decisions for human
-            adjudication or review at multiple levels is also always an option. Systems might adopt
-            any number of methods for dealing with identified changes: the important thing is to
-            ensure the changes can be identified consistently.</para>
+        <para>If other IdentifiedComponents depend on the changed concept, these
+            IdentifiedComponents can be identified by relationships in the Semantics. The Semantics
+            can assert rules for how to manage these changes. A Semantic defining a value set for
+            data entry might automatically accept any deactivations from the source system
+            authority, while a Semantic defining a value set for research might automatically
+            decline to adopt deactivations, or do so based on whether there are extant operational
+            values. Escalating such decisions for human adjudication or review at multiple levels is
+            also always an option. Systems might adopt any number of methods for dealing with
+            identified changes: the important thing is to ensure the changes can be identified
+            consistently.</para>
     </section>
     <section>
         <title>Field Data Types</title>
@@ -200,10 +201,10 @@
                     <para>Instant - models a single instantaneous point on a timeline.</para>
                 </listitem>
                 <listitem>
-                    <para>Planar Point - position in a two dimensional space (a plane).</para>
+                    <para>Planar Point - position in a two-dimensional space (a plane).</para>
                 </listitem>
                 <listitem>
-                    <para>Spatial Point - position in a three dimensional space.</para>
+                    <para>Spatial Point - position in a three-dimensional space.</para>
                 </listitem>
                 <listitem>
                     <para>Component ID List - an ordered list of Component IDs.</para>
@@ -221,15 +222,15 @@
                         directions.</para>
                 </listitem>
                 <listitem>
-                    <para>DiGraph: A graph in which a set of objects are connected together where
-                        all the edges are directed from one vertex to another. </para>
+                    <para>DiGraph: A graph in which a set of objects are connected where all the
+                        edges are directed from one vertex to another. </para>
                 </listitem>
                 <listitem>
                     <para>Vertex - The fundamental unit of data that makes up a graph or
                         tree.</para>
                     <itemizedlist>
                         <listitem>
-                            <para>In Tinkar, property graphs are used as a general purpose data
+                            <para>In Tinkar, property graphs are used as a general-purpose data
                                 pattern to represent an abstract syntax tree (AST), such as OWL
                                 EL++. This allows for data types without requiring custom nodes. </para>
                             <itemizedlist>
@@ -270,23 +271,23 @@
                         <listitem>
                             <para>In this output, one can see a sufficient set and necessary set.
                                 Bulleted items are properties in the node. The output is printed as
-                                a "depth first search." Each depth, adds 3 characters of padding,
-                                and shows how we represent OWL EL++ definitions using only
-                                terminology and a standard property graph data structure. The 1st
-                                one is node index 0 which has a child of node index 8. Node index 0
-                                is the OWL EL++ definition root. Node 8 points to Node 7, and the
-                                meaning of Node 8 is that it is a necessary set. Node 7 is 'And' and
-                                points to Node 5,1,6. Node 5's meaning is 'Role Type', Value is
-                                'Role group', and its other property is 'Role Operator.' Node 5
-                                points to Node 4. Node 4 is 'And.' Node 3 is 'Role Type.' Node 2 is
-                                Concept Reference. 7 also points to 1 and 6 (Concept References). </para>
+                                a "depth first search." Each depth adds 3 characters of padding and
+                                shows how OWL EL++ definitions using only terminology and a standard
+                                property graph data structure, are represented. The 1st one is node
+                                index 0 which has a child of node index 8. Node index 0 is the OWL
+                                EL++ definition root. Node 8 points to Node 7, and the meaning of
+                                Node 8 is that it is a necessary set. Node 7 is 'And' and points to
+                                Node 5,1,6. Node 5's meaning is 'Role Type', Value is 'Role group',
+                                and its other property is 'Role Operator.' Node 5 points to Node 4.
+                                Node 4 is 'And.' Node 3 is 'Role Type.' Node 2 is Concept Reference.
+                                7 also points to 1 and 6 (Concept References). </para>
                         </listitem>
                         <listitem>
-                            <para>Here using the property graph model, we can show that each vertex
-                                has a meaning. Tinkar can use concepts to represent anything end
-                                users might need at nodes. This allows for data types without
-                                requiring custom nodes. With no changes to the underlying data
-                                structures, Tinkar can represent more than OWL EL++. With updates to
+                            <para>The property graph model demonstrates that each vertex has a
+                                meaning. Tinkar can use concepts to represent anything end users
+                                might need at nodes. This allows for data types without requiring
+                                custom nodes. With no changes to the underlying data structures,
+                                Tinkar can represent more than OWL EL++. With updates to
                                 terminology, Tinkar can represent any parsable standard, such as
                                 BPMN and DMN, using this property graph model and a proper set of
                                 terminology concepts and semantics represented using Tinkar.</para>
@@ -297,10 +298,10 @@
     </section>
     <section>
         <title>Pattern (For Semantics)</title>
-        <para>We have chosen to define a first-class feature of the model, the <emphasis role="bold"
-                >Pattern </emphasis>(<emphasis role="bold">PatternVersion</emphasis> and <emphasis
-                role="bold">PatternChronology</emphasis>). This feature asserts patterns that
-            Semantic components can follow, like an XML or RDF Schema.</para>
+        <para>The Tinkar Reference Model defines a first-class feature of the model, the <emphasis
+                role="bold">Pattern </emphasis>(<emphasis role="bold">PatternVersion</emphasis> and
+                <emphasis role="bold">PatternChronology</emphasis>). This feature asserts patterns
+            that Semantic components can follow, like an XML or RDF Schema.</para>
         <para>
             <figure>
                 <title>Pattern</title>
@@ -362,7 +363,7 @@
                                     a set of predicates and objects about a subject. Semantics
                                     perform the descriptive work in Tinkar.</para>
                                 <para><emphasis role="bold">SemanticVersion</emphasis> - A single
-                                    instance of an Semantic with a STAMP.</para>
+                                    instance of a Semantic with a STAMP.</para>
                                 <para><emphasis role="bold">SemanticChronology</emphasis> - The set
                                     of versions having a STAMP for a Semantic. </para>
                                 <para><emphasis role="bold">Pattern</emphasis> - A class defining a
@@ -486,8 +487,8 @@
         </section>
         <section>
             <title>Future Iterations</title>
-            <para>As we continue to iterate on the Tinkar specification and move towards a DSTU and
-                connectathons we will iterate to provide more detail about coordinates.</para>
+            <para>As the Tinkar specification evolves towards a DSTU and Connectathons, more
+                coordinates and detailing will be provided. </para>
         </section>
     </section>
 </chapter>

@@ -11,7 +11,7 @@
                 (Requirement 1)</emphasis>. This goal requires <emphasis role="underline"
                 linkend="requirement_2">quality information in the patient record (Requirement
                 2)</emphasis>, wherever it comes from, and the increasingly distributed nature of
-            care requires that we use <emphasis role="underline" linkend="requirement_3">commonly
+            care that requires <emphasis role="underline" linkend="requirement_3">commonly
                 understood data standards (Requirement 3)</emphasis> to ensure mutual comprehension
             across the care team and over time. There are four outlined clinical use cases:</para>
         <informaltable>
@@ -52,9 +52,9 @@
                                     term (Requirement 5).</emphasis>
                             </para>
                             <para>Systems may capture this information unobtrusively as text, or
-                                they may request further information from the clinician to assist
-                                the authoring process. The system will convey at least the text and
-                                the identity of the clinician to the terminologist.</para>
+                                prompt further information from the clinician to assist the
+                                authoring process. The system will convey at least the text and the
+                                identity of the clinician to the terminologist.</para>
                             <itemizedlist>
                                 <listitem>
                                     <emphasis role="bold">Review Patient Data</emphasis>
@@ -106,7 +106,7 @@
                 role="underline" linkend="requirement_10">defined or refined by different
                 stakeholders (Requirement 10)</emphasis> with different sets of assumptions. For
             instance, whether a disorder meets a criterion defined by a standard terminology, a
-            payor, a professional society or a locally chartered board of specialists.</para>
+            payor, a professional society, or a locally chartered board of specialists.</para>
         <para>To support these needs, the Enterprise Terminology that supports the clinical systems
             must <emphasis role="underline" linkend="requirement_11">manage change systematically
                 (Requirement 11)</emphasis>, and it must do so for both internally managed and
@@ -119,12 +119,12 @@
             to standards current is a complex undertaking. A health system may subscribe to dozens
             of standard and commercial terminologies, each of which may publish scheduled updates
             several times a year, and any of which may push out an emergency update at any time. All
-            of these assets have different designs, so ensuring they continue to work together as
-            intended is expensive and time-consuming, and the necessary transformations introduce
-            risk. Systematic management of change requires granular representation of the assets and
-            their changes.</para>
-        <para>There are best-practice capabilities in knowledge asset maintenance, and we propose to
-            adopt them for clinical data standards. These include the following:</para>
+            these assets have different designs, so ensuring continued cohesion is expensive and
+            time-consuming, and the necessary transformations introduce risk. Systematic management
+            of change requires granular representation of the assets and associated asset
+            changes.</para>
+        <para>There are best-practice capabilities in knowledge asset maintenance. The following is
+            proposed for clinical data standards:</para>
         <para>
             <itemizedlist>
                 <listitem>
@@ -163,16 +163,16 @@
                 </listitem>
                 <listitem>
                     <para><emphasis role="underline">Merging capabilities</emphasis>: It must be
-                        possible to incorporate all of the changes made on one branch of the
+                        possible to incorporate all the changes made on one branch of the
                         version-control repository into another branch, such that any conflicts
                         between different versions of the same objects are detected and resolved.
                         This capability is important to enable work done by multiple knowledge
                         engineers concurrently to be combined and incorporated into the main branch
                         of the repository. The merging capability is also important to allow
                         knowledge engineers to update their local branches of the repository with
-                        changes that may have been made by others to the main branch, enabling them
-                        to ensure that their own changes will remain compatible with the latest
-                        version of the system.</para>
+                        changes that may have been made by others to the main branch, thus ensuring
+                        that changes will remain compatible with the latest version of the
+                        system.</para>
                 </listitem>
             </itemizedlist>
         </para>
@@ -242,26 +242,26 @@
                                 terminology systems as well as management data used only within the
                                 knowledge base (e.g., changing SNOMED CT<superscript>®</superscript>
                                 relationships, inserting a concept in between two existing
-                                concepts). Note that a standard can only be modified by the standard
-                                owner. A client enterprise may add to or modify the content in an
-                                "overlay," but those changes are part of the local enterprise
-                                assets. They do not actually modify the standard.</para>
+                                concepts). <emphasis>Note that a standard can only be modified by
+                                    the standard owner</emphasis>. A client enterprise may add to or
+                                modify the content in an "overlay," but those changes are part of
+                                the local enterprise assets. The client enterprise cannot actually
+                                modify the standard.</para>
                         </entry>
                     </row>
                 </tbody>
             </tgroup>
         </informaltable>
         <para><emphasis role="italic">Asset Curation Use Cases</emphasis></para>
-        <para>A key difficulty comes in when we examine the publish and consume cases. Today,
-            clinical systems consume terminologies, but the interfaces are point-to-point. To assert
-            or assess new information the tools must already understand all relevant interface
-            models. Since an external organization may modify that model at any time, the ability to
-            consume external assets involves ongoing manual efforts to understand or confirm the
-            model and the design of transformations to support consumption. This is potentially
-            expensive and risky.</para>
+        <para>Today, clinical systems consume terminologies, but the interfaces are point-to-point.
+            To assert or assess new information the tools must already understand all relevant
+            interface models. Since an external organization may modify that model at any time, the
+            ability to consume external assets involves ongoing manual efforts to understand or
+            confirm the model and the design of transformations to support consumption. This is
+            potentially expensive and risky.</para>
         <para>We propose a “data-driven” architecture to support self-describing terminology assets.
-            With a globally consistent design, all changes can be programmatically managed. That
-            management may involve human review, but it can leverage pattern-based recognition of
+            All changes can be programmatically managed with a globally consistent design.
+            Management may involve human review, but it can leverage pattern-based recognition of
             specific change types for automated handling, leaving a smaller number of cases that
             require human judgement. This information design will support a common representation of
             all terminologies. There are two key requirements for this design:</para>
@@ -326,16 +326,16 @@
             </listitem>
         </itemizedlist>
         <para>A further requirement is that not only must the architecture support these properties,
-            but that <emphasis role="underline">it must require</emphasis> them for all assets under
-            curation. Without consistent application of this rule, the foundational capability of
-            detailed version management is more difficult. </para>
+            but that <emphasis role="underline">it must require</emphasis> the properties for all
+            assets under curation. Without consistent application of this rule, the foundational
+            capability of detailed version management is more difficult. </para>
         <para>Additionally, for an asset to support a record of changes, each <emphasis
                 role="underline" linkend="requirement_22">asset must itself be identifiable
                 (Requirement 22)</emphasis>.</para>
         <para>The “single syntax” requirement is harder to satisfy. One approach would be to define
             a syntax that addresses the data elements all known terminologies. This would be a heavy
-            specification, difficult to maintain, and it would fail to capture new elements as they
-            are added in the future.</para>
+            specification, difficult to maintain, and it would fail to capture new elements as
+            terminologies are added in the future.</para>
         <para>The other approach is to use a “self-describing” or “meta-modeling” approach, where
             the syntax defines not only the content but also what the content means. “Rigid” or
             “brittle” specifications determine in advance where information belongs: a database may
@@ -351,7 +351,7 @@
             sites. Furthermore, this logic specifies a “range” in the same syntactic structure as
             the instance assertion: changes to the knowledge base do not affect the syntactical
             representation of the knowledge. Systems that adopt this approach will require effort to
-            take advantage of new features of terminologies, but they will not have to rebuild their
+            take advantage of new features of terminologies, without having to rebuild their
             infrastructure when changes are made.</para>
         <para>Having change data in discrete tagged change sets will allow the software to hide most
             of the complexity of version management from the human managers, allowing them to focus
@@ -361,10 +361,10 @@
         <title>Configuration Requirements</title>
         <para>A granular self-describing model will support any statement that can be made using
             concepts in a subject-predicate-object structure, and its compositional aspect permits
-            compound predicates: it is difficult to imagine a proposition that cannot be supported.
+            compound predicates. It is difficult to imagine a proposition that cannot be supported.
             This power, however, means that there are multiple ways to support any specific kind of
             statement that a terminology knowledge base must support. This section addresses best
-            practices for these cases. </para>
+            practices for these cases.</para>
         <section>
             <title>Operations</title>
             <para><emphasis role="bold">Import</emphasis>: A user may identify content from another
@@ -389,13 +389,13 @@
             <para><emphasis role="bold">Authoring/Maintenance</emphasis>: A user may modify existing
                 content or add new content. To preserve prior states, all modifications are recorded
                 as new versions of content: prior versions will remain unchanged. Any time a change
-                is made, the system will identify dependent assets and rules for handling
-                them.</para>
+                is made, the system will identify dependent assets and rules for handling these
+                changes.</para>
             <itemizedlist>
                 <listitem>
                     <para>An addition is a new version with a new chronology UUID (universally
-                        unique identifier) . Patterns may assert constraints for additions, which
-                        may be specific to context (Modules, Paths, Languages, etc.). </para>
+                        unique identifier). Patterns may assert constraints for additions, which may
+                        be specific to context (Modules, Paths, Languages, etc.). </para>
                 </listitem>
                 <listitem>
                     <para>An inactivation is a new version of an existing chronology with status set
@@ -415,7 +415,7 @@
                 stated relationships. An inferred set may be persisted.</para>
             <para><emphasis role="bold">Publish</emphasis>: A user may promote content into a
                 “publication” path and produce a transmissible payload of content that can be
-                consumed by other repositories. This promotion is a change, and may require
+                consumed by other repositories. This promotion is a change and may require
                 resolution of constraints on membership in that path.</para>
         </section>
         <section>
@@ -578,7 +578,7 @@
             </itemizedlist>
             <para>One other feature is the set of concepts that the application will use to
                 determine how to present the data to the user. A key dimension is the STAMP
-                information defined above. In addition, we require three other “coordinates” for
+                information defined above. In addition, three other “coordinates” are required for
                 managing the presentation:</para>
             <itemizedlist>
                 <listitem>
@@ -607,8 +607,8 @@
                                     terminologies are represented within Tinkar</para>
                             </listitem>
                             <listitem>
-                                <para>If extensions are created that they conform to the
-                                    requirements of the standard(s) they are based upon</para>
+                                <para>Create  extensions that conform to the requirements of the
+                                    standard(s) the constraint is based upon</para>
                             </listitem>
                             <listitem>
                                 <para>Perform general quality assurance</para>
@@ -616,9 +616,9 @@
                         </itemizedlist>For example, constraints would be used to represent standard
                         terminology artifacts, like the SNOMED CT<superscript>®</superscript>
                         Machine Readable Concept Model. Additionally, constraints could be used to
-                        ensure that terminologies are represented within Tinkar in such a way that
-                        they can be completely and consistently queried and displayed. </para>
-                    <para>These same constraints can be used with respect to creating new content
+                        ensure that the terminologies represented within Tinkar are completely and
+                        consistently queried and displayed. </para>
+                    <para>These same constraints can be used with respect to create new content
                         within Tinkar to specify the minimally viable data that would be required.
                         For example:<itemizedlist>
                             <listitem>
@@ -658,9 +658,9 @@
                         represented using semantics as they are self describing and can support
                         multiple different representations for constraints (SNOMED
                             CT<superscript>®</superscript> Expression Constraint Language, Drools,
-                        etc.). Representing Constraints as a Semantic also ensures they have a STAMP
-                        so they are versioned over time, captures author information and allows them
-                        to be tested and progressed over different modules and paths.</para>
+                        etc.). Representing Constraints as a Semantic also ensures STAMP. STAMP is
+                        versioned over time, capturing author information, allowing for tests and
+                        progress over different modules and paths.</para>
                     <para>Implementing Constraints would depend upon how the Constraints are written
                         and formatted. For example, Implementers could utilize a Rete algorithm
                         through something like Drools to implement Constraints.</para>
@@ -700,7 +700,7 @@
                             </listitem>
                         </itemizedlist></listitem>
                 </itemizedlist></para>
-            <para>We provide definitions for Tinkar Model Concepts in <link
+            <para>Definitions for Tinkar Model Concepts are located in <link
                     linkend="tinkar_model_concept_appenidix">Appendix C.</link></para>
         </section>
     </section>

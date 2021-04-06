@@ -9,9 +9,9 @@
             xlink:href="https://github.com/logicahealth/komet"/>), and how various terminologies,
         such as SNOMED CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm,
         and HL7 terminologies shall be reproducibly represented using the Terminology Knowledge Base
-        standard. Using the Komet browser we can view the search Concepts, view the Concept details
-        (Semantics), and navigate hierarchies, as well as many other functions that are outside the
-        scope of this ballot.</para>
+        standard. The Komet browser allows users to view the search Concepts, view the Concept
+        details (Semantics), and navigate hierarchies, as well as many other functions that are
+        outside the scope of this ballot.</para>
     <para>Java Reference Classes for the Tinkar model can be accessed here:(<link
         xlink:href="https://github.com/HL7/tinkar-java"/>).  C# Reference Classes
         can be accessed here:(<link
@@ -33,8 +33,8 @@
           </figure>
       </para>
       <para>The image above represents the Concept “Acute pelvic pain” within the Komet Concept
-            Detail panel. In this part of the Concept Detail Panel, no identifiers are displayed and
-            they can only be accessed by right clicking and copying them. </para>
+            Detail panel. In this part of the Concept Detail Panel, no identifiers are displayed.
+            Access to identifiers is gained by right clicking and copying them. </para>
       <para>
           <figure>
               <title>Accessing Identifiers</title>
@@ -76,7 +76,7 @@
             information specifying the Concept. ​ ​ A single instance of one of these Semantics is a
             SemanticVersion (with a STAMP). </para><para>
             <figure>
-                <title><?oxy_comment_start author="rcholan" timestamp="20210405T114530-0400" comment="Snagit" flag="done"?>Semantics<?oxy_comment_end?></title>
+                <title>Semantics</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="Semantics.png" scalefit="1" width="100%" contentdepth="100%" align="center"/>
@@ -91,9 +91,10 @@
     </section>
     <section>
         <title>Pattern</title>
-        <para>Komet currently does not contain functionality to view and edit Patterns. We hope to
-            have that functionality available to demonstrate before the May 2021 HL7 meeting. Some
-            examples of common patterns that are built into the tooling are:<itemizedlist>
+        <para>Komet currently does not contain functionality to view and edit Patterns.
+            Functionality is in progress that will potentially be available to demonstrate before
+            the May 2021 HL7 meeting. Some examples of common patterns that are built into the
+            tooling are:<itemizedlist>
                 <listitem>
                     <para>STR Pattern: This pattern is used to associate a String to a Component.
                         The type of association to a Component is represented by a Tinkar Model
@@ -136,14 +137,14 @@
     </section>
     <section>
       <title>Concept Detail</title>
-      <para>Below we see the details for the LOINC<superscript>®</superscript> Concept Homocystine
-            [Mass/time] in 24 hour Urine. You can see the (1)LOINC<superscript>®</superscript> ID,
-            (2)data from the LOINC<superscript>®</superscript> table, (3)Solor assigned Names, and
-            (4)relationships from the LOINC<superscript>®</superscript>- SNOMED
+      <para>Below, the details for the LOINC<superscript>®</superscript> Concept Homocystine
+            [Mass/time] in 24 hour Urine is presented. Users can see the (1)
+                LOINC<superscript>®</superscript> ID, (2) data from the
+                LOINC<superscript>®</superscript> table, (3) Solor assigned Names, and (4)
+            relationships from the LOINC<superscript>®</superscript>- SNOMED
                 CT<superscript>®</superscript> Cooperation Project. <figure>
                 <title>Concept Details</title>
-                <?oxy_comment_start author="rcholan" timestamp="20210405T114538-0400" comment="Snagit" flag="done"?>
-                <mediaobject><?oxy_comment_end?>
+                <mediaobject>
                     <imageobject>
                         <imagedata fileref="concept_detail.png" scalefit="1" width="100%"
                             contentdepth="55%" align="center"/>
@@ -154,8 +155,9 @@
                 </caption>
             </figure>
         </para>
-      <para>In the following image we can see the latest STAMP information for the
-                LOINC<superscript>®</superscript> Concept Homocystine [Mass/time] in 24 hour Urine. <figure>
+      <para>In the following image the latest STAMP information for the
+                LOINC<superscript>®</superscript> Concept Homocystine [Mass/time] in 24 hour Urine
+            is presented. <figure>
                 <title>STAMP</title>
                 <mediaobject>
                     <imageobject>
@@ -171,14 +173,14 @@
   </section>
     <section>
         <title>Navigation View</title>
-        <para>In this example we see the results of combining the LOINC<superscript>®</superscript>-
-            SNOMED CT<superscript>®</superscript> Cooperation Project module with the latest SNOMED
-                CT<superscript>®</superscript> and LOINC<superscript>®</superscript> releases. You
-            can then visualize and navigate the SNOMED CT<superscript>®</superscript> hierarchy and
-            arrive at associated LOINC<superscript>®</superscript> codes that would be reached by
-            the Urine homocystine measurement Concept. <figure>
-                <title>Navigation
-                    <?oxy_comment_start author="rcholan" timestamp="20210405T114659-0400" comment="Snagit" flag="done"?>View<?oxy_comment_end?></title>
+        <para>In this example, users can see the results of combining the
+                LOINC<superscript>®</superscript>- SNOMED CT<superscript>®</superscript> Cooperation
+            Project module with the latest SNOMED CT<superscript>®</superscript> and
+                LOINC<superscript>®</superscript> releases. Users can then visualize and navigate
+            the SNOMED CT<superscript>®</superscript> hierarchy and arrive at associated
+                LOINC<superscript>®</superscript> codes that would be reached by the Urine
+            homocystine measurement Concept. <figure>
+                <title>Navigation View</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="navigation_example.png" scalefit="1" width="100%"
@@ -197,8 +199,7 @@
             Active and Inactive components and to compare the representations across time. The image
             below shows only the Active components for the Concept Fibromyalgia compared to all
             previous versions of Fibromyalgia over time. <figure>
-                <title>Latest View with Active Status versus Latest View with Any
-                    <?oxy_comment_start author="rcholan" timestamp="20210405T114753-0400" comment="Snagit" flag="done"?>Status<?oxy_comment_end?></title>
+                <title>Latest View with Active Status versus Latest View with Any Status</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="active_vs_inactive.png" scalefit="1" width="100%"
@@ -260,8 +261,7 @@
         </para>
         <para>
             <figure>
-                <title>SNOMED CT<superscript>®</superscript>
-                    <?oxy_comment_start author="rcholan" timestamp="20210405T115005-0400" comment="Snagit"?><?oxy_comment_start author="rcholan" timestamp="20210405T115207-0400" comment="New image to expand" mid="5"?>Relationships<?oxy_comment_end?><?oxy_comment_end mid="5"?></title>
+                <title>SNOMED CT<superscript>®</superscript> Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="SNOMED_rels.png"  scalefit="1" width="100%" contentdepth="100%" align="center"/>
@@ -308,8 +308,7 @@
             that are derived from the latest version of the SNOMED CT LOINC Integration files. The
             parents and attributes represented in the Sufficient and Necessary sets are represented
             using SNOMED CT concepts based on mappings from the LOINC Part concepts to SNOMED CT concepts.<figure>
-                <title>LOINC<superscript>®</superscript> Inferred
-                    <?oxy_comment_start author="rcholan" timestamp="20210405T115238-0400" comment="Snagit"?>Relationships<?oxy_comment_end?></title>
+                <title>LOINC<superscript>®</superscript> Inferred Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels1.png" scalefit="1" width="100%"
@@ -325,8 +324,7 @@
             Integration files. The parents and attributes represented in the Sufficient sets are
             represented using SNOMED CT concepts based on mappings from the LOINC Part concepts to
             SNOMED CT concepts <figure>
-                <title>LOINC<superscript>®</superscript> Stated
-                    <?oxy_comment_start author="rcholan" timestamp="20210405T115246-0400" comment="Snagit"?>Relationships<?oxy_comment_end?></title>
+                <title>LOINC<superscript>®</superscript> Stated Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels2.png" scalefit="1" width="100%"
@@ -371,8 +369,7 @@
         <para> The figure below shows the Inferred and Stated Relationships based on a draft of an
             OWL release of RxNorm Stated Relationships that are based on the new SNOMED CT drug
             model.  The relationships are represented using SNOMED CT concepts.<figure>
-                <title>RxNorm
-                    <?oxy_comment_start author="rcholan" timestamp="20210405T121911-0400" comment="Snagit"?>Relationships<?oxy_comment_end?></title>
+                <title>RxNorm Relationships</title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="RxNorm_rels.png" scalefit="1" width="100%"
@@ -408,15 +405,13 @@
                 </caption>
             </figure>
         </para>
-        <para>We can then open two Concept Detail Panels and view the two Concepts side by side to
-            understand the differences and similarities between the two Concepts, their origins, and
-            understand how to correct the equivalencies between the two Concepts.
-            <?oxy_comment_start author="rcholan" timestamp="20210405T121533-0400" comment="Solor module content to be retired, US edition to be merged" flag="done"?>In
-            this case, the Concept "Ankylosis of both knee joints (disorder)" would need to be
-            retired as it belongs to the Solor Extension and the "Ankylosis of bilateral knee joints
-            (disorder)" Concept is contained in the U.S. Edition. <?oxy_comment_end?><figure>
-                <title>SNOMED CT<superscript>®</superscript> Equivalences between Modules
-                    <?oxy_comment_start author="rcholan" timestamp="20210320T111535-0400" comment="From Penni: I think this is backward the &quot;both&quot; is the US and the &quot;bilateral&quot; is the International core" flag="done"?></title><?oxy_comment_end?>
+        <para>The two Concept Detail Panels can be opened and viewed as two Concepts side by side to
+            understand the differences and similarities between the two, their origins, and
+            understand how to correct the equivalencies between these two Concepts. In this case,
+            the Concept "Ankylosis of both knee joints (disorder)" would need to be retired as it
+            belongs to the Solor Extension and the "Ankylosis of bilateral knee joints (disorder)"
+            Concept is contained in the U.S. Edition. <figure>
+                <title>SNOMED CT<superscript>®</superscript> Equivalences between Modules </title>
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="module_duplication.png" scalefit="1" width="100%"
