@@ -391,11 +391,17 @@
                             definition or expression constraint must both be true. </para>
                     </listitem>
                     <listitem>
-                        <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
-                        <para><?oxy_custom_end?>OWL EL Definition root: In a property graph, the 1st
-                            node, index 0, is the definition root. Helps bring together necessary
-                            sets under a common
-                            root/concept.<?oxy_comment_start author="rcholan" timestamp="20210402T124734-0400" comment="Think about name. run by kurt"?></para><?oxy_comment_end?>
+                        <para>Abstract Definition root: This is a conceptual parent of all specific
+                            definition root concepts, such as 'OWL EL Definition root'. All specific
+                            definition root instances can be found by searching for children of this
+                            concept.</para>
+                    </listitem>
+                    <listitem>
+                        <para>OWL EL Definition root: In an OWL EL++ property graph, the meaning
+                            field of the root node will always be the 'OWL EL Definition root'
+                            concept. This identifies that a property graph instance describes an OWL
+                            EL++ description logic graph. The OWL EL Definition root is a 'child of'
+                            the 'Abstract Definition root' concept.</para>
                     </listitem>
                     <listitem>
                         <para>Disjoint with: An operator that asserts that two concepts are disjoint
@@ -529,13 +535,12 @@
                     description logic. </para>
                 <itemizedlist>
                     <listitem>
-                        <para>Parent of</para>
+                        <para>Parent of: Concept used to represent that a Concept is a parent of
+                            another Concept.</para>
                     </listitem>
                     <listitem>
-                        <para>Child of </para>
-                    </listitem>
-                    <listitem>
-                        <para>Is a </para>
+                        <para>Child of: Concept used to represent that a Concept is a child of
+                            another Concept.</para>
                     </listitem>
                 </itemizedlist>
             </listitem>
