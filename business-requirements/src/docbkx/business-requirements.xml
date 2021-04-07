@@ -141,7 +141,7 @@
                         retrieval and inspection.</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline" linkend="requirement_121">Version comparison (Requirement 12)</emphasis>: It must be easy
+                    <para><emphasis role="underline" linkend="requirement_12">Version comparison (Requirement 12)</emphasis>: It must be easy
                         to compare two versions of the same object and identify all differences
                         between them. Among other things, this capability is important to determine
                         whether updates to a sub-artifact have changed its semantics in a way that
@@ -778,7 +778,7 @@
 
                     </row>
                     <row>
-                        <entry>6</entry>
+                        <entry xml:id="requirement_6" xreflabel="6">6</entry>
                         <entry>Indicate data for which changes to the terminology could affect
                             record interpretation </entry>
                         <entry>Function</entry>
@@ -790,7 +790,7 @@
 
                     </row>
                     <row>
-                        <entry>7</entry>
+                        <entry xml:id="requirement_7" xreflabel="7">7</entry>
                         <entry>View available terms and decision support recommendations for
                             specified dates and contexts</entry>
                         <entry>Function</entry>
@@ -802,7 +802,7 @@
 
                     </row>
                     <row>
-                        <entry>8</entry>
+                        <entry xml:id="requirement_8" xreflabel="8">8</entry>
                         <entry>Support rapid and accurate recording and review of record data </entry>
                         <entry>Need</entry>
                         <entry align="center">x</entry>
@@ -813,7 +813,7 @@
 
                     </row>
                     <row>
-                        <entry>9</entry>
+                        <entry xml:id="requirement_9" xreflabel="9">9</entry>
                         <entry>Manage change systematically</entry>
                         <entry>Feature</entry>
                         <entry align="center"/>
@@ -824,7 +824,7 @@
 
                     </row>
                     <row>
-                        <entry>10</entry>
+                        <entry xml:id="requirement_10" xreflabel="10">10</entry>
                         <entry>Identify assets uniquely</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -835,7 +835,7 @@
 
                     </row>
                     <row>
-                        <entry>11</entry>
+                        <entry xml:id="requirement_11" xreflabel="11">11</entry>
                         <entry>Retain all prior versions</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -846,7 +846,7 @@
 
                     </row>
                     <row>
-                        <entry>12</entry>
+                        <entry xml:id="requirement_12" xreflabel="12">12</entry>
                         <entry>Support comparison of versions</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -857,7 +857,7 @@
 
                     </row>
                     <row>
-                        <entry>13</entry>
+                        <entry xml:id="requirement_13" xreflabel="13">13</entry>
                         <entry>Support branching of sets of assets for independent
                             development</entry>
                         <entry>Function</entry>
@@ -869,7 +869,7 @@
 
                     </row>
                     <row>
-                        <entry>14</entry>
+                        <entry xml:id="requirement_14" xreflabel="14">14</entry>
                         <entry>Support controlled merging of branches by identifying and addressing
                             conflicts with defined rules</entry>
                         <entry>Function</entry>
@@ -881,7 +881,7 @@
 
                     </row>
                     <row>
-                        <entry>15</entry>
+                        <entry xml:id="requirement_15" xreflabel="15">15</entry>
                         <entry>Modify enterprise terminology by creating, modifying, or deactivating
                             assets and relationships</entry>
                         <entry>Function</entry>
@@ -893,7 +893,7 @@
 
                     </row>
                     <row>
-                        <entry>16</entry>
+                        <entry xml:id="requirement_16" xreflabel="16">16</entry>
                         <entry>Import standard terminologies, including merging capability for
                             assets referring to prior versions of the standard</entry>
                         <entry>Function</entry>
@@ -905,7 +905,7 @@
 
                     </row>
                     <row>
-                        <entry>17</entry>
+                        <entry xml:id="requirement_17" xreflabel="17">17</entry>
                         <entry>Publish enterprise terminologies, including application and
                             resolution of constraints specific to the publication path</entry>
                         <entry>Function</entry>
@@ -917,7 +917,7 @@
 
                     </row>
                     <row>
-                        <entry>18</entry>
+                        <entry xml:id="requirement_18" xreflabel="18">18</entry>
                         <entry>A self-describing method for representing terminology assets from
                             diverse and mutable models</entry>
                         <entry>Feature</entry>
@@ -929,7 +929,7 @@
 
                     </row>
                     <row>
-                        <entry>19</entry>
+                        <entry xml:id="requirement_19" xreflabel="19">19</entry>
                         <entry>Represent the status of the asset in a context</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -940,7 +940,7 @@
 
                     </row>
                     <row>
-                        <entry>20</entry>
+                        <entry xml:id="requirement_20" xreflabel="20">20</entry>
                         <entry>Represent the time at which a change is recorded</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -951,7 +951,7 @@
 
                     </row>
                     <row>
-                        <entry>21</entry>
+                        <entry xml:id="requirement_21" xreflabel="21">21</entry>
                         <entry>Represent the author of a change</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -962,7 +962,7 @@
 
                     </row>
                     <row>
-                        <entry>22</entry>
+                        <entry xml:id="requirement_22" xreflabel="22">22</entry>
                         <entry>Represent the system or sub-system of an asset</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -973,7 +973,7 @@
 
                     </row>
                     <row>
-                        <entry>23</entry>
+                        <entry xml:id="requirement_23" xreflabel="23">23</entry>
                         <entry>Represent the path or branch of an asset version</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -984,7 +984,7 @@
 
                     </row>
                     <row>
-                        <entry>24</entry>
+                        <entry xml:id="requirement_24" xreflabel="24">24</entry>
                         <entry>Support search using lexical or logical criteria</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -995,7 +995,7 @@
 
                     </row>
                     <row>
-                        <entry>25</entry>
+                        <entry xml:id="requirement_25" xreflabel="25">25</entry>
                         <entry>Support detailed view of assets and diverse properties, filtering
                             content not relevant to the chosen context</entry>
                         <entry>Function</entry>
@@ -1007,7 +1007,7 @@
 
                     </row>
                     <row>
-                        <entry>26</entry>
+                        <entry xml:id="requirement_26" xreflabel="26">26</entry>
                         <entry>Add terminology assets, including concepts, terms, relationships,
                             definitions, value sets, maps, and others</entry>
                         <entry>Function</entry>
@@ -1019,7 +1019,7 @@
 
                     </row>
                     <row>
-                        <entry>27</entry>
+                        <entry xml:id="requirement_27" xreflabel="27">27</entry>
                         <entry>Deactivate assets, preserving their original form</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -1030,7 +1030,7 @@
 
                     </row>
                     <row>
-                        <entry>28</entry>
+                        <entry xml:id="requirement_28" xreflabel="28">28</entry>
                         <entry>Modify assets, preserving their original form</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
@@ -1041,7 +1041,7 @@
 
                     </row>
                     <row>
-                        <entry>29</entry>
+                        <entry xml:id="requirement_29" xreflabel="=29">29</entry>
                         <entry>Classify assets using identified tools and logical profiles in chosen
                             contexts, with the option to persist the inferred assets</entry>
                         <entry>Function</entry>
@@ -1053,7 +1053,7 @@
 
                     </row>
                     <row>
-                        <entry>30</entry>
+                        <entry xml:id="requirement_30" xreflabel="30">30</entry>
                         <entry>Process a set of content for publication, including identification
                             and resolution of unresolved constraints</entry>
                         <entry>Function</entry>
