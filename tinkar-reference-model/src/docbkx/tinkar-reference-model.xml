@@ -113,8 +113,8 @@
                 <title>Component Types</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="Final_Semantic DefinitionSimple.png" scalefit="1" width="100%"
-                            contentdepth="100%" align="center"/>
+                        <imagedata fileref="Final_Semantic DefinitionSimple.png" scalefit="1"
+                            width="100%" contentdepth="100%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -128,12 +128,14 @@
             the concept Acetaminophen (which exists in SNOMED CT<superscript>®</superscript>, LOINC,
             and RxNorm) could have a UUID from each terminology, and be represented as an array of
             UUIDs for this single concept within a Tinkar implementation. </para>
-        <para>To assemble groups of assertions and to provide information about Concepts, Tinkar
-            uses a construct called a <emphasis role="bold">Semantic</emphasis>. A semantic adds
-            meaning to the components it references, through the fields it contains. A Semantic
-            supports the specification of value sets, compositional definitions, and other
-            components requiring internal structure, and it specifies the nature of the
-            compositional relationship explicitly.</para>
+        <para>A Concept is identified using UUID's and contains no information.  To assemble groups
+            of assertions and to provide information about Concepts, Tinkar uses a construct called
+            a <emphasis role="bold">Semantic</emphasis>. A Semantic is a class containing a set of
+            predicates and objects about a subject. A semantic adds meaning to the components it
+            references, through the fields it contains. A Semantic supports the specification of
+            value sets, compositional definitions, and other components requiring internal
+            structure, and it specifies the nature of the compositional relationship
+            explicitly.</para>
         <para>The Semantic class uses a Concept to define the relationship between the value(s) and
             the Concept; the value itself may be either a concept or some other kind of data type,
             such as a string. This creates the ability to assemble assertions into more complex
@@ -157,9 +159,14 @@
             values.</para>
         <para>Since it is versioned, a Semantic is manifested as a <emphasis role="bold"
                 >SemanticChronology</emphasis>, containing a set of <emphasis role="bold"
-                >SemanticVersions</emphasis>. Concepts, too, are manifest as collections: a
-                <emphasis role="bold">ConceptChronology</emphasis> consisting of a set of <emphasis
-                role="bold">ConceptVersions</emphasis>.</para>
+                >SemanticVersions</emphasis>. SemanticVersion is a single instance of a Semantic
+            with a STAMP and a SemanticChronology is the set of versions having a STAMP for a
+            Semantic. Concepts, too, are manifest as collections: a <emphasis role="bold"
+                >ConceptChronology</emphasis> consisting of a set of <emphasis role="bold"
+                >ConceptVersions</emphasis>. ConceptVersion is a single instance of an identifier
+            for a concept with a STAMP and the ConceptChronology is the set of versions having a
+            STAMP for a concept. A concept identifier specifies a ConceptChronology; specifying a
+            ConceptVersion requires a rule or parameter for selecting among STAMP values.</para>
         <para>If other IdentifiedComponents depend on the changed concept, these
             IdentifiedComponents can be identified by relationships in the Semantics. The Semantics
             can assert rules for how to manage these changes. A Semantic defining a value set for
@@ -300,8 +307,12 @@
         <title>Pattern (For Semantics)</title>
         <para>The Tinkar Reference Model defines a first-class feature of the model, the <emphasis
                 role="bold">Pattern </emphasis>(<emphasis role="bold">PatternVersion</emphasis> and
-                <emphasis role="bold">PatternChronology</emphasis>). This feature asserts patterns
-            that Semantic components can follow, like an XML or RDF Schema.</para>
+                <emphasis role="bold">PatternChronology</emphasis>). A Pattern is a class defining a
+            set of predicates and object types that can be asserted about a class of subjects. All
+            Semantics follow Patterns.  A PatternVersion is a single instance of a pattern with a
+            STAMP and a PatternChronology is the set of versions having a STAMP for a pattern. This
+            feature asserts patterns that Semantic components can follow, like an XML or RDF
+            Schema.</para>
         <para>
             <figure>
                 <title>Pattern</title>
