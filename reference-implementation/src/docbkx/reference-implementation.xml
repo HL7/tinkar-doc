@@ -147,7 +147,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="concept_detail.png" scalefit="1" width="100%"
-                            contentdepth="55%" align="center"/>
+                            contentdepth="70%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -312,7 +312,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels1.png" scalefit="1" width="100%"
-                            contentdepth="50%" align="center"/>
+                            contentdepth="55%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -328,7 +328,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels2.png" scalefit="1" width="100%"
-                            contentdepth="50%" align="center"/>
+                            contentdepth="55%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
