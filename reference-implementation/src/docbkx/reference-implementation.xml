@@ -312,7 +312,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels1.png" scalefit="1" width="100%"
-                            contentdepth="100%" align="center"/>
+                            contentdepth="50%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -328,7 +328,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="LOINC_rels2.png" scalefit="1" width="100%"
-                            contentdepth="100%" align="center"/>
+                            contentdepth="50%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>
@@ -366,9 +366,9 @@
                 </caption>
             </figure>
         </para>
-        <para> The figure below shows the Inferred and Stated Relationships based on a draft of an
-            OWL release of RxNorm Stated Relationships that are based on the new SNOMED CT drug
-            model.  The relationships are represented using SNOMED CT concepts.<figure>
+        <para>The figure below shows the Inferred and Stated Relationships based on a test version
+            of an OWL file of RxNorm Stated Relationships that are based on the new SNOMED CT drug
+            model. The relationships are represented using SNOMED CT concepts.<figure>
                 <title>RxNorm Relationships</title>
                 <mediaobject>
                     <imageobject>

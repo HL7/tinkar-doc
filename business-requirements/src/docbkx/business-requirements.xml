@@ -732,6 +732,12 @@
                         <entry>for structured data using standard terminologies, the terms available
                             are appropriate for the clinical context</entry>
                     </row>
+                    <row>
+                        <entry xml:id="requirement_5" xreflabel="5">5</entry>
+                        <entry>if a provider attempts to enter a term that is not supported by the
+                            enterprise terminology, the effort will be captured as a proposed
+                            term</entry>
+                    </row>
                 </tbody>
             </tgroup>
         </informaltable>
@@ -744,12 +750,6 @@
                     <row>
                         <entry><emphasis role="bold">ID</emphasis></entry>
                         <entry><emphasis role="bold">Requirement</emphasis></entry>
-                    </row>
-                    <row>
-                        <entry xml:id="requirement_5" xreflabel="5">5</entry>
-                        <entry>if a provider attempts to enter a term that is not supported by the
-                            enterprise terminology, the effort will be captured as a proposed
-                            term</entry>
                     </row>
                     <row>
                         <entry xml:id="requirement_6" xreflabel="6">6</entry>
