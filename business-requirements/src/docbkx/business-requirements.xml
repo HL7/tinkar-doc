@@ -262,7 +262,7 @@
             All changes can be programmatically managed with a globally consistent design.
             Management may involve human review, but it can leverage pattern-based recognition of
             specific change types for automated handling, leaving a smaller number of cases that
-            require human judgement. This information design will support a common representation of
+            require human judgment. This information design will support a common representation of
             all terminologies. There are two key requirements for this design:</para>
         <orderedlist>
             <listitem>
@@ -338,8 +338,8 @@
                 role="underline" linkend="requirement_10">asset must itself be identifiable
                 (Requirement 10)</emphasis>.</para>
         <para>The “single syntax” requirement is harder to satisfy. One approach would be to define
-            a syntax that addresses the data elements all known terminologies. This would be a heavy
-            specification, difficult to maintain, and it would fail to capture new elements as
+            a syntax that addresses the data elements of all known terminologies. This would be a
+            heavy specification, difficult to maintain, and it would fail to capture new elements as
             terminologies are added in the future.</para>
         <para>The other approach is to use a “self-describing” or “meta-modeling” approach, where
             the syntax defines not only the content but also what the content means. “Rigid” or
@@ -606,57 +606,57 @@
             <title>Constraints</title>
             <para>
                     <para>Constraints are required to:<orderedlist>
-                            <listitem>
-                                <para>Ensure that the appropriate level of detail for standard
-                                    terminologies are represented within Tinkar</para>
-                            </listitem>
-                            <listitem>
-                                <para>Create terminology extensions that conform to the requirements
-                                    of the standard(s) the extension is based on</para>
-                            </listitem>
-                            <listitem>
-                                <para>Perform general quality assurance</para>
-                            </listitem>
-                        </orderedlist>
-                        For example, constraints would be used to represent standard
-                        terminology artifacts, like the SNOMED CT<superscript>®</superscript>
-                        Machine Readable Concept Model. Additionally, constraints could be used to
-                        ensure that the terminologies represented within Tinkar are completely and
-                        consistently queried and displayed. </para>
-                    <para>These same constraints can be used with respect to create new content
-                        within Tinkar to specify the minimally viable data that would be required.
-                        For example:<orderedlist numeration='arabic' continuation='continues'>
-                            <listitem>
-                                <para>All concepts must have at least one Fully Qualified Name
-                                    within at least one Language or Dialect.</para>
-                            </listitem>
-                            <listitem>
-                                <para>All concepts must have at least one Name specified as
-                                    Preferred within at least one Language or Dialect.</para>
-                            </listitem>
-                            <listitem>
-                                <para>All concepts must have at least one parent, unless it is a
-                                    root concept.</para>
-                            </listitem>
-                        </orderedlist></para>
+                        <listitem>
+                            <para>Ensure that the appropriate level of detail for standard
+                                terminologies are represented within Tinkar</para>
+                        </listitem>
+                        <listitem>
+                            <para>Create terminology extensions that conform to the requirements of
+                                the standard(s) the extension is based on</para>
+                        </listitem>
+                        <listitem>
+                            <para>Perform general quality assurance</para>
+                        </listitem>
+                    </orderedlist>For example, constraints would be used to represent standard
+                    terminology artifacts, like the SNOMED CT<superscript>®</superscript> Machine
+                    Readable Concept Model. Additionally, constraints could be used to ensure that
+                    the terminologies represented within Tinkar are completely and consistently
+                    queried and displayed. </para>
+                    <para>These same constraints can be used to create new content within Tinkar to
+                    specify the minimally viable data that would be required. For
+                        example:<orderedlist numeration="arabic" continuation="continues">
+                        <listitem>
+                            <para>All concepts must have at least one Fully Qualified Name within at
+                                least one Language or Dialect.</para>
+                        </listitem>
+                        <listitem>
+                            <para>All concepts must have at least one Name specified as Preferred
+                                within at least one Language or Dialect.</para>
+                        </listitem>
+                        <listitem>
+                            <para>All concepts must have at least one parent, unless it is a root
+                                concept.</para>
+                        </listitem>
+                    </orderedlist></para>
                     <para>Constraints can be applied (or not applied) based on various criteria to
-                        perform Quality Assurance on content that is represented within Tinkar. For example:<orderedlist numeration='arabic' continuation='continues'>>
-                            <listitem>
-                                <para>SNOMED CT<superscript>®</superscript> FullySpecifiedName
-                                    hierarchy tags are applied based on where a concept exists in a
-                                    hierarchy</para>
-                            </listitem>
-                            <listitem>
-                                <para>Relationships between concepts have domain (based on
-                                    hierarchy) and range (the hierarchy(s) of values that a
-                                    relationship takes)</para>
-                            </listitem>
-                            <listitem>
-                                <para>Modeling templates can be specified to ensure that new content
-                                    that is created under a certain node in a hierarchy uses similar
-                                    wording and relationships.</para>
-                            </listitem>
-                        </orderedlist></para>
+                    perform Quality Assurance on content that is represented within Tinkar. For
+                        example:<orderedlist numeration="arabic" continuation="continues">
+                        <listitem>
+                            <para>SNOMED CT<superscript>®</superscript> FullySpecifiedName hierarchy
+                                tags are applied based on where a concept exists in a
+                                hierarchy</para>
+                        </listitem>
+                        <listitem>
+                            <para>Relationships between concepts have domain (based on hierarchy)
+                                and range (the hierarchy(s) of values that a relationship
+                                takes)</para>
+                        </listitem>
+                        <listitem>
+                            <para>Modeling templates can be specified to ensure that new content
+                                that is created under a certain node in a hierarchy uses similar
+                                wording and relationships.</para>
+                        </listitem>
+                    </orderedlist></para>
                     <para>Since some Quality Assurance Constraints do not always indicate an error,
                         an Allow List could also be represented as a Semantic to record concepts
                         that are allowed to not conform to a constraint. Constraints would be
@@ -669,22 +669,6 @@
                     <para>Implementing Constraints would depend upon how the Constraints are written
                         and formatted. For example, Implementers could utilize a Rete algorithm
                         through something like Drools to implement Constraints.</para>
-                    <orderedlist numeration='arabic' continuation='continues'>
-                    <listitem>
-                        <para>Properties published in SNOMED CT<superscript>®</superscript> RF2,
-                            including Machine Readable Concept Model (MRCM)</para>
-                    </listitem>
-                    <listitem>
-                        <para>LOINC<superscript>®</superscript> properties published in [Access |
-                            RELMA | Parts table]</para>
-                    </listitem>
-                    <listitem>
-                        <para>RxNorm properties </para>
-                    </listitem>
-                    <listitem>
-                        <para>MedRT relationships</para>
-                    </listitem>
-                </orderedlist>
             </para>
         </section>
         <section>
