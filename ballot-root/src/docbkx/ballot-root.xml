@@ -9,9 +9,8 @@
       variety of organizations across the healthcare enterprise. The healthcare enterprise needs an
       extensive terminology foundation and the ability to implement extensions to support diverse
       informatics systems. </para>
-    <para>This specification is intended to provide this support by supporting standard terminology
-      modules, value sets, and coding systems as well as local terms and equivalence
-      mappings.</para>
+    <para>This specification is intended to support standard terminology modules, value sets, and
+      coding systems as well as local terms and equivalence mappings.</para>
     <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification is necessary to
       support the operation of a variety of systems intended to deliver knowledge management for
       terminology to vendors, providers, and standards-development organizations, like Health Level
