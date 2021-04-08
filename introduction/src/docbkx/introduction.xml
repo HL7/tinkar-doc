@@ -45,10 +45,10 @@
     organization can reliably and sustainably produce required outcomes. There are five levels
     defined along the continuum of the capability maturity model (see below). The model provides a
     theoretical continuum along which process maturity can be developed incrementally from one level
-    to the next. A Tinkar Specification can provide a single representation for all terminologies
-    required in the U.S. and other countries, while also providing a better foundation for maturing
-    change management models as described by the capability maturity model <link linkend="bib2"
-      >[2]</link>:</para>
+    to the next. An implementation of the Tinkar Specification can provide a single representation
+    for all terminologies required in the U.S. and other countries, while also providing a better
+    foundation for maturing change management models as described by the capability maturity model
+      <link linkend="bib2">[2]</link>:</para>
   <para>
     <orderedlist>
       <listitem>
@@ -553,9 +553,9 @@
     <para>Tinkar will take different language sources and cohesively manage terminology data.
       Section 2 lays out the specific business requirements necessary for this task. The model
       representation is outlined in Section 3. Section 4 shows how Tinkar brings together the
-      biomedical terminologies by a common description format. Tinkar is used to fill the gaps
-      between the common HL7 Terminologies and other systems like SNOMED
-        CT<superscript>®</superscript>, RxNorm, UCUM, etc. The result is the distribution and
-      sharing of cohesive data across all platforms. </para>
+      biomedical terminologies by a common description format. An implementation of the Tinkar
+      specification can be used to fill the gaps between the common HL7 Terminologies and other
+      systems like SNOMED CT<superscript>®</superscript>, RxNorm, UCUM, etc. The result is the
+      distribution and sharing of cohesive data across all platforms. </para>
   </section>
 </chapter>
