@@ -70,8 +70,8 @@
     <section>
         <title>Semantic</title>
        <para>Semantics are the predicates and objects about a Concept. Semantics perform the
-            descriptive work in Tinkar. ​ ​ In the figure below we see (1)concept semantics,
-            (2)descriptions and (3)axioms attached to the “Acute pelvic pain” Concept which add
+            descriptive work in Tinkar. ​​In the figure below we see (1) concept semantics, (2)
+            descriptions and (3) axioms attached to the “Acute pelvic pain” Concept which add
             information specifying the Concept. ​ ​ A single instance of one of these Semantics is a
             SemanticVersion (with a STAMP). </para><para>
             <figure>
