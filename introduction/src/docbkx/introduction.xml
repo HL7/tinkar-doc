@@ -463,13 +463,13 @@
             layers.</emphasis></para>
       </caption>
     </figure>
-    <para><emphasis role="bold">Foundational Architecture</emphasis> – The Foundational Architecture
-      of the Knowledge Architecture provides the common elements of interoperability, such as:
-      object identity, versioning, modularity, and knowledge representation. It includes (a) the
-      foundation and building blocks of the common model; (b) how the repeatable transformation
-      process of disparate standards into the common model promotes interoperability with other
-      environments; and (c) how the modules of the architecture are tightly version controlled over
-      time. The Tinkar Reference Model belongs in this layer. </para>
+    <para><emphasis role="bold">Foundational Architecture</emphasis> – The Foundational layer of the
+      Knowledge Architecture provides the common elements of interoperability, such as: object
+      identity, versioning, modularity, and knowledge representation. It includes (a) the foundation
+      and building blocks of the common model; (b) how the repeatable transformation process of
+      disparate standards into the common model promotes interoperability with other environments;
+      and (c) how the modules of the architecture are tightly version controlled over time. The
+      Tinkar Reference Model belongs in this layer. </para>
     <para>
       <emphasis role="bold">Terminology Knowledge </emphasis>- The Terminology Knowledge layer is
       responsible for structured sets of medical terms and codes that <emphasis>define</emphasis>

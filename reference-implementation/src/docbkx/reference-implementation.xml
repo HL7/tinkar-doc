@@ -4,14 +4,13 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Example Implementation of Tinkar</title>
-    <para>This section includes user documentation for an example implementation of the Terminology
-        Knowledge Base standard, referred to as Komet (<link
-            xlink:href="https://github.com/logicahealth/komet"/>), and how various terminologies,
-        such as SNOMED CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm,
-        and HL7 terminologies shall be reproducibly represented using the Terminology Knowledge Base
-        standard. The Komet browser allows users to view the search Concepts, view the Concept
-        details (Semantics), and navigate hierarchies, as well as many other functions that are
-        outside the scope of this ballot.</para>
+    <para>This section includes user documentation for an example implementation of Tinkar, referred
+        to as Komet (<link xlink:href="https://github.com/logicahealth/komet"/>), and how various
+        terminologies, such as SNOMED CT<superscript>®</superscript>,
+            LOINC<superscript>®</superscript>, RxNorm, and HL7 terminologies shall be reproducibly
+        represented using Tinkar. The Komet browser allows users to view the search Concepts, view
+        the Concept details (Semantics), and navigate hierarchies, as well as many other functions
+        that are outside the scope of this ballot.</para>
     <para>Java Reference Classes for the Tinkar model can be accessed here:(<link
         xlink:href="https://github.com/HL7/tinkar-java"/>).  C# Reference Classes
         can be accessed here:(<link
@@ -50,7 +49,7 @@
           </figure>
       </para>
         <para>While there is a name displayed for human readable purposes, all information
-            describing the Concept is asserted with Semantics (see below). </para>
+            describing the Concept is asserted with Semantics (see below, section 4.2). </para>
         <para>When viewing Concepts in Komet there are various icons that have different meanings
             based on certain Semantics that are associated with the Concept. </para>
       <para>
@@ -396,7 +395,7 @@
                 <mediaobject>
                     <imageobject>
                         <imagedata fileref="equivalents.png" scalefit="1" width="100%"
-                            contentdepth="80%" align="center"/>
+                            contentdepth="65%" align="center"/>
                     </imageobject>
                 </mediaobject>
                 <caption>

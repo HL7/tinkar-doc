@@ -936,49 +936,59 @@
                         <entry align="center">x</entry>
 
                     </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        
+        
+         <informaltable>
+            <tgroup cols="6">
+                <colspec colnum="1" colname="col1" colwidth="1*"/>
+                <colspec colnum="2" colname="col3" colwidth="4*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                <colspec colname="newCol5" colnum="5" colwidth="1.5*"/>
+                <colspec colname="newCol6" colnum="6" colwidth="1.5*"/>
+                <tbody>
+                    <row>
+                        <entry><emphasis role="bold">ID</emphasis></entry>
+                        <entry><emphasis role="bold">Requirement</emphasis></entry>
+                        <entry><emphasis role="bold">Level</emphasis></entry>
+                        <entry><emphasis role="bold">Clinical System</emphasis></entry>
+                        <entry><emphasis role="bold">Terminology Management</emphasis></entry>
+                        <entry><emphasis role="bold">Information Design</emphasis></entry>
+                    </row>
                     <row>
                         <entry xml:id="requirement_21" xreflabel="21">21</entry>
                         <entry>Represent the author of a change</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center">x</entry>
-
                     </row>
                     <row>
                         <entry xml:id="requirement_22" xreflabel="22">22</entry>
                         <entry>Represent the system or sub-system of an asset</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center">x</entry>
-
                     </row>
                     <row>
                         <entry xml:id="requirement_23" xreflabel="23">23</entry>
                         <entry>Represent the path or branch of an asset version</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center">x</entry>
-
                     </row>
                     <row>
                         <entry xml:id="requirement_24" xreflabel="24">24</entry>
                         <entry>Support search using lexical or logical criteria</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center"/>
-
                     </row>
                     <row>
                         <entry xml:id="requirement_25" xreflabel="25">25</entry>
@@ -986,11 +996,8 @@
                             content not relevant to the chosen context</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center"/>
-
                     </row>
                     <row>
                         <entry xml:id="requirement_26" xreflabel="26">26</entry>
@@ -998,33 +1005,24 @@
                             definitions, value sets, maps, and others</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center">x</entry>
-
                     </row>
                     <row>
                         <entry xml:id="requirement_27" xreflabel="27">27</entry>
                         <entry>Deactivate assets, preserving their original form</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center">x</entry>
-
                     </row>
                     <row>
                         <entry xml:id="requirement_28" xreflabel="28">28</entry>
                         <entry>Modify assets, preserving their original form</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center">x</entry>
-
                     </row>
                     <row>
                         <entry xml:id="requirement_29" xreflabel="=29">29</entry>
@@ -1032,11 +1030,8 @@
                             contexts, with the option to persist the inferred assets</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center"/>
-
                     </row>
                     <row>
                         <entry xml:id="requirement_30" xreflabel="30">30</entry>
@@ -1044,15 +1039,13 @@
                             and resolution of unresolved constraints</entry>
                         <entry>Function</entry>
                         <entry align="center"/>
-
                         <entry align="center">x</entry>
-
                         <entry align="center"/>
-
                     </row>
                 </tbody>
             </tgroup>
         </informaltable>
+        
         
     </section>
 </chapter>

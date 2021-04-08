@@ -34,32 +34,32 @@
             </figure>
         </para>
         <para>The Tinkar Reference Model fulfills the requirement of capturing a complete record of
-            all changes, including relevant context information  <emphasis role="underline"  linkend="requirement_15">(Requirement 15)</emphasis>. This is captured
-            via the STAMP class using the following fields: </para>
+            all changes, including relevant context information. This is captured via the STAMP
+            class using the following fields: </para>
         <para>
             <orderedlist>
                 <listitem>
                     <para><emphasis role="bold">Status:</emphasis> A status is identified by a
                         concept, which may be annotated with other identifying information. For
-                        example: active or inactive <emphasis role="underline"  linkend="requirement_17">(Requirement 17)</emphasis></para>
+                        example: active or inactive <emphasis role="underline"  linkend="requirement_19">(Requirement 19)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Time:</emphasis> Timestamps must employ a common
-                        standard, which must support precision and time zone. <emphasis role="underline"  linkend="requirement_18">(Requirement
-                            18)</emphasis></para>
+                        standard, which must support precision and time zone. <emphasis role="underline"  linkend="requirement_20">(Requirement
+                            20)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Author:</emphasis> An author is identified by a
                         concept, which may be annotated with other identifying information as
-                        required. <emphasis role="underline"  linkend="requirement_19">(Requirement 19)</emphasis></para>
+                        required. <emphasis role="underline"  linkend="requirement_21">(Requirement 21)</emphasis></para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Module: </emphasis>Assignment to the appropriate
                         terminology (e.g., LOINC) or terminology component (e.g., SNOMED
                             CT<superscript>®</superscript>, US Extension). A module is identified by
                         a concept, which may be annotated with other identifying information.
-                            <emphasis role="underline" linkend="requirement_20">(Requirement
-                            20)</emphasis>
+                            <emphasis role="underline" linkend="requirement_22">(Requirement
+                            22)</emphasis>
                     </para>
                 </listitem>
                 <listitem>
@@ -70,8 +70,8 @@
                         practices/literature. A path is identified by a concept, which may be
                         annotated with other identifying information. A core set of paths is
                         necessary to support publication to external organizations. <emphasis
-                            role="underline" linkend="requirement_21">(Requirement
-                        21)</emphasis></para>
+                            role="underline" linkend="requirement_23">(Requirement
+                        23)</emphasis></para>
                 </listitem>
             </orderedlist>
         </para>
