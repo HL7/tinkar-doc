@@ -12,10 +12,10 @@
     <section>
         <title>Tinkar Serialization Data</title>
         <para>Tinkar will include a serialization format that will serialize any or all the
-            information stored in a Tinkar system. This serialization format will allow third
-            parties to read data created by a Tinkar compliant system. A serialized Tinkar file can
-            also be used to transfer information between different Tinkar systems. This will ensure
-            that no Tinkar data is lost. </para>
+            information stored in a Tinkar implementation. This serialization format will allow
+            third parties to read data created by a Tinkar compliant implementation. A serialized
+            Tinkar file can also be used to transfer information between different Tinkar
+            implementations. This will ensure that no Tinkar data is lost. </para>
         <para>C# and Java code implementations of the Tinkar Data Model will be made available to
             integrators allowing third parties to more easily use Tinkar.</para>
         <para>Specifically, third party implementers can use java or C#:</para>
