@@ -3,7 +3,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
   <title>Key Takeaways</title>
   <para>
-    <itemizedlist>
+    <orderedlist>
       <listitem>
         <para>Terminology Knowledge Architecture (Tinkar) intends to integrate clinical terminology
           and local concepts to support increased data quality for interoperable clinical
@@ -28,7 +28,7 @@
       </listitem>
       <listitem>
         <para>Tinkar aims to be both self-describing and completely machine processed:</para>
-        <orderedlist>
+        <orderedlist numeration='loweralpha'>
           <listitem>
             <para>Self-describing machine-readable representation of terminology, such that if an
               application can process the metadata, it should be able to import the content/concepts
@@ -51,7 +51,7 @@
           guidance in the future (e.g., implementation guides, profiles, value sets), and can be
           applied to design change management solutions.</para>
       </listitem>
-    </itemizedlist>
+    </orderedlist>
   </para>
 
 </chapter>

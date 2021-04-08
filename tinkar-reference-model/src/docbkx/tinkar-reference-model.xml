@@ -180,7 +180,7 @@
     </section>
     <section>
         <title>Field Data Types</title>
-        <para> Tinkar supports the following field data types for use with Semantics.<itemizedlist>
+        <para> Tinkar supports the following field data types for use with Semantics.<orderedlist>
                 <listitem>
                     <para>String - a sequence of characters, either as a literal constant or as a
                         variable. Strings could be used to represent terms from code systems or
@@ -235,12 +235,12 @@
                 <listitem>
                     <para>Vertex - The fundamental unit of data that makes up a graph or
                         tree.</para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>In Tinkar, property graphs are used as a general-purpose data
                                 pattern to represent an abstract syntax tree (AST), such as OWL
                                 EL++. This allows for data types without requiring custom nodes. </para>
-                            <itemizedlist>
+                            <orderedlist numeration='lowerroman'>
                                 <listitem>
                                     <para>An AST may be used "during semantic analysis, where the
                                         compiler checks for correct usage of the elements of the
@@ -260,7 +260,7 @@
                                         EL root" vs. a "BPMN root", etc. Each node must have 0 or
                                         more children. </para>
                                 </listitem>
-                            </itemizedlist>
+                            </orderedlist>
                         </listitem>
                         <listitem>
                             <para>Here is an example of Tinkar output of semantics that reference
@@ -299,9 +299,9 @@
                                 BPMN and DMN, using this property graph model and a proper set of
                                 terminology concepts and semantics represented using Tinkar.</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
-            </itemizedlist></para>
+            </orderedlist></para>
     </section>
     <section>
         <title>Pattern (For Semantics)</title>
@@ -407,10 +407,10 @@
             archived whenever they are modified. The downside of such versioning schemes is that
             they leak into any queries written against the graph, adding a layer of complexity to
             even the simplest query.</para>
-        <para>Types of Coordinates:<itemizedlist>
+        <para>Types of Coordinates:<orderedlist>
                 <listitem>
                     <para>STAMP coordinates are the most basic type of coordinate on which all
-                        content should be filtered. Examples of STAMP coordinates are:<itemizedlist>
+                        content should be filtered. Examples of STAMP coordinates are:<orderedlist numeration='loweralpha'>
                             <listitem>
                                 <para>Most recent version</para>
                             </listitem>
@@ -420,11 +420,11 @@
                             <listitem>
                                 <para>All active components only</para>
                             </listitem>
-                        </itemizedlist></para>
+                        </orderedlist></para>
                 </listitem>
                 <listitem>
                     <para>Language coordinates are used to control the terms that should be
-                        displayed. Examples of Language coordinates are:<itemizedlist>
+                        displayed. Examples of Language coordinates are:<orderedlist numeration='loweralpha'>
                             <listitem>
                                 <para>Displaying terms based on a language and/or dialect</para>
                             </listitem>
@@ -432,21 +432,21 @@
                                 <para>Prioritized list of synonyms based on a particular clinical
                                     domain</para>
                             </listitem>
-                        </itemizedlist></para>
+                        </orderedlist></para>
                 </listitem>
                 <listitem>
                     <para>Logic coordinates are used to identify the various results from
                         Description Logic Classifiers as well as the different versions of the
                         output over time:</para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Result from various Description Logic Classifiers</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
                 <listitem>
                     <para>Navigation coordinates are used to assist in viewing and searching for a
-                        particular concept. Examples of these would be:<itemizedlist>
+                        particular concept. Examples of these would be:<orderedlist numeration='loweralpha'>
                             <listitem>
                                 <para>Stated vs inferred relationships from SNOMED
                                         CT<superscript>®</superscript></para>
@@ -454,9 +454,9 @@
                             <listitem>
                                 <para>Concepts inclusion/exclusion for a particular domain</para>
                             </listitem>
-                        </itemizedlist></para>
+                        </orderedlist></para>
                 </listitem>
-            </itemizedlist></para>
+            </orderedlist></para>
         <section>
             <title>Calculating Coordinates</title>
             <para>The ComponentChronology contains all the versions of a component from the date it
@@ -465,7 +465,7 @@
                 requires the ability to find the most recent version of each component. Utilizing
                 the STAMP Coordinates supports calculating all other coordinates:</para>
             <para>
-                <itemizedlist>
+                <orderedlist>
                     <listitem>
                         <para>Identify the Module(s) the user would like to
                             view/search/modify.</para>
@@ -489,7 +489,7 @@
                             representation of historical, the user may need to calculate the most
                             recent version as of a different point in time. </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </para>
             <para>After the STAMP Coordinates have been calculated, additional coordinates can then
                 be applied as well. For example, applying a language and dialect coordinate will be

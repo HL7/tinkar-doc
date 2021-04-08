@@ -427,10 +427,10 @@
             <title>Patterns for Representing Various Assets</title>
             <para>The data architecture must support patterns for the representation of many kinds
                 of assets. A minimal list includes the following.</para>
-            <itemizedlist>
+            <orderedlist>
                 <listitem>
                     <para>A <emphasis role="bold">term</emphasis> must have </para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>A string representation</para>
                         </listitem>
@@ -443,30 +443,30 @@
                         <listitem>
                             <para>A type</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
                 <listitem>
                     <para>A <emphasis role="bold">concept</emphasis> must have </para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>At least one term</para>
                         </listitem>
                         <listitem>
                             <para>At least one parent, except for root concepts</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
                 <listitem>
                     <para>A <emphasis role="bold">logical definition</emphasis> must have</para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>A definitional status</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
                 <listitem>
                     <emphasis role="bold">STAMP values must include</emphasis>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>“Active” and “inactive” status concepts</para>
                         </listitem>
@@ -479,12 +479,12 @@
                         <listitem>
                             <para>Paths supporting “development” and “publication”</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
                 <listitem>
                     <para>An <emphasis role="bold">inferred classification</emphasis> must
                         indicate</para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>The classifier used for its generation</para>
                         </listitem>
@@ -494,11 +494,11 @@
                         <listitem>
                             <para>The stated asset(s)</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
                 <listitem>
                     <para>The <emphasis role="bold">module dependency</emphasis> graph</para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Identifies the root module</para>
                         </listitem>
@@ -508,33 +508,33 @@
                         <listitem>
                             <para>Must be acyclical</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
             <para>Many other patterns may be present. Implementations are expected to
                 support:</para>
-            <itemizedlist>
+            <orderedlist continuation='continues'>
                 <listitem><emphasis role="bold">Any assembly of relationships</emphasis> associating
-                    one concept with another must have<itemizedlist>
+                    one concept with another must have<orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>At least one default rule (constraint) for handling changes (e.g.,
                                 whether assets dependent on changed assets can be automatically
                                 handled or require intervention) </para>
                         </listitem>
-                    </itemizedlist></listitem>
+                    </orderedlist></listitem>
                 <listitem><emphasis role="bold">Any assembly of relationships</emphasis> may include
                     components that are themselves semantics</listitem>
-                <listitem><emphasis role="bold">Value sets </emphasis> may include<itemizedlist>
+                <listitem><emphasis role="bold">Value sets </emphasis> may include<orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Rule-based member inclusions</para>
                         </listitem>
                         <listitem>
                             <para>Enumerated members</para>
                         </listitem>
-                    </itemizedlist></listitem>
+                    </orderedlist></listitem>
                 <listitem>
                     <para>System-specific <emphasis role="bold">import rules</emphasis></para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>System equivalences for Tinkar attribute and other infrastructure
                                 concepts</para>
@@ -544,11 +544,11 @@
                                 equivalence-on-import inferences irrespective of administrative
                                 metadata</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
                 <listitem>
                     <emphasis role="bold">Maps</emphasis>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Relationships for equivalence assertions</para>
                         </listitem>
@@ -559,9 +559,9 @@
                             <para>Relationships for other functions, e.g., CDC Reportable Condition
                                 Mapping Table</para>
                         </listitem>
-                    </itemizedlist>
+                    </orderedlist>
                 </listitem>
-                <listitem><emphasis role="bold">Constraints </emphasis> on asset patterns, including<itemizedlist>
+                <listitem><emphasis role="bold">Constraints </emphasis> on asset patterns, including<orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Logical composition constraints on concepts, e.g., the SNOMED
                                     CT<superscript>®</superscript> concept model</para>
@@ -579,13 +579,13 @@
                                 incremental addition of effort estimates based on known problematic
                                 terms.</para>
                         </listitem>
-                    </itemizedlist></listitem>
-            </itemizedlist>
+                    </orderedlist></listitem>
+            </orderedlist>
             <para>One other feature is the set of concepts that the application will use to
                 determine how to present the data to the user. A key dimension is the STAMP
                 information defined above. In addition, three other “coordinates” are required for
                 managing the presentation:</para>
-            <itemizedlist>
+            <orderedlist continuation='continues'>
                 <listitem>
                     <para>Language: A user may assert a required or preferred language, or a set of
                         ranked language priorities. </para>
@@ -597,7 +597,7 @@
                     <para>Navigation: A user may select the parameters for presentation of the
                         logical classification </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
             <para>Like other concepts, these can be represented by the core data architecture. The
                 application implementing Tinkar must be able to identify those concepts appropriate
                 for these uses.</para>
@@ -605,8 +605,7 @@
         <section>
             <title>Constraints</title>
             <para>
-                <itemizedlist>
-                    <para>Constraints are required to:<itemizedlist>
+                    <para>Constraints are required to:<orderedlist>
                             <listitem>
                                 <para>Ensure that the appropriate level of detail for standard
                                     terminologies are represented within Tinkar</para>
@@ -618,14 +617,15 @@
                             <listitem>
                                 <para>Perform general quality assurance</para>
                             </listitem>
-                        </itemizedlist>For example, constraints would be used to represent standard
+                        </orderedlist>
+                        For example, constraints would be used to represent standard
                         terminology artifacts, like the SNOMED CT<superscript>®</superscript>
                         Machine Readable Concept Model. Additionally, constraints could be used to
                         ensure that the terminologies represented within Tinkar are completely and
                         consistently queried and displayed. </para>
                     <para>These same constraints can be used with respect to create new content
                         within Tinkar to specify the minimally viable data that would be required.
-                        For example:<itemizedlist>
+                        For example:<orderedlist numeration='arabic' continuation='continues'>
                             <listitem>
                                 <para>All concepts must have at least one Fully Qualified Name
                                     within at least one Language or Dialect.</para>
@@ -638,9 +638,9 @@
                                 <para>All concepts must have at least one parent, unless it is a
                                     root concept.</para>
                             </listitem>
-                        </itemizedlist></para>
+                        </orderedlist></para>
                     <para>Constraints can be applied (or not applied) based on various criteria to
-                        perform Quality Assurance on content that is represented within Tinkar. For example:<itemizedlist>
+                        perform Quality Assurance on content that is represented within Tinkar. For example:<orderedlist numeration='arabic' continuation='continues'>>
                             <listitem>
                                 <para>SNOMED CT<superscript>®</superscript> FullySpecifiedName
                                     hierarchy tags are applied based on where a concept exists in a
@@ -656,7 +656,7 @@
                                     that is created under a certain node in a hierarchy uses similar
                                     wording and relationships.</para>
                             </listitem>
-                        </itemizedlist></para>
+                        </orderedlist></para>
                     <para>Since some Quality Assurance Constraints do not always indicate an error,
                         an Allow List could also be represented as a Semantic to record concepts
                         that are allowed to not conform to a constraint. Constraints would be
@@ -669,6 +669,7 @@
                     <para>Implementing Constraints would depend upon how the Constraints are written
                         and formatted. For example, Implementers could utilize a Rete algorithm
                         through something like Drools to implement Constraints.</para>
+                    <orderedlist numeration='arabic' continuation='continues'>
                     <listitem>
                         <para>Properties published in SNOMED CT<superscript>®</superscript> RF2,
                             including Machine Readable Concept Model (MRCM)</para>
@@ -683,17 +684,17 @@
                     <listitem>
                         <para>MedRT relationships</para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </para>
         </section>
         <section>
             <title>Minimally Required Content</title>
-            <para>A Tinkar implementation must be furnished with the following content:<itemizedlist>
+            <para>A Tinkar implementation must be furnished with the following content:<orderedlist>
                     <listitem>One root concept</listitem>
                     <listitem>One module dependency graph</listitem>
                     <listitem>Infrastructure concepts a.k.a Tinkar Model Concepts to support the core patterns listed
                         above</listitem>
-                    <listitem>Import rules to support import of standard terminologies, including:<itemizedlist>
+                    <listitem>Import rules to support import of standard terminologies, including:<orderedlist enumeration='loweralpha'>
                             <listitem>Equivalences to support semantic integration of terminologies
                                 (e.g., that a LOINC<superscript>®</superscript> “system”
                                 instantiates the same relationship concept as the SNOMED
@@ -703,22 +704,23 @@
                                 <para>Exclusions to support removal of non-semantic properties from
                                     classification (e.g., RxNorm Translated CDs)</para>
                             </listitem>
-                        </itemizedlist></listitem>
-                </itemizedlist></para>
+                        </orderedlist></listitem>
+                </orderedlist></para>
             <para>Definitions for Tinkar Model Concepts are located in <link
                     linkend="tinkar_model_concept_appenidix">Appendix C.</link></para>
         </section>
     </section>
-    <section>
+    <?hard-linebreak?>
+    <section role="landscape">
         <title>List of Requirements</title>
         <informaltable>
             <tgroup cols="6">
-                <colspec colnum="1" colname="col1" colwidth="33pt"/>
-                <colspec colnum="2" colname="col3" colwidth="386.5pt"/>
+                <colspec colnum="1" colname="col1" colwidth="1*"/>
+                <colspec colnum="2" colname="col3" colwidth="4*"/>
                 <colspec colname="newCol3" colnum="3" colwidth="1*"/>
                 <colspec colname="newCol4" colnum="4" colwidth="1*"/>
-                <colspec colname="newCol5" colnum="5" colwidth="1*"/>
-                <colspec colname="newCol6" colnum="6" colwidth="1*"/>
+                <colspec colname="newCol5" colnum="5" colwidth="1.5*"/>
+                <colspec colname="newCol6" colnum="6" colwidth="1.5*"/>
                 <tbody>
                     <row>
                         <entry><emphasis role="bold">ID</emphasis></entry>

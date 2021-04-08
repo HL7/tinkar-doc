@@ -153,4 +153,24 @@ set       toc,title
   <xsl:value-of select="'1'"/>
 </xsl:template>
 
+
+
+<xsl:template name="select.user.pagemaster">
+  <xsl:param name="element"/>
+  <xsl:param name="pageclass"/>
+  <xsl:param name="default-pagemaster"/>
+
+  <xsl:choose>
+    <xsl:when test="@role = 'landscape'">landscape</xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="$default-pagemaster"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
+
+
+
+
 </xsl:stylesheet>
+
+

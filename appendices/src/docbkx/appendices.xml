@@ -10,21 +10,19 @@
     <section>
         <title>Concepts for Semantic Fields</title>
     
-    <itemizedlist>
+    <orderedlist>
         <listitem>
             <para>Identifier Source: An identifier used to label the identity of a unique component. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>UUID (Universally unique identifier): A 128-bit number used to identify
                         information in computer systems. </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Status: Concept that organizes the statuses of a component. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>Active: Concept used to represent a status for components that are active.
                     </para>
@@ -45,52 +43,44 @@
                     <para>Withdrawn: Concept used to represent a status for components that are
                         withdrawn. </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Time: Specifies the inclusive date and effectiveTime for various statuses of the
                 component. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>As far as a model concept to support STAMP versioning, time is left to
                         implementation-specific details where various frameworks could be used to
                         represent time (e.g., Epoch, Unix time representation). </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Author: Concept used to identify the author of a component. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>Default Author: An agent that may be responsible for authoring a change.
                     </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Module: Modules are used to organize content for maintenance and publication
                     purposes. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>Tinkar Module: All concepts, semantics, and Patterns must belong to a
                             module. A Tinkar Module would contain a release package of all content
                             published together. A module can be dependent upon another module. </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Path: A set of components under version control that can be managed distinctly
                     from other components. Paths “branch” from other paths as established, and can
                     be “merged” with other paths as well. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>Prerequisite path: The path that contains components that are shared
                             across all paths and contain infrastructure components. </para>
@@ -105,17 +95,17 @@
                 <listitem>
                     <para>Sandbox path: A path for components under testing.  </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
+    </orderedlist>
     </section>
     <section>
         <title>Concepts for Descriptions, Language, and Dialect</title>
-    <itemizedlist>
+    <orderedlist>
         <listitem>
             <para>Description type: Descriptions associate human-readable terms with a concept that
                 it describes. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>Fully qualified name description type: Fully qualified name is a
                         description that uniquely identifies and differentiates it from other
@@ -131,13 +121,11 @@
                 <listitem>
                     <para>Abbreviation: A shortened form of a term. </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Description case significance: Identifies the case significance of descriptions. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>Case sensitive: Differentiating between capital and lowercase letters.
                     </para>
@@ -154,13 +142,11 @@
                     <para>Not case sensitive: Uppercase or lowercase characters can be entered.
                     </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Description acceptability: Identifies the acceptability of a description. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>Acceptable: Specifies that a description is acceptable, but not preferred
                         within a language or dialect. </para>
@@ -170,16 +156,12 @@
                         dialect. There will be one preferred description for each description type.
                     </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Language: Specifies the language of the description text. </para>
-            <itemizedlist>
-                <listitem>
                     <para>For example: </para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Chinese language </para>
                         </listitem>
@@ -228,45 +210,42 @@
                         <listitem>
                             <para>Swedish language </para>
                         </listitem>
-                    </itemizedlist>
-                </listitem>
-            </itemizedlist>
+                    </orderedlist>
         </listitem>
         <listitem>
             <para>Dialect: Specifies the dialect of the language. </para>
-            <itemizedlist>
-                <listitem>
+
                     <para>For example: </para>
-                    <itemizedlist>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>GB English dialect </para>
                         </listitem>
                         <listitem>
                             <para>U.S. English dialect </para>
-                            <itemizedlist>
+                            <orderedlist numeration='lowerroman'>
                                 <listitem>
                                     <para>U.S. Nursing dialect </para>
                                 </listitem>
-                            </itemizedlist>
+                            </orderedlist>
                         </listitem>
                         <listitem>
                             <para>Spanish dialect </para>
-                            <itemizedlist>
+                            <orderedlist numeration='lowerroman'>
                                 <listitem>
                                     <para>Latin American Spanish dialect </para>
                                 </listitem>
-                            </itemizedlist>
+                            </orderedlist>
                         </listitem>
                         <listitem>
                             <para>French dialect </para>
                         </listitem>
                         <listitem>
                             <para>Korean dialect </para>
-                            <itemizedlist>
+                            <orderedlist numeration='lowerroman'>
                                 <listitem>
                                     <para>Standard Korean dialect </para>
                                 </listitem>
-                            </itemizedlist>
+                            </orderedlist>
                         </listitem>
                         <listitem>
                             <para>Polish dialect </para>
@@ -280,34 +259,28 @@
                         <listitem>
                             <para>Russian dialect </para>
                         </listitem>
-                    </itemizedlist>
-                </listitem>
-            </itemizedlist>
+                    </orderedlist>
+
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Membership type: Used to identify the different types of memberships associated
                     with components. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                         <para>Marked parent:  A membership type that identifies 1 or more parent for
                             a component. In a particular navigation view, this is a parent of a
                             member. </para>
                     </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Literal value: A literal is any number, text, or other information that directly
                     represents a value.  </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                 <listitem>
                     <para>Boolean literal: A datatype that represents either true or false. </para>
                 </listitem>
-            </itemizedlist>
-            <itemizedlist>
+
                 <listitem>
                     <para>Float literal: A datatype that represents numbers that have a decimal
                         point or an exponential part.  </para>
@@ -317,25 +290,19 @@
                             line. The instant is defined as an offset since the origin (called an
                             epoch). </para>
                 </listitem>
-            </itemizedlist>
-            <itemizedlist>
                 <listitem>
                     <para>Integer literal: A datatype that represents an integer value. </para>
                 </listitem>
                 <listitem>
                     <para>String literal: A datatype that represents a string value. </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
+            <para>    </para>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
-            <listitem>
-                <para> </para>
-            </listitem>
         <listitem>
             <para>Precedence: Precedence determines the order in which the operators in an
                     expression are evaluated. </para>
-            <itemizedlist>
+            <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para> Path precedence: Determines the order in which the path is evaluated. </para>
                     </listitem>
@@ -343,15 +310,13 @@
                     <para>Time precedence: : Determines the order in which the time is evaluated.
                     </para>
                 </listitem>
-            </itemizedlist>
+            </orderedlist>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>Relationship type in source terminology: the associations that there exist between
                     the meanings of terms from source terminologies (e.g., 'IsA'). </para>
         </listitem>
-    </itemizedlist>
+    </orderedlist>
     </section>
     <section>
         <title>Concepts for Description Logic</title>
@@ -360,10 +325,10 @@
             BPM+ Health. Tinkar Model Concepts include a concept for each logical operator in the EL
             profile; for other standards such as BPM+, Tinkar could include concepts for various
             nodes. </para>
-        <itemizedlist>
+        <orderedlist>
             <listitem>
                 <para>EL profile set operator </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>Necessary set: A set of relationships that is always true of a
                             concept. A concept that only contains necessary conditions is considered
@@ -379,13 +344,11 @@
                             least one set of necessary and sufficient conditions is considered
                             defined.</para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
-        </itemizedlist>
-        <itemizedlist>
             <listitem>
                 <para>Connective operator </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>And: An operator used to assert that two (or more) parts of a concept
                             definition or expression constraint must both be true. </para>
@@ -414,13 +377,11 @@
                             parts of a concept definition or expression constraint must be true.
                         </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
-        </itemizedlist>
-        <itemizedlist>
             <listitem>
                 <para>Logical feature: Description logic features </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>Inverse property: Any logic property that is used to link two objects
                             can have an inverse. For example, the property IsA can have the inverse
@@ -433,14 +394,12 @@
                             the PartOf relationship would be an example of a transitive property.
                         </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
-        </itemizedlist>
-        <itemizedlist>
             <listitem>
                 <para>Role operator: Concept that is used to describe universal vs existential
                     restrictions.  </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>Existential restriction (Some): Existential restrictions describe
                             objects that participate in at least one relationship along a specified
@@ -451,22 +410,20 @@
                             relationships along a given property to concepts that are members of a
                             specific class.</para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
             <listitem>
                 <para>Role </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>Role Group: Used to represent a role group similar to the ones found
                             in SNOMED CT. </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
-        </itemizedlist>
-        <itemizedlist>
             <listitem>
                 <para>Logic origin: Origin of the logic form</para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>EL++ inferred form: A representation of EL++ concept definitions that
                             is logically derived by applying a description logic classifier to the
@@ -477,14 +434,12 @@
                             consisting only of assertions made or revised by terminology authors.
                         </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
-        </itemizedlist>
-        <itemizedlist>
             <listitem>
                 <para>Concrete domain operator: Operators used when specifying a concrete
                     domain.</para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>Equal to: Value is equal to the concrete domain</para>
                     </listitem>
@@ -503,12 +458,12 @@
                         <para>Less than or equal to: The value should be less than or equal to the
                             concrete domain </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
             <listitem>
                 <para>Description-logic classifier: Concept used to organize the available
                     classifier used within Tinkar. For example:</para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>SnoRocket classifier: Concept used to identify the SnoRocket
                             classifier</para>
@@ -516,24 +471,20 @@
                     <listitem>
                         <para>ELK classifier: Concept used to identify the ELK classifier</para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
-        </itemizedlist>
-        <itemizedlist>
             <listitem>
                 <para>Description-logic profile: Used to identify the Description logic profile </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>EL++ profile: Represents the EL++ profile </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
-        </itemizedlist>
-        <itemizedlist>
             <listitem>
                 <para>Navigation Operator: Provides a navigation abstraction for specifying
                     description logic. </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>Parent of: Concept used to represent that a Concept is a parent of
                             another Concept.</para>
@@ -542,10 +493,8 @@
                         <para>Child of: Concept used to represent that a Concept is a child of
                             another Concept.</para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
-        </itemizedlist>
-        <itemizedlist>
             <listitem>
                 <para>Property pattern implication: Property pattern implications are used to
                     represent the description logic feature called property chains. Property chains
@@ -555,11 +504,9 @@
                 <para>363701004 |direct substance| <emphasis role="bold">ο</emphasis> 127489000 |has
                     active ingredient|→ 363701004 |direct substance|</para>
             </listitem>
-        </itemizedlist>
-        <itemizedlist>
             <listitem>
                 <para>Sufficient concept definition operator: </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>Necessary but not sufficient concept definition: Concept used to
                             identify concepts that have necessary, but not sufficient
@@ -569,14 +516,14 @@
                         <para>Sufficient concept definition: Concept used to identify concepts that
                             contain sufficient definitions.</para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
-        </itemizedlist>
+        </orderedlist>
     </section>
     <section>
         <title>Patterns</title>
    
-    <itemizedlist>
+    <orderedlist>
         <listitem>
             <para>Concept: An identifier for a concept or instance. The identifier contains no
                 information; all information specifying or describing the concept is asserted with
@@ -611,8 +558,6 @@
         <listitem>
             <para>Semantic version: A single instance of a Semantic with a STAMP. </para>
         </listitem>
-    </itemizedlist>
-    <itemizedlist>
         <listitem>
             <para>String: A sequence of characters, either as a literal constant or as a variable.
                 Strings could be used to represent terms from code systems or URLs, textual
@@ -669,7 +614,7 @@
                 <para>In Tinkar, property graphs are used as a general-purpose data pattern to
                     represent an abstract syntax tree (AST), such as OWL EL++. This allows for data
                     types without requiring custom nodes. </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>An AST may be used "during semantic analysis, where the compiler
                             checks for correct usage of the elements of the program and the
@@ -687,7 +632,7 @@
                             always have roots, but they are specific: "An OWL EL root" vs. a "BPMN
                             root", etc. Each node must have 0 or more children. </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
             <listitem>
                 <para>Here is an example of Tinkar output of semantics that reference multiple
@@ -724,15 +669,15 @@
                     and DMN, using this property graph model and a proper set of terminology
                     concepts and semantics represented using Tinkar.</para>
             </listitem>
-    </itemizedlist>
+    </orderedlist>
     </section>
     <section>
         <title>Concepts for Copyright &amp; Content License</title>
-        <itemizedlist>
+        <orderedlist>
             <listitem>
                 <para>Copyright: A type of intellectual property that gives its owner the exclusive
                     right to make copies of a creative work, usually for a limited time. </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>SNOMED CT License Agreement: License Agreement between The
                             International Health Terminology Standards Development Organisation and
@@ -750,11 +695,11 @@
                         <para>HL7 License: HL7 licenses its standards and select IP free of charge.
                             HL7 licenses describe the permitted uses of materials. </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
             <listitem>
                 <para>Content License: Official permission to use intellectual property. </para>
-                <itemizedlist>
+                <orderedlist numeration='loweralpha'>
                     <listitem>
                         <para>Apache 2 license: A permissive free software license written by the
                             Apache Software Foundation. </para>
@@ -764,12 +709,12 @@
                             give other people the right to share, use, and build upon a work the
                             author created. </para>
                     </listitem>
-                </itemizedlist>
+                </orderedlist>
             </listitem>
             <listitem>
                 <para>US Government Work: A work created by U.S. federal government employees, that
                     is in the public domain.</para>
             </listitem>
-        </itemizedlist>
+        </orderedlist>
     </section>
 </appendix>
