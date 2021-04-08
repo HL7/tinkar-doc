@@ -107,7 +107,7 @@
     <para>As a result of these complexities, there are many ways to say the same thing using
       standard terminologies and standard formats. The Institute of Medicine report, <emphasis
         role="italic">Health IT and Patient Safety: Building Safer Systems for Better
-        Care</emphasis> highlighted the unintended consequences of health IT-induced harm that can
+        Care</emphasis>, highlighted the unintended consequences of health IT-induced harm that can
       result in serious injury and death due to dosing errors, failing to detect serious illnesses,
       and delaying treatment due to poor human-computer interactions, confusing clinical
       terminology, or unreliable data quality <link linkend="bib3">[3]</link>. Despite the
@@ -350,14 +350,14 @@
     <itemizedlist>
       <listitem>
         <para>Clinical applications require integrated terminology to create interoperable clinical
-          statements that are organized into messages, documents, or resources</para>
+          statements that are organized into messages, documents, or resources.</para>
       </listitem>
       <listitem>
         <para>Data analysis and research require integrated terminology to analyze aggregated
           information. Interoperability, clinical decision support, or other types of automation
           require common semantics based on a set of integrated models across reference standards
           (e.g. SNOMED CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm,
-          etc.)</para>
+          etc.).</para>
       </listitem>
     </itemizedlist>
     <para>The Unified Medical Language System (UMLS) Metathesaurus is a compilation of multiple
@@ -427,7 +427,7 @@
       measurements (e.g., 90 beats per minute for a patient's pulse), but also procedural context
       (e.g., pulse oximetry, manual) about past observations or requests for future interventions.
       While two quantitative measurements may be the same, the procedural information could indicate
-      meaningful semantic differences, and lead to different clinical interpretation and treatment.
+      meaningful semantic differences and lead to different clinical interpretation and treatment.
       As information is exchanged across systems, the solution requires a common understanding of
       data, a method to support knowledge-representation, and clinical decision rules based on
       common terminology and statements. Each component must address an aspect, and together need to
@@ -476,7 +476,7 @@
       responsible for structured sets of medical terms and codes that <emphasis>define</emphasis>
       concepts of interest, including descriptions, dialects, language, and semantic hierarchy.
       SNOMED CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, and RxNorm are part
-      of this layer. It defines what valid codes or expressions may be used by higher level layers </para>
+      of this layer. It defines what valid codes or expressions may be used by higher level layers. </para>
     <para><emphasis role="bold">Statement Model</emphasis> – The Statement Model layer is
       responsible for defining how data elements are combined to create a statement. This layer
       reuses the artifacts defined in the Terminology Knowledge layer. The ANF Reference Model <link
@@ -490,15 +490,15 @@
       <emphasis role="bold">Procedural Knowledge</emphasis> – Procedural knowledge, also known as
         <emphasis>imperative knowledge</emphasis>, is the knowledge exercised in the performance of
       some task. An example would be determining a hypertension treatment plan by analyzing a
-      combination of a patient's clincial statements, and the available assertional knowledge. The
+      combination of a patient's clinical statements and the available assertional knowledge. The
       procedural knowledge is responsible for information about standard ways to carry out specific
       procedures, as well as other procedural guidelines, e.g., treatment protocols for diseases and
       order sets focused on certain patient situations. Procedural knowledge, together with
-      assertional knowledge, enables clinical decision support, quality measurement, and supports
-      patient safety. This layer relies on the architectural foundation and terminology layers,
-      incorporates the statement model for information retrieval, and uses the assertional
-      knowledge. Procedural knowledge artifacts may include clinical alert rules, reminders, etc.
-      that trigger actions or recommend interventions.</para>
+      assertional knowledge, enables clinical decision support, quality measurement, and patient
+      safety. This layer relies on the architectural foundation and terminology layers, incorporates
+      the statement model for information retrieval, and uses the assertional knowledge. Procedural
+      knowledge artifacts may include clinical alert rules, reminders, etc. that trigger actions or
+      recommend interventions.</para>
     <para>Examining a clinical procedure for controlling hypertension illustrates each of the layers
       of the informatics architectural separation of concerns. <itemizedlist>
         <listitem>

@@ -123,7 +123,7 @@
                             following content: (a) One root concept; (b) One module dependency
                             graph; (c) Infrastructure concepts a.k.a Tinkar Model Concepts to
                             support the core patterns listed above; (d) Import rules to support
-                            import of standard terminologies,</entry>
+                            import of standard terminologies.</entry>
                     </row>
                     <row>
                         <entry>Tinkar Model Concepts (a.k.a Infrastructure concepts)</entry>

@@ -132,12 +132,12 @@
                         versions of it are created and saved. </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="underline" linkend="requirement_11">Version history retention (Requirement 11)</emphasis>: Each
-                        version of an object must be persisted as the object changes over time,
-                        along with meta-data indicating its [version identifier,] time of creation,
-                        creating author, and branch of the version control system on which it was
-                        created. Further, every version of each object must remain available for
-                        retrieval and inspection.</para>
+                    <para><emphasis role="underline" linkend="requirement_11">Version history
+                            retention (Requirement 11)</emphasis>: Each version of an object must be
+                        persisted as the object changes over time, along with meta-data indicating
+                        its version identifier, time of creation, creating author, and branch of the
+                        version control system on which it was created. Further, every version of
+                        each object must remain available for retrieval and inspection.</para>
                 </listitem>
                 <listitem>
                     <para><emphasis role="underline" linkend="requirement_12">Version comparison (Requirement 12)</emphasis>: It must be easy
@@ -252,7 +252,7 @@
         </informaltable>
         <para><emphasis role="italic">Asset Curation Use Cases</emphasis></para>
         <para>Today, clinical systems consume terminologies, but the interfaces are point-to-point.
-            To assert or assess new information the tools must already understand all relevant
+            To assert or assess new information, the tools must already understand all relevant
             interface models. Since an external organization may modify that model at any time, the
             ability to consume external assets involves ongoing manual efforts to understand or
             confirm the model and the design of transformations to support consumption. This is
