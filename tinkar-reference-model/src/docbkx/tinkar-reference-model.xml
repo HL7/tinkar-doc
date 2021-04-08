@@ -393,20 +393,21 @@
     </section>
     <section>
         <title>Coordinate</title>
-        <para>Tinkar supports and encourages the storage of time series data that utilizes multiple
-            dimensions, for example, STAMP, Language, Dialect, clinical domains, etc. The ability to
-            efficiently search, display, and navigate concepts and semantics requires the ability to
-            calculate combinations of content based on one or more of these different dimensions. </para>
-        <para>In order to facilitate the computability of various, complex dimensions, including
+        <para>The Tinkar Reference Model supports and encourages the storage of time series data
+            that utilizes multiple coordinates, for example, STAMP, Language, Dialect, clinical
+            domains, etc. The ability to efficiently search, display, and navigate concepts and
+            semantics requires the ability to calculate combinations of content based on one or more
+            of these different coordinates. </para>
+        <para>In order to facilitate the computability of various, complex coordinates, including
             time series data, a graph structure is commonly used in software versioned control
             systems. A particular type of graph structure that is commonly used is a "version
-            graph", such as a directed acyclic graph. A version graph enables us to recover the
-            state of the graph at a particular point in time. Most graph databases do not support
-            versioning as a first-class concept. It is possible, however, to create a versioning
-            scheme inside the graph model whereby nodes and relationships are timestamped and
-            archived whenever they are modified. The downside of such versioning schemes is that
-            they leak into any queries written against the graph, adding a layer of complexity to
-            even the simplest query.</para>
+            graph", such as a directed acyclic graph. A version graph would enable a Tinkar
+            implementation to recover the state of the graph at a particular point in time. Most
+            graph databases do not support versioning as a first-class concept. It is possible,
+            however, to create a versioning scheme inside the graph model whereby nodes and
+            relationships are timestamped and archived whenever they are modified. The downside of
+            such versioning schemes is that they leak into any queries written against the graph,
+            adding a layer of complexity to even the simplest query.</para>
         <para>Types of Coordinates:<orderedlist>
                 <listitem>
                     <para>STAMP coordinates are the most basic type of coordinate on which all
