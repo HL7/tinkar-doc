@@ -22,7 +22,7 @@
                         <entry>
                             <itemizedlist>
                                 <listitem>
-                                    <emphasis role="bold">Record Patient Data</emphasis>
+                                    <para><emphasis role="bold">Record Patient Data</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>A care provider, already authenticated and authorized to the
@@ -43,7 +43,7 @@
                                 needs, the provider may assert a need for a new term.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <emphasis role="bold">Propose Terminology Change</emphasis>
+                                    <para><emphasis role="bold">Propose Terminology Change</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>If a provider attempts to enter a term that is not supported by
@@ -57,7 +57,7 @@
                                 identity of the clinician to the terminologist.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <emphasis role="bold">Review Patient Data</emphasis>
+                                    <para><emphasis role="bold">Review Patient Data</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>A provider, already authenticated and authorized to the system and
@@ -76,8 +76,7 @@
                                 identify the change and its effect.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <emphasis role="bold">Review Knowledge Base changes relevant to
-                                        record</emphasis>
+                                    <para><emphasis role="bold">Review Knowledge Base changes relevant to record</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>If the system identifies a relevant change, the provider may
@@ -200,7 +199,7 @@
                         <entry>
                             <itemizedlist>
                                 <listitem>
-                                    <emphasis role="bold">Modify Enterprise Terminology</emphasis>
+                                    <para><emphasis role="bold">Modify Enterprise Terminology</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>A user adds, modifies, or deactivates content in the terminology
@@ -209,14 +208,14 @@
                                 base.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <emphasis role="bold">Publish Enterprise Terminology</emphasis>
+                                    <para><emphasis role="bold">Publish Enterprise Terminology</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>A user manages the publication process that supports the automated
                                 provision of terminology content to clinical systems.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <emphasis role="bold">Import Standard Terminology</emphasis>
+                                    <para><emphasis role="bold">Import Standard Terminology</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>A user incorporates a new standard terminology or new version of a
@@ -225,7 +224,7 @@
                                 impacts on existing enterprise assets.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <emphasis role="bold">Publish Standard Terminology</emphasis>
+                                    <para><emphasis role="bold">Publish Standard Terminology</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>A user manages the publication process that supports the automated
@@ -233,7 +232,7 @@
                                 servers.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <emphasis role="bold">Modify Standard Terminology</emphasis>
+                                    <para><emphasis role="bold">Modify Standard Terminology</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>A user adds, modifies, or deactivates content in the terminology
@@ -266,14 +265,10 @@
             all terminologies. There are two key requirements for this design:</para>
         <orderedlist>
             <listitem>
-                <emphasis role="underline" linkend="requirement_11">A complete record of all
-                    changes, including relevant change context information (Requirement
-                    11)</emphasis>
+                <para><emphasis role="underline" linkend="requirement_11">A complete record of all changes, including relevant change context information (Requirement 11)</emphasis></para>
             </listitem>
             <listitem>
-                <emphasis role="underline" linkend="requirement_18">A single syntax to support the
-                    representation of all terminology assets, known and future (Requirement
-                    18)</emphasis>
+                <para><emphasis role="underline" linkend="requirement_18">A single syntax to support the representation of all terminology assets, known and future (Requirement 18)</emphasis></para>
             </listitem>
         </orderedlist>
         <para>The context information of the first requirement includes the following:</para>
@@ -465,7 +460,7 @@
                     </orderedlist>
                 </listitem>
                 <listitem>
-                    <emphasis role="bold">STAMP values must include</emphasis>
+                    <para><emphasis role="bold">STAMP values must include</emphasis></para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>“Active” and “inactive” status concepts</para>
@@ -514,24 +509,29 @@
             <para>Many other patterns may be present. Implementations are expected to
                 support:</para>
             <orderedlist continuation='continues'>
-                <listitem><emphasis role="bold">Any assembly of relationships</emphasis> associating
-                    one concept with another must have<orderedlist numeration='loweralpha'>
+                <listitem><para><emphasis role="bold">Any assembly of relationships</emphasis> associating one concept with another must have</para>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>At least one default rule (constraint) for handling changes (e.g.,
                                 whether assets dependent on changed assets can be automatically
                                 handled or require intervention) </para>
                         </listitem>
-                    </orderedlist></listitem>
-                <listitem><emphasis role="bold">Any assembly of relationships</emphasis> may include
-                    components that are themselves semantics</listitem>
-                <listitem><emphasis role="bold">Value sets </emphasis> may include<orderedlist numeration='loweralpha'>
+                    </orderedlist>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Any assembly of relationships</emphasis> may include components that are themselves semantics</para>
+                </listitem>
+                <listitem>
+                    <para><emphasis role="bold">Value sets </emphasis> may include</para>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Rule-based member inclusions</para>
                         </listitem>
                         <listitem>
                             <para>Enumerated members</para>
                         </listitem>
-                    </orderedlist></listitem>
+                    </orderedlist>
+                </listitem>
                 <listitem>
                     <para>System-specific <emphasis role="bold">import rules</emphasis></para>
                     <orderedlist numeration='loweralpha'>
@@ -547,7 +547,7 @@
                     </orderedlist>
                 </listitem>
                 <listitem>
-                    <emphasis role="bold">Maps</emphasis>
+                    <para><emphasis role="bold">Maps</emphasis></para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Relationships for equivalence assertions</para>
@@ -561,7 +561,9 @@
                         </listitem>
                     </orderedlist>
                 </listitem>
-                <listitem><emphasis role="bold">Constraints </emphasis> on asset patterns, including<orderedlist numeration='loweralpha'>
+                <listitem>
+                    <para><emphasis role="bold">Constraints </emphasis> on asset patterns, including</para>
+                    <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Logical composition constraints on concepts, e.g., the SNOMED
                                     CT<superscript>®</superscript> concept model</para>
@@ -599,13 +601,14 @@
                 </listitem>
             </orderedlist>
             <para>Like other concepts, these can be represented by the core data architecture. The
-                application implementing Tinkar must be able to identify those concepts appropriate
-                for these uses.</para>
+                application implementing the Tinkar specification must be able to identify those
+                concepts appropriate for these uses.</para>
         </section>
         <section>
             <title>Constraints</title>
             <para>
-                    <para>Constraints are required to:<orderedlist>
+                    Constraints are required to:</para>
+                <orderedlist>
                         <listitem>
                             <para>Ensure that the appropriate level of detail for standard
                                 terminologies are represented within Tinkar</para>
@@ -617,14 +620,17 @@
                         <listitem>
                             <para>Perform general quality assurance</para>
                         </listitem>
-                    </orderedlist>For example, constraints would be used to represent standard
+                 </orderedlist>
+                <para>For example, constraints would be used to represent standard
                     terminology artifacts, like the SNOMED CT<superscript>®</superscript> Machine
                     Readable Concept Model. Additionally, constraints could be used to ensure that
-                    the terminologies represented within Tinkar are completely and consistently
-                    queried and displayed. </para>
-                    <para>These same constraints can be used to create new content within Tinkar to
-                    specify the minimally viable data that would be required. For
-                        example:<orderedlist numeration="arabic" continuation="continues">
+                    the terminologies represented within a Tinkar implementation are completely and
+                    consistently queried and displayed. 
+                </para>
+                <para>These same constraints can be used to create new content within a Tinkar
+                    implementation to specify the minimally viable data that would be required. For
+                        example:</para>
+                        <orderedlist numeration="arabic" continuation="continues">
                         <listitem>
                             <para>All concepts must have at least one Fully Qualified Name within at
                                 least one Language or Dialect.</para>
@@ -637,10 +643,11 @@
                             <para>All concepts must have at least one parent, unless it is a root
                                 concept.</para>
                         </listitem>
-                    </orderedlist></para>
+                    </orderedlist>
                     <para>Constraints can be applied (or not applied) based on various criteria to
-                    perform Quality Assurance on content that is represented within Tinkar. For
-                        example:<orderedlist numeration="arabic" continuation="continues">
+                    perform Quality Assurance on content that is represented within a Tinkar
+                    implementation. For example:<orderedlist numeration="arabic"
+                        continuation="continues">
                         <listitem>
                             <para>SNOMED CT<superscript>®</superscript> FullySpecifiedName hierarchy
                                 tags are applied based on where a concept exists in a
@@ -669,26 +676,26 @@
                     <para>Implementing Constraints would depend upon how the Constraints are written
                         and formatted. For example, Implementers could utilize a Rete algorithm
                         through something like Drools to implement Constraints.</para>
-            </para>
         </section>
         <section>
             <title>Minimally Required Content</title>
             <para>A Tinkar implementation must be furnished with the following content:<orderedlist>
-                    <listitem>One root concept</listitem>
-                    <listitem>One module dependency graph</listitem>
-                    <listitem>Infrastructure concepts a.k.a Tinkar Model Concepts to support the core patterns listed
-                        above</listitem>
-                    <listitem>Import rules to support import of standard terminologies, including:<orderedlist enumeration='loweralpha'>
-                            <listitem>Equivalences to support semantic integration of terminologies
+                <listitem><para>One root concept</para></listitem>
+                <listitem><para>One module dependency graph</para></listitem>
+                <listitem><para>Infrastructure concepts a.k.a Tinkar Model Concepts to support the core patterns listed above</para></listitem>
+                <listitem><para>Import rules to support import of standard terminologies, including:</para>
+                    <orderedlist numeration='loweralpha'>
+                            <listitem><para>Equivalences to support semantic integration of terminologies
                                 (e.g., that a LOINC<superscript>®</superscript> “system”
                                 instantiates the same relationship concept as the SNOMED
                                     CT<superscript>®</superscript> “inheres in”
-                                attribute)</listitem>
+                                attribute)</para></listitem>
                             <listitem>
                                 <para>Exclusions to support removal of non-semantic properties from
                                     classification (e.g., RxNorm Translated CDs)</para>
                             </listitem>
-                        </orderedlist></listitem>
+                        </orderedlist>
+                </listitem>
                 </orderedlist></para>
             <para>Definitions for Tinkar Model Concepts are located in <link
                     linkend="tinkar_model_concept_appenidix">Appendix C.</link></para>
