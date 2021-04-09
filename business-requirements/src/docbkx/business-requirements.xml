@@ -511,7 +511,8 @@
             <para>Many other patterns may be present. Implementations are expected to
                 support:</para>
             <orderedlist continuation='continues'>
-                <listitem><para><emphasis role="bold">Any assembly of relationships</emphasis> associating one concept with another must have</para>
+                <listitem><para><emphasis role="bold">Any assembly of relationships</emphasis> associating one concept with
+                        another must have:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>At least one default rule (constraint) for handling changes (e.g.,
@@ -524,7 +525,7 @@
                     <para><emphasis role="bold">Any assembly of relationships</emphasis> may include components that are themselves semantics</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Value sets</emphasis> may include</para>
+                    <para><emphasis role="bold">Value sets</emphasis> may include:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Rule-based member inclusions</para>
@@ -535,7 +536,7 @@
                     </orderedlist>
                 </listitem>
                 <listitem>
-                    <para>System-specific <emphasis role="bold">import rules</emphasis></para>
+                    <para>System-specific <emphasis role="bold">import rules</emphasis>:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>System equivalences for Tinkar attribute and other infrastructure
@@ -549,7 +550,7 @@
                     </orderedlist>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Maps</emphasis></para>
+                    <para><emphasis role="bold">Maps</emphasis>:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Relationships for equivalence assertions</para>
@@ -565,7 +566,7 @@
                 </listitem>
                 <listitem>
                     <para><emphasis role="bold">Constraints</emphasis> on asset patterns,
-                        including</para>
+                        including:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Logical composition constraints on concepts, e.g., the SNOMED

@@ -30,10 +30,10 @@
     closer together. However, while this evolution leads to greater compatibility and
     interoperability, integration of SNOMED CT<superscript>®</superscript>,
       LOINC<superscript>®</superscript>, and RxNorm is non-trivial as these terminologies use
-    different formalisms and tools for their representation.  Various terminologies have different
+    different formalisms and tools for their representation. Various terminologies have different
     semantics, models, release cycles, and versioning mechanisms <link linkend="bib1">[1]</link>.
-    While there is recognition that terminology standards are not standardized at the exchange
-    level, there is no consensus about harmonized next steps to solve the challenges. </para>
+    While there is recognition that terminologies are not standardized at the exchange level, there
+    is no consensus about harmonized next steps to solve the challenges. </para>
   <para>This document focuses on the need for – and logical specification of – a Terminology
     Knowledge Architecture (Tinkar). The Tinkar Reference Model is a logical model that describes
     the standardized model for terminology and change management.    Tinkar provides an architecture

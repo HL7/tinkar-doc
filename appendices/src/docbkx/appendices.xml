@@ -614,7 +614,7 @@
                 <para>In Tinkar, property graphs are used as a general-purpose data pattern to
                     represent an abstract syntax tree (AST), such as OWL EL++. This allows for data
                     types without requiring custom nodes. </para>
-                <orderedlist numeration='loweralpha'>
+                <orderedlist numeration="lowerroman">
                     <listitem>
                         <para>An AST may be used "during semantic analysis, where the compiler
                             checks for correct usage of the elements of the program and the
@@ -636,16 +636,13 @@
             </listitem>
             <listitem>
                 <para>Here is an example of Tinkar output of semantics that reference multiple
-                    concepts. One concept is Acetylsalicylic acid. The other concept is Antiplatelet
-                    agent. </para>
-            </listitem>
-            <listitem>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="propertygraph.PNG" format="PNG" scalefit="1"
-                            width="100%" contentdepth="100%" align="center"/>
-                    </imageobject>
-                </mediaobject>
+                    concepts. <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="propertygraph.PNG" format="PNG" scalefit="1"
+                                width="100%" contentdepth="100%" align="center"/>
+                        </imageobject>
+                    </mediaobject>
+                </para>
             </listitem>
             <listitem>
                 <para>In this output, one can see a sufficient set and necessary set. Bulleted items

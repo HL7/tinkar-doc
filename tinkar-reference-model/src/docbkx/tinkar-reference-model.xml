@@ -264,16 +264,14 @@
                         </listitem>
                         <listitem>
                             <para>Here is an example of Tinkar output of semantics that reference
-                                multiple concepts. One concept is Acetylsalicylic acid. The other
-                                concept is Antiplatelet agent. </para>
-                        </listitem>
-                        <listitem>
-                            <mediaobject>
+                                multiple concepts.
+                           <mediaobject>
                                 <imageobject>
                                     <imagedata fileref="propertygraph.PNG" format="PNG" scalefit="1"
                                         width="100%" contentdepth="100%" align="center"/>
                                 </imageobject>
                             </mediaobject>
+                            </para>
                         </listitem>
                         <listitem>
                             <para>In this output, one can see a sufficient set and necessary set.
