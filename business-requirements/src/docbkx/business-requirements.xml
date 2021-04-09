@@ -334,8 +334,8 @@
                 (Requirement 10)</emphasis>.</para>
         <para>The “single syntax” requirement is harder to satisfy. One approach would be to define
             a syntax that addresses the data elements of all known terminologies. This would be a
-            heavy specification, difficult to maintain, and it would fail to capture new elements as
-            terminologies are added in the future.</para>
+            heavy specification, that would be difficult to maintain, and could fail to capture new
+            elements as terminologies are added in the future.</para>
         <para>The other approach is to use a “self-describing” or “meta-modeling” approach, where
             the syntax defines not only the content but also what the content means. “Rigid” or
             “brittle” specifications determine in advance where information belongs: a database may
@@ -393,9 +393,11 @@
                 changes.</para>
             <itemizedlist>
                 <listitem>
-                    <para>An <emphasis role="underline" linkend="requirement_26">addition (Requirement 26)</emphasis>is a new version with a new asset UUID (universally unique
-                        identifier). Patterns may assert constraints for additions, which may be
-                        specific to context (Modules, Paths, Languages, etc.). </para>
+                    <para>An <emphasis role="underline" linkend="requirement_26">addition
+                            (Requirement 26)</emphasis> is a new version with a new asset UUID
+                        (universally unique identifier). Patterns may assert constraints for
+                        additions, which may be specific to context (Modules, Paths, Languages,
+                        etc.). </para>
                 </listitem>
                 <listitem>
                     <para>An <emphasis role="underline" linkend="requirement_27">inactivation (Requirement 27)</emphasis> is a new version of an existing asset with status set to
@@ -424,7 +426,7 @@
                 of assets. A minimal list includes the following.</para>
             <orderedlist>
                 <listitem>
-                    <para>A <emphasis role="bold">term</emphasis> must have </para>
+                    <para>A <emphasis role="bold">term</emphasis> must have: </para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>A string representation</para>
@@ -441,7 +443,7 @@
                     </orderedlist>
                 </listitem>
                 <listitem>
-                    <para>A <emphasis role="bold">concept</emphasis> must have </para>
+                    <para>A <emphasis role="bold">concept</emphasis> must have: </para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>At least one term</para>
@@ -452,7 +454,7 @@
                     </orderedlist>
                 </listitem>
                 <listitem>
-                    <para>A <emphasis role="bold">logical definition</emphasis> must have</para>
+                    <para>A <emphasis role="bold">logical definition</emphasis> must have:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>A definitional status</para>
@@ -460,7 +462,7 @@
                     </orderedlist>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">STAMP values must include</emphasis></para>
+                    <para><emphasis role="bold">STAMP values must include</emphasis>:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>“Active” and “inactive” status concepts</para>
@@ -478,7 +480,7 @@
                 </listitem>
                 <listitem>
                     <para>An <emphasis role="bold">inferred classification</emphasis> must
-                        indicate</para>
+                        indicate:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>The classifier used for its generation</para>
@@ -492,7 +494,7 @@
                     </orderedlist>
                 </listitem>
                 <listitem>
-                    <para>The <emphasis role="bold">module dependency</emphasis> graph</para>
+                    <para>The <emphasis role="bold">module dependency</emphasis> graph:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Identifies the root module</para>
@@ -522,7 +524,7 @@
                     <para><emphasis role="bold">Any assembly of relationships</emphasis> may include components that are themselves semantics</para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Value sets </emphasis> may include</para>
+                    <para><emphasis role="bold">Value sets</emphasis> may include</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Rule-based member inclusions</para>
@@ -562,7 +564,8 @@
                     </orderedlist>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">Constraints </emphasis> on asset patterns, including</para>
+                    <para><emphasis role="bold">Constraints</emphasis> on asset patterns,
+                        including</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>Logical composition constraints on concepts, e.g., the SNOMED
@@ -665,14 +668,13 @@
                         </listitem>
                     </orderedlist></para>
                     <para>Since some Quality Assurance Constraints do not always indicate an error,
-                        an Allow List could also be represented as a Semantic to record concepts
-                        that are allowed to not conform to a constraint. Constraints would be
-                        represented using semantics as they are self describing and can support
-                        multiple different representations for constraints (SNOMED
-                            CT<superscript>®</superscript> Expression Constraint Language, Drools,
-                        etc.). Representing Constraints as a Semantic also ensures STAMP. STAMP is
-                        versioned over time, capturing author information, allowing for tests and
-                        progress over different modules and paths.</para>
+                an Allow List could also be represented as a Semantic to record concepts that are
+                allowed to not conform to a constraint. Constraints would be represented using
+                semantics as they are self describing and can support multiple different
+                representations for constraints (SNOMED CT<superscript>®</superscript> Expression
+                Constraint Language, Drools, etc.). Representing Constraints as a Semantic also
+                ensures STAMP. STAMP is versioned over time, capturing author information and
+                allowing for tests and progress over different modules and paths.</para>
                     <para>Implementing Constraints would depend upon how the Constraints are written
                         and formatted. For example, Implementers could utilize a Rete algorithm
                         through something like Drools to implement Constraints.</para>

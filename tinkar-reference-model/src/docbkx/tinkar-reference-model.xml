@@ -76,7 +76,7 @@
             </orderedlist>
         </para>
                     <para>These elements together are referred to by the acronym “<emphasis
-                role="bold">STAMP</emphasis>”, as described previously. Every new assertion, whether
+                role="bold">STAMP</emphasis>,” as described previously. Every new assertion, whether
             a new component or a change to an existing component, must have a STAMP to determine
             when it is to be used. The STAMP properties support the ability to apply terminology
             components for specific purposes. For example, <itemizedlist>
@@ -126,11 +126,11 @@
             represented by an array of UUIDs with at least one UUID, but can be represented by more
             than one UUID in the case of a concept being derived from multiple sources. For example,
             the concept Acetaminophen (which exists in SNOMED CT<superscript>®</superscript>, LOINC,
-            and RxNorm) could have a UUID from each terminology, and be represented as an array of
+            and RxNorm) could have a UUID from each terminology and be represented as an array of
             UUIDs for this single concept within a Tinkar implementation. </para>
-        <para>A Concept is identified using UUID's and contains no information.  To assemble groups
-            of assertions and to provide information about Concepts, Tinkar uses a construct called
-            a <emphasis role="bold">Semantic</emphasis>. A Semantic is a class containing a set of
+        <para>A Concept is identified using UUIDs and contains no information. To assemble groups of
+            assertions and to provide information about Concepts, Tinkar uses a construct called a
+                <emphasis role="bold">Semantic</emphasis>. A Semantic is a class containing a set of
             predicates and objects about a subject. A semantic adds meaning to the components it
             references, through the fields it contains. A Semantic supports the specification of
             value sets, compositional definitions, and other components requiring internal
@@ -160,7 +160,7 @@
         <para>Since it is versioned, a Semantic is manifested as a <emphasis role="bold"
                 >SemanticChronology</emphasis>, containing a set of <emphasis role="bold"
                 >SemanticVersions</emphasis>. SemanticVersion is a single instance of a Semantic
-            with a STAMP and a SemanticChronology is the set of versions having a STAMP for a
+            with a STAMP, and a SemanticChronology is the set of versions having a STAMP for a
             Semantic. Concepts, too, are manifest as collections: a <emphasis role="bold"
                 >ConceptChronology</emphasis> consisting of a set of <emphasis role="bold"
                 >ConceptVersions</emphasis>. ConceptVersion is a single instance of an identifier
@@ -279,15 +279,15 @@
                             <para>In this output, one can see a sufficient set and necessary set.
                                 Bulleted items are properties in the node. The output is printed as
                                 a "depth first search." Each depth adds 3 characters of padding and
-                                shows how OWL EL++ definitions using only terminology and a standard
-                                property graph data structure, are represented. The 1st one is node
-                                index 0 which has a child of node index 8. Node index 0 is the OWL
-                                EL++ definition root. Node 8 points to Node 7, and the meaning of
-                                Node 8 is that it is a necessary set. Node 7 is 'And' and points to
-                                Node 5,1,6. Node 5's meaning is 'Role Type', Value is 'Role group',
-                                and its other property is 'Role Operator.' Node 5 points to Node 4.
-                                Node 4 is 'And.' Node 3 is 'Role Type.' Node 2 is Concept Reference.
-                                7 also points to 1 and 6 (Concept References). </para>
+                                shows how OWL EL++ definitions, using only terminology and a
+                                standard property graph data structure, are represented. The 1st one
+                                is node index 0 which has a child of node index 8. Node index 0 is
+                                the OWL EL++ definition root. Node 8 points to Node 7, and the
+                                meaning of Node 8 is that it is a necessary set. Node 7 is 'And' and
+                                points to Node 5,1,6. Node 5's meaning is 'Role Type', Value is
+                                'Role group', and its other property is 'Role Operator.' Node 5
+                                points to Node 4. Node 4 is 'And.' Node 3 is 'Role Type.' Node 2 is
+                                Concept Reference. 7 also points to 1 and 6 (Concept References). </para>
                         </listitem>
                         <listitem>
                             <para>The property graph model demonstrates that each vertex has a
@@ -329,7 +329,7 @@
         </para>
         <para>Using the Pattern, Semantics with varying fields and data types can be specified to
             represent any structure needed to provide meaning to a concept. For example, if a field
-            within a semantic is used to describe an SDO's website, the Meaning would be "URL,
+            within a semantic is used to describe an SDO's website, the Meaning would be "URL",
             DataType of "String," and Purpose of "Website." The Pattern would then contain an array
             of these FieldDefinitions.</para>
     </section>
@@ -401,7 +401,7 @@
         <para>In order to facilitate the computability of various, complex coordinates, including
             time series data, a graph structure is commonly used in software versioned control
             systems. A particular type of graph structure that is commonly used is a "version
-            graph", such as a directed acyclic graph. A version graph would enable a Tinkar
+            graph," such as a directed acyclic graph. A version graph would enable a Tinkar
             implementation to recover the state of the graph at a particular point in time. Most
             graph databases do not support versioning as a first-class concept. It is possible,
             however, to create a versioning scheme inside the graph model whereby nodes and

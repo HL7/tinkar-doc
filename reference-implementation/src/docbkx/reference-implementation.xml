@@ -97,7 +97,7 @@
                 <listitem>
                     <para>STR Pattern: This pattern is used to associate a String to a Component.
                         The type of association to a Component is represented by a Tinkar Model
-                        Concept. In the example below the type of String is SNOMED
+                        Concept. In the example below, the type of String is SNOMED
                             CT<superscript>®</superscript> integer ID.</para>
                     <figure>
                         <title>STR Pattern</title>
@@ -116,7 +116,7 @@
                 <listitem>
                     <para>REF Pattern: This pattern is used to associate a Concept to a Component.
                         The type of association is also represented by a Tinkar Model Concept. In
-                        the example below the type of association is "SNOMED legacy
+                        the example below, the type of association is "SNOMED legacy
                         implication."</para>
                     <figure>
                         <title>REF Pattern</title>
@@ -154,7 +154,7 @@
                 </caption>
             </figure>
         </para>
-      <para>In the following image the latest STAMP information for the
+      <para>In the following image, the latest STAMP information for the
                 LOINC<superscript>®</superscript> Concept Homocystine [Mass/time] in 24 hour Urine
             is presented. <figure>
                 <title>STAMP</title>
@@ -322,7 +322,7 @@
             relationships that are contained within the latest version of the SNOMED CT LOINC
             Integration files. The parents and attributes represented in the Sufficient sets are
             represented using SNOMED CT concepts based on mappings from the LOINC Part concepts to
-            SNOMED CT concepts <figure>
+            SNOMED CT concepts.<figure>
                 <title>LOINC<superscript>®</superscript> Stated Relationships</title>
                 <mediaobject>
                     <imageobject>
