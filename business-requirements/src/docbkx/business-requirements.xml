@@ -301,7 +301,7 @@
             <listitem>
                 <para>The production branch of that organization, e.g., for distributed development,
                     testing, staging, or production (a.k.a., <emphasis role="underline"
-                        linkend="requirement_23">Path) (Requirement 23).</emphasis> For systems that
+                        linkend="requirement_23">Path) </emphasis>(Requirement 23). For systems that
                     do not provide a path, a default path will be created for the system.</para>
             </listitem>
         </orderedlist>
@@ -378,15 +378,15 @@
                 managed as directed by documented policies. The import operation will usually
                 identify sets of such changes which require prioritization to prevent redundant
                 processing.</para>
-            <para><emphasis role="bold" linkend="requirement_24">Search (Requirement 24)</emphasis>: A user may use lexical or concept-based
+            <para><emphasis role="underline" linkend="requirement_24">Search (Requirement 24)</emphasis>: A user may use lexical or concept-based
                 parameters to search for a set of matching assets.</para>
-            <para><emphasis role="bold" linkend="requirement_25">View (Requirement 25)</emphasis>: A user may view an asset, the view
+            <para><emphasis role="underline" linkend="requirement_25">View (Requirement 25)</emphasis>: A user may view an asset, the view
                 consisting of related information associated in visually appropriate ways. This view
                 may omit information not appropriate to the user’s context. </para>
-            <para><emphasis role="bold" linkend="requirement_12">Compare (Requirement 12)</emphasis>: A user may view related assets,
+            <para><emphasis role="underline" linkend="requirement_12">Compare (Requirement 12)</emphasis>: A user may view related assets,
                 including versions of component, in a form designed to support analytical
                 comparison, e.g., side-by-side display.</para>
-            <para><emphasis role="bold">Authoring/Maintenance</emphasis>: A user may modify existing
+            <para><emphasis role="underline">Authoring/Maintenance</emphasis>: A user may modify existing
                 content or add new content. To preserve prior states, all modifications are recorded
                 as new versions of content: prior versions will remain unchanged. Any time a change
                 is made, the system will identify dependent assets and rules for handling these
@@ -409,11 +409,11 @@
                         path.</para>
                 </listitem>
             </itemizedlist>
-            <para><emphasis role="bold" linkend="requirement_29">Classify (Requirement 29)</emphasis>: A user may select a logical profile and
+            <para><emphasis role="emphasis" linkend="requirement_29">Classify (Requirement 29)</emphasis>: A user may select a logical profile and
                 classifier and use classification logic to test equivalence and subsumption of
                 identified assets, or to generate a set of inferred relationships from a set of
                 stated relationships. An inferred set may be persisted.</para>
-            <para><emphasis role="bold" linkend="requirement_30">Publish (Requirement 30)</emphasis>: A user may promote content into a
+            <para><emphasis role="emphasis" linkend="requirement_30">Publish (Requirement 30)</emphasis>: A user may promote content into a
                 “publication” path and produce a transmissible payload of content that can be
                 consumed by other repositories. This promotion is a change and may require
                 resolution of constraints on membership in that path.</para>
