@@ -276,32 +276,32 @@
             <listitem>
                 <para>The <emphasis role="underline" linkend="requirement_19"> Status</emphasis> of
                     the asset: whether it should be considered active or inactive in the context of
-                    these other attributes (Requirement 19). For systems that do not support status,
+                    these other attributes <emphasis role="underline" linkend="requirement_19">(Requirement 19)</emphasis>. For systems that do not support status,
                     the default will be "active."</para>
             </listitem>
             <listitem>
                 <para>The <emphasis role="underline" linkend="requirement_20">Time</emphasis> of the
-                    change, specified with a time zone and at an appropriate precision (Requirement
-                    20). For systems that do not provide a time, the default will be the release
+                    change, specified with a time zone and at an appropriate precision <emphasis role="underline" linkend="requirement_20">(Requirement
+                    20)</emphasis>. For systems that do not provide a time, the default will be the release
                     time.</para>
             </listitem>
             <listitem>
                 <para>The <emphasis role="underline" linkend="requirement_21">Author</emphasis> of
-                    the creation or change, unambiguously identified (Requirement 21). For systems
+                    the creation or change, unambiguously identified <emphasis role="underline" linkend="requirement_21">(Requirement 21)</emphasis>. For systems
                     that do not provide an author, a default author will be created for the
                     system.</para>
             </listitem>
             <listitem>
                 <para>The domain or organizational name of the larger asset within which the
-                    component is meaningful, such as code system or edition (a.k.a., <emphasis
-                        role="underline" linkend="requirement_22">Module</emphasis>) (Requirement
-                    22). For systems that do not provide a module, a default module will be created
+                    component is meaningful, such as code system or edition <emphasis
+                        role="underline" linkend="requirement_22">(a.k.a., Module) (Requirement
+                    22)</emphasis>. For systems that do not provide a module, a default module will be created
                     for the system.</para>
             </listitem>
             <listitem>
                 <para>The production branch of that organization, e.g., for distributed development,
-                    testing, staging, or production (a.k.a., <emphasis role="underline"
-                        linkend="requirement_23">Path) </emphasis>(Requirement 23). For systems that
+                    testing, staging, or production <emphasis role="underline"
+                        linkend="requirement_23">(a.k.a., Path) (Requirement 23)</emphasis>. For systems that
                     do not provide a path, a default path will be created for the system.</para>
             </listitem>
         </orderedlist>
@@ -367,7 +367,7 @@
             practices for these cases.</para>
         <section>
             <title>Operations</title>
-            <para><emphasis role="bold">Import</emphasis>: A user may identify content from another
+            <para><emphasis role="underline">Import</emphasis>: A user may identify content from another
                 system and write it into the Terminology Repository. When this happens, the new
                 content will be recorded in the common, self-describing format. When a set of
                 content is imported, rules asserted by the source steward or the Terminology
@@ -409,11 +409,11 @@
                         path.</para>
                 </listitem>
             </itemizedlist>
-            <para><emphasis role="emphasis" linkend="requirement_29">Classify (Requirement 29)</emphasis>: A user may select a logical profile and
+            <para><emphasis role="underline" linkend="requirement_29">Classify (Requirement 29)</emphasis>: A user may select a logical profile and
                 classifier and use classification logic to test equivalence and subsumption of
                 identified assets, or to generate a set of inferred relationships from a set of
                 stated relationships. An inferred set may be persisted.</para>
-            <para><emphasis role="emphasis" linkend="requirement_30">Publish (Requirement 30)</emphasis>: A user may promote content into a
+            <para><emphasis role="underline" linkend="requirement_30">Publish (Requirement 30)</emphasis>: A user may promote content into a
                 “publication” path and produce a transmissible payload of content that can be
                 consumed by other repositories. This promotion is a change and may require
                 resolution of constraints on membership in that path.</para>
