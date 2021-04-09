@@ -192,6 +192,18 @@
                         <entry>A standard describing data formats and elements and an application
                             programming interface for exchanging electronic health records. </entry>
                     </row>
+                    <row>
+                        <entry>Capability Maturity Model</entry>
+                        <entry>
+                            <para>A development model that can be viewed as a set of structured
+                                levels that describe how well the behaviors, practices, and
+                                processes of an organization can reliably and sustainably produce
+                                required outcomes. There are five levels defined along the continuum
+                                of the capability maturity model and the model provides a
+                                theoretical continuum along which process maturity can be developed
+                                incrementally from one level to the next.</para>
+                        </entry>
+                    </row>
                 </tbody>
             </tgroup>
         </informaltable>
