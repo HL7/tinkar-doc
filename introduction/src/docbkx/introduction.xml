@@ -485,7 +485,7 @@
       makes use of the Terminology Knowledge layer concepts to specify
         <emphasis>non-defining</emphasis> facts that may be used by procedural knowledge algorithms.
       An example fact might be that "thiazide diuretics treat hypertension." Assertional Knowledge
-      may indicate what symptoms may be associated with a disorder. </para>
+      may also indicate what symptoms may be associated with a disorder. </para>
     <para>
       <emphasis role="bold">Procedural Knowledge</emphasis> – Procedural knowledge, also known as
         <emphasis>imperative knowledge</emphasis>, is the knowledge exercised in the performance of
