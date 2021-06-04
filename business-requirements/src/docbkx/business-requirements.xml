@@ -451,7 +451,9 @@
                             <para>An indicator of case sensitivity </para>
                         </listitem>
                         <listitem>
-                            <para>A type</para>
+                            <para>A type used to represent whether a term is a synonym, fully
+                                qualified name (for example: SNOMED CT Fully Specified Name or LOINC
+                                Long Common Name), definition, etc.</para>
                         </listitem>
                     </orderedlist>
                 </listitem>
@@ -462,7 +464,8 @@
                             <para>At least one term</para>
                         </listitem>
                         <listitem>
-                            <para>At least one parent, except for root concepts</para>
+                            <para>At least one parent, except for root concepts or terminologies
+                                that are not hierarchical</para>
                         </listitem>
                     </orderedlist>
                 </listitem>
