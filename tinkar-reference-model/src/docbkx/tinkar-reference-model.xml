@@ -97,6 +97,11 @@
             unversioned IdentifiedComponents that are referenced by the components they scope. Since
             STAMP uses versioned concepts (that have a STAMP), having the STAMP as a versioned
             component would lead to an infinite regress. </para>
+        <para>Not all terminology systems contain all the information recorded in STAMP, but
+            defaults can be used in cases where it is missing.​  For example, SNOMED CT contains the
+            Status, Time, and Module but do not distribute the Path or Author.  Since most
+            terminologies only release a Production path, the Path could be defaulted to Production
+            Path and the Author could be defaulted to  SNOMED CT Author. </para>
         <para>All IdentifedComponents in the knowledge base will consist of a series of change
             records, called ComponentVersions, (beginning with the “Create” version), all associated
             to an underlying ComponentChronology.</para>
@@ -452,10 +457,13 @@
                             </listitem>
                             <listitem>
                                 <para>Concepts inclusion/exclusion for a particular domain</para>
+                                
                             </listitem>
                         </orderedlist></para>
                 </listitem>
             </orderedlist></para>
+        <para>As the Tinkar specification evolves towards a DSTU and
+            Connectathons, more coordinates and detailing will be provided. </para>
         <section>
             <title>Calculating Coordinates</title>
             <para>The ComponentChronology contains all the versions of a component from the date it
@@ -495,10 +503,19 @@
                 important not only for viewing and searching, but also to determine the appropriate
                 preferred name for displaying a hierarchy.</para>
         </section>
-        <section>
-            <title>Future Iterations</title>
-            <para>As the Tinkar specification evolves towards a DSTU and Connectathons, more
-                coordinates and detailing will be provided. </para>
-        </section>
+    </section>
+    <section>
+        <title>Future Iterations</title>
+        <para>The current Tinkar Reference Model is expressive enough to be able to represent any
+            terminology. Future iterations of the Tinkar specification will require harmonized
+            implementation guides to be created for each terminology.  Doing so will ensure that
+            implementers will be able manage terminology produced by a variety of organizations
+            across a healthcare enterprise. Harmonized implementation guides will also support
+            healthcare organizations' standard terminology modules, value sets, and coding systems
+            as well as local terms and equivalence mappings. </para>
+        <para>Additional metadata from standards like Dublin Core or FHIR that may not currently be
+            supported with the current Tinkar Reference Model could be supported using Concepts and
+            Semantics.  However, further changes to the Tinkar Reference Model may be needed if they
+            cannot be supported using the current model.</para>
     </section>
 </chapter>
