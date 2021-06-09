@@ -324,14 +324,10 @@
                     within certain terminologies is a difficult subject that is out of scope for
                     this document, but having support for the ability to create modules, recognize
                     redundancy, and merge or retire concepts are important requirements that must be
-                    supported.</para><para><link
-                        xlink:href="https://www.win.tue.nl/%7Ewstomv/edu/2ip30/references/criteria_for_modularization.pdf"
-                    /></para>
-                <para><link xlink:href="https://appunite.com/blog/modular-software-design-mistakes"
-                    /></para>
-                <para><link
-                        xlink:href="https://shanebdavis.medium.com/the-5-essential-elements-of-modular-software-design-6b333918e543"
-                    /></para>
+                    supported. <link
+                        linkend="bib13">[12]</link> <link
+                            linkend="bib14">[13]</link> <link
+                                linkend="bib15">[14]</link>  </para>
             </listitem>
             <listitem>
                 <para>“Time” supports the ability to apply CDS rules as they would have looked in

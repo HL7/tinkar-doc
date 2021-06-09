@@ -157,8 +157,9 @@
             <itemizedlist>
               <listitem>
                 <para>Difficulty with determining that codes/terms using standard terminologies from
-                  disparate health IT systems represent a common clinical idea/concept (e.g.,
-                  “COVID-19 positive” and "COVID-19 detected").</para>
+                  disparate health IT systems represent a common clinical idea/concept (e.g., “Feels
+                  Feverish” in the Temperature Symptoms SNOMED CT hierarchy versus "Feels
+                  Hot/Feverish" in the Observation and Sensation SNOMED CT hierarchy).</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -367,15 +368,14 @@
       and use very little of the additional information (relationships between concepts) that may be
       available from the source terminology. It does not permit classification to identify cases of
       possible missed synonymy. Second, issues of currency occur because of dyssynchrony of release
-      dates between source terminologies and the UMLS itself. Third, though there are editing
-      guidelines in place, there may be substantial variation in editing practices between the
-      individual editors. Fourth, the UMLS does not support a contribution model. That is, it is a
-      static file that cannot be amended to support additional terms that may be required to fill
-      gaps in existing terminologies subsumed by the Metathesaurus; it does not support extensions.
-      Lastly, there is no efficient format for sharing integrated Metathesaurus content (though
-      there is RRF). The UMLS is not an architecture for terminology management. It may only serve
-      as a reference, noting the aforementioned limitations. An implementation of Tinkar may help
-      address these limitations. </para>
+      dates between source terminologies and the UMLS itself. Third, the UMLS does not support a
+      contribution model. That is, it is a static file that cannot be amended to support additional
+      terms that may be required to fill gaps in existing terminologies subsumed by the
+      Metathesaurus; it does not support extensions. Lastly, there is no efficient format for
+      sharing integrated Metathesaurus content (though there is Rich Release Format [RRF]). The UMLS
+      is not an architecture for terminology management. It may only serve as a reference, noting
+      the aforementioned limitations. An implementation of Tinkar may help address these
+      limitations. </para>
     <para>CTS2 is an architecture for terminology management that supports history retrieval, though
       it does not support an arbitrarily granular change set model for versioning. The Tinkar
       Specification, in contrast, provides that every new assertion, whether a new component or a
@@ -394,9 +394,13 @@
   </section>
   <section>
     <title>Benefits of Self-Describing Architecture</title>
-    <para>Tinkar is self-describing and completely machine processed. Key advantages of a
-      self-describing architecture (or metadata driven architecture) <link linkend="bib9">[9]</link>
-      include the following details: </para>
+    <para>Tinkar is self-describing and completely machine processed. A self-describing architecture
+      is defined in a report from Queensland University of Technology as follow: "[t]he idea is that
+      self-descriptions of data and other techniques would allow context-understanding programs to
+      selectively find what users want, or for programs to work on behalf of humans and organizations
+      to make them more scalable, efficient and productive." <link linkend="bib12">[9]</link> Key
+      advantages of a self-describing architecture (or metadata driven architecture) <link
+        linkend="bib9">[10]</link> include the following details: </para>
     <para><emphasis role="bold">Changes can be reviewed immediately</emphasis> – Every action or
       change by end users can be immediately previewed or tested, without needing any compilation or
       deployment process. The review can also be done before saving or publishing the changes, which
@@ -480,7 +484,7 @@
     <para><emphasis role="bold">Statement Model</emphasis> – The Statement Model layer is
       responsible for defining how data elements are combined to create a statement. This layer
       reuses the artifacts defined in the Terminology Knowledge layer. The ANF Reference Model <link
-        linkend="bib10">[10]</link> belongs in this layer.</para>
+        linkend="bib10">[11]</link> belongs in this layer.</para>
     <para><emphasis role="bold">Assertional Knowledge</emphasis> – The Assertional Knowledge layer
       makes use of the Terminology Knowledge layer concepts to specify
         <emphasis>non-defining</emphasis> facts that may be used by procedural knowledge algorithms.

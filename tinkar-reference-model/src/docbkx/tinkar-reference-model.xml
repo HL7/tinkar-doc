@@ -256,7 +256,7 @@
                                         as the base for code generation. The AST is often used to
                                         generate an intermediate representation, sometimes called an
                                         intermediate language, for the code generation." <link
-                                            linkend="bib11">[11]</link>
+                                            linkend="bib11">[15]</link>
                                     </para>
                                 </listitem>
                                 <listitem>
@@ -502,6 +502,12 @@
                 be applied as well. For example, applying a language and dialect coordinate will be
                 important not only for viewing and searching, but also to determine the appropriate
                 preferred name for displaying a hierarchy.</para>
+        </section>
+        <section>
+            <title>Next Steps Around Coordinates</title>
+            <para>As the Tinkar specification evolves towards a DSTU and Connectathons, more
+                coordinates and detailing will be</para>
+            <para>provided.</para>
         </section>
     </section>
     <section>

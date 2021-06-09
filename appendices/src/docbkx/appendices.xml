@@ -624,7 +624,7 @@
                             correctness, the AST serves as the base for code generation. The AST is
                             often used to generate an intermediate representation, sometimes called
                             an intermediate language, for the code generation." <link
-                                linkend="bib11">[11]</link>
+                                linkend="bib11">[15]</link>
                         </para>
                     </listitem>
                     <listitem>
