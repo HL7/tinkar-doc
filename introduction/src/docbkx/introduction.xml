@@ -159,7 +159,9 @@
                 <para>Difficulty with determining that codes/terms using standard terminologies from
                   disparate health IT systems represent a common clinical idea/concept (e.g., “Feels
                   Feverish” in the Temperature Symptoms SNOMED CT hierarchy versus "Feels
-                  Hot/Feverish" in the Observation and Sensation SNOMED CT hierarchy).</para>
+                  Hot/Feverish" in the Observation and Sensation SNOMED CT hierarchy. Both concepts
+                  are Findings in SNOMED CT but there is no unifying way to identify
+                  equivalence).</para>
               </listitem>
             </itemizedlist>
           </para>
