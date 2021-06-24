@@ -11,7 +11,7 @@
         code lists/value sets. This section describes classes of objects that support a common
         foundational framework for terminology and knowledge base systems (e.g. SNOMED
             CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm, HL7, etc.).
-        An implemenation of Tinkar can provide a single representation for all terminologies
+        An implementation of Tinkar can provide a single representation for all terminologies
         required in the U.S. and other countries, while also providing a better foundation for
         managing change. Tinkar could support the operation of a variety of systems intended to
         deliver knowledge management for terminology to vendors providers, and standards-development
