@@ -13,12 +13,12 @@
                         capture domain information in an information system.</entry>
                 </row>
                 <row>
-                    <entry>Standard terminology</entry>
+                    <entry>Standard Terminology</entry>
                     <entry>A terminology developed and published for use across organizational
                         boundaries.</entry>
                 </row>
                 <row>
-                    <entry>Enterprise terminology</entry>
+                    <entry>Enterprise Terminology</entry>
                     <entry>The set of terminology assets that are specific to and maintained by a
                         healthcare organization, including, locations and services and their
                         relationships to standard terminologies.</entry>
@@ -65,7 +65,7 @@
                 </row>
                 <row>
                     <entry>Branch</entry>
-                    <entry>"Branch" as commonly used in version control, implies a tree structure,
+                    <entry>“Branch” as commonly used in version control, implies a tree structure,
                         where a version configuration is allowed to only have one origin. In many
                         instances, supported version configuration has more than one origin. For
                         example, a mapping configuration may have an origin of T1 on System A, and
@@ -92,7 +92,7 @@
                         and imported content. </entry>
                 </row>
                 <row>
-                    <entry>Configuration requirements</entry>
+                    <entry>Configuration Requirements</entry>
                     <entry>
                         <para>Functionality required to make a Tinkar repository operational.</para>
                     </entry>
@@ -139,8 +139,7 @@
                     </row>
                     <row>
                         <entry>
-                            <para>Foundation Layer of Knowledge Architecture </para>
-                            <para> </para>
+                            <para> Foundation Layer of Knowledge Architecture</para>
                         </entry>
                         <entry>The Foundation layer provides the common elements of interoperability
                             such as object identity, versioning, modularity, and knowledge
@@ -149,10 +148,7 @@
                             controlled over time.</entry>
                     </row>
                     <row>
-                        <entry>
-                            <para>Terminology Knowledge Layer of Knowledge Architecture </para>
-                            <para> </para>
-                        </entry>
+                        <entry> Terminology Layer of Knowledge Architecture</entry>
                         <entry>The Terminology Knowledge Layer provides structured sets of medical
                             terms and codes that define concepts of interest. This includes
                             descriptions, dialects, language, and semantic hierarchy; SNOMED
@@ -188,7 +184,7 @@
                             systems.</entry>
                     </row>
                     <row>
-                        <entry>FHIR (Fast Healthcare Interoperability Resources)</entry>
+                        <entry>FHIR (Fast Healthcare Interoperability Resource)</entry>
                         <entry>A standard describing data formats and elements and an application
                             programming interface for exchanging electronic health records. </entry>
                     </row>

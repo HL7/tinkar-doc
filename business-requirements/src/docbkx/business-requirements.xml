@@ -31,7 +31,7 @@
                                 information in the patient record. This may include signs, symptoms,
                                 impressions, diagnoses, orders, notes, or other assets.</para>
                             <para>This operation may initiate workflow processes or automated
-                                processes such as Clinical Decision Support suggestions.</para>
+                                processes such as clinical decision support suggestions.</para>
                             <para>For structured data using standard terminologies, the <emphasis
                                     role="underline" linkend="requirement_4">terms available are
                                     appropriate (Requirement 4)</emphasis> for the clinical context,
@@ -39,7 +39,7 @@
                                 and for the data context (e.g., data entry fields may not support
                                 inactive or deprecated terms that would be allowed in search or
                                 analytical contexts).</para>
-                            <para>If the available terminology does not support the provider's
+                            <para>If the available terminology does not support the provider’s
                                 needs, the provider may assert a need for a new term.</para>
                             <itemizedlist>
                                 <listitem>
@@ -76,7 +76,8 @@
                                 identify the change and its effect.</para>
                             <itemizedlist>
                                 <listitem>
-                                    <para><emphasis role="bold">Review Knowledge Base changes relevant to record</emphasis></para>
+                                    <para><emphasis role="bold">Review Knowledge Base Changes
+                                            Relevant to Record</emphasis></para>
                                 </listitem>
                             </itemizedlist>
                             <para>If the system identifies a relevant change, the provider may
@@ -91,6 +92,10 @@
                 </tbody>
             </tgroup>
         </informaltable>
+        <para> </para>
+        <para> </para>
+        <para> </para>
+        <para> </para>
         <para><emphasis role="italic"> Clinical Use Cases</emphasis></para>
         <para>The key capability for a clinician should be <emphasis role="underline"
                 linkend="requirement_8">to record and review data quickly and accurately
@@ -107,8 +112,8 @@
             payor, a professional society, or a locally chartered board of specialists.</para>
         <para>To support these needs, the Enterprise Terminology that supports the clinical systems
             must <emphasis role="underline" linkend="requirement_9">manage change systematically
-                (Requirement 9)</emphasis>, and it must do so for both internally managed and
-            externally sourced assets. </para>
+                (Requirement 9)</emphasis>, and it must do so for both internally-managed and
+            externally-sourced assets. </para>
     </section>
     <section>
         <title>Asset Curation Requirements</title>
@@ -134,7 +139,7 @@
                 <listitem>
                     <para><emphasis role="underline" linkend="requirement_11">Version history
                             retention (Requirement 11)</emphasis>: Each version of an object must be
-                        persisted as the object changes over time, along with meta-data indicating
+                        persisted as the object changes over time, along with metadata indicating
                         its version identifier, time of creation, creating author, and branch of the
                         version control system on which it was created. Further, every version of
                         each object must remain available for retrieval and inspection.</para>
@@ -242,7 +247,7 @@
                                 relationships, inserting a concept in between two existing
                                 concepts). <emphasis>Note that a standard can only be modified by
                                     the standard owner</emphasis>. A client enterprise may add to or
-                                modify the content in an "overlay," but those changes are part of
+                                modify the content in an “overlay,” but those changes are part of
                                 the local enterprise assets. The client enterprise cannot actually
                                 modify the standard.</para>
                         </entry>
@@ -274,10 +279,11 @@
         <para>The context information of the first requirement includes the following:</para>
         <orderedlist>
             <listitem>
-                <para>The <emphasis role="underline" linkend="requirement_19"> Status</emphasis> of
+                <para>The <emphasis role="underline" linkend="requirement_19">Status</emphasis> of
                     the asset: whether it should be considered active or inactive in the context of
-                    these other attributes <emphasis role="underline" linkend="requirement_19">(Requirement 19)</emphasis>. For systems that do not support status,
-                    the default will be "active."</para>
+                    these other attributes <emphasis role="underline" linkend="requirement_19"
+                        >(Requirement 19)</emphasis>. For systems that do not support status, the
+                    default will be “active.”</para>
             </listitem>
             <listitem>
                 <para>The <emphasis role="underline" linkend="requirement_20">Time</emphasis> of the
@@ -309,7 +315,7 @@
                 >STAMP</emphasis>.” Every new assertion, whether a new asset or a change to an
             existing asset, must have a STAMP to determine when it is to be used. The STAMP
             properties support the ability to apply terminology assets for specific purposes. For
-            example,</para>
+            example:</para>
         <itemizedlist>
             <listitem>
                 <para>“Path” can be used to test provisional content without physically swapping out
@@ -355,7 +361,7 @@
             goes one step further by making the relationship between an element and its containing
             class an explicit part of every triplet. If this relationship is specified in a
             controlled terminology, then assertions can be tested for validity. For example, if an
-            RDF Schema specification (RDFS) asserts that the finding site of a lesion must be an
+            RDF Schema Specification (RDFS) asserts that the finding site of a lesion must be an
             anatomical feature, then assertions about actual lesions can be tested for valid finding
             sites. Furthermore, this logic specifies a “range” in the same syntactic structure as
             the instance assertion: changes to the knowledge base do not affect the syntactical
@@ -376,13 +382,13 @@
             practices for these cases.</para>
         <section>
             <title>Operations</title>
-            <para><emphasis role="underline">Import</emphasis>: A user may identify content from another
-                system and write it into the Terminology Repository. When this happens, the new
-                content will be recorded in the common, self-describing format. When a set of
+            <para><emphasis role="underline">Import</emphasis>: A user may identify content from
+                another system and write it into the Terminology Repository. When this happens, the
+                new content will be recorded in the common, self-describing format. When a set of
                 content is imported, rules asserted by the source steward or the Terminology
-                Repository steward may be used to assert structural equivalence in the repository –
-                i.e., different source concepts may be represented as alternate representations of
-                the same root concept. During importation of subsequent versions of a system,
+                Repository steward may be used to assert structural equivalence in the repository
+                (i.e., different source concepts may be represented as alternate representations of
+                the same root concept). During importation of subsequent versions of a system,
                 changes to assets on which other enterprise assets depend must be identified and
                 managed as directed by documented policies. The import operation will usually
                 identify sets of such changes which require prioritization to prevent redundant
@@ -392,9 +398,10 @@
             <para><emphasis role="underline" linkend="requirement_25">View (Requirement 25)</emphasis>: A user may view an asset, the view
                 consisting of related information associated in visually appropriate ways. This view
                 may omit information not appropriate to the user’s context. </para>
-            <para><emphasis role="underline" linkend="requirement_12">Compare (Requirement 12)</emphasis>: A user may view related assets,
-                including versions of component, in a form designed to support analytical
-                comparison, e.g., side-by-side display.</para>
+            <para><emphasis role="underline" linkend="requirement_12">Compare (Requirement
+                    12)</emphasis>: A user may view related assets, including versions of component,
+                in a form designed to support analytical comparison (e.g., side-by-side
+                display).</para>
             <para><emphasis role="underline">Authoring/Maintenance</emphasis>: A user may modify existing
                 content or add new content. To preserve prior states, all modifications are recorded
                 as new versions of content: prior versions will remain unchanged. Any time a change
@@ -432,7 +439,7 @@
         <section>
             <title>Patterns for Representing Various Assets</title>
             <para>The data architecture must support patterns for the representation of many kinds
-                of assets. A minimal list includes the following.</para>
+                of assets. A minimal list includes the following:</para>
             <orderedlist>
                 <listitem>
                     <para>A <emphasis role="bold">term</emphasis> must have: </para>
@@ -524,7 +531,7 @@
                 support:</para>
             <orderedlist continuation='continues'>
                 <listitem><para><emphasis role="bold">Any assembly of relationships</emphasis> associating one concept with
-                        another must have:</para>
+                        another which must have:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
                             <para>At least one default rule (constraint) for handling changes (e.g.,
@@ -571,8 +578,8 @@
                             <para>Relationships for subsumption assertions</para>
                         </listitem>
                         <listitem>
-                            <para>Relationships for other functions, e.g., CDC Reportable Condition
-                                Mapping Table</para>
+                            <para>Relationships for other functions (e.g., CDC Reportable Condition
+                                Mapping Table)</para>
                         </listitem>
                     </orderedlist>
                 </listitem>
@@ -581,21 +588,21 @@
                         including:</para>
                     <orderedlist numeration='loweralpha'>
                         <listitem>
-                            <para>Logical composition constraints on concepts, e.g., the SNOMED
-                                    CT<superscript>®</superscript> concept model</para>
+                            <para>Logical composition constraints on concepts (e.g., the SNOMED
+                                    CT<superscript>®</superscript> concept model)</para>
                         </listitem>
                         <listitem>
-                            <para>Syntactic compositional constraints on strings, e.g., MIME types,
-                                ISO languages, or UCUM units</para>
+                            <para>Syntactic compositional constraints on strings (e.g., MIME types,
+                                ISO languages, or UCUM units)</para>
                         </listitem>
                         <listitem>
                             <para>Pattern constraints, e.g., presence of exactly one name classified
                                 as “fully specified,” or names in specified languages</para>
                         </listitem>
                         <listitem>
-                            <para>Rules that may govern modifications to other assets, e.g.,
+                            <para>Rules that may govern modifications to other assets (e.g.,
                                 incremental addition of effort estimates based on known problematic
-                                terms.</para>
+                                terms).</para>
                         </listitem>
                     </orderedlist></listitem>
             </orderedlist>
@@ -605,15 +612,16 @@
                 managing the presentation:</para>
             <orderedlist continuation='continues'>
                 <listitem>
-                    <para>Language: A user may assert a required or preferred language, or a set of
-                        ranked language priorities. </para>
+                    <para><emphasis role="bold">Language</emphasis>: A user may assert a required or
+                        preferred language, or a set of ranked language priorities. </para>
                 </listitem>
                 <listitem>
-                    <para>Logic: A user may select the parameters for logical classification.</para>
+                    <para><emphasis role="bold">Logic</emphasis>: A user may select the parameters
+                        for logical classification.</para>
                 </listitem>
                 <listitem>
-                    <para>Navigation: A user may select the parameters for presentation of the
-                        logical classification </para>
+                    <para><emphasis role="bold">Navigation</emphasis>: A user may select the
+                        parameters for presentation of the logical classification </para>
                 </listitem>
             </orderedlist>
             <para>Like other concepts, these can be represented by the core data architecture. The
@@ -649,15 +657,15 @@
                         <orderedlist numeration="arabic" continuation="continues">
                         <listitem>
                             <para>All concepts must have at least one Fully Qualified Name within at
-                                least one Language or Dialect.</para>
+                        least one Language or Dialect</para>
                         </listitem>
                         <listitem>
                             <para>All concepts must have at least one Name specified as Preferred
-                                within at least one Language or Dialect.</para>
+                        within at least one Language or Dialect</para>
                         </listitem>
                         <listitem>
                             <para>All concepts must have at least one parent, unless it is a root
-                                concept.</para>
+                        concept</para>
                         </listitem>
                     </orderedlist>
                     <para>Constraints can be applied (or not applied) based on various criteria to
@@ -676,8 +684,8 @@
                         </listitem>
                         <listitem>
                             <para>Modeling templates can be specified to ensure that new content
-                                that is created under a certain node in a hierarchy uses similar
-                                wording and relationships.</para>
+                            that is created under a certain node in a hierarchy uses similar wording
+                            and relationships</para>
                         </listitem>
                     </orderedlist></para>
                     <para>Since some Quality Assurance Constraints do not always indicate an error,
@@ -689,8 +697,8 @@
                 ensures STAMP. STAMP is versioned over time, capturing author information and
                 allowing for tests and progress over different modules and paths.</para>
                     <para>Implementing Constraints would depend upon how the Constraints are written
-                        and formatted. For example, Implementers could utilize a Rete algorithm
-                        through something like Drools to implement Constraints.</para>
+                and formatted. For example, implementers could utilize a Rete algorithm through
+                something like Drools to implement Constraints.</para>
         </section>
         <section>
             <title>Minimally Required Content</title>
@@ -700,11 +708,11 @@
                 <listitem><para>Infrastructure concepts a.k.a Tinkar Model Concepts to support the core patterns listed above</para></listitem>
                 <listitem><para>Import rules to support import of standard terminologies, including:</para>
                     <orderedlist numeration='loweralpha'>
-                            <listitem><para>Equivalences to support semantic integration of terminologies
-                                (e.g., that a LOINC<superscript>®</superscript> “system”
-                                instantiates the same relationship concept as the SNOMED
-                                    CT<superscript>®</superscript> “inheres in”
-                                attribute)</para></listitem>
+                            <listitem><para>Equivalences to support semantic integration of terminologies (e.g., that a
+                                        LOINC<superscript>®</superscript> “system” instantiates the
+                                    same relationship concept as the SNOMED
+                                        CT<superscript>®</superscript> “inheres in”
+                                    attribute)</para></listitem>
                             <listitem>
                                 <para>Exclusions to support removal of non-semantic properties from
                                     classification (e.g., RxNorm Translated CDs)</para>
