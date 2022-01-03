@@ -19,7 +19,7 @@
     Healthcare organizations must adopt and integrate subsets or modules of various reference
     terminology and manage references, dependencies, versions, and releases. It is important for the
     integrity of medical records that the change history of concepts and value sets can be managed
-    and tracked to allow the exchange of either current or retrospective health records. Therefore,
+    and tracked to allow the exchange of either current or retrospective medical records. Therefore,
     enterprise terminology requires integrated terminology using a common representation and
     management.</para>
   <para>Despite the need to use standard terminologies in a highly integrated way, there is no
@@ -40,14 +40,14 @@
     that delivers integrated terminology to the enterprise and its information systems. In doing so,
     it addresses the differences in management and structure across reference terminology, local
     concepts, and code lists/value sets. </para>
-  <para>The capability maturity model is a development model and can be viewed as a set of
+  <para>The Capability Maturity Model is a development model and can be viewed as a set of
     structured levels that describe how well the behaviors, practices, and processes of an
     organization can reliably and sustainably produce required outcomes. There are five levels
-    defined along the continuum of the capability maturity model (see below). The model provides a
+    defined along the continuum of the Capability Maturity Model (see below). The model provides a
     theoretical continuum along which process maturity can be developed incrementally from one level
     to the next. An implementation of the Tinkar Specification can provide a single representation
     for all terminologies required in the U.S. and other countries, while also providing a better
-    foundation for maturing change management models as described by the capability maturity model
+    foundation for maturing change management models as described by the Capability Maturity Model
       <link linkend="bib2">[2]</link>:</para>
   <para>
     <orderedlist>
@@ -89,14 +89,14 @@
       clinical data using clinical statements and clinical terminologies in non-standardized ways.
       Interoperability specifications aim to require terminology bindings to concepts, code systems,
       and reusable value sets. Currently, there is variation in clinical data exchange across the
-      enterprise, as current payloads and clinical statements use inconsistent and highly variable
+      enterprise, as existing payloads and clinical statements use inconsistent and highly variable
       enterprise terminologies. The management of the concepts, code systems, and value sets is
       non-trivial because developers, implementers, and end users are forced to manage “unnecessary
       complexity.” For example:</para>
     <itemizedlist>
       <listitem>
         <para>Representation of medications: RxNorm codes overlap with CVX codes. Investigational
-          vaccines from the FDA are not represented in either RxNorm or CVX or SNOMED
+          vaccines from the FDA are not represented in RxNorm, CVX, or SNOMED
             CT<superscript>®</superscript>.</para>
       </listitem>
       <listitem>
@@ -108,15 +108,14 @@
       standard terminologies and standard formats. The Institute of Medicine report, <emphasis
         role="italic">Health IT and Patient Safety: Building Safer Systems for Better
         Care</emphasis>, highlighted the unintended consequences of health IT-induced harm that can
-      result in serious injury and death due to dosing errors, failing to detect serious illnesses,
-      and delaying treatment due to poor human-computer interactions, confusing clinical
-      terminology, or unreliable data quality <link linkend="bib3">[3]</link>. Despite the
-      widespread understanding of the importance of the quality of clinical data, there is currently
-      a lack of integration and management of clinical terminologies across the healthcare
-      enterprise. </para>
+      result in serious injury and death due to dosing errors, failure to detect serious illnesses,
+      and delayed treatment due to poor human-computer interactions, confusing clinical terminology,
+      or unreliable data quality <link linkend="bib3">[3]</link>. Despite the widespread
+      understanding of the importance of the quality of clinical data, there is currently a lack of
+      integration and management of clinical terminologies across the healthcare enterprise. </para>
     <para>Tinkar intends to support integration of clinical terminology and local concepts to
-      support increased data quality for interoperable clinical information. Quality clinical data
-      enables healthcare systems across the enterprise to conduct robust and meaningful data
+      support increased data quality for interoperable clinical information. High-quality clinical
+      data enables healthcare systems across the enterprise to conduct robust and meaningful data
       analysis and increase overall interoperability, which ultimately enhances quality of care
       across all medical facilities. </para>
       <!-- <figure> -->
@@ -157,8 +156,12 @@
             <itemizedlist>
               <listitem>
                 <para>Difficulty with determining that codes/terms using standard terminologies from
-                  disparate health IT systems represent a common clinical idea/concept (e.g.,
-                  “COVID-19 positive” and "COVID-19 detected").</para>
+                  disparate health IT systems represent a common clinical idea/concept (e.g., “Feels
+                  Feverish” in the Temperature Symptoms SNOMED CT<superscript>®</superscript>
+                  hierarchy versus “Feels Hot/Feverish” in the Observation and Sensation SNOMED
+                    CT<superscript>®</superscript> hierarchy. Both concepts are Findings in SNOMED
+                    CT<superscript>®</superscript> but there is no unifying way to identify
+                  equivalence).</para>
               </listitem>
             </itemizedlist>
           </para>
@@ -170,9 +173,9 @@
             <itemizedlist>
               <listitem>
                 <para>A new set of local terminology may be managed with value sets and concept gaps
-                  addressed in quick iterations (e.g., "COVID-19 negative test result" was needed in
-                  practical use before official SDO releases, or gaps like "mild anemia" which was
-                  proposed but not accepted by both the international and U.S. SNOMED
+                  addressed in quick iterations (e.g., “COVID-19 negative test result” was needed in
+                  practical use before official SDO releases, or gaps like “mild anemia”, which was
+                  proposed, but not accepted, by both the international and U.S. SNOMED
                     CT<superscript>®</superscript> release).</para>
               </listitem>
             </itemizedlist>
@@ -185,7 +188,7 @@
               <listitem>
                 <para>Incorrect usage or representation of clinical ideas/concepts from standard
                   terminologies due to a lack of harmonization and multiple representations that
-                  currently exist (e.g., LOINC<superscript>®</superscript>, and SNOMED
+                  currently exist (e.g., LOINC<superscript>®</superscript> and SNOMED
                     CT<superscript>®</superscript> have overlapping concepts).</para>
               </listitem>
             </itemizedlist>
@@ -218,7 +221,7 @@
               statins because of a major IT glitch.</para>
           </listitem>
           <listitem>
-            <para>Underlying cause: (1) code mapping errors, (2) brittle means for determining
+            <para>Underlying cause: (1) code mapping errors, and (2) brittle means for determining
               equivalence.</para>
           </listitem>
         </itemizedlist>
@@ -229,12 +232,12 @@
         <itemizedlist>
           <listitem>
             <para>Amiodarone is associated with several side effects, including thyroid dysfunction,
-              which is due to amiodarone's high iodine content and its direct toxic effect on the
+              which is due to amiodarone’s high iodine content and its direct toxic effect on the
               thyroid.</para>
           </listitem>
           <listitem>
             <para>Underlying cause: (1) the identifier for the drug amiodarone was changed in
-              another system, (2) uncoordinated means for determining equivalence.</para>
+              another system, and (2) uncoordinated means for determining equivalence.</para>
           </listitem>
         </itemizedlist>
       </listitem>
@@ -252,9 +255,11 @@
       </listitem>
     </itemizedlist>
     <para> </para>
-   <para> Tinkar addresses challenges and problems from the above implementation examples:</para>
+   <para> </para>
     <para> </para>
     <para> </para>
+    <para> </para>
+    <para>Tinkar addresses challenges and problems from the above implementation examples:</para>
     <informaltable>
       <tgroup cols="2">
         <colspec colnum="1" colname="col1"/>
@@ -277,7 +282,7 @@
             </entry>
           </row>
           <row>
-            <entry>Uncoordinated, or brittle, terminology integration frequently breaks across
+            <entry>Uncoordinated or brittle terminology integration frequently breaks across
               systems</entry>
             <entry>
               <para>Standardize (and facilitate sharing) of terminology representation across
@@ -331,17 +336,17 @@
       manage terminology produced by a variety of organizations across a healthcare enterprise. This
       foundation must allow enterprise to extend terminology standards and implement extensions in a
       timely fashion.</para>
-    <para>This specification is intended to support healthcare organizations' standard terminology
+    <para>This specification is intended to support healthcare organizations’ standard terminology
       modules, value sets, and coding systems as well as local terms and equivalence
       mappings.</para>
-    <para>A standard-based Terminology Knowledge Architecture (Tinkar) specification is necessary to
-      support the operation of a variety of systems intended to deliver knowledge management for
-      terminology to vendors, providers, and even standards-development organizations, like HL7. </para>
+    <para>A standard-based Tinkar specification is necessary to support the operation of a variety
+      of systems intended to deliver knowledge management for terminology to vendors, providers, and
+      even standards-development organizations, like HL7. </para>
   </section>
   <section>
     <title>Related Efforts</title>
     <para>Previous efforts have attempted to create a common set of terminology capabilities and
-      services by specifying a single pre-defined structure for managing terminology. Unfortunately,
+      services by specifying a single predefined structure for managing terminology. Unfortunately,
       a hardwired structure that works for one standard may not work for another. The inability to
       integrate content across terminology standards is a barrier to implementing services and
       modules that can deliver integrated concepts, code lists, and value sets required by
@@ -354,10 +359,9 @@
       </listitem>
       <listitem>
         <para>Data analysis and research require integrated terminology to analyze aggregated
-          information. Interoperability, clinical decision support, or other types of automation
-          require common semantics based on a set of integrated models across reference standards
-          (e.g. SNOMED CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm,
-          etc.).</para>
+          information. Interoperability, CDS, or other types of automation require common semantics
+          based on a set of integrated models across reference standards (e.g., SNOMED
+            CT<superscript>®</superscript>, LOINC<superscript>®</superscript>, RxNorm).</para>
       </listitem>
     </itemizedlist>
     <para>The Unified Medical Language System (UMLS) Metathesaurus is a compilation of multiple
@@ -367,18 +371,17 @@
       and use very little of the additional information (relationships between concepts) that may be
       available from the source terminology. It does not permit classification to identify cases of
       possible missed synonymy. Second, issues of currency occur because of dyssynchrony of release
-      dates between source terminologies and the UMLS itself. Third, though there are editing
-      guidelines in place, there may be substantial variation in editing practices between the
-      individual editors. Fourth, the UMLS does not support a contribution model. That is, it is a
-      static file that cannot be amended to support additional terms that may be required to fill
-      gaps in existing terminologies subsumed by the Metathesaurus; it does not support extensions.
-      Lastly, there is no efficient format for sharing integrated Metathesaurus content (though
-      there is RRF). The UMLS is not an architecture for terminology management. It may only serve
-      as a reference, noting the aforementioned limitations. An implementation of Tinkar may help
-      address these limitations. </para>
+      dates between source terminologies and the UMLS itself. Third, the UMLS does not support a
+      contribution model. That is, it is a static file that cannot be amended to support additional
+      terms that may be required to fill gaps in existing terminologies subsumed by the
+      Metathesaurus; it does not support extensions. Lastly, there is no efficient format for
+      sharing integrated Metathesaurus content (though there is Rich Release Format [RRF]). The UMLS
+      is not an architecture for terminology management. It may only serve as a reference, noting
+      the aforementioned limitations. An implementation of Tinkar may help address these
+      limitations. </para>
     <para>CTS2 is an architecture for terminology management that supports history retrieval, though
       it does not support an arbitrarily granular change set model for versioning. The Tinkar
-      Specification, in contrast, provides that every new assertion, whether a new component or a
+      specification, in contrast, provides that every new assertion, whether a new component or a
       change to an existing component, must have a precise version coordinate that govern granular
       change control. CTS2 asserts a specific terminology model and does not support unanticipated
       properties with a self-describing model.</para>
@@ -394,15 +397,19 @@
   </section>
   <section>
     <title>Benefits of Self-Describing Architecture</title>
-    <para>Tinkar is self-describing and completely machine processed. Key advantages of a
-      self-describing architecture (or metadata driven architecture) <link linkend="bib9">[9]</link>
-      include the following details: </para>
+    <para>Tinkar is self-describing and completely machine-processed. A self-describing architecture
+      is defined in a report from Queensland University of Technology as follows: “[t]he idea is
+      that self-descriptions of data and other techniques would allow context-understanding programs
+      to selectively find what users want, or for programs to work on behalf of humans and
+      organizations to make them more scalable, efficient and productive.” <link linkend="bib12"
+        >[9]</link> Key advantages of a self-describing architecture (or metadata driven
+      architecture) <link linkend="bib9">[10]</link> include the following details: </para>
     <para><emphasis role="bold">Changes can be reviewed immediately</emphasis> – Every action or
       change by end users can be immediately previewed or tested, without needing any compilation or
       deployment process. The review can also be done before saving or publishing the changes, which
       makes it an interactive development environment for designers to create functionality in an
       iterative manner.</para>
-    <para><emphasis role="bold">Version Control with easy rollback</emphasis> - Every time any
+    <para><emphasis role="bold">Version control with easy rollback</emphasis> – Every time any
       changes are made to published terminology artifacts, the historic versions of the metadata
       files are maintained. This enables easy version control and rollback when necessary. Every
       time a change is made to any artifact, the prior version that existed is archived. When a
@@ -411,10 +418,10 @@
       architecture facilitates the ability for multiple types of terminology data sources to be
       connected to the system.</para>
     <para><emphasis role="bold">Define granular coordinates and configuration management</emphasis>
-      – The functionality for defining granular user defined settings and controls for granular
+      – The functionality for defining granular, user-defined settings and controls for granular
       elements of clinical terminology management is supported. This includes create, read, and
       append settings, as well as management of individual elements, like fields or other controls. </para>
-    <para><emphasis role="bold">Faster extensions – </emphasis>A benefit of a self-describing
+    <para><emphasis role="bold">Faster extensions</emphasis> – A benefit of a self-describing
       architecture is that it can abstract a lot of the deep internal complexities that makes
       development of standard terminologies complicated. This approach can improve processes around
       extensions to terminology. </para>
@@ -424,7 +431,7 @@
      <para>Increased reliance on computerized health records, including Electronic Health Records
       Systems, requires standardized medical terminology to encode health information consistently
       across systems and enterprises. Clinicians require not only objective quantitative
-      measurements (e.g., 90 beats per minute for a patient's pulse), but also procedural context
+      measurements (e.g., 90 beats per minute for a patient’s pulse), but also procedural context
       (e.g., pulse oximetry, manual) about past observations or requests for future interventions.
       While two quantitative measurements may be the same, the procedural information could indicate
       meaningful semantic differences and lead to different clinical interpretation and treatment.
@@ -458,7 +465,7 @@
         </mediaobject>
       </informalfigure>
       <caption>
-        <para><emphasis>Separation of concerns is an architectural design principle, whereby a
+        <para><emphasis>Separation of Concerns is an architectural design principle, whereby a
             system is divided into distinct sections, such that each section can address separate
             concerns. In this case, each architectural layer may build upon artifacts from lower
             layers.</emphasis></para>
@@ -480,25 +487,25 @@
     <para><emphasis role="bold">Statement Model</emphasis> – The Statement Model layer is
       responsible for defining how data elements are combined to create a statement. This layer
       reuses the artifacts defined in the Terminology Knowledge layer. The ANF Reference Model <link
-        linkend="bib10">[10]</link> belongs in this layer.</para>
+        linkend="bib10">[11]</link> belongs in this layer.</para>
     <para><emphasis role="bold">Assertional Knowledge</emphasis> – The Assertional Knowledge layer
       makes use of the Terminology Knowledge layer concepts to specify
         <emphasis>non-defining</emphasis> facts that may be used by procedural knowledge algorithms.
-      An example fact might be that "thiazide diuretics treat hypertension." Assertional Knowledge
-      may indicate what symptoms may be associated with a disorder. </para>
+      An example fact might be that “thiazide diuretics treat hypertension.” Assertional Knowledge
+      may also indicate what symptoms may be associated with a disorder. </para>
     <para>
-      <emphasis role="bold">Procedural Knowledge</emphasis> – Procedural knowledge, also known as
-        <emphasis>imperative knowledge</emphasis>, is the knowledge exercised in the performance of
-      some task. An example would be determining a hypertension treatment plan by analyzing a
-      combination of a patient's clinical statements and the available assertional knowledge. The
-      procedural knowledge is responsible for information about standard ways to carry out specific
-      procedures, as well as other procedural guidelines, e.g., treatment protocols for diseases and
-      order sets focused on certain patient situations. Procedural knowledge, together with
-      assertional knowledge, enables clinical decision support, quality measurement, and patient
-      safety. This layer relies on the architectural foundation and terminology layers, incorporates
-      the statement model for information retrieval, and uses the assertional knowledge. Procedural
-      knowledge artifacts may include clinical alert rules, reminders, etc. that trigger actions or
-      recommend interventions.</para>
+      <emphasis role="bold">Procedural Knowledge</emphasis> – The Procedural Knowledge layer, also
+      known as <emphasis>imperative knowledge</emphasis>, is the knowledge exercised in the
+      performance of some task. An example would be determining a hypertension treatment plan by
+      analyzing a combination of a patient’s clinical statements and the available assertional
+      knowledge. The procedural knowledge is responsible for information about standard ways to
+      carry out specific procedures, as well as other procedural guidelines, (e.g., treatment
+      protocols for diseases and order sets focused on certain patient situations). Procedural
+      knowledge, together with assertional knowledge, enables clinical decision support, quality
+      measurement, and patient safety. This layer relies on the architectural foundation and
+      terminology layers, incorporates the statement model for information retrieval, and uses the
+      assertional knowledge. Procedural knowledge artifacts may include clinical alert rules,
+      reminders, etc., that trigger actions or recommend interventions.</para>
     <para>Examining a clinical procedure for controlling hypertension illustrates each of the layers
       of the informatics architectural separation of concerns. <itemizedlist>
         <listitem>
@@ -516,17 +523,16 @@
         </listitem>
         <listitem>
           <para>The Assertional Knowledge layer represents non-procedural statements, or facts, such
-            as "Stage 2 high blood pressure is over 140 systolic or 90 diastolic," or that
-            beta-blockers and ACE inhibitors may be used to treat hypertension, or that
-            beta-blockers are contraindicated in patients with a diagnosis of reactive airway
-            disease. </para>
+            as “Stage 2 high blood pressure is over 140 systolic or 90 diastolic,” or “beta-blockers
+            and ACE inhibitors may be used to treat hypertension”, or “beta-blockers are
+            contraindicated in patients with a diagnosis of reactive airway disease.” </para>
         </listitem>
         <listitem>
           <para>Finally, the Procedural Knowledge layer provides algorithms to analyze clinical
             statements about a patient, in combination with the Assertional Knowledge, to recommend
             a treatment protocol for different kinds of hypertension, including the considerations
-            of, e.g., patient age, co-morbidities etc., which can be generated by an electronic
-            clinical decision support system (Statement + Assertional layers). This layer adds
+            of, (e.g., patient age, co-morbidities etc., which can be generated by an electronic
+            clinical decision support system [Statement + Assertional layers]). This layer adds
             support for workflow and conditional logic (i.e., if-then-else).</para>
         </listitem>
       </itemizedlist></para>
@@ -536,7 +542,7 @@
     <para>HL7 relies on implementation guides (for V2, CDA, and FHIR) to add sufficient terminology
       knowledge to standards-based clinical statements. Terminology constraints documented as
       profiles or templates are the mechanism to create interoperable implementation guides from
-      health IT standards. Only after the Terminology Knowledge is fully defined, can the
+      health IT standards. Only after the Terminology Knowledge is fully defined can the
       standards-based statements be used to support business and workflow decision points consistent
       with the Assertional and Procedural layers described above. </para>
   </section>

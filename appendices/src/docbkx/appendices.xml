@@ -15,8 +15,8 @@
             <para>Identifier Source: An identifier used to label the identity of a unique component. </para>
             <orderedlist numeration='loweralpha'>
                 <listitem>
-                    <para>UUID (Universally unique identifier): A 128-bit number used to identify
-                        information in computer systems. </para>
+                    <para>UUID (Universally Unique Identifier): A 128-bit number used to identify
+                            information in computer systems. </para>
                 </listitem>
             </orderedlist>
         </listitem>
@@ -37,7 +37,7 @@
                 </listitem>
                 <listitem>
                     <para>Primordial: Concept used to represent a status for components that have
-                            not yet been release and exist in their most basic form.</para>
+                            not yet been released and exist in their most basic form.</para>
                 </listitem>
                 <listitem>
                     <para>Withdrawn: Concept used to represent a status for components that are
@@ -113,7 +113,7 @@
                 </listitem>
                 <listitem>
                     <para>Regular name description type: There may be descriptions/synonyms marked
-                            as "regular."</para>
+                            as “regular.”</para>
                 </listitem>
                 <listitem>
                     <para>Definition: An expression of the meaning of a term. </para>
@@ -314,7 +314,7 @@
         </listitem>
         <listitem>
             <para>Relationship type in source terminology: the associations that there exist between
-                    the meanings of terms from source terminologies (e.g., 'IsA'). </para>
+                    the meanings of terms from source terminologies (e.g., ‘IsA’).</para>
         </listitem>
     </orderedlist>
     </section>
@@ -355,16 +355,16 @@
                     </listitem>
                     <listitem>
                         <para>Abstract Definition root: This is a conceptual parent of all specific
-                            definition root concepts, such as 'OWL EL Definition root'. All specific
+                            definition root concepts, such as ‘OWL EL Definition root.’ All specific
                             definition root instances can be found by searching for children of this
-                            concept.</para>
+                            concept. </para>
                     </listitem>
                     <listitem>
                         <para>OWL EL Definition root: In an OWL EL++ property graph, the meaning
-                            field of the root node will always be the 'OWL EL Definition root'
+                            field of the root node will always be the ‘OWL EL Definition root’
                             concept. This identifies that a property graph instance describes an OWL
-                            EL++ description logic graph. The OWL EL Definition root is a 'child of'
-                            the 'Abstract Definition root' concept.</para>
+                            EL++ description logic graph. The OWL EL Definition root is a ‘child of’
+                            the ‘Abstract Definition root’ concept.</para>
                     </listitem>
                     <listitem>
                         <para>Disjoint with: An operator that asserts that two concepts are disjoint
@@ -499,7 +499,8 @@
                 <para>Property pattern implication: Property pattern implications are used to
                     represent the description logic feature called property chains. Property chains
                     are rules that allows you to infer the existence of a property from a chain of
-                    properties. The current release of SNOMED CT includes one property
+                    properties. The current release of SNOMED CT<superscript>®</superscript>
+                    includes one property
                     chain:<?oxy_comment_start author="rcholan" timestamp="20210402T125530-0400" comment="Look up &quot;property chaining&quot;" id="kdg_qnx_dpb" flag="done"?></para><?oxy_comment_end?>
                 <para>363701004 |direct substance| <emphasis role="bold">ο</emphasis> 127489000 |has
                     active ingredient|→ 363701004 |direct substance|</para>
@@ -591,24 +592,23 @@
             <para>Spatial point: Position in a three-dimensional space. </para>
         </listitem>
         <listitem>
-            <para>UUID (Universally unique identifier): A 128-bit number used to identify
-                information in computer systems. </para>
+            <para>UUID (Universally Unique Ddentifier): A 128-bit number used to identify
+                    information in computer systems. </para>
         </listitem>
         <listitem>
             <para>Property graph: A type of graph model where data are organized as nodes,
                     relationships, and properties (data stored on the nodes or relationships). </para>
         </listitem>
             <listitem>
-                <para>Directed Tree or Ditree - a graph obtained from an undirected tree by
-                    replacing each undirected edge by two directed edges with opposite
-                    directions.</para>
+                <para>Directed Tree or Ditree: a graph obtained from an undirected tree by replacing
+                    each undirected edge by two directed edges with opposite directions.</para>
             </listitem>
             <listitem>
                 <para>DiGraph: A graph in which a set of objects are connected where all the edges
                     are directed from one vertex to another. </para>
             </listitem>
             <listitem>
-                <para>Vertex - The fundamental unit of data that makes up a graph or tree.</para>
+                <para>Vertex: The fundamental unit of data that makes up a graph or tree.</para>
             </listitem>
             <listitem>
                 <para>In Tinkar, property graphs are used as a general-purpose data pattern to
@@ -616,21 +616,21 @@
                     types without requiring custom nodes. </para>
                 <orderedlist numeration="lowerroman">
                     <listitem>
-                        <para>An AST may be used "during semantic analysis, where the compiler
+                        <para>An AST may be used “during semantic analysis, where the compiler
                             checks for correct usage of the elements of the program and the
                             language. The compiler also generates symbol tables based on the AST
                             during semantic analysis. A complete traversal of the tree allows
                             verification of the correctness of the program. After verifying
                             correctness, the AST serves as the base for code generation. The AST is
                             often used to generate an intermediate representation, sometimes called
-                            an intermediate language, for the code generation." <link
-                                linkend="bib11">[11]</link>
+                            an intermediate language, for the code generation.” <link
+                                linkend="bib11">[15]</link>
                         </para>
                     </listitem>
                     <listitem>
                         <para>An AST is made up of nodes and branches. In Tinkar, every tree will
-                            always have roots, but they are specific: "An OWL EL root" vs. a "BPMN
-                            root", etc. Each node must have 0 or more children. </para>
+                            always have roots, but they are specific: “An OWL EL root” vs. a “BPMN
+                            root”, etc. Each node must have 0 or more children. </para>
                     </listitem>
                 </orderedlist>
             </listitem>
@@ -641,21 +641,17 @@
                             <imagedata fileref="propertygraph.PNG" format="PNG" scalefit="1"
                                 width="100%" contentdepth="100%" align="center"/>
                         </imageobject>
-                    </mediaobject>
-                </para>
-            </listitem>
-            <listitem>
-                <para>In this output, one can see a sufficient set and necessary set. Bulleted items
-                    are properties in the node. The output is printed as a "depth first search."
-                    Each depth adds 3 characters of padding and shows how OWL EL++ definitions,
-                    using only terminology and a standard property graph data structure, are
-                    represented. The 1st one is node index 0 which has a child of node index 8. Node
-                    index 0 is the OWL EL++ definition root. Node 8 points to Node 7, and the
-                    meaning of Node 8 is that it is a necessary set. Node 7 is 'And' and points to
-                    Node 5,1,6. Node 5's meaning is 'Role Type', Value is 'Role group', and its
-                    other property is 'Role Operator.' Node 5 points to Node 4. Node 4 is 'And.'
-                    Node 3 is 'Role Type.' Node 2 is Concept Reference. 7 also points to 1 and 6
-                    (Concept References). </para>
+                    </mediaobject>In this output, one can see a sufficient set and necessary set.
+                    Bulleted items are properties in the node. The output is printed as a “depth
+                    first search.” Each depth adds 3 characters of padding and shows how OWL EL++
+                    definitions, using only terminology and a standard property graph data
+                    structure, are represented. The 1st one is node index 0 which has a child of
+                    node index 8. Node index 0 is the OWL EL++ definition root. Node 8 points to
+                    Node 7, and the meaning of Node 8 is that it is a necessary set. Node 7 is ‘And’
+                    and points to Node 5,1,6. Node 5’s meaning is ‘Role Type’, Value is ‘Role
+                    group’, and its other property is ‘Role Operator.’ Node 5 points to Node 4. Node
+                    4 is ‘And.’ Node 3 is ‘Role Type.’ Node 2 is Concept Reference. 7 also points to
+                    1 and 6 (Concept References).</para>
             </listitem>
             <listitem>
                 <para>The property graph model demonstrates that each vertex has a meaning. Tinkar
@@ -676,17 +672,19 @@
                     right to make copies of a creative work, usually for a limited time. </para>
                 <orderedlist numeration='loweralpha'>
                     <listitem>
-                        <para>SNOMED CT License Agreement: License Agreement between The
-                            International Health Terminology Standards Development Organisation and
-                            the person or organization to which the International Release of SNOMED
-                            CT (whether on its own or as part of a Member’s National Release of
-                            SNOMED CT) is distributed or otherwise made available. </para>
+                        <para>SNOMED CT<superscript>®</superscript> License Agreement: License
+                            Agreement between The International Health Terminology Standards
+                            Development Organisation and the person or organization to which the
+                            International Release of SNOMED CT<superscript>®</superscript> (whether
+                            on its own or as part of a Member’s National Release of SNOMED
+                                CT<superscript>®</superscript>) is distributed or otherwise made
+                            available. </para>
                     </listitem>
                     <listitem>
                         <para>Regenstrief Public License: License Agreement between Regenstrief
-                            Institute, Inc. for LOINC to be made available for use, modification,
-                            and distribution in accordance with the Regenstrief Public License
-                            Version. </para>
+                            Institute, Inc. for LOINC<superscript>®</superscript> to be made
+                            available for use, modification, and distribution in accordance with the
+                            Regenstrief Public License Version. </para>
                     </listitem>
                     <listitem>
                         <para>HL7 License: HL7 licenses its standards and select IP free of charge.

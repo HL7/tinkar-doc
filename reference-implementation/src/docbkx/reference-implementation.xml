@@ -50,7 +50,7 @@
       </para>
         <para>While there is a name displayed for human readable purposes, all information
             describing the Concept is asserted with Semantics (see below, section 4.2). </para>
-        <para>When viewing Concepts in Komet there are various icons that have different meanings
+        <para>When viewing Concepts in Komet, there are various icons that have different meanings
             based on certain Semantics that are associated with the Concept. </para>
       <para>
           <figure>
@@ -72,7 +72,7 @@
        <para>Semantics are the predicates and objects about a Concept. Semantics perform the
             descriptive work in Tinkar. ​​In the figure below we see (1) concept semantics, (2)
             descriptions and (3) axioms attached to the “Acute pelvic pain” Concept which add
-            information specifying the Concept. ​ ​ A single instance of one of these Semantics is a
+            information specifying the Concept. ​A single instance of one of these Semantics is a
             SemanticVersion (with a STAMP). </para><para>
             <figure>
                 <title>Semantics</title>
@@ -116,8 +116,8 @@
                 <listitem>
                     <para>REF Pattern: This pattern is used to associate a Concept to a Component.
                         The type of association is also represented by a Tinkar Model Concept. In
-                        the example below, the type of association is "SNOMED legacy
-                        implication."</para>
+                        the example below, the type of association is “SNOMED legacy
+                        implication.”</para>
                     <figure>
                         <title>REF Pattern</title>
                         <mediaobject>
@@ -211,7 +211,7 @@
                 </caption>
             </figure>
         </para>
-    <para>The image below shows the inferred definition marked as "1" that represents the most
+    <para>The image below shows the inferred definition marked as “1” that represents the most
             recent and active version of the Concept Definition. Below the current definition is the
             change history where each of the previous versions of Concept Definitions are
             represented. <figure>
@@ -304,9 +304,11 @@
             </figure>
         </para>
         <para>The figure below shows the LOINC<superscript>®</superscript> inferred relationships
-            that are derived from the latest version of the SNOMED CT LOINC Integration files. The
-            parents and attributes represented in the Sufficient and Necessary sets are represented
-            using SNOMED CT concepts based on mappings from the LOINC Part concepts to SNOMED CT concepts.<figure>
+            that are derived from the latest version of the SNOMED CT<superscript>®</superscript>
+                LOINC<superscript>®</superscript> Integration files. The parents and attributes
+            represented in the Sufficient and Necessary sets are represented using SNOMED
+                CT<superscript>®</superscript> concepts based on mappings from the LOINC Part
+            concepts to SNOMED CT<superscript>®</superscript> concepts.<figure>
                 <title>LOINC<superscript>®</superscript> Inferred Relationships</title>
                 <mediaobject>
                     <imageobject>
@@ -319,10 +321,12 @@
                             Relationships</emphasis></para>
                 </caption>
             </figure>The next figure shows the LOINC<superscript>®</superscript> stated
-            relationships that are contained within the latest version of the SNOMED CT LOINC
-            Integration files. The parents and attributes represented in the Sufficient sets are
-            represented using SNOMED CT concepts based on mappings from the LOINC Part concepts to
-            SNOMED CT concepts.<figure>
+            relationships that are contained within the latest version of the SNOMED
+                CT<superscript>®</superscript> LOINC<superscript>®</superscript> Integration files.
+            The parents and attributes represented in the Sufficient sets are represented using
+            SNOMED CT<superscript>®</superscript> concepts based on mappings from the
+                LOINC<superscript>®</superscript> Part concepts to SNOMED
+                CT<superscript>®</superscript> concepts.<figure>
                 <title>LOINC<superscript>®</superscript> Stated Relationships</title>
                 <mediaobject>
                     <imageobject>
@@ -366,8 +370,9 @@
             </figure>
         </para>
         <para>The figure below shows the Inferred and Stated Relationships based on a test version
-            of an OWL file of RxNorm Stated Relationships that are based on the new SNOMED CT drug
-            model. The relationships are represented using SNOMED CT concepts.<figure>
+            of an OWL file of RxNorm Stated Relationships that are based on the new SNOMED
+                CT<superscript>®</superscript> drug model. The relationships are represented using
+            SNOMED CT<superscript>®</superscript>concepts.<figure>
                 <title>RxNorm Relationships</title>
                 <mediaobject>
                     <imageobject>
@@ -389,8 +394,8 @@
                 CT<superscript>®</superscript> International release with the September 2020 version
             of the SNOMED CT<superscript>®</superscript> U.S. Edition and a Solor Extension to
             SNOMED CT. The classifier has detected that there is an equivalence between the
-            Concepts: "Ankylosis of bilateral knee joints (disorder)" and "Ankylosis of both knee
-            joints (disorder)."<figure>
+            Concepts: “Ankylosis of bilateral knee joints (disorder)” and “Ankylosis of both knee
+            joints (disorder).”<figure>
                 <title>Equivalences Detected by Classifier</title>
                 <mediaobject>
                     <imageobject>
@@ -407,9 +412,9 @@
         <para>The two Concept Detail Panels can be opened and viewed as two Concepts side by side to
             understand the differences and similarities between the two, their origins, and
             understand how to correct the equivalencies between these two Concepts. In this case,
-            the Concept "Ankylosis of both knee joints (disorder)" would need to be retired as it
-            belongs to the Solor Extension and the "Ankylosis of bilateral knee joints (disorder)"
-            Concept is contained in the U.S. Edition. <figure>
+            the Concept “Ankylosis of both knee joints (disorder)” would need to be retired as it
+            belongs to the Solor Extension and the “Ankylosis of bilateral knee joints (disorder)”
+            Concept is contained in the U.S. Edition.<figure>
                 <title>SNOMED CT<superscript>®</superscript> Equivalences between Modules </title>
                 <mediaobject>
                     <imageobject>

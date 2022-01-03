@@ -30,17 +30,32 @@
         AMIA says. Healthcare IT News. 2016. Available from: <link
             xlink:href="https://www.healthcareitnews.com/news/clinical-decision-support-malfunctions-are-widespread-and-persistent-amia-says"
         />.</para>
-    <para xml:id="bib9">9. Tharakan V. Metadata Driven Architecture For Application Development.
+    <para xml:id="bib12">9. Oaks, P. Towards Self Describing Web Services. Lecture Notes in Computer Science. 2003. 2722. 10.1007/3-540-45068-8_90. 
+        Available from: <link
+            xlink:href="https://www.researchgate.net/publication/27482447_Towards_Self_Describing_Web_Services"
+        />.</para>
+    <para xml:id="bib9">10. Tharakan V. Metadata Driven Architecture For Application Development.
         ClaySys Technologies; 2019. Available from: <link
             xlink:href="https://www.claysys.com/blog/metadata-driven-application-development/"
         />.</para>
-    <para xml:id="bib10">10. Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019.
+    <para xml:id="bib10">11. Analysis Normal Form Informative Ballot. HL7 CIMI Work Group. Sept 2019.
             <link
             xlink:href="http://www.hl7.org/documentcenter/public/ballots/2019SEP/downloads/HL7_CIMI_LM_ANF_R1_I1_2019SEP.pdf"
         />.  mirror link: <link
             xlink:href="http://solor.io/wp-content/uploads/2020/01/ANF-Ballot-Jan-2020.pdf"
             >http://solor.io/wp-content/uploads/2020/01/ANF-Ballot-Jan-2020.pdf</link>.</para>
-    <para xml:id="bib11">11. Abstract syntax tree. Wikipedia; 2020. Available from:
+    <para xml:id="bib13">12. Parnas, D. On the Criteria To Be Used in Decomposing Systems into Modules. Programming Techniques. 1972. Available from:
+        <link
+            xlink:href="https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf"/>.</para>
+    
+    <para xml:id="bib14">13. Kaszubowski, M. Modular software design - 10 common mistakes. AppUnite Blog. 2020, Sep. Available from:
+        <link
+            xlink:href="https://appunite.com/blog/modular-software-design-mistakes"/>.</para>
+    
+    <para xml:id="bib15">14. Delamore, S. The 5 Essential Elements of Modular Software Design. 2020, Jan. Medium. Available from:
+        <link
+            xlink:href="https://shanebdavis.medium.com/the-5-essential-elements-of-modular-software-design-6b333918e543"/>.</para>
+    <para xml:id="bib11">15. Abstract syntax tree. Wikipedia; 2020. Available from:
         <link
             xlink:href="https://en.wikipedia.org/wiki/Abstract_syntax_tree"/>.</para>
   

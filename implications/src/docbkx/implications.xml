@@ -50,8 +50,8 @@
             </listitem>
         </orderedlist>
         <para>There are two main areas in which Tinkar and FHIR are expected to interface, as
-            described in the subsequent sections: "Dynamic FHIR Terminology Servers" and "Static
-            FHIR CodeSystem and ValueSet Resources."</para>
+            described in the subsequent sections: “Dynamic FHIR Terminology Servers” and “Static
+            FHIR CodeSystem and ValueSet Resources.”</para>
         <section>
             <title>Dynamic FHIR Terminology Servers</title>
             <para>FHIR terminology servers are designed to provide knowledge artifacts in real time
@@ -97,8 +97,8 @@
                         keep it up to date and manage change. </para>
                 </listitem>
                 <listitem>
-                    <para><emphasis role="bold">HL7 terminological content (THO)</emphasis>: HL7
-                        Terminological content refers to <emphasis role="underline"
+                    <para><emphasis role="bold">HL7 Terminological Content (THO)</emphasis>: HL7
+                        Terminological Content refers to <emphasis role="underline"
                             >t</emphasis>erminology.<emphasis role="underline"
                             >h</emphasis>L7.<emphasis role="underline">o</emphasis>rg (THO) which is
                         the domain address of the entry point for the published content. HL7
